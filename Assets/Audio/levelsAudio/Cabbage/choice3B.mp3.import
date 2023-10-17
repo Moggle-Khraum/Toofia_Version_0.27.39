@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choice3B.mp3-ae33827386989f56e5e72aaeb1ab4f5f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Cabbage/choice3B.mp3"
+dest_files=[ "res://.import/choice3B.mp3-ae33827386989f56e5e72aaeb1ab4f5f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

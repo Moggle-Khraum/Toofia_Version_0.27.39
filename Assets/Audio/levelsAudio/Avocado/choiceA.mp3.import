@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-be7ba601cb79dcb3799e0ca9cc0549d7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Avocado/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-be7ba601cb79dcb3799e0ca9cc0549d7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

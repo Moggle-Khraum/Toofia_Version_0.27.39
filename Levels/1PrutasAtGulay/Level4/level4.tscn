@@ -1,0 +1,4348 @@
+[gd_scene load_steps=136 format=2]
+
+[ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=1]
+[ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Images/levelImages/avocado.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Audio/levelsAudio/Avocado/avocado.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Audio/levelsAudio/Avocado/askVoiceAvocado.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Audio/levelsAudio/Avocado/choiceC.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=8]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=9]
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=10]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
+[ext_resource path="res://Assets/GUI/Box_Rounded.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Audio/levelsAudio/pickAnswer.mp3" type="AudioStream" id=13]
+[ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=14]
+[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Audio/levelsAudio/Avocado/choiceB.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/levelsAudio/Avocado/choiceA.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Levels/1PrutasAtGulay/Level4/level4.gd" type="Script" id=18]
+[ext_resource path="res://Assets/Audio/repeatInfo.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Levels/1PrutasAtGulay/Level4/ScorePanel3StarA.gd" type="Script" id=20]
+[ext_resource path="res://Assets/UIElements/Item4.png" type="Texture" id=21]
+[ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=22]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_StarGrey_WhiteOutline.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Audio/levelsAudio/correctAnswer.mp3" type="AudioStream" id=24]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_Star_WhiteOutline.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Sliders/ScrollBar_Blue_Scroller.png" type="Texture" id=26]
+[ext_resource path="res://Assets/BoxesBanners/Box_Square.png" type="Texture" id=27]
+[ext_resource path="res://Assets/UIElements/Icon_Menu.png" type="Texture" id=28]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Home.png" type="Texture" id=29]
+[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Return.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Audio/levelsAudio/Cabbage/wrongPickCabbage.mp3" type="AudioStream" id=32]
+[ext_resource path="res://Levels/1PrutasAtGulay/Level4/PausePanel4.tscn" type="PackedScene" id=33]
+[ext_resource path="res://Levels/1PrutasAtGulay/Level4/ScorePanel2StarB.gd" type="Script" id=34]
+[ext_resource path="res://Levels/1PrutasAtGulay/Level4/ScorePanel2StarC.gd" type="Script" id=35]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 33
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 33
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="DynamicFont" id=5]
+size = 30
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 30
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=131]
+size = 20
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+extra_spacing_char = 2
+extra_spacing_space = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 20
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+extra_spacing_char = 2
+extra_spacing_space = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=129]
+size = 20
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 20
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=130]
+size = 20
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = 4
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 20
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 65
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 65
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxTexture" id=42]
+texture = ExtResource( 15 )
+region_rect = Rect2( 0, 0, 1279, 734 )
+
+[sub_resource type="DynamicFont" id=43]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=44]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=45]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=46]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=47]
+size = 40
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=48]
+size = 40
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=49]
+size = 20
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=50]
+size = 20
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=51]
+size = 24
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=52]
+size = 24
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=53]
+size = 23
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=54]
+size = 23
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=55]
+size = 35
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=56]
+size = 35
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=57]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=58]
+size = 25
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=59]
+size = 25
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=60]
+size = 65
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=61]
+size = 65
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=62]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0, 1, 0.0627451, 1 )
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="Animation" id=63]
+resource_name = "blink"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.509804 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=64]
+size = 25
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = 4
+extra_spacing_bottom = 1
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=65]
+size = 25
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="Animation" id=66]
+resource_name = "blink"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.509804 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=67]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=68]
+size = 30
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxTexture" id=69]
+texture = ExtResource( 15 )
+region_rect = Rect2( 0, 0, 1279, 734 )
+
+[sub_resource type="DynamicFont" id=70]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=71]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=72]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=73]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=74]
+size = 40
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=75]
+size = 40
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=76]
+size = 20
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=77]
+size = 20
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=78]
+size = 24
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=79]
+size = 24
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=80]
+size = 23
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=81]
+size = 23
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=82]
+size = 35
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=83]
+size = 35
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=84]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=85]
+size = 25
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=86]
+size = 25
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=87]
+size = 65
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=88]
+size = 65
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=89]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0, 1, 0.0627451, 1 )
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="Animation" id=90]
+resource_name = "blink"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.509804 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=91]
+size = 25
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = 4
+extra_spacing_bottom = 1
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=92]
+size = 25
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=93]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 1, 0, 0, 1 )
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="Animation" id=94]
+resource_name = "blink"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.411765 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.45098 ) ]
+}
+
+[sub_resource type="DynamicFont" id=95]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=96]
+size = 30
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxTexture" id=97]
+texture = ExtResource( 15 )
+region_rect = Rect2( 0, 0, 1279, 734 )
+
+[sub_resource type="DynamicFont" id=98]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=99]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=100]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=101]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=102]
+size = 40
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=103]
+size = 40
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=104]
+size = 20
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=105]
+size = 20
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=106]
+size = 24
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=107]
+size = 24
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=108]
+size = 23
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=109]
+size = 23
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=110]
+size = 35
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=111]
+size = 35
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=112]
+size = 35
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=113]
+size = 25
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=114]
+size = 25
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=115]
+size = 65
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=116]
+size = 65
+use_filter = true
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=117]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0, 1, 0.0627451, 1 )
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="Animation" id=118]
+resource_name = "blink"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.509804 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=119]
+size = 25
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = 4
+extra_spacing_bottom = 1
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=120]
+size = 25
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="StyleBoxFlat" id=121]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 1, 0, 0, 1 )
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="Animation" id=122]
+resource_name = "blink"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.411765 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.45098 ) ]
+}
+
+[sub_resource type="DynamicFont" id=127]
+size = 25
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = 4
+extra_spacing_bottom = 1
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=128]
+size = 25
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 10 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=125]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=126]
+size = 30
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 9 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelBox" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.213867
+anchor_top = 0.035
+anchor_right = 0.780273
+anchor_bottom = 0.138333
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level4Line" type="Label" parent="Panel/NinePatchRect/levelBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "pangapat na tanong"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level4Label" type="Label" parent="Panel/NinePatchRect/levelBox"]
+anchor_left = 0.0137931
+anchor_right = 0.984483
+anchor_bottom = 0.903229
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 2 )
+text = "pangapat na tanong"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level4Label2" type="Label" parent="Panel/NinePatchRect/levelBox/level4Label"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 3 )
+text = "pangapat na tanong"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pauseButton" type="Button" parent="Panel/NinePatchRect"]
+anchor_left = 0.00683594
+anchor_top = 0.0283333
+anchor_right = 0.100586
+anchor_bottom = 0.146667
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 11 )
+flat = true
+clip_text = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pauseIcon" type="TextureRect" parent="Panel/NinePatchRect/pauseButton"]
+anchor_left = 0.322917
+anchor_top = 0.217391
+anchor_right = 0.65625
+anchor_bottom = 0.782609
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="imageHolder" type="Sprite" parent="Panel/NinePatchRect"]
+position = Vector2( 250, 299 )
+scale = Vector2( 0.244296, 0.247043 )
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="avocado" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+unique_name_in_owner = true
+anchor_left = 0.0619019
+anchor_top = 0.207446
+anchor_right = 0.937805
+anchor_bottom = 0.853307
+margin_left = -761.5
+margin_top = -761.0
+margin_right = -761.5
+margin_bottom = -761.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/avocado"]
+unique_name_in_owner = true
+anchor_left = 0.156158
+anchor_top = 0.124532
+anchor_right = 0.86437
+anchor_bottom = 0.886704
+margin_left = -3.05176e-05
+margin_top = -4.57764e-05
+margin_bottom = -6.10352e-05
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/avocado"]
+unique_name_in_owner = true
+anchor_left = 0.113193
+anchor_top = 0.0881327
+anchor_right = 0.923539
+anchor_bottom = 0.914486
+margin_left = -3.05176e-05
+margin_right = 0.00012207
+input_pass_on_modal_close_click = false
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="infoAvocado" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/avocado"]
+unique_name_in_owner = true
+stream = ExtResource( 4 )
+bus = "Voices"
+
+[node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.0664063
+anchor_top = 0.811667
+anchor_right = 0.418945
+anchor_bottom = 0.968333
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exampleLabel2" type="Label" parent="Panel/NinePatchRect/imageText"]
+anchor_top = 0.0113636
+anchor_right = 1.0
+anchor_bottom = 1.01136
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 5 )
+text = "halimbawang larawan"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exampleLabel" type="Label" parent="Panel/NinePatchRect/imageText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 6 )
+text = "halimbawang larawan"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exampleLabel" type="Label" parent="Panel/NinePatchRect/imageText/exampleLabel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -3.0
+margin_bottom = -3.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 7 )
+text = "halimbawang larawan"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="askHolder" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.470703
+anchor_top = 0.173333
+anchor_right = 0.960938
+anchor_bottom = 0.758333
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="askLabel" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0478087
+anchor_top = 0.042735
+anchor_right = 0.96215
+anchor_bottom = 0.344729
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 131 )
+text = "1. Batay sa iyong narinig, Ano ang pangalan ng prutas na nasa larawan?"
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="askLabel2" type="Label" parent="Panel/NinePatchRect/askHolder/askLabel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -2.0
+margin_bottom = -2.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 9 )
+text = "1. Batay sa iyong narinig, Ano ang pangalan ng prutas na nasa larawan?"
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="askVoice4" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
+unique_name_in_owner = true
+stream = ExtResource( 5 )
+bus = "Voices"
+
+[node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0517928
+anchor_top = 0.361823
+anchor_right = 0.950198
+anchor_bottom = 0.51567
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 129 )
+text = "A. Ang pangalan nito ay Abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabel2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 11 )
+text = "A. Ang pangalan nito ay Abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+unique_name_in_owner = true
+stream = ExtResource( 17 )
+bus = "Voices"
+
+[node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0577689
+anchor_top = 0.532764
+anchor_right = 0.964142
+anchor_bottom = 0.68661
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 130 )
+text = "B. Ang pangalan nito ay Adokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 11 )
+text = "B. Ang pangalan nito ay Adokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+unique_name_in_owner = true
+stream = ExtResource( 16 )
+bus = "Voices"
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0597612
+anchor_top = 0.720798
+anchor_right = 0.966134
+anchor_bottom = 0.811966
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 12 )
+text = "C. Ang pangalan nito ay Atis."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 11 )
+text = "C. Ang pangalan nito ay Atis."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+unique_name_in_owner = true
+stream = ExtResource( 6 )
+bus = "Voices"
+
+[node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
+unique_name_in_owner = true
+anchor_left = 0.553711
+anchor_top = 0.771667
+anchor_right = 0.890625
+anchor_bottom = 0.930001
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="A" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+unique_name_in_owner = true
+visible = false
+margin_right = 95.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 12 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickA" type="Label" parent="Panel/NinePatchRect/AnswerPanel/A"]
+anchor_left = 0.0947368
+anchor_top = 0.0842112
+anchor_right = 0.905263
+anchor_bottom = 0.926316
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 13 )
+text = "A
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/A/pickA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 14 )
+text = "A"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+unique_name_in_owner = true
+visible = false
+margin_left = 125.0
+margin_right = 220.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 12 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickB" type="Label" parent="Panel/NinePatchRect/AnswerPanel/B"]
+anchor_left = 0.0842105
+anchor_top = 0.147368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 13 )
+text = "B
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/B/pickB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 14 )
+text = "B"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+unique_name_in_owner = true
+visible = false
+margin_left = 250.0
+margin_right = 345.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 12 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickC" type="Label" parent="Panel/NinePatchRect/AnswerPanel/C"]
+anchor_left = 0.0842105
+anchor_top = 0.0947368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 13 )
+text = "C"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickC2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/C/pickC"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 14 )
+text = "C"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
+unique_name_in_owner = true
+stream = ExtResource( 13 )
+bus = "Voices"
+
+[node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 19 )
+bus = "Voices"
+
+[node name="ScorePanel3StarA" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 42 )
+script = ExtResource( 20 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="panelblock" type="NinePatchRect" parent="ScorePanel3StarA"]
+anchor_left = 0.0185547
+anchor_top = 0.14
+anchor_right = 0.486328
+anchor_bottom = 0.966667
+margin_right = -6.10352e-05
+texture = ExtResource( 22 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="banner2" type="TextureRect" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.0265487
+anchor_top = -0.0693642
+anchor_right = 0.977876
+anchor_bottom = 0.0597303
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ribbon" type="TextureRect" parent="ScorePanel3StarA/panelblock"]
+anchor_left = -0.0125261
+anchor_top = -0.145161
+anchor_right = 1.03132
+anchor_bottom = 0.0806452
+texture = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napakA" type="Label" parent="ScorePanel3StarA/panelblock/ribbon"]
+anchor_left = 0.126
+anchor_top = 0.169643
+anchor_right = 0.526377
+anchor_bottom = 0.496188
+margin_right = -2.18842
+margin_bottom = 10.4269
+rect_rotation = -3.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 43 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napaka" type="Label" parent="ScorePanel3StarA/panelblock/ribbon/napakA"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 44 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husaY" type="Label" parent="ScorePanel3StarA/panelblock/ribbon"]
+anchor_left = 0.472
+anchor_top = 0.0625
+anchor_right = 0.866185
+anchor_bottom = 0.624122
+margin_right = 3.90768
+margin_bottom = -13.9017
+rect_rotation = 4.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 45 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husay" type="Label" parent="ScorePanel3StarA/panelblock/ribbon/husaY"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 46 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.0647182
+anchor_top = 0.145161
+anchor_right = 0.327766
+anchor_bottom = 0.368952
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel3StarA/panelblock/star0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.31524
+anchor_top = 0.0120968
+anchor_right = 0.693111
+anchor_bottom = 0.332661
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel3StarA/panelblock/star1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star2" type="TextureRect" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.665971
+anchor_top = 0.15121
+anchor_right = 0.929019
+anchor_bottom = 0.375
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star2" type="TextureRect" parent="ScorePanel3StarA/panelblock/star2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.0501044
+anchor_top = 0.375
+anchor_right = 0.94572
+anchor_bottom = 0.546371
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 47 )
+text = "Binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel3StarA/panelblock/applause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 48 )
+text = "binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="nameLabel1" type="Label" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.104384
+anchor_top = 0.528226
+anchor_right = 0.897704
+anchor_bottom = 0.602823
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 49 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="namelabel1" type="Label" parent="ScorePanel3StarA/panelblock/nameLabel1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 50 )
+text = "dave"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="nameline" type="HSeparator" parent="ScorePanel3StarA/panelblock/nameLabel1"]
+anchor_left = 0.00526316
+anchor_top = 0.54054
+anchor_right = 1.0
+anchor_bottom = 1.27027
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="theLevels" type="Label" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.200418
+anchor_top = 0.620968
+anchor_right = 0.461379
+anchor_bottom = 0.770162
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 51 )
+text = "Mga Levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLabel" type="Label" parent="ScorePanel3StarA/panelblock/theLevels"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 52 )
+text = "mga levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="theHome" type="Label" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.551148
+anchor_top = 0.637097
+anchor_right = 0.753653
+anchor_bottom = 0.764113
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 53 )
+text = "Main menu"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="thehome" type="Label" parent="ScorePanel3StarA/panelblock/theHome"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 54 )
+text = "main menu"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelPanel" type="HBoxContainer" parent="ScorePanel3StarA/panelblock"]
+anchor_left = 0.237996
+anchor_top = 0.770161
+anchor_right = 0.73904
+anchor_bottom = 0.941532
+custom_constants/separation = 60
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goLevels" type="TextureRect" parent="ScorePanel3StarA/panelblock/levelPanel"]
+margin_right = 90.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levels" type="Button" parent="ScorePanel3StarA/panelblock/levelPanel/goLevels"]
+anchor_left = 0.130439
+anchor_top = 0.189657
+anchor_right = 0.878265
+anchor_bottom = 0.818967
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 28 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goHome" type="TextureRect" parent="ScorePanel3StarA/panelblock/levelPanel"]
+margin_left = 150.0
+margin_right = 240.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="home" type="Button" parent="ScorePanel3StarA/panelblock/levelPanel/goHome"]
+anchor_left = 0.122222
+anchor_top = 0.105882
+anchor_right = 0.870049
+anchor_bottom = 0.847261
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 29 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="panelblock2" type="NinePatchRect" parent="ScorePanel3StarA"]
+anchor_left = 0.493164
+anchor_top = 0.0316667
+anchor_right = 0.980469
+anchor_bottom = 0.968333
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="block" type="Control" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.0400802
+anchor_top = 0.0480427
+anchor_right = 0.96994
+anchor_bottom = 0.233096
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel" type="Label" parent="ScorePanel3StarA/panelblock2/block"]
+anchor_top = 0.0116664
+anchor_right = 1.00121
+anchor_bottom = 1.00331
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 55 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel2" type="Label" parent="ScorePanel3StarA/panelblock2/block"]
+anchor_right = 0.998208
+anchor_bottom = 0.979974
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 56 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel" type="Label" parent="ScorePanel3StarA/panelblock2/block/wrongLabel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -3.0
+margin_bottom = -2.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 57 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.0420842
+anchor_top = 0.240214
+anchor_right = 0.719439
+anchor_bottom = 0.318505
+margin_left = -1.14441e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 58 )
+text = "Ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel3StarA/panelblock2/correctAns"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 59 )
+text = "ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickA2" type="TextureRect" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.0641283
+anchor_top = 0.327402
+anchor_right = 0.264529
+anchor_bottom = 0.494662
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA" type="Label" parent="ScorePanel3StarA/panelblock2/pickA2"]
+anchor_right = 1.0
+anchor_bottom = 0.904255
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 60 )
+text = "A"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA" type="Label" parent="ScorePanel3StarA/panelblock2/pickA2/pickA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 61 )
+text = "A"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="correctBarA" type="Panel" parent="ScorePanel3StarA/panelblock2/pickA2"]
+anchor_left = -0.0900002
+anchor_top = -0.0957446
+anchor_right = 4.46
+anchor_bottom = 1.09574
+margin_left = 1.52588e-05
+custom_styles/panel = SubResource( 62 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="animA2" type="AnimationPlayer" parent="ScorePanel3StarA/panelblock2/pickA2/correctBarA"]
+unique_name_in_owner = true
+autoplay = "blink"
+anims/blink = SubResource( 63 )
+
+[node name="answerLabelA2" type="Label" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.276553
+anchor_top = 0.33452
+anchor_right = 0.943888
+anchor_bottom = 0.482206
+margin_left = -2.67029e-05
+margin_right = -3.05176e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 64 )
+text = "A. Ang pangalan ay abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelA" type="Label" parent="ScorePanel3StarA/panelblock2/answerLabelA2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 65 )
+text = "A. Ang pangalan ay abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="border" type="HSeparator" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.0781563
+anchor_top = 0.209964
+anchor_right = 0.951904
+anchor_bottom = 0.254448
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns2" type="Label" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.0460922
+anchor_top = 0.505338
+anchor_right = 0.667335
+anchor_bottom = 0.58363
+margin_left = -1.14441e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 58 )
+text = "Ang iyong sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel3StarA/panelblock2/correctAns2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 59 )
+text = "ang iyong sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickA" type="TextureRect" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.0701403
+anchor_top = 0.587189
+anchor_right = 0.270541
+anchor_bottom = 0.754448
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA" type="Label" parent="ScorePanel3StarA/panelblock2/pickA"]
+anchor_left = 0.0842105
+anchor_top = 0.147368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 60 )
+text = "A
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA" type="Label" parent="ScorePanel3StarA/panelblock2/pickA/pickA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 61 )
+text = "A"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="correctBarA" type="Panel" parent="ScorePanel3StarA/panelblock2/pickA"]
+anchor_left = -0.0900002
+anchor_top = -0.0957446
+anchor_right = 4.46
+anchor_bottom = 1.09574
+margin_left = 1.52588e-05
+custom_styles/panel = SubResource( 62 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="animA" type="AnimationPlayer" parent="ScorePanel3StarA/panelblock2/pickA/correctBarA"]
+unique_name_in_owner = true
+autoplay = "blink"
+anims/blink = SubResource( 66 )
+
+[node name="answerLabelA" type="Label" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.282565
+anchor_top = 0.594306
+anchor_right = 0.9499
+anchor_bottom = 0.741993
+margin_left = -2.67029e-05
+margin_right = -3.05176e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 64 )
+text = "A. Ang pangalan ay abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelA" type="Label" parent="ScorePanel3StarA/panelblock2/answerLabelA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 65 )
+text = "A. Ang pangalan ay abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="border2" type="HSeparator" parent="ScorePanel3StarA/panelblock2"]
+anchor_left = 0.0761523
+anchor_top = 0.759786
+anchor_right = 0.9499
+anchor_bottom = 0.80427
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nextQuestion" type="Button" parent="ScorePanel3StarA/panelblock2"]
+margin_left = 106.0
+margin_top = 478.0
+margin_right = 432.0
+margin_bottom = 542.0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="block" type="TextureRect" parent="ScorePanel3StarA/panelblock2/nextQuestion"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 26 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel3StarA/panelblock2/nextQuestion"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 67 )
+text = "magpatuloy.."
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel3StarA/panelblock2/nextQuestion/continue"]
+anchor_top = 0.0232558
+anchor_right = 1.0
+anchor_bottom = 0.953488
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 68 )
+text = "magpatuloy.."
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctPick" type="AudioStreamPlayer" parent="ScorePanel3StarA"]
+unique_name_in_owner = true
+stream = ExtResource( 24 )
+bus = "Voices"
+
+[node name="ScorePanel2StarB" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 69 )
+script = ExtResource( 34 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="panelblock" type="NinePatchRect" parent="ScorePanel2StarB"]
+anchor_left = 0.0185547
+anchor_top = 0.14
+anchor_right = 0.486328
+anchor_bottom = 0.966667
+margin_right = -6.10352e-05
+texture = ExtResource( 22 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="banner2" type="TextureRect" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.0265487
+anchor_top = -0.0693642
+anchor_right = 0.977876
+anchor_bottom = 0.0597303
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ribbon" type="TextureRect" parent="ScorePanel2StarB/panelblock"]
+anchor_left = -0.0125261
+anchor_top = -0.145161
+anchor_right = 1.03132
+anchor_bottom = 0.0806452
+texture = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napakA" type="Label" parent="ScorePanel2StarB/panelblock/ribbon"]
+anchor_left = 0.126
+anchor_top = 0.169643
+anchor_right = 0.526377
+anchor_bottom = 0.496188
+margin_right = -2.18842
+margin_bottom = 10.4269
+rect_rotation = -3.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 70 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napaka" type="Label" parent="ScorePanel2StarB/panelblock/ribbon/napakA"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 71 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husaY" type="Label" parent="ScorePanel2StarB/panelblock/ribbon"]
+anchor_left = 0.472
+anchor_top = 0.0625
+anchor_right = 0.866185
+anchor_bottom = 0.624122
+margin_right = 3.90768
+margin_bottom = -13.9017
+rect_rotation = 4.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 72 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husay" type="Label" parent="ScorePanel2StarB/panelblock/ribbon/husaY"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 73 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.0647182
+anchor_top = 0.145161
+anchor_right = 0.327766
+anchor_bottom = 0.368952
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarB/panelblock/star0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.31524
+anchor_top = 0.0120968
+anchor_right = 0.693111
+anchor_bottom = 0.332661
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel2StarB/panelblock/star1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star2" type="TextureRect" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.665971
+anchor_top = 0.15121
+anchor_right = 0.929019
+anchor_bottom = 0.375
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star2" type="TextureRect" parent="ScorePanel2StarB/panelblock/star2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.0501044
+anchor_top = 0.375
+anchor_right = 0.94572
+anchor_bottom = 0.546371
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 74 )
+text = "Binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel2StarB/panelblock/applause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 75 )
+text = "binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="nameLabel2" type="Label" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.104384
+anchor_top = 0.528226
+anchor_right = 0.897704
+anchor_bottom = 0.602823
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 76 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="namelabel2" type="Label" parent="ScorePanel2StarB/panelblock/nameLabel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 77 )
+text = "dave"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="nameline" type="HSeparator" parent="ScorePanel2StarB/panelblock/nameLabel2"]
+anchor_left = 0.00526316
+anchor_top = 0.54054
+anchor_right = 1.0
+anchor_bottom = 1.27027
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="theLevels" type="Label" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.0793319
+anchor_top = 0.610887
+anchor_right = 0.340293
+anchor_bottom = 0.760081
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 78 )
+text = "Mga Levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLabel" type="Label" parent="ScorePanel2StarB/panelblock/theLevels"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 79 )
+text = "mga levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="theHome" type="Label" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.402923
+anchor_top = 0.629032
+anchor_right = 0.605428
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 80 )
+text = "Main menu"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="thehome" type="Label" parent="ScorePanel2StarB/panelblock/theHome"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 81 )
+text = "main menu"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="theRetry" type="Label" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.643007
+anchor_top = 0.629032
+anchor_right = 0.941545
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 80 )
+text = "subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="theretry" type="Label" parent="ScorePanel2StarB/panelblock/theRetry"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 81 )
+text = "subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelPanel" type="HBoxContainer" parent="ScorePanel2StarB/panelblock"]
+anchor_left = 0.114823
+anchor_top = 0.768145
+anchor_right = 0.908142
+anchor_bottom = 0.939516
+custom_constants/separation = 50
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goLevels" type="TextureRect" parent="ScorePanel2StarB/panelblock/levelPanel"]
+margin_right = 90.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levels" type="Button" parent="ScorePanel2StarB/panelblock/levelPanel/goLevels"]
+anchor_left = 0.130439
+anchor_top = 0.189657
+anchor_right = 0.878265
+anchor_bottom = 0.818967
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 28 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goHome" type="TextureRect" parent="ScorePanel2StarB/panelblock/levelPanel"]
+margin_left = 140.0
+margin_right = 230.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="home" type="Button" parent="ScorePanel2StarB/panelblock/levelPanel/goHome"]
+anchor_left = 0.122222
+anchor_top = 0.105882
+anchor_right = 0.870049
+anchor_bottom = 0.847261
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 29 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goRetry" type="TextureRect" parent="ScorePanel2StarB/panelblock/levelPanel"]
+margin_left = 280.0
+margin_right = 370.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="retry" type="Button" parent="ScorePanel2StarB/panelblock/levelPanel/goRetry"]
+anchor_left = 0.144445
+anchor_top = 0.129412
+anchor_right = 0.892272
+anchor_bottom = 0.870791
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 31 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="panelblock2" type="NinePatchRect" parent="ScorePanel2StarB"]
+anchor_left = 0.493164
+anchor_top = 0.0316667
+anchor_right = 0.980469
+anchor_bottom = 0.968333
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="block" type="Control" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.0400802
+anchor_top = 0.0480427
+anchor_right = 0.96994
+anchor_bottom = 0.233096
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel" type="Label" parent="ScorePanel2StarB/panelblock2/block"]
+anchor_top = 0.0116664
+anchor_right = 1.00121
+anchor_bottom = 1.00331
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 82 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel2" type="Label" parent="ScorePanel2StarB/panelblock2/block"]
+anchor_right = 0.998208
+anchor_bottom = 0.979974
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 83 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel" type="Label" parent="ScorePanel2StarB/panelblock2/block/wrongLabel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -3.0
+margin_bottom = -2.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 84 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.0420842
+anchor_top = 0.240214
+anchor_right = 0.719439
+anchor_bottom = 0.318505
+margin_left = -1.14441e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 85 )
+text = "Ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarB/panelblock2/correctAns"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 86 )
+text = "ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickA" type="TextureRect" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.0641283
+anchor_top = 0.327402
+anchor_right = 0.264529
+anchor_bottom = 0.494662
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA" type="Label" parent="ScorePanel2StarB/panelblock2/pickA"]
+anchor_right = 1.0
+anchor_bottom = 0.904255
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 87 )
+text = "A
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA" type="Label" parent="ScorePanel2StarB/panelblock2/pickA/pickA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 88 )
+text = "A"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="correctBarA" type="Panel" parent="ScorePanel2StarB/panelblock2/pickA"]
+anchor_left = -0.0900002
+anchor_top = -0.0957446
+anchor_right = 4.46
+anchor_bottom = 1.09574
+margin_left = 1.52588e-05
+custom_styles/panel = SubResource( 89 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="animB2" type="AnimationPlayer" parent="ScorePanel2StarB/panelblock2/pickA/correctBarA"]
+unique_name_in_owner = true
+autoplay = "blink"
+anims/blink = SubResource( 90 )
+
+[node name="answerLabelA" type="Label" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.276553
+anchor_top = 0.33452
+anchor_right = 0.943888
+anchor_bottom = 0.482206
+margin_left = -2.67029e-05
+margin_right = -3.05176e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 91 )
+text = "A. Ang pangalan ay abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelA" type="Label" parent="ScorePanel2StarB/panelblock2/answerLabelA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 92 )
+text = "A. Ang pangalan ay abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="border" type="HSeparator" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.0781563
+anchor_top = 0.209964
+anchor_right = 0.951904
+anchor_bottom = 0.254448
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns2" type="Label" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.0460922
+anchor_top = 0.505338
+anchor_right = 0.667335
+anchor_bottom = 0.58363
+margin_left = -1.14441e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 85 )
+text = "Ang iyong sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarB/panelblock2/correctAns2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 86 )
+text = "ang iyong sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickB" type="TextureRect" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.0701403
+anchor_top = 0.587189
+anchor_right = 0.270541
+anchor_bottom = 0.754448
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB" type="Label" parent="ScorePanel2StarB/panelblock2/pickB"]
+anchor_left = 0.0842105
+anchor_top = 0.147368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 87 )
+text = "B"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB" type="Label" parent="ScorePanel2StarB/panelblock2/pickB/pickB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 88 )
+text = "B"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wrongBarB" type="Panel" parent="ScorePanel2StarB/panelblock2/pickB"]
+modulate = Color( 1, 1, 1, 0.435294 )
+anchor_left = -0.1
+anchor_top = -0.074468
+anchor_right = 4.43
+anchor_bottom = 1.09574
+margin_left = 1.52588e-05
+custom_styles/panel = SubResource( 93 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="animB" type="AnimationPlayer" parent="ScorePanel2StarB/panelblock2/pickB/wrongBarB"]
+unique_name_in_owner = true
+autoplay = "blink"
+anims/blink = SubResource( 94 )
+
+[node name="answerLabelB" type="Label" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.282565
+anchor_top = 0.594306
+anchor_right = 0.9499
+anchor_bottom = 0.741993
+margin_left = -2.67029e-05
+margin_right = -3.05176e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 91 )
+text = "B. Ang pangalan ay adokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB" type="Label" parent="ScorePanel2StarB/panelblock2/answerLabelB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 92 )
+text = "B. Ang pangalan ay adokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="border2" type="HSeparator" parent="ScorePanel2StarB/panelblock2"]
+anchor_left = 0.0761523
+anchor_top = 0.759786
+anchor_right = 0.9499
+anchor_bottom = 0.80427
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nextQuestion" type="Button" parent="ScorePanel2StarB/panelblock2"]
+margin_left = 106.0
+margin_top = 478.0
+margin_right = 432.0
+margin_bottom = 542.0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="block" type="TextureRect" parent="ScorePanel2StarB/panelblock2/nextQuestion"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 26 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel2StarB/panelblock2/nextQuestion"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 95 )
+text = "magpatuloy.."
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel2StarB/panelblock2/nextQuestion/continue"]
+anchor_top = 0.0232558
+anchor_right = 1.0
+anchor_bottom = 0.953488
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 96 )
+text = "magpatuloy.."
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongpick" type="AudioStreamPlayer" parent="ScorePanel2StarB"]
+unique_name_in_owner = true
+stream = ExtResource( 32 )
+bus = "Voices"
+
+[node name="ScorePanel2StarC" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 97 )
+script = ExtResource( 35 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="panelblock" type="NinePatchRect" parent="ScorePanel2StarC"]
+anchor_left = 0.0185547
+anchor_top = 0.14
+anchor_right = 0.486328
+anchor_bottom = 0.966667
+margin_right = -6.10352e-05
+texture = ExtResource( 22 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="banner2" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.0265487
+anchor_top = -0.0693642
+anchor_right = 0.977876
+anchor_bottom = 0.0597303
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ribbon" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = -0.0125261
+anchor_top = -0.145161
+anchor_right = 1.03132
+anchor_bottom = 0.0806452
+texture = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napakA" type="Label" parent="ScorePanel2StarC/panelblock/ribbon"]
+anchor_left = 0.126
+anchor_top = 0.169643
+anchor_right = 0.526377
+anchor_bottom = 0.496188
+margin_right = -2.18842
+margin_bottom = 10.4269
+rect_rotation = -3.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 98 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napaka" type="Label" parent="ScorePanel2StarC/panelblock/ribbon/napakA"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 99 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husaY" type="Label" parent="ScorePanel2StarC/panelblock/ribbon"]
+anchor_left = 0.472
+anchor_top = 0.0625
+anchor_right = 0.866185
+anchor_bottom = 0.624122
+margin_right = 3.90768
+margin_bottom = -13.9017
+rect_rotation = 4.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 100 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husay" type="Label" parent="ScorePanel2StarC/panelblock/ribbon/husaY"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 101 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.0647182
+anchor_top = 0.145161
+anchor_right = 0.327766
+anchor_bottom = 0.368952
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarC/panelblock/star0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.31524
+anchor_top = 0.0120968
+anchor_right = 0.693111
+anchor_bottom = 0.332661
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel2StarC/panelblock/star1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star2" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.665971
+anchor_top = 0.15121
+anchor_right = 0.929019
+anchor_bottom = 0.375
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star2" type="TextureRect" parent="ScorePanel2StarC/panelblock/star2"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.0501044
+anchor_top = 0.375
+anchor_right = 0.94572
+anchor_bottom = 0.546371
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 102 )
+text = "Binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel2StarC/panelblock/applause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 103 )
+text = "binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="nameLabel2" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.104384
+anchor_top = 0.528226
+anchor_right = 0.897704
+anchor_bottom = 0.602823
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 104 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="namelabel2" type="Label" parent="ScorePanel2StarC/panelblock/nameLabel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 105 )
+text = "dave"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="nameline" type="HSeparator" parent="ScorePanel2StarC/panelblock/nameLabel2"]
+anchor_left = 0.00526316
+anchor_top = 0.54054
+anchor_right = 1.0
+anchor_bottom = 1.27027
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="theLevels" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.0793319
+anchor_top = 0.610887
+anchor_right = 0.340293
+anchor_bottom = 0.760081
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 106 )
+text = "Mga Levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLabel" type="Label" parent="ScorePanel2StarC/panelblock/theLevels"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 107 )
+text = "mga levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="theHome" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.402923
+anchor_top = 0.629032
+anchor_right = 0.605428
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 108 )
+text = "Main menu"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="thehome" type="Label" parent="ScorePanel2StarC/panelblock/theHome"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 109 )
+text = "main menu"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="theRetry" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.643007
+anchor_top = 0.629032
+anchor_right = 0.941545
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 108 )
+text = "subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="theretry" type="Label" parent="ScorePanel2StarC/panelblock/theRetry"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 109 )
+text = "subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelPanel" type="HBoxContainer" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.114823
+anchor_top = 0.768145
+anchor_right = 0.908142
+anchor_bottom = 0.939516
+custom_constants/separation = 50
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goLevels" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
+margin_right = 90.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levels" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goLevels"]
+anchor_left = 0.130439
+anchor_top = 0.189657
+anchor_right = 0.878265
+anchor_bottom = 0.818967
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 28 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goHome" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
+margin_left = 140.0
+margin_right = 230.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="home" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goHome"]
+anchor_left = 0.122222
+anchor_top = 0.105882
+anchor_right = 0.870049
+anchor_bottom = 0.847261
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 29 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goRetry" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
+margin_left = 280.0
+margin_right = 370.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="retry" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goRetry"]
+anchor_left = 0.144445
+anchor_top = 0.129412
+anchor_right = 0.892272
+anchor_bottom = 0.870791
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 31 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="panelblock2" type="NinePatchRect" parent="ScorePanel2StarC"]
+anchor_left = 0.493164
+anchor_top = 0.0316667
+anchor_right = 0.980469
+anchor_bottom = 0.968333
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="block" type="Control" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.0400802
+anchor_top = 0.0480427
+anchor_right = 0.96994
+anchor_bottom = 0.233096
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel" type="Label" parent="ScorePanel2StarC/panelblock2/block"]
+anchor_top = 0.0116664
+anchor_right = 1.00121
+anchor_bottom = 1.00331
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 110 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel2" type="Label" parent="ScorePanel2StarC/panelblock2/block"]
+anchor_right = 0.998208
+anchor_bottom = 0.979974
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 111 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="wrongLabel" type="Label" parent="ScorePanel2StarC/panelblock2/block/wrongLabel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -3.0
+margin_bottom = -2.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 112 )
+text = "Mali ang napili
+mong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.0420842
+anchor_top = 0.240214
+anchor_right = 0.719439
+anchor_bottom = 0.318505
+margin_left = -1.14441e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 113 )
+text = "Ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock2/correctAns"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 114 )
+text = "ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickA" type="TextureRect" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.0641283
+anchor_top = 0.327402
+anchor_right = 0.264529
+anchor_bottom = 0.494662
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA" type="Label" parent="ScorePanel2StarC/panelblock2/pickA"]
+anchor_right = 1.0
+anchor_bottom = 0.904255
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 115 )
+text = "A
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA" type="Label" parent="ScorePanel2StarC/panelblock2/pickA/pickA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 116 )
+text = "A"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="correctBarA" type="Panel" parent="ScorePanel2StarC/panelblock2/pickA"]
+anchor_left = -0.0900002
+anchor_top = -0.0957446
+anchor_right = 4.46
+anchor_bottom = 1.09574
+margin_left = 1.52588e-05
+custom_styles/panel = SubResource( 117 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="animaA" type="AnimationPlayer" parent="ScorePanel2StarC/panelblock2/pickA/correctBarA"]
+unique_name_in_owner = true
+autoplay = "blink"
+anims/blink = SubResource( 118 )
+
+[node name="answerLabelA" type="Label" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.276553
+anchor_top = 0.33452
+anchor_right = 0.943888
+anchor_bottom = 0.482206
+margin_left = -2.67029e-05
+margin_right = -3.05176e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 119 )
+text = "B. Ang pangalan ay abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelA" type="Label" parent="ScorePanel2StarC/panelblock2/answerLabelA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 120 )
+text = "B. Ang pangalan ay abokado."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="border" type="HSeparator" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.0781563
+anchor_top = 0.209964
+anchor_right = 0.951904
+anchor_bottom = 0.254448
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns2" type="Label" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.0460922
+anchor_top = 0.505338
+anchor_right = 0.667335
+anchor_bottom = 0.58363
+margin_left = -1.14441e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 113 )
+text = "Ang iyong sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock2/correctAns2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 114 )
+text = "ang iyong sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickC" type="TextureRect" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.0701403
+anchor_top = 0.587189
+anchor_right = 0.270541
+anchor_bottom = 0.754448
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickC" type="Label" parent="ScorePanel2StarC/panelblock2/pickC"]
+anchor_left = 0.0842105
+anchor_top = 0.147368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 115 )
+text = "C"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickC" type="Label" parent="ScorePanel2StarC/panelblock2/pickC/pickC"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 116 )
+text = "C"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wrongBarC" type="Panel" parent="ScorePanel2StarC/panelblock2/pickC"]
+modulate = Color( 1, 1, 1, 0.435294 )
+anchor_left = -0.1
+anchor_top = -0.074468
+anchor_right = 4.43
+anchor_bottom = 1.09574
+margin_left = 1.52588e-05
+custom_styles/panel = SubResource( 121 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="animC" type="AnimationPlayer" parent="ScorePanel2StarC/panelblock2/pickC/wrongBarC"]
+unique_name_in_owner = true
+autoplay = "blink"
+anims/blink = SubResource( 122 )
+
+[node name="answerLabelC" type="Label" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.282565
+anchor_top = 0.592527
+anchor_right = 0.955911
+anchor_bottom = 0.768684
+margin_left = -2.67029e-05
+margin_right = -3.05176e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 127 )
+text = "C. Ang pangalan ay atis."
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelC" type="Label" parent="ScorePanel2StarC/panelblock2/answerLabelC"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 128 )
+text = "C. ANg pangalan ay Atis"
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="border2" type="HSeparator" parent="ScorePanel2StarC/panelblock2"]
+anchor_left = 0.0761523
+anchor_top = 0.759786
+anchor_right = 0.9499
+anchor_bottom = 0.80427
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nextQuestion" type="Button" parent="ScorePanel2StarC/panelblock2"]
+margin_left = 106.0
+margin_top = 478.0
+margin_right = 432.0
+margin_bottom = 542.0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="block" type="TextureRect" parent="ScorePanel2StarC/panelblock2/nextQuestion"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 26 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel2StarC/panelblock2/nextQuestion"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 125 )
+text = "magpatuloy.."
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel2StarC/panelblock2/nextQuestion/continue"]
+anchor_top = 0.0232558
+anchor_right = 1.0
+anchor_bottom = 0.953488
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 126 )
+text = "magpatuloy.."
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="PrutasAtGulay" parent="." instance=ExtResource( 30 )]
+unique_name_in_owner = true
+
+[node name="pausePanel" parent="." instance=ExtResource( 33 )]
+unique_name_in_owner = true
+
+[connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/imageHolder/avocado/repeat" to="." method="_on_repeat_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/avocado/infoAvocado" to="." method="_on_infoAvocado_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/askLabel/askVoice4" to="." method="_on_askVoice4_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/choiceA" to="." method="_on_choiceA_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB/choiceB" to="." method="_on_choiceB_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB2/choiceC" to="." method="_on_choiceC_finished"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/A" to="." method="_on_A_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/B" to="." method="_on_B_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/C" to="." method="_on_C_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/AnswerPanel/pickAnswer" to="." method="_on_pickAnswer_finished"]
+[connection signal="finished" from="Panel/repeatInfo" to="." method="_on_repeatInfo_finished"]
+[connection signal="visibility_changed" from="ScorePanel3StarA" to="." method="_on_ScorePanel3StarA_visibility_changed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="visibility_changed" from="ScorePanel2StarB" to="." method="_on_ScorePanel2StarB_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="visibility_changed" from="ScorePanel2StarC" to="." method="_on_ScorePanel2StarC_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
+
+[editable path="PrutasAtGulay"]
+[editable path="PrutasAtGulay/bgPanel"]
+[editable path="pausePanel"]
+[editable path="pausePanel/PrutasAtGulay"]
+[editable path="pausePanel/PrutasAtGulay/bgPanel"]
