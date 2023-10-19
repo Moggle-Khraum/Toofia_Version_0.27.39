@@ -217,7 +217,7 @@ anchor_left = 0.162109
 anchor_top = 0.265053
 anchor_right = 0.838867
 anchor_bottom = 0.353001
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
@@ -234,6 +234,7 @@ __meta__ = {
 }
 
 [node name="SubTitleLabel2" type="Label" parent="Panel/SubTitleLabel"]
+visible = false
 anchor_left = -0.00106838
 anchor_top = -0.0491803
 anchor_right = 0.998932
@@ -258,7 +259,7 @@ anchor_left = 0.198242
 anchor_top = 0.353404
 anchor_right = 0.811523
 anchor_bottom = 0.421808
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
@@ -279,7 +280,7 @@ anchor_left = 0.196289
 anchor_top = 0.351737
 anchor_right = 0.813477
 anchor_bottom = 0.418513
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
@@ -296,6 +297,7 @@ __meta__ = {
 }
 
 [node name="displayLabel2" type="Label" parent="Panel/displayGreet"]
+visible = false
 anchor_top = -0.0249648
 anchor_right = 1.0
 anchor_bottom = 0.863925
