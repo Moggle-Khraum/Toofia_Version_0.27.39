@@ -142,7 +142,6 @@ texture = ExtResource( 12 )
 region_rect = Rect2( 0, 0, 356, 357 )
 
 [node name="PopupDialog" type="Popup"]
-visible = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 popup_exclusive = true
@@ -327,7 +326,6 @@ __meta__ = {
 
 [node name="HFlowContainer" type="HFlowContainer" parent="CenterContainer/PanelPopup/ScrollContainer"]
 margin_right = 862.0
-margin_bottom = 621.0
 rect_clip_content = true
 mouse_filter = 2
 __meta__ = {
