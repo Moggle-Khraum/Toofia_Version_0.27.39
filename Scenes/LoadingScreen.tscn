@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scenes/CompatWarning.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=8]
 [ext_resource path="res://Scripts/LoadingScreenScript.gd" type="Script" id=9]
+[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintMC.otf" type="DynamicFontData" id=10]
 
 [sub_resource type="DynamicFont" id=16]
 size = 165
@@ -40,18 +41,18 @@ use_filter = true
 font_data = ExtResource( 8 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=20]
-size = 30
+[sub_resource type="DynamicFont" id=29]
+size = 37
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 8 )
+font_data = ExtResource( 10 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=21]
-size = 30
+[sub_resource type="DynamicFont" id=30]
+size = 37
 use_filter = true
-font_data = ExtResource( 8 )
+font_data = ExtResource( 10 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=22]
@@ -121,7 +122,7 @@ anchor_bottom = 0.421667
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 12
+custom_constants/shadow_offset_y = 7
 custom_fonts/font = SubResource( 16 )
 text = "Toofia"
 align = 1
@@ -137,6 +138,10 @@ __meta__ = {
 [node name="TitleLabel2" type="Label" parent="MainPanel/TitleLabel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 102.0
+margin_top = -3.0
+margin_right = -103.0
+margin_bottom = -8.00021
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 12
@@ -192,44 +197,40 @@ __meta__ = {
 }
 
 [node name="SubTitleLabel" type="Label" parent="MainPanel"]
-anchor_left = 0.0273438
-anchor_top = 0.335
-anchor_right = 0.988281
-anchor_bottom = 0.47
+anchor_left = 0.104492
+anchor_top = 0.37
+anchor_right = 0.899414
+anchor_bottom = 0.458333
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 20 )
-text = "Kasangkapang Tulong pang-edukasyon"
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 29 )
+text = "Kasangkapang Tulong Pang-edukasyon"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="SubTitleLabel2" type="Label" parent="MainPanel/SubTitleLabel"]
-anchor_left = -0.00106838
-anchor_top = -0.0491803
-anchor_right = 0.998932
-anchor_bottom = 0.95082
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 0.000305176
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 21 )
-text = "Kasangkapang Tulong pang-edukasyon"
+custom_fonts/font = SubResource( 30 )
+text = "Kasangkapang Tulong Pang-edukasyon"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
 [node name="LoadingLabel" type="Label" parent="MainPanel"]
@@ -367,7 +368,7 @@ anchor_top = 0.911667
 anchor_right = 0.206055
 anchor_bottom = 0.963333
 custom_fonts/font = SubResource( 25 )
-text = "Toofia  ver.0.10.25"
+text = "Toofia  ver.0.27.35"
 align = 1
 valign = 1
 autowrap = true
@@ -405,6 +406,5 @@ __meta__ = {
 }
 
 [node name="PopupDialog" parent="." instance=ExtResource( 1 )]
-visible = false
 
 [connection signal="value_changed" from="MainPanel/loadingBar" to="." method="_on_loadingBar_value_changed"]

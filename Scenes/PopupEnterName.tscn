@@ -1,11 +1,12 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
-[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintMC.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Scripts/PopupEnterName.gd" type="Script" id=3]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/Background.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/UIElements/Icon_Pencil.png" type="Texture" id=8]
 [ext_resource path="res://Assets/GUI/Icon_LongSquare.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UIElements/Icon_SqiuareTilt.png" type="Texture" id=10]
@@ -107,7 +108,7 @@ use_filter = true
 font_data = ExtResource( 6 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=31]
 size = 32
 outline_size = 1
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
@@ -126,19 +127,19 @@ outline_color = Color( 0, 0, 0, 1 )
 extra_spacing_top = 6
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=25]
-size = 33
+[sub_resource type="DynamicFont" id=29]
+size = 44
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 6 )
+font_data = ExtResource( 7 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=26]
-size = 33
+[sub_resource type="DynamicFont" id=30]
+size = 44
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 6 )
+font_data = ExtResource( 7 )
 fallback/0 = ExtResource( 2 )
 
 [node name="NamePopup" type="Panel"]
@@ -447,13 +448,13 @@ anchor_right = 0.944134
 anchor_bottom = 0.664088
 custom_colors/cursor_color = Color( 0.027451, 0.286275, 0.733333, 1 )
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 31 )
 custom_styles/normal = SubResource( 7 )
 align = 1
 max_length = 20
 shortcut_keys_enabled = false
 middle_mouse_paste_enabled = false
-placeholder_text = "Dito isulat ang pangalan"
+placeholder_text = "Isulat Dito"
 caret_blink = true
 caret_blink_speed = 0.5
 __meta__ = {
@@ -503,13 +504,12 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 25 )
-text = "itala"
+custom_fonts/font = SubResource( 29 )
+text = "Itala"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -522,14 +522,13 @@ margin_bottom = -5.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 26 )
+custom_fonts/font = SubResource( 30 )
 text = "Itala
 "
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }

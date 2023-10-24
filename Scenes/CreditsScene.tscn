@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Scripts/CreditsScripts.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Assets/UIElements/Icon_Award.png" type="Texture" id=10]
 [ext_resource path="res://Assets/UIElements/Icon_Writing.png" type="Texture" id=11]
 [ext_resource path="res://Assets/GUI/Icon_Settings.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=13]
 
 [sub_resource type="Theme" id=8]
 
@@ -27,43 +28,52 @@ outline_color = Color( 0, 0, 0, 1 )
 extra_spacing_top = 6
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=5]
-size = 30
-outline_size = 2
-outline_color = Color( 0, 0, 0, 1 )
-use_filter = true
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=14]
-size = 23
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=15]
-size = 23
-outline_size = 1
-outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
-
 [sub_resource type="DynamicFont" id=16]
-size = 22
+size = 32
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 3 )
+font_data = ExtResource( 13 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=17]
-size = 22
+size = 32
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 3 )
+font_data = ExtResource( 13 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 30
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 13 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 30
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 13 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 33
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 13 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 33
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 13 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=11]
@@ -149,65 +159,43 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="guideBtnLabel" type="Label" parent="BGPanel/FGPanel/guideCage/ShowTutorialsBtn"]
-visible = false
-anchor_left = 0.223647
-anchor_top = 0.0177778
-anchor_right = 0.974461
-anchor_bottom = 0.888889
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 6
-custom_fonts/font = SubResource( 5 )
-text = "Mga Gabay
-"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="guideLabel" type="Label" parent="BGPanel/FGPanel/guideCage/ShowTutorialsBtn"]
-anchor_left = 0.230037
-anchor_top = 0.0177778
-anchor_right = 0.958486
-anchor_bottom = 0.906667
+anchor_left = 0.249186
+anchor_top = -0.0688893
+anchor_right = 0.945686
+anchor_bottom = 0.855558
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 14 )
-text = "mga gabay"
+custom_fonts/font = SubResource( 16 )
+text = "Mga Gabay"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="guideLabel" type="Label" parent="BGPanel/FGPanel/guideCage/ShowTutorialsBtn/guideLabel"]
-anchor_right = 1.0
+anchor_left = 0.00458716
+anchor_top = -0.0192308
+anchor_right = 0.990826
 anchor_bottom = 1.0
-margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 15 )
-text = "mga gabay"
+custom_fonts/font = SubResource( 17 )
+text = "Mga Gabay"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
-"_edit_lock_": true
+"_edit_lock_": true,
+"_edit_use_anchors_": true
 }
 
 [node name="guideIcon" type="TextureRect" parent="BGPanel/FGPanel/guideCage"]
@@ -256,32 +244,21 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="credits" type="TextureRect" parent="BGPanel/FGPanel/creditCage/ShowCreditsBtn"]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 5 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="creditsLabel" type="Label" parent="BGPanel/FGPanel/creditCage/ShowCreditsBtn"]
-anchor_left = 0.207672
-anchor_top = 0.0177778
-anchor_right = 0.977656
-anchor_bottom = 0.906666
+anchor_left = 0.220431
+anchor_top = -0.0155539
+anchor_right = 0.97444
+anchor_bottom = 0.855555
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 16 )
-text = "mga pagkilala"
+custom_fonts/font = SubResource( 18 )
+text = "Mga Pagkilala"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -295,13 +272,12 @@ margin_bottom = -2.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 17 )
-text = "mga pagkilala"
+custom_fonts/font = SubResource( 19 )
+text = "Mga Pagkilala"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -364,19 +340,18 @@ __meta__ = {
 [node name="backLabel" type="Label" parent="BGPanel/FGPanel/exitCage/BackButton"]
 anchor_left = 0.230037
 anchor_top = 0.0177778
-anchor_right = 0.958486
-anchor_bottom = 0.906667
+anchor_right = 0.952096
+anchor_bottom = 0.906669
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 14 )
-text = "umalis dito"
+custom_fonts/font = SubResource( 20 )
+text = "Umalis Dito"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -386,16 +361,16 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -1.0
+margin_bottom = -3.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 15 )
-text = "umalis dito"
+custom_fonts/font = SubResource( 21 )
+text = "Umalis Dito"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
