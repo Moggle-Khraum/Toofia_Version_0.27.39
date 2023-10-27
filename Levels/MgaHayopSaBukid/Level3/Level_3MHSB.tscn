@@ -1,0 +1,717 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GUI/Box_Rounded.png" type="Texture" id=5]
+[ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=8]
+[ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
+[ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 33
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 33
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 50
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 50
+use_filter = true
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_top = -3
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 30
+use_filter = true
+extra_spacing_top = -3
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = -4
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 30
+use_filter = true
+extra_spacing_top = -4
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 30
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = -6
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 30
+use_filter = true
+extra_spacing_top = -8
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 65
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 65
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelBox" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.213867
+anchor_top = 0.035
+anchor_right = 0.780273
+anchor_bottom = 0.138333
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLine" type="Label" parent="Panel/NinePatchRect/levelBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "pangatlong tanong"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelLabel" type="Label" parent="Panel/NinePatchRect/levelBox"]
+anchor_left = 0.0137931
+anchor_right = 0.984483
+anchor_bottom = 0.903229
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 2 )
+text = "pangatlong tanong"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLabel2" type="Label" parent="Panel/NinePatchRect/levelBox/levelLabel"]
+anchor_left = -0.0017762
+anchor_top = 0.0178571
+anchor_right = 0.998224
+anchor_bottom = 0.946428
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 3 )
+text = "pangatlong tanong"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pauseButton" type="Button" parent="Panel/NinePatchRect"]
+anchor_left = 0.00683594
+anchor_top = 0.0283333
+anchor_right = 0.100586
+anchor_bottom = 0.146667
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 11 )
+flat = true
+clip_text = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pauseIcon" type="TextureRect" parent="Panel/NinePatchRect/pauseButton"]
+anchor_left = 0.322917
+anchor_top = 0.217391
+anchor_right = 0.65625
+anchor_bottom = 0.782609
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="imageHolder" type="Sprite" parent="Panel/NinePatchRect"]
+position = Vector2( 250, 299 )
+scale = Vector2( 0.244296, 0.247043 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="kalabaw" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+unique_name_in_owner = true
+anchor_left = 0.0994746
+anchor_top = 0.0635747
+anchor_right = 0.913657
+anchor_bottom = 0.89866
+margin_left = -761.5
+margin_top = -740.761
+margin_right = -761.5
+margin_bottom = -740.761
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/kalabaw"]
+unique_name_in_owner = true
+anchor_left = -0.00818752
+anchor_top = 0.493314
+anchor_right = 1.01152
+anchor_bottom = 0.493314
+margin_top = 113.691
+margin_right = -350.13
+margin_bottom = 945.691
+rect_rotation = -51.9726
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/kalabaw"]
+unique_name_in_owner = true
+anchor_left = -0.302751
+anchor_top = 0.455531
+anchor_right = 1.21478
+anchor_bottom = 0.455531
+margin_left = -3.05176e-05
+margin_top = 158.496
+margin_right = -537.192
+margin_bottom = 1410.5
+rect_rotation = -52.3259
+input_pass_on_modal_close_click = false
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="infoKalabaw" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/kalabaw"]
+unique_name_in_owner = true
+bus = "Voices"
+
+[node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.12793
+anchor_top = 0.811667
+anchor_right = 0.347656
+anchor_bottom = 0.903333
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="name" type="Label" parent="Panel/NinePatchRect/imageText"]
+anchor_top = 0.0181819
+anchor_right = 1.11556
+anchor_bottom = 1.20001
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 5 )
+text = "Kalabaw"
+align = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nameoutline" type="Label" parent="Panel/NinePatchRect/imageText"]
+anchor_right = 1.11556
+anchor_bottom = 1.12728
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 6 )
+text = "Kalabaw"
+align = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="name" type="Label" parent="Panel/NinePatchRect/imageText/nameoutline"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 7 )
+text = "Kalabaw"
+align = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="askHolder" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.470703
+anchor_top = 0.173333
+anchor_right = 0.960938
+anchor_bottom = 0.758333
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="askLabel" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.051793
+anchor_top = 0.0541316
+anchor_right = 0.954182
+anchor_bottom = 0.393163
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 8 )
+text = "1. Batay sa iyong narinig, ano ang pangalan ng hayop na nasa larawan?"
+align = 3
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="askLabel2" type="Label" parent="Panel/NinePatchRect/askHolder/askLabel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -2.0
+margin_bottom = -2.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 9 )
+text = "1. Batay sa iyong narinig, ano ang pangalan ng hayop na nasa larawan?"
+align = 3
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0776891
+anchor_top = 0.42735
+anchor_right = 0.918326
+anchor_bottom = 0.54416
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 10 )
+text = "A. Ang pangalan ay manok."
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabel2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 11 )
+text = "A. Ang pangalan ay manok."
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0796812
+anchor_top = 0.569801
+anchor_right = 0.904381
+anchor_bottom = 0.695157
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 12 )
+text = "B. Ang pangalan ay pusa."
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 13 )
+text = "B. Ang pangalan ay pusa."
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0816732
+anchor_top = 0.732194
+anchor_right = 0.910357
+anchor_bottom = 0.843305
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 14 )
+text = "C. Wala sa mga binanggit."
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 15 )
+text = "C. Wala sa mga binanggit."
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
+unique_name_in_owner = true
+anchor_left = 0.553711
+anchor_top = 0.771667
+anchor_right = 0.890625
+anchor_bottom = 0.930001
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="A" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+unique_name_in_owner = true
+margin_right = 95.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickA" type="Label" parent="Panel/NinePatchRect/AnswerPanel/A"]
+anchor_left = 0.0947368
+anchor_top = 0.0842112
+anchor_right = 0.905263
+anchor_bottom = 0.926316
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 16 )
+text = "A
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/A/pickA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 17 )
+text = "A"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+unique_name_in_owner = true
+margin_left = 125.0
+margin_right = 220.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickB" type="Label" parent="Panel/NinePatchRect/AnswerPanel/B"]
+anchor_left = 0.0842105
+anchor_top = 0.147368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 16 )
+text = "B
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/B/pickB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 17 )
+text = "B"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+unique_name_in_owner = true
+margin_left = 250.0
+margin_right = 345.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickC" type="Label" parent="Panel/NinePatchRect/AnswerPanel/C"]
+anchor_left = 0.0842105
+anchor_top = 0.0947368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 16 )
+text = "C"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickC2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/C/pickC"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 17 )
+text = "C"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
+unique_name_in_owner = true
+bus = "Voices"
+
+[node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
+unique_name_in_owner = true
+bus = "Voices"

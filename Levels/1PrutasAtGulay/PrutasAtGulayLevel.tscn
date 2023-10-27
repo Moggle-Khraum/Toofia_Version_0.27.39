@@ -540,6 +540,7 @@ __meta__ = {
 }
 
 [node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5"]
+visible = false
 anchor_left = 0.587033
 anchor_top = 0.568262
 anchor_right = 0.952033
@@ -634,6 +635,7 @@ __meta__ = {
 }
 
 [node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6"]
+visible = false
 anchor_left = 0.587033
 anchor_top = 0.568262
 anchor_right = 0.952033
@@ -728,6 +730,7 @@ __meta__ = {
 }
 
 [node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7"]
+visible = false
 anchor_left = 0.587033
 anchor_top = 0.568262
 anchor_right = 0.952033
@@ -822,6 +825,7 @@ __meta__ = {
 }
 
 [node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8"]
+visible = false
 anchor_left = 0.587033
 anchor_top = 0.568262
 anchor_right = 0.952033
@@ -1308,6 +1312,7 @@ __meta__ = {
 }
 
 [node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button13"]
+visible = false
 anchor_left = 0.587033
 anchor_top = 0.568262
 anchor_right = 0.952033
@@ -1402,6 +1407,7 @@ __meta__ = {
 }
 
 [node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button14"]
+visible = false
 anchor_left = 0.587033
 anchor_top = 0.568262
 anchor_right = 0.952033
@@ -1496,6 +1502,7 @@ __meta__ = {
 }
 
 [node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button15"]
+visible = false
 anchor_left = 0.587033
 anchor_top = 0.568262
 anchor_right = 0.952033
@@ -1533,6 +1540,19 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16"]
+anchor_left = 0.185
+anchor_top = 0.265001
+anchor_right = 0.81
+anchor_bottom = 0.720001
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16"]
 anchor_left = 0.045
 anchor_top = 0.065
@@ -1543,7 +1563,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 10 )
-text = "coming soon..!"
+text = "Level 16"
 align = 1
 valign = 1
 autowrap = true
@@ -1562,7 +1582,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 11 )
-text = "coming soon..!"
+text = "Level 16"
 align = 1
 valign = 1
 autowrap = true
@@ -1749,6 +1769,7 @@ bus = "Music"
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button14/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button15/15Button" to="." method="_on_15Button_pressed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button15/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button16/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Panel/GoBackButton" to="." method="_on_GoBackButton_pressed"]
 [connection signal="pressed" from="Panel/LeftButton" to="." method="_on_LeftButton_pressed"]
 [connection signal="pressed" from="Panel/RightButton" to="." method="_on_RightButton_pressed"]

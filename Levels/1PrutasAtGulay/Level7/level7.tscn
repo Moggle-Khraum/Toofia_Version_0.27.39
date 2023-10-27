@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=2]
@@ -11,6 +11,10 @@
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/Box_Rounded.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/levelImages/talong.png" type="Texture" id=12]
+[ext_resource path="res://Levels/1PrutasAtGulay/Level7/PausePanel7.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Levels/1PrutasAtGulay/Level7/level7.gd" type="Script" id=14]
+[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=15]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -143,6 +147,7 @@ fallback/0 = ExtResource( 4 )
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -269,32 +274,34 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pakwan" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+[node name="talong" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
 unique_name_in_owner = true
-anchor_left = 0.118344
-anchor_top = 0.132978
-anchor_right = 0.852422
-anchor_bottom = 0.82943
-margin_left = -761.5
-margin_top = -761.0
-margin_right = -761.5
-margin_bottom = -761.0
+anchor_left = 0.365905
+anchor_top = -0.138731
+anchor_right = 0.365905
+anchor_bottom = 1.05386
+margin_left = -250.688
+margin_top = -682.885
+margin_right = 872.312
+margin_bottom = -983.007
+rect_rotation = 52.2871
+texture = ExtResource( 12 )
 expand = true
 __meta__ = {
-"_edit_group_": true,
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/pakwan"]
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/talong"]
 unique_name_in_owner = true
-anchor_left = 0.156158
-anchor_top = 0.124532
-anchor_right = 0.86437
-anchor_bottom = 0.886704
-margin_left = -3.05176e-05
-margin_top = -4.57764e-05
-margin_bottom = -6.10352e-05
+anchor_left = -0.00818752
+anchor_top = 0.493314
+anchor_right = 1.01152
+anchor_bottom = 0.493314
+margin_top = 113.691
+margin_right = -350.13
+margin_bottom = 945.691
+rect_rotation = -51.9726
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -303,14 +310,17 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/pakwan"]
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/talong"]
 unique_name_in_owner = true
-anchor_left = 0.113193
-anchor_top = 0.0881327
-anchor_right = 0.923539
-anchor_bottom = 0.914486
+anchor_left = -0.302751
+anchor_top = 0.455531
+anchor_right = 1.21478
+anchor_bottom = 0.455531
 margin_left = -3.05176e-05
-margin_right = 0.00012207
+margin_top = 158.496
+margin_right = -537.192
+margin_bottom = 1410.5
+rect_rotation = -52.3259
 input_pass_on_modal_close_click = false
 custom_styles/panel = SubResource( 4 )
 __meta__ = {
@@ -318,7 +328,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="infoPakwan" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pakwan"]
+[node name="infoTalong" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/talong"]
 unique_name_in_owner = true
 bus = "Voices"
 
@@ -333,8 +343,9 @@ __meta__ = {
 }
 
 [node name="name" type="Label" parent="Panel/NinePatchRect/imageText"]
+anchor_top = 0.0181781
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 1.2
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
@@ -350,7 +361,7 @@ __meta__ = {
 
 [node name="nameoutline" type="Label" parent="Panel/NinePatchRect/imageText"]
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 1.12728
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
@@ -711,3 +722,14 @@ bus = "Voices"
 [node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
 unique_name_in_owner = true
 bus = "Voices"
+
+[node name="PrutasAtGulay" parent="." instance=ExtResource( 15 )]
+unique_name_in_owner = true
+
+[node name="pausePanel" parent="." instance=ExtResource( 13 )]
+unique_name_in_owner = true
+
+[connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
+[connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
+
+[editable path="pausePanel"]

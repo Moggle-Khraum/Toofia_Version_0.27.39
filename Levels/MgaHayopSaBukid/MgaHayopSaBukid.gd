@@ -49,15 +49,13 @@ func _on_1Button_pressed() -> void:
 	var level1 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level1/1stQuestion/Level_1MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 1")
-	
-	print ("You are now at Level 1")
 	MainMenuThemePlayer.stop()
 	
 # THIS IS LEVEL 2
 func _on_2Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 2")
-	$'Panel/1QuestDummy'.show()
+	var level2 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level1/Level_2MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 2")
 	
@@ -65,7 +63,7 @@ func _on_2Button_pressed() -> void:
 func _on_3Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 3")
-	$'Panel/1QuestDummy'.show()
+	var level3 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level3/Level_3MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 3")
 
@@ -73,7 +71,7 @@ func _on_3Button_pressed() -> void:
 func _on_4Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 4")
-	$'Panel/1QuestDummy'.show()
+	var level4 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level4/Level_4MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 4")
 
@@ -81,7 +79,7 @@ func _on_4Button_pressed() -> void:
 func _on_9Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 5")
-	$'Panel/1QuestDummy'.show()
+	var level5 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level5/Level_5MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 5")
 
@@ -89,7 +87,7 @@ func _on_9Button_pressed() -> void:
 func _on_10Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 6")
-	$'Panel/1QuestDummy'.show()
+	var level6 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level6/Level_6MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 6")
 
@@ -97,7 +95,7 @@ func _on_10Button_pressed() -> void:
 func _on_11Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 7")
-	$'Panel/1QuestDummy'.show()
+	var level7 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level7/Level_7MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 7")
 
@@ -105,7 +103,7 @@ func _on_11Button_pressed() -> void:
 func _on_12Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 8")
-	$'Panel/1QuestDummy'.show()
+	var level8 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level8/Level_8MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 8")
 
@@ -114,7 +112,7 @@ func _on_12Button_pressed() -> void:
 func _on_5Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 9")
-	$'Panel/1QuestDummy'.show()
+	var level9 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level9/Level_9MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 9")
 
@@ -122,7 +120,7 @@ func _on_5Button_pressed() -> void:
 func _on_6Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 10")
-	$'Panel/1QuestDummy'.show()
+	var level10 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level10/Level_10MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 10")
 
@@ -130,7 +128,7 @@ func _on_6Button_pressed() -> void:
 func _on_7Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 11")
-	$'Panel/1QuestDummy'.show()
+	var level11 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level11/Level_11MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 11")
 
@@ -138,7 +136,7 @@ func _on_7Button_pressed() -> void:
 func _on_8Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 12")
-	$'Panel/1QuestDummy'.show()
+	var level12 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level12/Level_12MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 12")
 
@@ -146,7 +144,7 @@ func _on_8Button_pressed() -> void:
 func _on_13Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 13")
-	$'Panel/1QuestDummy'.show()
+	var level13 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level13/Level_13MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 13")
 
@@ -154,7 +152,7 @@ func _on_13Button_pressed() -> void:
 func _on_14Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 14")
-	$'Panel/1QuestDummy'.show()
+	var level14 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level14/Level_14MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 14")
 
@@ -162,9 +160,18 @@ func _on_14Button_pressed() -> void:
 func _on_15Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 15")
-	$'Panel/1QuestDummy'.show()
+	var level15 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level15/Level_15MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 15")
+	
+
+# THIS IS LEVEL 16
+func _on_16Button_pressed() -> void:
+	LevelsButtons.play()
+	print("Presses Level 16")
+	var level16 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level16/Level_16MHSB.tscn")
+	emit_signal('pressed')
+	print ("You are now at Level 16")
 	
 
 

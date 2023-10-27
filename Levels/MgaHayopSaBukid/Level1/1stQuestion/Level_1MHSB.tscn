@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=80 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Assets/Audio/correctAnswer.mp3" type="AudioStream" id=20]
 [ext_resource path="res://Assets/Audio/repeatInfo.mp3" type="AudioStream" id=21]
 [ext_resource path="res://Assets/Audio/levelsAudio/manok.mp3" type="AudioStream" id=22]
+[ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=23]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -47,73 +48,94 @@ fallback/0 = ExtResource( 2 )
 
 [sub_resource type="StyleBoxEmpty" id=4]
 
-[sub_resource type="DynamicFont" id=5]
-size = 30
+[sub_resource type="DynamicFont" id=56]
+size = 50
 outline_size = 2
 outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
 use_filter = true
-font_data = ExtResource( 1 )
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 23 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=6]
-size = 30
+[sub_resource type="DynamicFont" id=57]
+size = 50
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 1 )
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 23 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=7]
-size = 30
+[sub_resource type="DynamicFont" id=58]
+size = 50
 use_filter = true
-font_data = ExtResource( 1 )
-fallback/0 = ExtResource( 2 )
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 23 )
 
-[sub_resource type="DynamicFont" id=8]
-size = 20
+[sub_resource type="DynamicFont" id=59]
+size = 30
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_mipmaps = true
 use_filter = true
-extra_spacing_top = 2
-extra_spacing_bottom = 2
-extra_spacing_char = 2
-extra_spacing_space = 2
-font_data = ExtResource( 13 )
+extra_spacing_top = -3
+font_data = ExtResource( 23 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=9]
-size = 20
+[sub_resource type="DynamicFont" id=60]
+size = 30
 use_filter = true
-extra_spacing_top = 2
-extra_spacing_bottom = 2
-extra_spacing_char = 2
-extra_spacing_space = 2
-font_data = ExtResource( 13 )
+extra_spacing_top = -3
+font_data = ExtResource( 23 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=10]
-size = 20
+[sub_resource type="DynamicFont" id=61]
+size = 30
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
-font_data = ExtResource( 13 )
+extra_spacing_top = -4
+font_data = ExtResource( 23 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=11]
-size = 20
+[sub_resource type="DynamicFont" id=62]
+size = 30
 use_filter = true
-extra_spacing_top = 2
-extra_spacing_bottom = 2
-font_data = ExtResource( 13 )
+extra_spacing_top = -4
+font_data = ExtResource( 23 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=12]
-size = 20
+[sub_resource type="DynamicFont" id=63]
+size = 30
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
-font_data = ExtResource( 13 )
+font_data = ExtResource( 23 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=64]
+size = 30
+use_filter = true
+font_data = ExtResource( 23 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=65]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = -6
+font_data = ExtResource( 23 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=66]
+size = 30
+use_filter = true
+extra_spacing_top = -8
+font_data = ExtResource( 23 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=15]
@@ -716,68 +738,60 @@ stream = ExtResource( 12 )
 bus = "SFX"
 
 [node name="imageText" type="TextureRect" parent="background"]
-anchor_left = 0.0664063
+anchor_left = 0.12793
 anchor_top = 0.811667
-anchor_right = 0.418945
-anchor_bottom = 0.968333
+anchor_right = 0.347656
+anchor_bottom = 0.903333
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="exampleLabel2" type="Label" parent="background/imageText"]
-anchor_top = 0.0113636
+[node name="name" type="Label" parent="background/imageText"]
+anchor_top = 0.0181781
 anchor_right = 1.0
-anchor_bottom = 1.01136
+anchor_bottom = 1.2
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 5 )
-text = "halimbawang larawan"
+custom_fonts/font = SubResource( 56 )
+text = "Manok"
 align = 1
-valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="exampleLabel" type="Label" parent="background/imageText"]
+[node name="nameoutline" type="Label" parent="background/imageText"]
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 1.12728
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 6 )
-text = "halimbawang larawan"
+custom_fonts/font = SubResource( 57 )
+text = "Manok"
 align = 1
-valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="exampleLabel" type="Label" parent="background/imageText/exampleLabel"]
+[node name="name" type="Label" parent="background/imageText/nameoutline"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -3.0
-margin_bottom = -3.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 7 )
-text = "halimbawang larawan"
+custom_fonts/font = SubResource( 58 )
+text = "Manok"
 align = 1
-valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -795,20 +809,19 @@ __meta__ = {
 }
 
 [node name="askLabel" type="Label" parent="background/askHolder"]
-anchor_left = 0.0677291
-anchor_top = 0.042735
-anchor_right = 0.954183
-anchor_bottom = 0.344729
+anchor_left = 0.051793
+anchor_top = 0.0541316
+anchor_right = 0.954182
+anchor_bottom = 0.393163
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 8 )
-text = "1. Batay sa iyong narinig, ano ang pangalan ng hayop?"
-valign = 1
+custom_fonts/font = SubResource( 59 )
+text = "1. Batay sa iyong narinig, ano ang pangalan ng hayop na nasa larawan?"
+align = 3
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -822,32 +835,28 @@ margin_bottom = -2.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 9 )
-text = "1. Batay sa iyong narinig, ano ang pangalan ng hayop?"
-valign = 1
+custom_fonts/font = SubResource( 60 )
+text = "1. Batay sa iyong narinig, ano ang pangalan ng hayop na nasa larawan?"
+align = 3
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="answerLabelA" type="Label" parent="background/askHolder"]
-anchor_left = 0.0478088
-anchor_top = 0.361823
-anchor_right = 0.814741
-anchor_bottom = 0.478632
+anchor_left = 0.0776891
+anchor_top = 0.42735
+anchor_right = 0.918326
+anchor_bottom = 0.54416
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 10 )
-text = "A. Ito po ay isang Manok."
-align = 1
-valign = 1
+custom_fonts/font = SubResource( 61 )
+text = "A. Ang pangalan ay manok."
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -859,33 +868,27 @@ anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 11 )
-text = "A. ito po ay isang Manok."
-align = 1
-valign = 1
+custom_fonts/font = SubResource( 62 )
+text = "A. Ang pangalan ay manok."
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="answerLabelB" type="Label" parent="background/askHolder"]
-anchor_left = 0.0617532
-anchor_top = 0.524217
-anchor_right = 0.846613
-anchor_bottom = 0.615386
+anchor_left = 0.0796812
+anchor_top = 0.569801
+anchor_right = 0.904381
+anchor_bottom = 0.695157
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 12 )
-text = "B. Ito po ay isang Kambing."
-align = 1
-valign = 1
+custom_fonts/font = SubResource( 63 )
+text = "B. Ang pangalan ay tupa."
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -897,50 +900,43 @@ anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 11 )
-text = "B. ito po ay isang kambing."
-align = 1
-valign = 1
+custom_fonts/font = SubResource( 64 )
+text = "B. Ang pangalan ay tupa."
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="answerLabelC" type="Label" parent="background/askHolder"]
-anchor_left = 0.0657373
-anchor_top = 0.675214
-anchor_right = 0.850597
-anchor_bottom = 0.766383
+[node name="answerLabelB2" type="Label" parent="background/askHolder"]
+anchor_left = 0.0816732
+anchor_top = 0.732194
+anchor_right = 0.910357
+anchor_bottom = 0.843305
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 12 )
-text = "C. Wala sa mga Pagpipilian."
-align = 1
-valign = 1
+custom_fonts/font = SubResource( 65 )
+text = "C. Wala sa mga binanggit."
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="answerLabelC" type="Label" parent="background/askHolder/answerLabelC"]
+[node name="answerLabelB2" type="Label" parent="background/askHolder/answerLabelB2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = 2.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 11 )
-text = "C. Wala sa mga Pagpipilian."
-align = 1
-valign = 1
+custom_fonts/font = SubResource( 66 )
+text = "C. Wala sa mga binanggit."
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
