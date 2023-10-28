@@ -19,7 +19,7 @@ func _on_x_hide() -> void:
 
 func _on_pauseButton_pressed() -> void:
 	MenuClickSfxPlayer.play()
-	$pausePanel.show()
+	$'%pausePanel'.show()
 	print("Shows the Pause Panel")
 	$"%infoChicken".stream_paused = true
 	print("Info Chicken Stop")
@@ -220,4 +220,11 @@ func _on_chickenVoice_finished():
 	$"%AnswerPanel".show()
 	$"%blockButtons".show()
 	print("Shows Answer Panel, Show Block Buttons")
+	
+
+
+
+
+func _on_MgaHayopSaBukid_visibility_changed() -> void:
+	$'%animalsTheme'.play()
 	

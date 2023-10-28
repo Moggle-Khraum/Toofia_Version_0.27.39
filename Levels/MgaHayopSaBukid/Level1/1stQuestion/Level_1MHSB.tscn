@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://Assets/Audio/repeatInfo.mp3" type="AudioStream" id=21]
 [ext_resource path="res://Assets/Audio/levelsAudio/manok.mp3" type="AudioStream" id=22]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=23]
+[ext_resource path="res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn" type="PackedScene" id=24]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -1965,7 +1966,11 @@ unique_name_in_owner = true
 stream = ExtResource( 21 )
 bus = "Voices"
 
-[node name="Popup" parent="." instance=ExtResource( 15 )]
+[node name="pausePanel" parent="." instance=ExtResource( 15 )]
+unique_name_in_owner = true
+
+[node name="MgaHayopSaBukid" parent="." instance=ExtResource( 24 )]
+unique_name_in_owner = true
 
 [connection signal="pressed" from="background/pauseButton" to="." method="_on_pauseButton_pressed"]
 [connection signal="pressed" from="background/imageHolder/chicken/repeat" to="." method="_on_repeat_pressed"]
@@ -1981,3 +1986,5 @@ bus = "Voices"
 [connection signal="visibility_changed" from="wrongAnswerC" to="." method="_on_wrongAnswerC_visibility_changed"]
 [connection signal="pressed" from="wrongAnswerC/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="finished" from="repeatInfo" to="." method="_on_repeatInfo_finished"]
+
+[editable path="pausePanel"]

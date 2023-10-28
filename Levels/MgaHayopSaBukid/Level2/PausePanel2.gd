@@ -2,7 +2,7 @@ extends Popup
 
 func _on_levels_pressed() -> void:
 	MenuClickSfxPlayer.play()
-	$"%PrutasAtGulay".show()
+	$'%MgaHayopSaBukid'.show()
 	#This will go to level selection
 	print("To Levels")
 

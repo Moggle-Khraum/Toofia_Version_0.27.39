@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=6]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=8]
+[ext_resource path="res://Levels/MgaHayopSaBukid/nextLevel/Level10/Level_10MHSB.gd" type="Script" id=9]
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
@@ -143,6 +144,7 @@ fallback/0 = ExtResource( 3 )
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 9 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -715,3 +717,5 @@ bus = "Voices"
 [node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
 unique_name_in_owner = true
 bus = "Voices"
+
+[connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]

@@ -41,12 +41,10 @@ func _on_1Button_pressed() -> void:
 	print("Presses Level 1")
 	var level1 = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level1/1stQuestion/Level_1.tscn")
 	emit_signal('pressed')
-	$".".hide()
+	#$".".hide()
 	print ("You are now at Level 1")
-	
 	var playerdata = PlayerData.new()
 	playerdata.createPlayerData1()
-	
 	print ("You are now at Level 1")
 	MainMenuThemePlayer.stop()
 	$'%fruitTheme'.stream_paused = true
@@ -58,7 +56,6 @@ func _on_2Button_pressed() -> void:
 	var level2 = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level2/2ndQuestion/Level_2.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 2")
-	
 	var playerdata2 = PlayerData2.new()
 	playerdata2.createPlayerData2()
 	$'%fruitTheme'.stream_paused = true

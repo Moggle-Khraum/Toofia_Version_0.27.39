@@ -175,7 +175,7 @@ func _on_pickAnswer_finished():
 
 
 func _on_levels_pressed() -> void:
-	$'%PrutasAtGulay'.show()
+	$'%MgaHayopSaBukid'.show()
 	$'%pausePanel'.hide()
 	print('Go to Level Selection')
 	
@@ -190,4 +190,4 @@ func _on_retry_pressed() -> void:
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%PrutasAtGulay'.show()
+	$'%MgaHayopSaBukid'.show()

@@ -61,7 +61,6 @@ font_data = ExtResource( 17 )
 fallback/0 = ExtResource( 3 )
 
 [node name="MgaHayopSaBukid" type="Popup"]
-visible = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 9 )
@@ -1698,6 +1697,7 @@ unique_name_in_owner = true
 stream = ExtResource( 1 )
 bus = "Music"
 
+[connection signal="visibility_changed" from="." to="." method="_on_MgaHayopSaBukid_visibility_changed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture1/1Button" to="." method="_on_1Button_pressed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture2/2Button" to="." method="_on_2Button_pressed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture3/3Button" to="." method="_on_3Button_pressed"]

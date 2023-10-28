@@ -708,4 +708,3 @@ unique_name_in_owner = true
 [connection signal="pressed" from="VisibleBlockerRight/RightButton" to="ScrollContainer" method="_on_RightButton_pressed"]
 [connection signal="pressed" from="VisibleBlockerLeft/LeftButton" to="ScrollContainer" method="_on_LeftButton_pressed"]
 [connection signal="pressed" from="gobackCage/GoBackButton" to="." method="_on_GoBackButton_pressed"]
-[connection signal="visibility_changed" from="MgaHayopSaBukid" to="MgaHayopSaBukid" method="_on_MgaHayopSaBukid_visibility_changed"]
