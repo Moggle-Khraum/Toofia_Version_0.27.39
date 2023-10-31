@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/applePrutas.mp3-0d85806ce8b5a456bc9a52e4c8685652.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Apple/applePrutas.mp3"
+dest_files=[ "res://.import/applePrutas.mp3-0d85806ce8b5a456bc9a52e4c8685652.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

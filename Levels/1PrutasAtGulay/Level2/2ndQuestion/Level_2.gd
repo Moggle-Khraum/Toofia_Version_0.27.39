@@ -11,7 +11,6 @@ func _ready() -> void:
 func _on_x_pressed() -> void:
 	$"%infoPotato".stream_paused = false
 	print("Info Potato Plays")
-	$"%repeatInfo".stream_paused = false
 	print("Repeat Info Plays")
 	$'%askVoice2'.stream_paused = false
 	$'%choiceA'.stream_paused = false
@@ -25,8 +24,6 @@ func _on_pauseButton_pressed() -> void:
 	print("Shows the Pause Panel")
 	$"%infoPotato".stream_paused = true
 	print("Info Potato Stop")
-	$"%repeatInfo".stream_paused = true
-	print("Repeat Info Stop")
 	$'%askVoice2'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
@@ -125,7 +122,6 @@ func voiceOver():
 
 func _on_infoPotato_finished() -> void:
 	yield(get_tree().create_timer(0.10), "timeout")
-	#$'%repeatInfo'.play()
 	$'%askVoice2'.play()
 	print("Play Potato Info")
 
@@ -168,20 +164,21 @@ func _on_choiceC_finished() -> void:
 	print("Show A, B, C")
 
 func _on_pickAnswer_finished() -> void:
-	$'%repeatInfo'.play()
-	print("Plays Repeat Info")
-#==========================================================
+	yield(get_tree().create_timer(0.5), "timeout")
+	enableButtons()
+	print('Enable Buttons')
 
-func _on_repeatInfo_finished():
-	if $'%repeatInfo'.playing:
-		$'%coverButton'.show()
-		print("Cover Repeat buttons")
-	else:
+#==================================================
+
+func enableButtons():
 		$'%coverButton'.hide()
 		$"%C".disabled = false
 		$"%B".disabled = false
 		$"%A".disabled = false
 		print("Enabled Button A, B, C")
+
+#==========================================================
+		
 
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()

@@ -11,10 +11,7 @@ func _ready() -> void:
 func _on_x_pressed() -> void:
 	$"%infoApple".stream_paused = false
 	print("Info Apple Plays")
-	$"%repeatInfo".stream_paused = false
-	print("Repeat Info Plays")
 	$'%askVoice'.stream_paused = false
-	$'%repeatInfo'.stream_paused = false
 	$"%choiceA".stream_paused = false
 	$"%choiceB".stream_paused = false
 	$"%choiceC".stream_paused = false
@@ -26,10 +23,7 @@ func _on_pauseButton_pressed() -> void:
 	print("Shows the Pause Panel")
 	$"%infoApple".stream_paused = true
 	print("Info Apple Stop")
-	$"%repeatInfo".stream_paused = true
-	print("Repeat Info Stop")
 	$'%askVoice'.stream_paused = true
-	$'%repeatInfo'.stream_paused = true
 	$"%choiceA".stream_paused = true
 	$"%choiceB".stream_paused = true
 	$"%choiceC".stream_paused = true
@@ -152,17 +146,16 @@ func _on_choiceC_finished() -> void:
 	$'%B'.show()
 	print("Show A, B, C")
 	
+	
 
 func _on_pickAnswer_finished() -> void:
-	$'%repeatInfo'.play()
-	print("Repeat Info Plays")
+	yield(get_tree().create_timer(0.5), "timeout")
+	enableButtons()
+	print('Enable Buttons')
+
 #==================================================
 
-func _on_repeatInfo_finished():
-	if $'%repeatInfo'.playing:
-		$'%coverButton'.show()
-		print("Cover Repeat buttons")
-	else:
+func enableButtons():
 		$'%coverButton'.hide()
 		$"%C".disabled = false
 		$"%B".disabled = false
@@ -171,3 +164,4 @@ func _on_repeatInfo_finished():
 
 
 	
+

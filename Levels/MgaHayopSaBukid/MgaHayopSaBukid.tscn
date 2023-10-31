@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://Assets/Audio/Running_Through_The_Jungle.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Audio/levelsAudio/Music/Running_Through_The_Jungle.mp3" type="AudioStream" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=5]
 [ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=6]
@@ -92,6 +92,7 @@ __meta__ = {
 margin_right = 1763.0
 margin_bottom = 450.0
 rect_min_size = Vector2( 1763, 450 )
+rect_clip_content = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -1510,17 +1511,17 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button16"]
-anchor_left = 0.035
-anchor_top = 0.05
-anchor_right = 0.96
-anchor_bottom = 0.955
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button16/16Button"]
+anchor_left = -0.178295
+anchor_top = -0.0909091
+anchor_right = 1.16279
+anchor_bottom = 0.939394
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 8 )
-text = "Level 16"
+text = "level 16"
 align = 1
 valign = 1
 autowrap = true
@@ -1531,7 +1532,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button16/level"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button16/16Button/level"]
 anchor_top = -0.0193965
 anchor_right = 1.0
 anchor_bottom = 1.02938
@@ -1539,7 +1540,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 9 )
-text = "Level 16"
+text = "level 16"
 align = 1
 valign = 1
 autowrap = true

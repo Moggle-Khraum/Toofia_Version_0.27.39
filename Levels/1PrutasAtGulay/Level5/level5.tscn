@@ -721,6 +721,7 @@ unique_name_in_owner = true
 
 [node name="PrutasAtGulay" parent="." instance=ExtResource( 15 )]
 unique_name_in_owner = true
+visible = false
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]

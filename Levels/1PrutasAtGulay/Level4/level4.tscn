@@ -4310,6 +4310,7 @@ __meta__ = {
 
 [node name="PrutasAtGulay" parent="." instance=ExtResource( 30 )]
 unique_name_in_owner = true
+visible = false
 
 [node name="pausePanel" parent="." instance=ExtResource( 33 )]
 unique_name_in_owner = true

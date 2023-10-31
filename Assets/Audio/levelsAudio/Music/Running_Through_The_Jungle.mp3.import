@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Running_Through_The_Jungle.mp3-217df1ddbd70cf258ece4127ce5124d9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Music/Running_Through_The_Jungle.mp3"
+dest_files=[ "res://.import/Running_Through_The_Jungle.mp3-217df1ddbd70cf258ece4127ce5124d9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

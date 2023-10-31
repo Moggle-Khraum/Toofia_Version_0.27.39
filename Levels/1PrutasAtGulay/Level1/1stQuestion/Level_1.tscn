@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=2]
@@ -8,23 +8,22 @@
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Audio/levelsAudio/correctAnswer.mp3" type="AudioStream" id=8]
-[ext_resource path="res://Assets/Audio/repeatInfo.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Assets/Audio/levelsAudio/Apple/choiceA.mp3" type="AudioStream" id=9]
 [ext_resource path="res://Assets/Images/levelImages/apple1.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Audio/levelsAudio/correcto.mp3" type="AudioStream" id=11]
 [ext_resource path="res://Assets/Sliders/ScrollBar_Blue_Scroller.png" type="Texture" id=12]
 [ext_resource path="res://Assets/GUI/Box_Rounded.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Audio/explain1.mp3" type="AudioStream" id=14]
+[ext_resource path="res://Assets/Audio/levelsAudio/explain1.mp3" type="AudioStream" id=14]
 [ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Assets/Audio/levelsAudio/pickAnswer.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/levelsAudio/Apple/pickChoice.mp3" type="AudioStream" id=16]
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=17]
-[ext_resource path="res://Assets/Audio/levelsAudio/apple.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Assets/Audio/levelsAudio/Apple/apple.mp3" type="AudioStream" id=18]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=19]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=20]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level1/1stQuestion/PausePanel0.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Assets/Audio/levelsAudio/askVoice.wav" type="AudioStream" id=22]
-[ext_resource path="res://Assets/Audio/levelsAudio/choiceAGulay.mp3" type="AudioStream" id=23]
-[ext_resource path="res://Assets/Audio/levelsAudio/choiceBGulay.mp3" type="AudioStream" id=24]
-[ext_resource path="res://Assets/Audio/levelsAudio/choiceCGulay.mp3" type="AudioStream" id=25]
+[ext_resource path="res://Assets/Audio/levelsAudio/Apple/choiceB.mp3" type="AudioStream" id=23]
+[ext_resource path="res://Assets/Audio/levelsAudio/Apple/choiceC.mp3" type="AudioStream" id=24]
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=26]
 [ext_resource path="res://Assets/UIElements/Item4.png" type="Texture" id=27]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_Star_WhiteOutline.png" type="Texture" id=28]
@@ -760,17 +759,16 @@ stream = ExtResource( 22 )
 bus = "Voices"
 
 [node name="answerLabelA" type="Label" parent="background/askHolder"]
-anchor_left = 0.0796814
-anchor_top = 0.390314
-anchor_right = 0.67729
-anchor_bottom = 0.541312
+anchor_left = 0.0796812
+anchor_top = 0.390313
+anchor_right = 0.842628
+anchor_bottom = 0.541311
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 129 )
-text = "A. Ito ay gulay."
-align = 3
+text = "A. Ito ay isang gulay."
 valign = 1
 autowrap = true
 clip_text = true
@@ -787,8 +785,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 130 )
-text = "A. Ito ay gulay."
-align = 3
+text = "A. Ito ay isang gulay."
 valign = 1
 autowrap = true
 clip_text = true
@@ -798,20 +795,20 @@ __meta__ = {
 
 [node name="choiceA" type="AudioStreamPlayer" parent="background/askHolder/answerLabelA"]
 unique_name_in_owner = true
-stream = ExtResource( 23 )
+stream = ExtResource( 9 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="background/askHolder"]
-anchor_left = 0.0856575
+anchor_left = 0.0856573
 anchor_top = 0.552707
-anchor_right = 0.691234
+anchor_right = 0.812748
 anchor_bottom = 0.712251
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 138 )
-text = "B. Ito ay prutas."
+text = "B. Ito ay isang prutas."
 valign = 1
 autowrap = true
 clip_text = true
@@ -827,7 +824,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 139 )
-text = "B. Ito ay prutas."
+text = "B. Ito ay isang prutas."
 valign = 1
 autowrap = true
 clip_text = true
@@ -837,13 +834,13 @@ __meta__ = {
 
 [node name="choiceB" type="AudioStreamPlayer" parent="background/askHolder/answerLabelB"]
 unique_name_in_owner = true
-stream = ExtResource( 24 )
+stream = ExtResource( 23 )
 bus = "Voices"
 
 [node name="answerLabelC" type="Label" parent="background/askHolder"]
-anchor_left = 0.0776894
+anchor_left = 0.0876493
 anchor_top = 0.703704
-anchor_right = 0.729083
+anchor_right = 0.854581
 anchor_bottom = 0.854701
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
@@ -851,7 +848,6 @@ custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 140 )
 text = "C. Wala sa nabanggit."
-align = 1
 valign = 1
 autowrap = true
 clip_text = true
@@ -868,7 +864,6 @@ custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 141 )
 text = "C. Wala sa nabanggit."
-align = 1
 valign = 1
 autowrap = true
 clip_text = true
@@ -878,7 +873,7 @@ __meta__ = {
 
 [node name="choiceC" type="AudioStreamPlayer" parent="background/askHolder/answerLabelC"]
 unique_name_in_owner = true
-stream = ExtResource( 25 )
+stream = ExtResource( 24 )
 bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="background"]
@@ -1076,11 +1071,6 @@ __meta__ = {
 [node name="pickAnswer" type="AudioStreamPlayer" parent="background/AnswerPanel"]
 unique_name_in_owner = true
 stream = ExtResource( 16 )
-bus = "Voices"
-
-[node name="repeatInfo" type="AudioStreamPlayer" parent="."]
-unique_name_in_owner = true
-stream = ExtResource( 9 )
 bus = "Voices"
 
 [node name="ScorePanel2StarA" type="Panel" parent="."]
@@ -3911,7 +3901,6 @@ unique_name_in_owner = true
 [connection signal="pressed" from="background/AnswerPanel/B" to="." method="_on_B_pressed"]
 [connection signal="pressed" from="background/AnswerPanel/C" to="." method="_on_C_pressed"]
 [connection signal="finished" from="background/AnswerPanel/pickAnswer" to="." method="_on_pickAnswer_finished"]
-[connection signal="finished" from="repeatInfo" to="." method="_on_repeatInfo_finished"]
 [connection signal="visibility_changed" from="ScorePanel2StarA" to="." method="_on_ScorePanel2StarA_visibility_changed"]
 [connection signal="pressed" from="ScorePanel2StarA/panelblock/levelPanel/goLevels/levels" to="ScorePanel2StarA" method="_on_levels_pressed"]
 [connection signal="pressed" from="ScorePanel2StarA/panelblock/levelPanel/goHome/home" to="ScorePanel2StarA" method="_on_home_pressed"]
