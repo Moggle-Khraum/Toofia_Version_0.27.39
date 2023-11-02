@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=2]
+[gd_scene load_steps=112 format=2]
 
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=2]
@@ -13,13 +13,12 @@
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level3/PausePanel3.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Assets/Audio/levelsAudio/Cabbage/cabbage.mp3" type="AudioStream" id=14]
-[ext_resource path="res://Assets/Audio/levelsAudio/Cabbage/choice3B.mp3" type="AudioStream" id=15]
-[ext_resource path="res://Assets/Audio/levelsAudio/Cabbage/choice3A.mp3" type="AudioStream" id=16]
-[ext_resource path="res://Assets/Audio/levelsAudio/Cabbage/askVoiceCabbage.mp3" type="AudioStream" id=17]
-[ext_resource path="res://Assets/Audio/levelsAudio/Cabbage/choice3C.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Assets/Audio/levelsAudio/Carrot/carrot.mp3" type="AudioStream" id=14]
+[ext_resource path="res://Assets/Audio/levelsAudio/Carrot/choiceA.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Audio/levelsAudio/Carrot/choiceB.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/levelsAudio/Carrot/askVoiceCarrot.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Assets/Audio/levelsAudio/Carrot/choiceC.mp3" type="AudioStream" id=18]
 [ext_resource path="res://Assets/Audio/levelsAudio/pickAnswer.mp3" type="AudioStream" id=19]
-[ext_resource path="res://Assets/Audio/repeatInfo.mp3" type="AudioStream" id=20]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level3/Level3.gd" type="Script" id=21]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level3/ScorePanel2StarC.gd" type="Script" id=22]
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=23]
@@ -33,7 +32,7 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_Square.png" type="Texture" id=31]
 [ext_resource path="res://Assets/Audio/levelsAudio/correctAnswer.mp3" type="AudioStream" id=32]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level3/ScorePanel2StarB.gd" type="Script" id=33]
-[ext_resource path="res://Assets/Audio/levelsAudio/Cabbage/wrongPickCabbage.mp3" type="AudioStream" id=34]
+[ext_resource path="res://Assets/Audio/levelsAudio/Carrot/wrongPickCabbage.mp3" type="AudioStream" id=34]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level3/ScorePanel3StarA.gd" type="Script" id=35]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=36]
 
@@ -147,7 +146,7 @@ fallback/0 = ExtResource( 3 )
 [sub_resource type="DynamicFont" id=90]
 size = 30
 use_filter = true
-extra_spacing_top = -8
+extra_spacing_top = -7
 font_data = ExtResource( 36 )
 fallback/0 = ExtResource( 3 )
 
@@ -821,7 +820,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="cabbage" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+[node name="carrot" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
 unique_name_in_owner = true
 anchor_left = 0.278702
 anchor_top = -0.0610136
@@ -839,7 +838,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/cabbage"]
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/carrot"]
 unique_name_in_owner = true
 anchor_left = -0.437024
 anchor_top = 0.539506
@@ -857,7 +856,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/cabbage"]
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/carrot"]
 unique_name_in_owner = true
 anchor_left = 0.113193
 anchor_top = 0.0881327
@@ -872,7 +871,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="infoCabbage" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/cabbage"]
+[node name="infoKarot" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/carrot"]
 unique_name_in_owner = true
 stream = ExtResource( 14 )
 bus = "Voices"
@@ -990,16 +989,16 @@ stream = ExtResource( 17 )
 bus = "Voices"
 
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
-anchor_left = 0.0776894
-anchor_top = 0.427351
-anchor_right = 0.537848
+anchor_left = 0.0776891
+anchor_top = 0.42735
+anchor_right = 0.729083
 anchor_bottom = 0.54416
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 85 )
-text = "A. Ito ay gulay."
+text = "A. Ito ay isang gulay."
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1014,7 +1013,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 86 )
-text = "A. Ito ay gulay."
+text = "A. Ito ay isang gulay."
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1023,20 +1022,20 @@ __meta__ = {
 
 [node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
 unique_name_in_owner = true
-stream = ExtResource( 16 )
+stream = ExtResource( 15 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0796812
 anchor_top = 0.569801
-anchor_right = 0.553784
+anchor_right = 0.737051
 anchor_bottom = 0.695157
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 87 )
-text = "B. Ito ay prutas."
+text = "B. Ito ay isang prutas."
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1051,7 +1050,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 88 )
-text = "B. Ito ay prutas."
+text = "B. Ito ay isang prutas."
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1060,7 +1059,7 @@ __meta__ = {
 
 [node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
 unique_name_in_owner = true
-stream = ExtResource( 15 )
+stream = ExtResource( 16 )
 bus = "Voices"
 
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1077,12 +1076,16 @@ text = "C. Ito ay parehong gulay at prutas"
 autowrap = true
 clip_text = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = 1.0
+margin_right = -0.00012207
+margin_bottom = 6.10352e-05
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
@@ -1285,11 +1288,6 @@ __meta__ = {
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
 stream = ExtResource( 19 )
-bus = "Voices"
-
-[node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
-unique_name_in_owner = true
-stream = ExtResource( 20 )
 bus = "Voices"
 
 [node name="ScorePanel3StarA" type="Panel" parent="."]
@@ -4092,14 +4090,13 @@ __meta__ = {
 
 [node name="PrutasAtGulay" parent="." instance=ExtResource( 13 )]
 unique_name_in_owner = true
-visible = false
 
 [node name="PausePanel" parent="." instance=ExtResource( 12 )]
 unique_name_in_owner = true
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
-[connection signal="pressed" from="Panel/NinePatchRect/imageHolder/cabbage/repeat" to="." method="_on_repeat_pressed"]
-[connection signal="finished" from="Panel/NinePatchRect/imageHolder/cabbage/infoCabbage" to="." method="_on_infoCabbage_finished"]
+[connection signal="pressed" from="Panel/NinePatchRect/imageHolder/carrot/repeat" to="." method="_on_repeat_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/carrot/infoKarot" to="." method="_on_infoCabbage_finished"]
 [connection signal="finished" from="Panel/NinePatchRect/askHolder/askLabel/askVoice3" to="." method="_on_askVoice3_finished"]
 [connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/choiceA" to="." method="_on_choiceA_finished"]
 [connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB/choiceB" to="." method="_on_choiceB_finished"]
@@ -4108,7 +4105,6 @@ unique_name_in_owner = true
 [connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/B" to="." method="_on_B_pressed"]
 [connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/C" to="." method="_on_C_pressed"]
 [connection signal="finished" from="Panel/NinePatchRect/AnswerPanel/pickAnswer" to="." method="_on_pickAnswer_finished"]
-[connection signal="finished" from="Panel/repeatInfo" to="." method="_on_repeatInfo_finished"]
 [connection signal="visibility_changed" from="ScorePanel3StarA" to="." method="_on_ScorePanel3StarA_visibility_changed"]
 [connection signal="pressed" from="ScorePanel3StarA/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="ScorePanel3StarA/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]

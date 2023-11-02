@@ -23,8 +23,6 @@ func voiceOver():
 func _on_x_pressed():
 	$"%infoAvocado".stream_paused = false
 	print("Info Avocado Plays")
-	$"%repeatInfo".stream_paused = false
-	print("Repeat Info Plays")
 	$'%askVoice4'.stream_paused = false
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
@@ -38,8 +36,6 @@ func _on_pauseButton_pressed():
 	print("Shows the Pause Panel")
 	$"%infoAvocado".stream_paused = true
 	print("Info Avocado Stop")
-	$"%repeatInfo".stream_paused = true
-	print("Repeat Info Stop")
 	$'%askVoice4'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
@@ -170,8 +166,17 @@ func _on_repeatInfo_finished():
 		print("Enabled Button A, B, C")
 
 func _on_pickAnswer_finished():
-	$'%repeatInfo'.play()
-	print("Plays Repeat Info")
+	yield(get_tree().create_timer(0.5), "timeout")
+	enableButtons()
+	print('Enable Buttons')
+
+#==================================================
+func enableButtons():
+		$'%coverButton'.hide()
+		$"%C".disabled = false
+		$"%B".disabled = false
+		$"%A".disabled = false
+		print("Enabled Button A, B, C")
 
 
 func _on_levels_pressed() -> void:

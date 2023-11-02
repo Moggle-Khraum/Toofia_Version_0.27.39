@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoiceCarrot.mp3-ce03260fe402b92374c8614bcba2510c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Carrot/askVoiceCarrot.mp3"
+dest_files=[ "res://.import/askVoiceCarrot.mp3-ce03260fe402b92374c8614bcba2510c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

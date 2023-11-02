@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=2]
@@ -15,6 +15,12 @@
 [ext_resource path="res://Levels/1PrutasAtGulay/Level5/PausePanel5.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level5/level5.gd" type="Script" id=14]
 [ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Assets/Audio/levelsAudio/Grapes/grapes.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/levelsAudio/Grapes/askVoice5.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Assets/Audio/levelsAudio/Grapes/choiceA.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Assets/Audio/levelsAudio/Grapes/choiceB.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Assets/Audio/levelsAudio/Grapes/choiceC.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Audio/levelsAudio/Grapes/pickAnswer.mp3" type="AudioStream" id=21]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -326,6 +332,7 @@ __meta__ = {
 
 [node name="infoGrapes" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/grapes"]
 unique_name_in_owner = true
+stream = ExtResource( 16 )
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
@@ -433,6 +440,11 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="askVoice5" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
+unique_name_in_owner = true
+stream = ExtResource( 17 )
+bus = "Voices"
+
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0776894
 anchor_top = 0.427351
@@ -464,6 +476,10 @@ clip_text = true
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+stream = ExtResource( 18 )
+bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0796812
@@ -497,6 +513,10 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+stream = ExtResource( 19 )
+bus = "Voices"
+
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0816732
 anchor_top = 0.732194
@@ -511,6 +531,7 @@ text = "C. Ito ay ibas."
 autowrap = true
 clip_text = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
@@ -528,6 +549,10 @@ clip_text = true
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+stream = ExtResource( 20 )
+bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
 unique_name_in_owner = true
@@ -710,10 +735,7 @@ __meta__ = {
 
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
-bus = "Voices"
-
-[node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
-unique_name_in_owner = true
+stream = ExtResource( 21 )
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 13 )]
@@ -721,7 +743,6 @@ unique_name_in_owner = true
 
 [node name="PrutasAtGulay" parent="." instance=ExtResource( 15 )]
 unique_name_in_owner = true
-visible = false
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]

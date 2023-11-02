@@ -15,18 +15,16 @@ func _ready():
 func voiceOver():
 	#if self.has_signal('PlayCoconut'):
 	yield(get_tree().create_timer(0.5), "timeout")
-	$'%infoCabbage'.play()
-	print("Plays Cabbage")
+	$'%infoKarot'.play()
+	print("Plays Karot")
 	print("Hides Repeat Button")
-	if $"%infoCabbage".playing:
+	if $"%infoKarot".playing:
 		$"%coverButton".show()
 #=============================================
 
 func _on_x_pressed():
-	$"%infoCabbage".stream_paused = false
-	print("Info Cabbage Plays")
-	$"%repeatInfo".stream_paused = false
-	print("Repeat Info Plays")
+	$"%infoKarot".stream_paused = false
+	print("Info Karot Plays")
 	$'%askVoice3'.stream_paused = false
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
@@ -38,10 +36,8 @@ func _on_pauseButton_pressed():
 	MenuClickSfxPlayer.play()
 	$"%PausePanel".show()
 	print("Shows the Pause Panel")
-	$"%infoCabbage".stream_paused = true
+	$"%infoKarot".stream_paused = true
 	print("Info Potato Stop")
-	$"%repeatInfo".stream_paused = true
-	print("Repeat Info Stop")
 	$'%askVoice3'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
@@ -53,7 +49,7 @@ func _on_pauseButton_pressed():
 func _on_A_pressed():
 	print('The Answer is Correct!')
 	CorrectAnswer.play()
-	$"%cabbage".hide()
+	$"%carrot".hide()
 	print("Pressed A, Correct Answer")
 	$'%ScorePanel3StarA'.show()
 
@@ -68,7 +64,7 @@ func _on_ScorePanel3StarA_visibility_changed():
 func _on_B_pressed():
 	print('The Answer is Wrong!')
 	WrongAnswer.play()
-	$"%cabbage".hide()
+	$"%carrot".hide()
 	print("Pressed B, Wrong Answer")
 	$'%ScorePanel2StarB'.show()
 	
@@ -84,7 +80,7 @@ func _on_ScorePanel2StarB_visibility_changed():
 func _on_C_pressed():
 	print('The Answer is Wrong!')
 	WrongAnswer.play()
-	$"%cabbage".hide()
+	$"%carrot".hide()
 	print("Pressed C, Wrong Answer")
 	$'%ScorePanel2StarC'.show()
 	
@@ -98,18 +94,18 @@ func _on_ScorePanel2StarC_visibility_changed():
 	
 #=============================================s
 func _on_repeat_pressed():
-	$'%infoCabbage'.play()
+	$'%infoKarot'.play()
 	print("Repeat Info got Pressed")
 	emit_signal("repeat")
 	print("Emits Signal")
-	$"%infoCabbage".stop()
+	$"%infoKarot".stop()
 	print("Info Cabbage stop")
 	$'%coverButton'.show()
 	$"%A".hide()
 	$"%B".hide()
 	$"%C".hide()
 	print("Hide Repeat Button")
-	if not $"%infoCabbage".playing or $"%askVoice3".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
+	if not $"%infoKarot".playing or $"%askVoice3".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
 		$"%coverButton".show()
 		print("Cover Show")
 	else:
@@ -173,8 +169,18 @@ func _on_repeatInfo_finished():
 		print("Enabled Button A, B, C")
 
 func _on_pickAnswer_finished():
-	$'%repeatInfo'.play()
-	print("Plays Repeat Info")
+	yield(get_tree().create_timer(0.5), "timeout")
+	enableButtons()
+	print('Enable Buttons')
+
+#==================================================
+func enableButtons():
+		$'%coverButton'.hide()
+		$"%C".disabled = false
+		$"%B".disabled = false
+		$"%A".disabled = false
+		print("Enabled Button A, B, C")
+
 
 
 func _on_levels_pressed() -> void:
