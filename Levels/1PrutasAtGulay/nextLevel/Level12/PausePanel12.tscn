@@ -723,3 +723,7 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[connection signal="pressed" from="bg/box/pausePanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="bg/box/pausePanel/goTopics/topics" to="." method="_on_topics_pressed"]
+[connection signal="pressed" from="bg/x" to="." method="_on_x_pressed"]

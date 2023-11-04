@@ -3889,6 +3889,7 @@ unique_name_in_owner = true
 
 [node name="PausePanel" parent="." instance=ExtResource( 21 )]
 unique_name_in_owner = true
+visible = false
 
 [connection signal="pressed" from="background/pauseButton" to="." method="_on_pauseButton_pressed"]
 [connection signal="pressed" from="background/imageHolder/apple/repeat" to="." method="_on_repeat_pressed"]

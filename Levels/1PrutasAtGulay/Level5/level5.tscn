@@ -415,7 +415,6 @@ custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 8 )
 text = "1. Batay sa iyong narinig, ano ang pangalan ng prutas na nasa larawan?"
-align = 3
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -433,7 +432,6 @@ custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 9 )
 text = "1. Batay sa iyong narinig, ano ang pangalan ng prutas na nasa larawan?"
-align = 3
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -446,9 +444,9 @@ stream = ExtResource( 17 )
 bus = "Voices"
 
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
-anchor_left = 0.0776894
-anchor_top = 0.427351
-anchor_right = 0.537848
+anchor_left = 0.0776891
+anchor_top = 0.42735
+anchor_right = 0.924302
 anchor_bottom = 0.54416
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
@@ -478,13 +476,14 @@ __meta__ = {
 }
 
 [node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+unique_name_in_owner = true
 stream = ExtResource( 18 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0796812
 anchor_top = 0.569801
-anchor_right = 0.553784
+anchor_right = 0.928286
 anchor_bottom = 0.695157
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
@@ -514,6 +513,7 @@ __meta__ = {
 }
 
 [node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+unique_name_in_owner = true
 stream = ExtResource( 19 )
 bus = "Voices"
 
@@ -551,6 +551,7 @@ __meta__ = {
 }
 
 [node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+unique_name_in_owner = true
 stream = ExtResource( 20 )
 bus = "Voices"
 
@@ -566,6 +567,7 @@ __meta__ = {
 
 [node name="A" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_right = 95.0
 margin_bottom = 95.0
 rect_min_size = Vector2( 95, 95 )
@@ -622,6 +624,7 @@ __meta__ = {
 
 [node name="B" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 125.0
 margin_right = 220.0
 margin_bottom = 95.0
@@ -679,6 +682,7 @@ __meta__ = {
 
 [node name="C" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 250.0
 margin_right = 345.0
 margin_bottom = 95.0
@@ -745,6 +749,13 @@ unique_name_in_owner = true
 unique_name_in_owner = true
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/imageHolder/grapes/repeat" to="." method="_on_repeat_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/grapes/infoGrapes" to="." method="_on_infoGrapes_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/askLabel/askVoice5" to="." method="_on_askVoice5_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/choiceA" to="." method="_on_choiceA_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB/choiceB" to="." method="_on_choiceB_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB2/choiceC" to="." method="_on_choiceC_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/AnswerPanel/pickAnswer" to="." method="_on_pickAnswer_finished"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 
 [editable path="pausePanel"]

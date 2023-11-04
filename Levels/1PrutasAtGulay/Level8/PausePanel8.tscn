@@ -127,7 +127,6 @@ font_data = ExtResource( 3 )
 fallback/0 = ExtResource( 2 )
 
 [node name="Popup" type="Popup"]
-visible = true
 self_modulate = Color( 1, 1, 1, 0.45098 )
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -724,3 +723,8 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[connection signal="pressed" from="bg/box/pausePanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="bg/box/pausePanel/goMainMenu/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="bg/box/pausePanel/goTopics/topics" to="." method="_on_topics_pressed"]
+[connection signal="pressed" from="bg/x" to="." method="_on_x_pressed"]

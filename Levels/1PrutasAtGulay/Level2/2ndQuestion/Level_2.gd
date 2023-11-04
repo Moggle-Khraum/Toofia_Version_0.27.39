@@ -164,18 +164,11 @@ func _on_choiceC_finished() -> void:
 	print("Show A, B, C")
 
 func _on_pickAnswer_finished() -> void:
-	yield(get_tree().create_timer(0.5), "timeout")
-	enableButtons()
-	print('Enable Buttons')
-
-#==================================================
-
-func enableButtons():
-		$'%coverButton'.hide()
-		$"%C".disabled = false
-		$"%B".disabled = false
-		$"%A".disabled = false
-		print("Enabled Button A, B, C")
+	$'%coverButton'.hide()
+	$"%C".disabled = false
+	$"%B".disabled = false
+	$"%A".disabled = false
+	print("Enabled Button A, B, C")
 
 #==========================================================
 		
