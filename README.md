@@ -7,7 +7,7 @@
 
 :desktop_computer: **Language Used:** *GDScript*
 
-:hourglass_flowing_sand: **Progress:** *48% out of 100%*
+:hourglass_flowing_sand: **Progress:** *50% out of 100%*
 
 :dart: **Completed Goal:**
 - [x] Add a Persistent Music system that persists even when restarting the game.
