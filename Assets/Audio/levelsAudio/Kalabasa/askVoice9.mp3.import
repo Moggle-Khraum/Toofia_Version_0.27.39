@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice9.mp3-15742afcd1166ac63b364beb20cf5912.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Kalabasa/askVoice9.mp3"
+dest_files=[ "res://.import/askVoice9.mp3-15742afcd1166ac63b364beb20cf5912.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

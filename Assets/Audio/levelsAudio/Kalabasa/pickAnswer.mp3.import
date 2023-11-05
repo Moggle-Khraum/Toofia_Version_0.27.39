@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pickAnswer.mp3-293f615a10b8ab311ce2ceed5b04ab3e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Kalabasa/pickAnswer.mp3"
+dest_files=[ "res://.import/pickAnswer.mp3-293f615a10b8ab311ce2ceed5b04ab3e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

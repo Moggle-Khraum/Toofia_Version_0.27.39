@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pinya.mp3-0cdbadf09bd9125f3d031dce52a88cbd.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Pinya/pinya.mp3"
+dest_files=[ "res://.import/pinya.mp3-0cdbadf09bd9125f3d031dce52a88cbd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

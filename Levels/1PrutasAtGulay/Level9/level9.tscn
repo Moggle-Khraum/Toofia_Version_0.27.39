@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=2]
@@ -11,10 +11,16 @@
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/Box_Rounded.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Images/levelImages/kalabasa.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/levelImages/pumpkin.png" type="Texture" id=12]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level9/PausePanel9.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level9/level9.gd" type="Script" id=14]
 [ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Assets/Audio/levelsAudio/Kalabasa/kalabasa.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/levelsAudio/Kalabasa/pickAnswer.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Assets/Audio/levelsAudio/Kalabasa/choiceB.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Assets/Audio/levelsAudio/Kalabasa/askVoice9.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Assets/Audio/levelsAudio/Kalabasa/choiceA.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Audio/levelsAudio/Kalabasa/choiceC.mp3" type="AudioStream" id=21]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -67,8 +73,8 @@ extra_spacing_top = -6
 extra_spacing_char = 3
 font_data = ExtResource( 5 )
 
-[sub_resource type="DynamicFont" id=8]
-size = 30
+[sub_resource type="DynamicFont" id=19]
+size = 29
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_mipmaps = true
@@ -77,8 +83,8 @@ extra_spacing_top = -3
 font_data = ExtResource( 5 )
 fallback/0 = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=9]
-size = 30
+[sub_resource type="DynamicFont" id=18]
+size = 29
 use_filter = true
 extra_spacing_top = -3
 font_data = ExtResource( 5 )
@@ -293,14 +299,10 @@ __meta__ = {
 
 [node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/kalabasa"]
 unique_name_in_owner = true
-anchor_left = -0.00818752
-anchor_top = 0.493314
-anchor_right = 1.01152
-anchor_bottom = 0.493314
-margin_top = 113.691
-margin_right = -350.13
-margin_bottom = 945.691
-rect_rotation = -51.9726
+anchor_left = 0.16446
+anchor_top = 0.120198
+anchor_right = 0.872386
+anchor_bottom = 0.867728
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -311,15 +313,11 @@ __meta__ = {
 
 [node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/kalabasa"]
 unique_name_in_owner = true
-anchor_left = -0.302751
-anchor_top = 0.455531
-anchor_right = 1.21478
-anchor_bottom = 0.455531
-margin_left = -3.05176e-05
-margin_top = 158.496
-margin_right = -537.192
-margin_bottom = 1410.5
-rect_rotation = -52.3259
+anchor_left = -0.0214381
+anchor_top = -0.0470994
+anchor_right = 1.01774
+anchor_bottom = 1.07779
+margin_right = -0.00012207
 input_pass_on_modal_close_click = false
 custom_styles/panel = SubResource( 4 )
 __meta__ = {
@@ -329,6 +327,7 @@ __meta__ = {
 
 [node name="infoSquash" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/kalabasa"]
 unique_name_in_owner = true
+stream = ExtResource( 16 )
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
@@ -411,9 +410,8 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 8 )
-text = "1. Batay sa iyong narinig, ang nasa larawan ba ay prutas o gulay?"
-align = 3
+custom_fonts/font = SubResource( 19 )
+text = "1. Batay sa iyong narinig, ang kalabasa ba ay gulay o prutas?"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -429,20 +427,24 @@ margin_bottom = -2.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 9 )
-text = "1. Batay sa iyong narinig, ang nasa larawan ba ay prutas o gulay?"
-align = 3
+custom_fonts/font = SubResource( 18 )
+text = "1. Batay sa iyong narinig, ang kalabasa ba ay gulay o prutas?"
 autowrap = true
 clip_text = true
 __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="askVoice9" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
+unique_name_in_owner = true
+stream = ExtResource( 19 )
+bus = "Voices"
+
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
-anchor_left = 0.0776894
-anchor_top = 0.427351
-anchor_right = 0.537848
-anchor_bottom = 0.54416
+anchor_left = 0.0776891
+anchor_top = 0.361823
+anchor_right = 0.948206
+anchor_bottom = 0.478632
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
@@ -470,11 +472,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+unique_name_in_owner = true
+stream = ExtResource( 20 )
+bus = "Voices"
+
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
-anchor_left = 0.0796812
-anchor_top = 0.569801
-anchor_right = 0.904381
-anchor_bottom = 0.695157
+anchor_left = 0.0856573
+anchor_top = 0.51567
+anchor_right = 0.950198
+anchor_bottom = 0.641026
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
@@ -502,17 +509,22 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+unique_name_in_owner = true
+stream = ExtResource( 18 )
+bus = "Voices"
+
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0816732
-anchor_top = 0.732194
-anchor_right = 0.910357
-anchor_bottom = 0.843305
+anchor_top = 0.700855
+anchor_right = 0.936254
+anchor_bottom = 0.811966
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 14 )
-text = "C. Wala sa mga binanggit."
+text = "C. Wala sa nabanggit."
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -528,12 +540,17 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 15 )
-text = "C. Wala sa mga binanggit."
+text = "C. Wala sa nabanggit."
 autowrap = true
 clip_text = true
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+unique_name_in_owner = true
+stream = ExtResource( 21 )
+bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
 unique_name_in_owner = true
@@ -547,6 +564,7 @@ __meta__ = {
 
 [node name="A" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_right = 95.0
 margin_bottom = 95.0
 rect_min_size = Vector2( 95, 95 )
@@ -603,6 +621,7 @@ __meta__ = {
 
 [node name="B" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 125.0
 margin_right = 220.0
 margin_bottom = 95.0
@@ -660,6 +679,7 @@ __meta__ = {
 
 [node name="C" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 250.0
 margin_right = 345.0
 margin_bottom = 95.0
@@ -716,10 +736,7 @@ __meta__ = {
 
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
-bus = "Voices"
-
-[node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
-unique_name_in_owner = true
+stream = ExtResource( 17 )
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 13 )]
@@ -729,6 +746,13 @@ unique_name_in_owner = true
 unique_name_in_owner = true
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/imageHolder/kalabasa/repeat" to="." method="_on_repeat_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/kalabasa/infoSquash" to="." method="_on_infoSquash_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/askLabel/askVoice9" to="." method="_on_askVoice9_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/choiceA" to="." method="_on_choiceA_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB/choiceB" to="." method="_on_choiceB_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB2/choiceC" to="." method="_on_choiceC_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/AnswerPanel/pickAnswer" to="." method="_on_pickAnswer_finished"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 
 [editable path="pausePanel"]
