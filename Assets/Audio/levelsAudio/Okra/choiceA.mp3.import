@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-8e0c40cfa6069999e01aa810a09faa61.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Okra/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-8e0c40cfa6069999e01aa810a09faa61.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

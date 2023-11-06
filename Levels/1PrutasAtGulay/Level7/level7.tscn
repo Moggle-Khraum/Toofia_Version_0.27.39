@@ -752,10 +752,10 @@ unique_name_in_owner = true
 stream = ExtResource( 20 )
 bus = "Voices"
 
-[node name="PrutasAtGulay" parent="." instance=ExtResource( 15 )]
+[node name="pausePanel" parent="." instance=ExtResource( 13 )]
 unique_name_in_owner = true
 
-[node name="pausePanel" parent="." instance=ExtResource( 13 )]
+[node name="PrutasAtGulay" parent="." instance=ExtResource( 15 )]
 unique_name_in_owner = true
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]

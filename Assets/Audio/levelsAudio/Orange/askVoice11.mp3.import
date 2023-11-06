@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice11.mp3-70bc8e509f4b088e20c7ee31d6f20564.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Orange/askVoice11.mp3"
+dest_files=[ "res://.import/askVoice11.mp3-70bc8e509f4b088e20c7ee31d6f20564.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

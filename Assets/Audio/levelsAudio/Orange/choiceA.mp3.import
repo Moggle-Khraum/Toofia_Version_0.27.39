@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-20e3e2dfae1ebf3085d0beb33334962a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Orange/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-20e3e2dfae1ebf3085d0beb33334962a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
