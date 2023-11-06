@@ -86,7 +86,7 @@ func _on_C_pressed():
 	
 func _on_ScorePanel2StarC_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%wrongPick'.play()
+	$ScorePanel2StarB/wrongpick.play()
 	print("Plays Wrong Pick")
 	$'%animA'.play('blink')
 	$'%animC'.play('blink')
@@ -197,4 +197,5 @@ func _on_PrutasAtGulay_visibility_changed():
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%PrutasAtGulay'.show()
+	var nextQ = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level4/level4.tscn")
+	#$'%PrutasAtGulay'.show()

@@ -28,6 +28,8 @@ func _on_pauseButton_pressed() -> void:
 	$"%choiceB".stream_paused = true
 	$"%choiceC".stream_paused = true
 	$"%pickAnswer".stream_paused = true
+	
+	
 
 #==============================================================================
 func _on_A_pressed():

@@ -1,11 +1,23 @@
-extends BaseScroll
-#The above is referencing the Template base called BaseScroll
+extends Control
 
-var backtoTopic = load('res://Scenes/MenuChoices.tscn')
+#THIS IS FOR THE SCROLL EFFECTS
+var scrollerContainer: ScrollContainer
+var targetScroll = 0.0
+var scrollStep = 600
+var scrollWeight = 0.5
 
-#THIS IS FOR SIGNAL that was used by Buttons
 signal pressed
 
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	#getting the Node by calling it through by get_node
+	scrollerContainer = $'%ScrollContainer'
+
+# warning-ignore:unused_argument
+func _process(delta: float) -> void:
+	# Check if the ScrollContainer's content width is larger than its view width
+	targetScroll = scrollerContainer.scroll_horizontal
+	scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, targetScroll, scrollWeight)
 
 #This is for the Left Button
 func _on_LeftButton_pressed() -> void:
@@ -26,6 +38,7 @@ func _on_GoBackButton_pressed() -> void:
 	print("Presses Go Back")
 	MenuClickSfxPlayer.play()
 	#handles the Go back button
+	var backtoTopic = load('res://Scenes/MenuChoices.tscn')
 	var levelSelect = get_tree().change_scene_to(backtoTopic)
 	print("Going to Topic Selector")
 	$'%fruitTheme'.stream_paused = true
@@ -395,8 +408,7 @@ func createPlayerData15():
 	print("Folder Created..")
 
 
-func _on_PrutasAtGulay_visibility_changed():
+func _on_PrutasGulay_visibility_changed():
 	$"%fruitTheme".play()
 	print("Plays Fruit")
-
 

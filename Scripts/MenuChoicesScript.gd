@@ -24,9 +24,9 @@ func _on_GoBackButton_pressed():
 func _on_CardMenu1_pressed():
 	MenuClickSfxPlayer.play()
 	print("Presses 1")
-	#var prutasATgulay = load('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
-	#var levels = get_tree().change_scene_to(prutasATgulay)
-	$'%PrutasAtGulay'.show()
+	var pag = load('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
+	var levels = get_tree().change_scene_to(pag)
+	#$'%PrutasAtGulay'.show()
 	MainMenuThemePlayer.stop()
 	print("Going to Prutas at Gulay Levels")
 

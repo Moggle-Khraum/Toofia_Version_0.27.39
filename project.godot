@@ -9,18 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Control",
-"class": "BaseScroll",
-"language": "GDScript",
-"path": "res://Templates/BaseScroll.gd"
-}, {
 "base": "ScrollContainer",
 "class": "CardScroll",
 "language": "GDScript",
 "path": "res://Templates/CardScroll.gd"
 } ]
 _global_script_class_icons={
-"BaseScroll": "",
 "CardScroll": ""
 }
 

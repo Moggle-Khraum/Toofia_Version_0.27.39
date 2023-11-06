@@ -1,4 +1,4 @@
-[gd_scene load_steps=112 format=2]
+[gd_scene load_steps=111 format=2]
 
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=2]
@@ -12,7 +12,6 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level3/PausePanel3.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Assets/Audio/levelsAudio/Carrot/carrot.mp3" type="AudioStream" id=14]
 [ext_resource path="res://Assets/Audio/levelsAudio/Carrot/choiceA.mp3" type="AudioStream" id=15]
 [ext_resource path="res://Assets/Audio/levelsAudio/Carrot/choiceB.mp3" type="AudioStream" id=16]
@@ -4088,12 +4087,8 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="PrutasAtGulay" parent="." instance=ExtResource( 13 )]
-unique_name_in_owner = true
-
 [node name="PausePanel" parent="." instance=ExtResource( 12 )]
 unique_name_in_owner = true
-visible = false
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
 [connection signal="pressed" from="Panel/NinePatchRect/imageHolder/carrot/repeat" to="." method="_on_repeat_pressed"]
@@ -4122,8 +4117,4 @@ visible = false
 [connection signal="pressed" from="ScorePanel2StarC/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="pressed" from="PausePanel/bg/x" to="." method="_on_x_pressed"]
 
-[editable path="PrutasAtGulay"]
-[editable path="PrutasAtGulay/bgPanel"]
 [editable path="PausePanel"]
-[editable path="PausePanel/PrutasAtGulay"]
-[editable path="PausePanel/PrutasAtGulay/bgPanel"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=110 format=2]
+[gd_scene load_steps=109 format=2]
 
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=2]
@@ -33,7 +33,6 @@
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=32]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level2/2ndQuestion/ScorePanel2StarA.gd" type="Script" id=33]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level2/2ndQuestion/ScorePanel3StarC.gd" type="Script" id=34]
-[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=35]
 
 [sub_resource type="DynamicFont" id=90]
 size = 33
@@ -4090,9 +4089,6 @@ unique_name_in_owner = true
 stream = ExtResource( 16 )
 bus = "Voices"
 
-[node name="PrutasAtGulay" parent="." instance=ExtResource( 35 )]
-unique_name_in_owner = true
-
 [node name="pausePanel" parent="." instance=ExtResource( 21 )]
 unique_name_in_owner = true
 
@@ -4123,6 +4119,4 @@ unique_name_in_owner = true
 [connection signal="pressed" from="ScorePanel3StarC/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 
-[editable path="PrutasAtGulay"]
-[editable path="PrutasAtGulay/bgPanel"]
 [editable path="pausePanel"]

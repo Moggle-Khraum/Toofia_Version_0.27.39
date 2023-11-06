@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://Assets/Images/levelImages/durian.png" type="Texture" id=12]
 [ext_resource path="res://Levels/1PrutasAtGulay/nextLevel/Level13/PausePanel13.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Levels/1PrutasAtGulay/nextLevel/Level13/level13.gd" type="Script" id=14]
-[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=15]
 
 [sub_resource type="DynamicFont" id=18]
 size = 27
@@ -726,9 +725,6 @@ unique_name_in_owner = true
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 13 )]
-unique_name_in_owner = true
-
-[node name="PrutasAtGulay" parent="." instance=ExtResource( 15 )]
 unique_name_in_owner = true
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]

@@ -1,6 +1,5 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level4/PausePanel4.gd" type="Script" id=4]
@@ -720,9 +719,6 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
-
-[node name="PrutasAtGulay" parent="." instance=ExtResource( 1 )]
-unique_name_in_owner = true
 
 [connection signal="pressed" from="bg/box/pausePanel/goLevels/levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="bg/box/pausePanel/goMainMenu/home" to="." method="_on_home_pressed"]

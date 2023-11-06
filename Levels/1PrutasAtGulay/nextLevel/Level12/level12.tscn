@@ -14,7 +14,7 @@
 [ext_resource path="res://Assets/Images/levelImages/corn.png" type="Texture" id=12]
 [ext_resource path="res://Levels/1PrutasAtGulay/nextLevel/Level12/PausePanel12.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Levels/1PrutasAtGulay/nextLevel/Level12/level12.gd" type="Script" id=14]
-[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Assets/Audio/levelsAudio/Corn/pickAnswer.mp3" type="AudioStream" id=15]
 
 [sub_resource type="DynamicFont" id=18]
 size = 27
@@ -437,6 +437,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="askVoice12" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
+unique_name_in_owner = true
+
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0776894
 anchor_top = 0.427351
@@ -469,6 +472,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+unique_name_in_owner = true
+
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0796812
 anchor_top = 0.569801
@@ -500,6 +506,9 @@ clip_text = true
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+unique_name_in_owner = true
 
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0816732
@@ -534,6 +543,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+unique_name_in_owner = true
+
 [node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
 unique_name_in_owner = true
 anchor_left = 0.553711
@@ -546,6 +558,7 @@ __meta__ = {
 
 [node name="A" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_right = 95.0
 margin_bottom = 95.0
 rect_min_size = Vector2( 95, 95 )
@@ -602,6 +615,7 @@ __meta__ = {
 
 [node name="B" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 125.0
 margin_right = 220.0
 margin_bottom = 95.0
@@ -659,6 +673,7 @@ __meta__ = {
 
 [node name="C" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 250.0
 margin_right = 345.0
 margin_bottom = 95.0
@@ -715,19 +730,18 @@ __meta__ = {
 
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
-bus = "Voices"
-
-[node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
-unique_name_in_owner = true
+stream = ExtResource( 15 )
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 13 )]
 unique_name_in_owner = true
 
-[node name="PrutasAtGulay" parent="." instance=ExtResource( 15 )]
-unique_name_in_owner = true
-
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/corn/infoCorn" to="." method="_on_infoCorn_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/askLabel/askVoice12" to="." method="_on_askVoice12_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/choiceA" to="." method="_on_choiceA_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB/choiceB" to="." method="_on_choiceB_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB2/choiceC" to="." method="_on_choiceC_finished"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 
 [editable path="pausePanel"]

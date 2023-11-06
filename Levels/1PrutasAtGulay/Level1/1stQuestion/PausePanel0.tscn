@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=2]
@@ -10,7 +10,6 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Rounded.png" type="Texture" id=8]
 [ext_resource path="res://Assets/UIElements/Icon_Menu.png" type="Texture" id=9]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level1/1stQuestion/PausePanel0.gd" type="Script" id=10]
-[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/UIElements/Icon_Return.png" type="Texture" id=12]
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintC.otf" type="DynamicFontData" id=13]
 
@@ -127,7 +126,6 @@ font_data = ExtResource( 1 )
 fallback/0 = ExtResource( 3 )
 
 [node name="Popup" type="Popup"]
-visible = true
 self_modulate = Color( 1, 1, 1, 0.45098 )
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -722,14 +720,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="PrutasAtGulay" parent="." instance=ExtResource( 11 )]
-unique_name_in_owner = true
-
 [connection signal="pressed" from="bg/box/pausePanel/goLevels/levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="bg/box/pausePanel/goMainMenu/home" to="." method="_on_home_pressed"]
 [connection signal="pressed" from="bg/box/pausePanel/goTopics/topics" to="." method="_on_topics_pressed"]
 [connection signal="pressed" from="bg/x" to="." method="_on_x_pressed"]
-[connection signal="visibility_changed" from="PrutasAtGulay" to="." method="_on_PrutasAtGulay_visibility_changed"]
-
-[editable path="PrutasAtGulay"]
-[editable path="PrutasAtGulay/bgPanel"]

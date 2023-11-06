@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Scripts/MenuChoicesScript.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
@@ -12,7 +12,6 @@
 [ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=11]
 [ext_resource path="res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=15]
 [ext_resource path="res://Assets/GUI/Blue_Rectangle.png" type="Texture" id=16]
@@ -694,9 +693,6 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
-
-[node name="PrutasAtGulay" parent="." instance=ExtResource( 13 )]
-unique_name_in_owner = true
 
 [node name="MgaHayopSaBukid" parent="." instance=ExtResource( 12 )]
 unique_name_in_owner = true

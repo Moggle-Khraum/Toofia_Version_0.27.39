@@ -26,7 +26,7 @@ func _on_home_pressed() -> void:
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	#var nextQ = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level1/2ndQuestion/Level_2.tscn")
-	$'%PrutasAtGulay'.show()
+	var nextQ = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level2/2ndQuestion/Level_2.tscn")
+	#$'%PrutasAtGulay'.show()
 	print("Next Question")
 	
