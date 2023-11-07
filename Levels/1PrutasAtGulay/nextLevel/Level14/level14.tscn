@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=2]
@@ -11,9 +11,15 @@
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/Box_Rounded.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Images/levelImages/Tomato.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/levelImages/singkamas.png" type="Texture" id=12]
 [ext_resource path="res://Levels/1PrutasAtGulay/nextLevel/Level14/PausePanel14.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Levels/1PrutasAtGulay/nextLevel/Level14/level14.gd" type="Script" id=14]
+[ext_resource path="res://Assets/Audio/levelsAudio/Turnip/singkamas.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Audio/levelsAudio/Turnip/askVoice14.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/levelsAudio/Turnip/pickAnswer.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Assets/Audio/levelsAudio/Turnip/choiceA.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Assets/Audio/levelsAudio/Turnip/choiceC.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Assets/Audio/levelsAudio/Turnip/choiceB.mp3" type="AudioStream" id=20]
 
 [sub_resource type="DynamicFont" id=18]
 size = 27
@@ -273,12 +279,12 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="kamatis" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+[node name="turnip" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
 unique_name_in_owner = true
-anchor_left = 0.043088
-anchor_top = 0.0505312
-anchor_right = 0.970206
-anchor_bottom = 1.02951
+anchor_left = 0.0592143
+anchor_top = 0.18617
+anchor_right = 0.956785
+anchor_bottom = 0.839915
 margin_left = -761.5
 margin_top = -761.0
 margin_right = -761.5
@@ -290,7 +296,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/kamatis"]
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/turnip"]
 unique_name_in_owner = true
 anchor_left = -0.00818752
 anchor_top = 0.493314
@@ -308,7 +314,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/kamatis"]
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/turnip"]
 unique_name_in_owner = true
 anchor_left = -0.302751
 anchor_top = 0.455531
@@ -326,8 +332,9 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="infoKamatis" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/kamatis"]
+[node name="infoTurnip" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/turnip"]
 unique_name_in_owner = true
+stream = ExtResource( 15 )
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
@@ -341,14 +348,15 @@ __meta__ = {
 }
 
 [node name="name" type="Label" parent="Panel/NinePatchRect/imageText"]
-anchor_top = 0.03636
-anchor_right = 0.999999
-anchor_bottom = 1.03636
+anchor_left = -0.106667
+anchor_top = 0.0363639
+anchor_right = 1.21334
+anchor_bottom = 1.23637
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 5 )
-text = "Kamatis"
+text = "Singkamas"
 align = 1
 autowrap = true
 clip_text = true
@@ -358,14 +366,16 @@ __meta__ = {
 }
 
 [node name="nameoutline" type="Label" parent="Panel/NinePatchRect/imageText"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = -0.128889
+anchor_top = -0.0181819
+anchor_right = 1.23556
+anchor_bottom = 1.23637
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 6 )
-text = "Kamatis"
+text = "Singkamas"
 align = 1
 autowrap = true
 clip_text = true
@@ -381,7 +391,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 7 )
-text = "Kamatis"
+text = "Singkamas"
 align = 1
 autowrap = true
 clip_text = true
@@ -411,7 +421,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 8 )
-text = "1. Batay sa iyong narinig, ang nasa larawan ba ay prutas o gulay?"
+text = "1. Batay sa iyong narinig, ang singkamas ba na nasa larawan ay gulay?"
 align = 3
 autowrap = true
 clip_text = true
@@ -429,7 +439,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 9 )
-text = "1. Batay sa iyong narinig, ang nasa larawan ba ay prutas o gulay?"
+text = "1. Batay sa iyong narinig, ang singkamas ba na nasa larawan ay gulay?"
 align = 3
 autowrap = true
 clip_text = true
@@ -437,17 +447,22 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="askVoice14" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
+unique_name_in_owner = true
+stream = ExtResource( 16 )
+bus = "Voices"
+
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
-anchor_left = 0.0776894
-anchor_top = 0.427351
-anchor_right = 0.537848
+anchor_left = 0.0776891
+anchor_top = 0.42735
+anchor_right = 0.95219
 anchor_bottom = 0.54416
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 10 )
-text = "A. Ito ay gulay."
+text = "A. Ito ay prutas."
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -462,24 +477,29 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 11 )
-text = "A. Ito ay gulay."
+text = "A. Ito ay prutas."
 autowrap = true
 clip_text = true
 __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+unique_name_in_owner = true
+stream = ExtResource( 18 )
+bus = "Voices"
+
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0796812
 anchor_top = 0.569801
-anchor_right = 0.904381
+anchor_right = 0.950198
 anchor_bottom = 0.695157
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 12 )
-text = "B. Ito ay prutas."
+text = "B. Ito ay gulay."
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -494,12 +514,17 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 13 )
-text = "B. Ito ay prutas."
+text = "B. Ito ay gulay."
 autowrap = true
 clip_text = true
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+unique_name_in_owner = true
+stream = ExtResource( 20 )
+bus = "Voices"
 
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
 anchor_left = 0.0816732
@@ -511,7 +536,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 14 )
-text = "C. Wala sa mga binanggit."
+text = "C. Wala sa pagpipilian."
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -527,12 +552,17 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 15 )
-text = "C. Wala sa mga binanggit."
+text = "C. Wala sa pagpipilian."
 autowrap = true
 clip_text = true
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+unique_name_in_owner = true
+stream = ExtResource( 19 )
+bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
 unique_name_in_owner = true
@@ -546,6 +576,7 @@ __meta__ = {
 
 [node name="A" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_right = 95.0
 margin_bottom = 95.0
 rect_min_size = Vector2( 95, 95 )
@@ -602,6 +633,7 @@ __meta__ = {
 
 [node name="B" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 125.0
 margin_right = 220.0
 margin_bottom = 95.0
@@ -659,6 +691,7 @@ __meta__ = {
 
 [node name="C" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 250.0
 margin_right = 345.0
 margin_bottom = 95.0
@@ -715,16 +748,18 @@ __meta__ = {
 
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
-bus = "Voices"
-
-[node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
-unique_name_in_owner = true
+stream = ExtResource( 17 )
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 13 )]
 unique_name_in_owner = true
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/imageHolder/turnip/repeat" to="." method="_on_repeat_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/askLabel/askVoice14" to="." method="_on_askVoice14_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/choiceA" to="." method="_on_choiceA_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB/choiceB" to="." method="_on_choiceB_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB2/choiceC" to="." method="_on_choiceC_finished"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 
 [editable path="pausePanel"]

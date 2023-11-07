@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceB.mp3-2edf0a6d668152ea7b58781d4064b6c1.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Corn/choiceB.mp3"
+dest_files=[ "res://.import/choiceB.mp3-2edf0a6d668152ea7b58781d4064b6c1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -412,3 +412,7 @@ func _on_PrutasGulay_visibility_changed():
 	$"%fruitTheme".play()
 	print("Plays Fruit")
 
+
+
+func _on_16Button_pressed() -> void:
+	pass # Replace with function body.
