@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -15,11 +15,12 @@
 [ext_resource path="res://Assets/Audio/levelsAudio/Dog/askVoice2.mp3" type="AudioStream" id=13]
 [ext_resource path="res://Levels/MgaHayopSaBukid/Level2/Level_2MHSB.gd" type="Script" id=14]
 [ext_resource path="res://Assets/Audio/levelsAudio/Dog/pickAnswer.mp3" type="AudioStream" id=15]
-[ext_resource path="res://Assets/Audio/levelsAudio/Cat/shari_meow.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/levelsAudio/Cat/cat2.mp3" type="AudioStream" id=16]
 [ext_resource path="res://Assets/Images/levelImages/cat.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Audio/levelsAudio/Cat/choiceB.mp3" type="AudioStream" id=18]
 [ext_resource path="res://Assets/Audio/levelsAudio/Cat/choiceC.mp3" type="AudioStream" id=19]
 [ext_resource path="res://Assets/Audio/levelsAudio/Cat/choiceA.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Audio/levelsAudio/Cat/cat.mp3" type="AudioStream" id=21]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -330,11 +331,13 @@ __meta__ = {
 
 [node name="infoCat" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pusa"]
 unique_name_in_owner = true
+stream = ExtResource( 21 )
 bus = "Voices"
 
 [node name="catVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pusa"]
 unique_name_in_owner = true
 stream = ExtResource( 16 )
+volume_db = 2.622
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
@@ -752,6 +755,13 @@ bus = "Voices"
 unique_name_in_owner = true
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/pusa/infoCat" to="." method="_on_infoCat_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/pusa/catVoice" to="." method="_on_catVoice_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/askLabel/askVoice2" to="." method="_on_askVoice2_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/choiceA" to="." method="_on_choiceA_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB/choiceB" to="." method="_on_choiceB_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB2/choiceC" to="." method="_on_choiceC_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/AnswerPanel/pickAnswer" to="." method="_on_pickAnswer_finished"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 
 [editable path="pausePanel"]

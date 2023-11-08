@@ -57,7 +57,7 @@ func _on_B_pressed():
 
 func _on_ScorePanel3StarB_visibility_changed() -> void:
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%correcto'.play()
+	$'%correctPick'.play()
 	$'%animB'.play('blink')
 	print("Plays Correcto")
 	
@@ -71,7 +71,7 @@ func _on_C_pressed():
 	
 func _on_ScorePanel2StarC_visibility_changed() -> void:
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%wrongC'.play()
+	$'%wrongPick'.play()
 	$'%AnimationPlayer'.play('blink')
 	
 #========================================================================
@@ -159,3 +159,21 @@ func _on_pickAnswer_finished() -> void:
 
 
 
+
+
+func _on_levels_pressed() -> void:
+	var home = get_tree().change_scene('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
+	print('Go to Level Selection')
+	
+func _on_home_pressed() -> void:
+	var home = get_tree().change_scene("res://Scenes/MainMenu.tscn")
+	print("To Main Menu")
+	
+func _on_retry_pressed() -> void:
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level1/Level1.tscn")
+	print('Retry level')
+
+func _on_nextQuestion_pressed() -> void:
+	ScrollPop.play()
+	yield(get_tree().create_timer(0.12), "timeout")
+	var nextQ = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level2/2ndQuestion/Level_2.tscn")

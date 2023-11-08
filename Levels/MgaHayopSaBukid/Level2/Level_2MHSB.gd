@@ -37,9 +37,9 @@ func _on_repeat_pressed() -> void:
 #========================================================================================
 
 func _on_x_pressed() -> void:
-	$"%infoChicken".stream_paused = false
-	$'%chickenVoice'.stream_paused = false
-	$'%askVoice1'.stream_paused = false
+	$"%infoCat".stream_paused = false
+	$'%catVoice'.stream_paused = false
+	$'%askVoice2'.stream_paused = false
 	$"%choiceA".stream_paused = false
 	$"%choiceB".stream_paused = false
 	$"%choiceC".stream_paused = false
@@ -50,9 +50,9 @@ func _on_pauseButton_pressed() -> void:
 	MenuClickSfxPlayer.play()
 	$'%pausePanel'.show()
 	print("Shows the Pause Panel")
-	$"%infoChicken".stream_paused = true
-	$'%chickenVoice'.stream_paused = true
-	$'%askVoice1'.stream_paused = true
+	$"%infoCat".stream_paused = true
+	$'%catVoice'.stream_paused = true
+	$'%askVoice2'.stream_paused = true
 	$"%choiceA".stream_paused = true
 	$"%choiceB".stream_paused = true
 	$"%choiceC".stream_paused = true
@@ -97,17 +97,17 @@ func _on_C_pressed():
 	
 #========================================================================
 
-func _on_infoChicken_finished() -> void:
+func _on_infoCat_finished() -> void:
 	yield(get_tree().create_timer(0.9), "timeout")
-	$"%chickenVoice".play()
-	print("Plays Chicken Voice")
+	$"%catVoice".play()
+	print("Plays Cat Voice")
 
-func _on_chickenVoice_finished():
+func _on_catVoice_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%askVoice1'.play()
+	$'%askVoice2'.play()
 	print('Play AskVoice')
 	
-func _on_askVoice1_finished() -> void:
+func _on_askVoice2_finished() -> void:
 	yield(get_tree().create_timer(0.9), "timeout")
 	$'%choiceA'.play()
 	$'%A'.show()

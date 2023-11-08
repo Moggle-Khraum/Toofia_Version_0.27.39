@@ -7,7 +7,7 @@
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=5]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=7]
-[ext_resource path="res://Assets/Audio/levelsAudio/Potato/wrongPotato.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Audio/Tama.mp3" type="AudioStream" id=8]
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintB.otf" type="DynamicFontData" id=9]
 [ext_resource path="res://Assets/Images/levelImages/potato1.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Audio/levelsAudio/Potato/patatas.mp3" type="AudioStream" id=11]
@@ -15,7 +15,7 @@
 [ext_resource path="res://Assets/GUI/Box_Rounded.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Audio/levelsAudio/Potato/askVoicePotato.mp3" type="AudioStream" id=14]
 [ext_resource path="res://Assets/Audio/levelsAudio/Potato/choiceATalong.mp3" type="AudioStream" id=15]
-[ext_resource path="res://Assets/Audio/levelsAudio/correctAnswer.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/Mali.mp3" type="AudioStream" id=16]
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Audio/levelsAudio/Potato/choiceBMansanas.mp3" type="AudioStream" id=18]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=19]
@@ -2199,11 +2199,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="wrongPick" type="AudioStreamPlayer" parent="ScorePanel2StarA"]
-unique_name_in_owner = true
-stream = ExtResource( 8 )
-bus = "Voices"
-
 [node name="ScorePanel2StarB" type="Panel" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -3920,13 +3915,18 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correcto" type="AudioStreamPlayer" parent="ScorePanel3StarC"]
+[node name="pausePanel" parent="." instance=ExtResource( 21 )]
+unique_name_in_owner = true
+
+[node name="wrongPick" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource( 16 )
 bus = "Voices"
 
-[node name="pausePanel" parent="." instance=ExtResource( 21 )]
+[node name="correctPick" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
+stream = ExtResource( 8 )
+bus = "Voices"
 
 [connection signal="pressed" from="background/pauseButton" to="." method="_on_pauseButton_pressed"]
 [connection signal="pressed" from="background/imageHolder/potato/repeat" to="." method="_on_repeat_pressed"]

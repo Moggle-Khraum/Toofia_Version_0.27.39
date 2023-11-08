@@ -1,4 +1,4 @@
-[gd_scene load_steps=137 format=2]
+[gd_scene load_steps=134 format=2]
 
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=2]
@@ -22,9 +22,6 @@
 [ext_resource path="res://Assets/Audio/levelsAudio/Turnip/choiceB.mp3" type="AudioStream" id=20]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Home.png" type="Texture" id=21]
 [ext_resource path="res://Assets/UIElements/Icon_Menu.png" type="Texture" id=22]
-[ext_resource path="res://Levels/1PrutasAtGulay/Level4/ScorePanel3StarA.gd" type="Script" id=23]
-[ext_resource path="res://Levels/1PrutasAtGulay/Level4/ScorePanel2StarC.gd" type="Script" id=24]
-[ext_resource path="res://Levels/1PrutasAtGulay/Level4/ScorePanel2StarB.gd" type="Script" id=25]
 [ext_resource path="res://Assets/Audio/levelsAudio/correctAnswer.mp3" type="AudioStream" id=26]
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=27]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_Star_WhiteOutline.png" type="Texture" id=28]
@@ -1510,7 +1507,6 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 21 )
-script = ExtResource( 23 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -2397,7 +2393,6 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 48 )
-script = ExtResource( 25 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3354,7 +3349,6 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 76 )
-script = ExtResource( 24 )
 __meta__ = {
 "_edit_lock_": true
 }

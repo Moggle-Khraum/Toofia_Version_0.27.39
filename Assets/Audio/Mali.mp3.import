@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mali.mp3-abe50aee7b48bd2ffd6b572f65169da8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Mali.mp3"
+dest_files=[ "res://.import/Mali.mp3-abe50aee7b48bd2ffd6b572f65169da8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

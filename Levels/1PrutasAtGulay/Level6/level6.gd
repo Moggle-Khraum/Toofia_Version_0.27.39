@@ -50,9 +50,9 @@ func _on_A_pressed():
 	CorrectAnswer.play()
 	$"%pakwan".hide()
 	print("Pressed A, Correct Answer")
-	$'%ScorePanel3StarA'.show()
+	$'%ScorePanel2StarA'.show()
 
-func _on_ScorePanel3StarA_visibility_changed():
+func _on_ScorePanel2StarA_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
 	$'%correctPick'.play()
 	$'%animA2'.play('blink')
@@ -63,13 +63,12 @@ func _on_ScorePanel3StarA_visibility_changed():
 func _on_B_pressed():
 	print('The Answer is Wrong!')
 	WrongAnswer.play()
-	$"%avocado".hide()
 	print("Pressed B, Wrong Answer")
-	$'%ScorePanel2StarB'.show()
+	$'%ScorePanel3StarB'.show()
 	
-func _on_ScorePanel2StarB_visibility_changed():
+func _on_ScorePanel3StarB_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$ScorePanel2StarB/wrongpick.play()
+	$'%wrongPick'.play()
 	print("Plays WrongPick")
 	$'%animB'.play('blink')
 	$'%animB2'.play('blink')
@@ -79,7 +78,6 @@ func _on_ScorePanel2StarB_visibility_changed():
 func _on_C_pressed():
 	print('The Answer is Wrong!')
 	WrongAnswer.play()
-	$"%avocado".hide()
 	print("Pressed C, Wrong Answer")
 	$'%ScorePanel2StarC'.show()
 	
@@ -165,8 +163,7 @@ func _on_pickAnswer_finished():
 
 
 func _on_levels_pressed() -> void:
-	$'%PrutasAtGulay'.show()
-	$'%pausePanel'.hide()
+	var home = get_tree().change_scene('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
 	print('Go to Level Selection')
 	
 func _on_home_pressed() -> void:
@@ -174,10 +171,12 @@ func _on_home_pressed() -> void:
 	print("To Main Menu")
 	
 func _on_retry_pressed() -> void:
-	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level3/Level3.tscn")
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level6/Level6.tscn")
 	print('Retry level')
 
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%PrutasAtGulay'.show()
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level7/Level7.tscn")
+
+

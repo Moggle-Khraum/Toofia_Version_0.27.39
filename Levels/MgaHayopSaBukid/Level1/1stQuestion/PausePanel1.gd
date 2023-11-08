@@ -2,7 +2,7 @@ extends Popup
 
 func _on_levels_pressed() -> void:
 	MenuClickSfxPlayer.play()
-	var pag = get_tree().change_scene('res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn')
+	var pag = get_tree().change_scene('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
 	#This will go to level selection
 	print("To Levels")
 

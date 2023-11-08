@@ -23,14 +23,14 @@
 [ext_resource path="res://Assets/UIElements/Item4.png" type="Texture" id=21]
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=22]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_StarGrey_WhiteOutline.png" type="Texture" id=23]
-[ext_resource path="res://Assets/Audio/levelsAudio/correctAnswer.mp3" type="AudioStream" id=24]
+[ext_resource path="res://Assets/Audio/Tama.mp3" type="AudioStream" id=24]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_Star_WhiteOutline.png" type="Texture" id=25]
 [ext_resource path="res://Assets/Sliders/ScrollBar_Blue_Scroller.png" type="Texture" id=26]
 [ext_resource path="res://Assets/BoxesBanners/Box_Square.png" type="Texture" id=27]
 [ext_resource path="res://Assets/UIElements/Icon_Menu.png" type="Texture" id=28]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Home.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Audio/Mali.mp3" type="AudioStream" id=30]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Return.png" type="Texture" id=31]
-[ext_resource path="res://Assets/Audio/levelsAudio/Carrot/wrongPickCabbage.mp3" type="AudioStream" id=32]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level4/PausePanel4.tscn" type="PackedScene" id=33]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=36]
 
@@ -2279,11 +2279,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correctPick" type="AudioStreamPlayer" parent="ScorePanel3StarA"]
-unique_name_in_owner = true
-stream = ExtResource( 24 )
-bus = "Voices"
-
 [node name="ScorePanel2StarB" type="Panel" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -3176,11 +3171,6 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
-
-[node name="wrongpick" type="AudioStreamPlayer" parent="ScorePanel2StarB"]
-unique_name_in_owner = true
-stream = ExtResource( 32 )
-bus = "Voices"
 
 [node name="ScorePanel2StarC" type="Panel" parent="."]
 unique_name_in_owner = true
@@ -4079,6 +4069,16 @@ __meta__ = {
 
 [node name="pausePanel" parent="." instance=ExtResource( 33 )]
 unique_name_in_owner = true
+
+[node name="wrongPick" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 30 )
+bus = "Voices"
+
+[node name="correctPick" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 24 )
+bus = "Voices"
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
 [connection signal="pressed" from="Panel/NinePatchRect/imageHolder/avocado/repeat" to="." method="_on_repeat_pressed"]
