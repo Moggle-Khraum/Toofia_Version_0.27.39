@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -12,7 +12,6 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
-[ext_resource path="res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Levels/MgaHayopSaBukid/Level4/PausePanel4.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=1]
@@ -721,9 +720,6 @@ unique_name_in_owner = true
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 14 )]
-unique_name_in_owner = true
-
-[node name="MgaHayopSaBukid" parent="." instance=ExtResource( 13 )]
 unique_name_in_owner = true
 
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]

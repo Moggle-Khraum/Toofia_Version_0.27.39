@@ -33,8 +33,8 @@ func _on_CardMenu1_pressed():
 func _on_CardMenu2_pressed():
 	MenuClickSfxPlayer.play()
 	print("Presses 2")
-	#var farmAnimals = get_tree().change_scene("res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn")
-	$'%MgaHayopSaBukid'.show()
+	var farmAnimals = get_tree().change_scene("res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn")
+	#$'%MgaHayopSaBukid'.show()
 	MainMenuThemePlayer.stop()
 	print("Going to Mga Hayop sa Bukid")
 

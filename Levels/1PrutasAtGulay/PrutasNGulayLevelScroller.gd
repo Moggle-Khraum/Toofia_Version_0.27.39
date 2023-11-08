@@ -219,7 +219,7 @@ func _on_15Button_pressed() -> void:
 	print ("Level 15 Data Folder Created")
 	
 # THIS IS LEVEL 16
-func _on_Button_pressed() -> void:
+func _on_16Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 16")
 	var level15 = get_tree().change_scene("res://Levels/1PrutasAtGulay/nextLevel/Level16/level16.tscn")
@@ -412,7 +412,3 @@ func _on_PrutasGulay_visibility_changed():
 	$"%fruitTheme".play()
 	print("Plays Fruit")
 
-
-
-func _on_16Button_pressed() -> void:
-	pass # Replace with function body.

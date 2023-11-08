@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice15.mp3-865e8067c1b8bd5758d1a1707c310cfd.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Malunggay/askVoice15.mp3"
+dest_files=[ "res://.import/askVoice15.mp3-865e8067c1b8bd5758d1a1707c310cfd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

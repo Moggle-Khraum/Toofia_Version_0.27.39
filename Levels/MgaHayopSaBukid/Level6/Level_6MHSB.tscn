@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=6]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=8]
-[ext_resource path="res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
@@ -719,9 +718,6 @@ bus = "Voices"
 [node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
 unique_name_in_owner = true
 bus = "Voices"
-
-[node name="MgaHayopSaBukid" parent="." instance=ExtResource( 9 )]
-unique_name_in_owner = true
 
 [node name="pausePanel" parent="." instance=ExtResource( 14 )]
 unique_name_in_owner = true
