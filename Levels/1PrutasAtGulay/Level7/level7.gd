@@ -170,13 +170,13 @@ func _on_home_pressed() -> void:
 	print("To Main Menu")
 	
 func _on_retry_pressed() -> void:
-	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level7/Level7.tscn")
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level7/level7.tscn")
 	print('Retry level')
 
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level8/Level8.tscn")
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level8/level8.tscn")
 
 
 

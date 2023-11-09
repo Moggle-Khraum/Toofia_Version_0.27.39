@@ -1,4 +1,4 @@
-[gd_scene load_steps=134 format=2]
+[gd_scene load_steps=128 format=2]
 
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=2]
@@ -22,7 +22,8 @@
 [ext_resource path="res://Assets/Audio/levelsAudio/Kalabasa/choiceA.mp3" type="AudioStream" id=20]
 [ext_resource path="res://Assets/Audio/levelsAudio/Kalabasa/choiceC.mp3" type="AudioStream" id=21]
 [ext_resource path="res://Assets/UIElements/Icon_Menu.png" type="Texture" id=22]
-[ext_resource path="res://Assets/Audio/levelsAudio/correctAnswer.mp3" type="AudioStream" id=26]
+[ext_resource path="res://Assets/Audio/Tama.mp3" type="AudioStream" id=23]
+[ext_resource path="res://Assets/Audio/Mali.mp3" type="AudioStream" id=24]
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=27]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_Star_WhiteOutline.png" type="Texture" id=28]
 [ext_resource path="res://Assets/BoxesBanners/Box_Square.png" type="Texture" id=29]
@@ -30,7 +31,6 @@
 [ext_resource path="res://Assets/UIIcons/Icon_Large_StarGrey_WhiteOutline.png" type="Texture" id=31]
 [ext_resource path="res://Assets/Sliders/ScrollBar_Blue_Scroller.png" type="Texture" id=32]
 [ext_resource path="res://Assets/UIElements/Item4.png" type="Texture" id=33]
-[ext_resource path="res://Assets/Audio/levelsAudio/Carrot/wrongPickCabbage.mp3" type="AudioStream" id=34]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -207,22 +207,6 @@ outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 7 )
-fallback/0 = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=27]
-size = 20
-outline_size = 2
-outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
-use_filter = true
-font_data = ExtResource( 6 )
-fallback/0 = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=28]
-size = 20
-use_filter = true
-extra_spacing_top = 2
-extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=29]
@@ -437,22 +421,6 @@ outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 7 )
-fallback/0 = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=54]
-size = 20
-outline_size = 2
-outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
-use_filter = true
-font_data = ExtResource( 6 )
-fallback/0 = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=55]
-size = 20
-use_filter = true
-extra_spacing_top = 2
-extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=56]
@@ -681,22 +649,6 @@ outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 7 )
-fallback/0 = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=82]
-size = 20
-outline_size = 2
-outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
-use_filter = true
-font_data = ExtResource( 6 )
-fallback/0 = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=83]
-size = 20
-use_filter = true
-extra_spacing_top = 2
-extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=84]
@@ -1485,9 +1437,6 @@ unique_name_in_owner = true
 stream = ExtResource( 17 )
 bus = "Voices"
 
-[node name="pausePanel" parent="." instance=ExtResource( 13 )]
-unique_name_in_owner = true
-
 [node name="ScorePanel3StarA" type="Panel" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -1722,54 +1671,6 @@ clip_text = true
 uppercase = true
 __meta__ = {
 "_edit_lock_": true
-}
-
-[node name="nameLabel1" type="Label" parent="ScorePanel3StarA/panelblock"]
-anchor_left = 0.104384
-anchor_top = 0.528226
-anchor_right = 0.897704
-anchor_bottom = 0.602823
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 27 )
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="namelabel1" type="Label" parent="ScorePanel3StarA/panelblock/nameLabel1"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 28 )
-text = "dave"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="nameline" type="HSeparator" parent="ScorePanel3StarA/panelblock/nameLabel1"]
-anchor_left = 0.00526316
-anchor_top = 0.54054
-anchor_right = 1.0
-anchor_bottom = 1.27027
-margin_top = 3.05176e-05
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
 }
 
 [node name="theLevels" type="Label" parent="ScorePanel3StarA/panelblock"]
@@ -2369,11 +2270,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correctPick" type="AudioStreamPlayer" parent="ScorePanel3StarA"]
-unique_name_in_owner = true
-stream = ExtResource( 26 )
-bus = "Voices"
-
 [node name="ScorePanel2StarB" type="Panel" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -2609,54 +2505,6 @@ clip_text = true
 uppercase = true
 __meta__ = {
 "_edit_lock_": true
-}
-
-[node name="nameLabel2" type="Label" parent="ScorePanel2StarB/panelblock"]
-anchor_left = 0.104384
-anchor_top = 0.528226
-anchor_right = 0.897704
-anchor_bottom = 0.602823
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 54 )
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="namelabel2" type="Label" parent="ScorePanel2StarB/panelblock/nameLabel2"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 55 )
-text = "dave"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="nameline" type="HSeparator" parent="ScorePanel2StarB/panelblock/nameLabel2"]
-anchor_left = 0.00526316
-anchor_top = 0.54054
-anchor_right = 1.0
-anchor_bottom = 1.27027
-margin_top = 3.05176e-05
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
 }
 
 [node name="theLevels" type="Label" parent="ScorePanel2StarB/panelblock"]
@@ -3325,11 +3173,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="wrongpick" type="AudioStreamPlayer" parent="ScorePanel2StarB"]
-unique_name_in_owner = true
-stream = ExtResource( 34 )
-bus = "Voices"
-
 [node name="ScorePanel2StarC" type="Panel" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -3565,54 +3408,6 @@ clip_text = true
 uppercase = true
 __meta__ = {
 "_edit_lock_": true
-}
-
-[node name="nameLabel2" type="Label" parent="ScorePanel2StarC/panelblock"]
-anchor_left = 0.104384
-anchor_top = 0.528226
-anchor_right = 0.897704
-anchor_bottom = 0.602823
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 82 )
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="namelabel2" type="Label" parent="ScorePanel2StarC/panelblock/nameLabel2"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 83 )
-text = "dave"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="nameline" type="HSeparator" parent="ScorePanel2StarC/panelblock/nameLabel2"]
-anchor_left = 0.00526316
-anchor_top = 0.54054
-anchor_right = 1.0
-anchor_bottom = 1.27027
-margin_top = 3.05176e-05
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
 }
 
 [node name="theLevels" type="Label" parent="ScorePanel2StarC/panelblock"]
@@ -4281,6 +4076,19 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="pausePanel" parent="." instance=ExtResource( 13 )]
+unique_name_in_owner = true
+
+[node name="wrongPick" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 24 )
+bus = "Voices"
+
+[node name="correctPick" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 23 )
+bus = "Voices"
+
 [connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
 [connection signal="pressed" from="Panel/NinePatchRect/imageHolder/kalabasa/repeat" to="." method="_on_repeat_pressed"]
 [connection signal="finished" from="Panel/NinePatchRect/imageHolder/kalabasa/infoSquash" to="." method="_on_infoSquash_finished"]
@@ -4288,7 +4096,24 @@ __meta__ = {
 [connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/choiceA" to="." method="_on_choiceA_finished"]
 [connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB/choiceB" to="." method="_on_choiceB_finished"]
 [connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelB2/choiceC" to="." method="_on_choiceC_finished"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/A" to="." method="_on_A_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/B" to="." method="_on_B_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/C" to="." method="_on_C_pressed"]
 [connection signal="finished" from="Panel/NinePatchRect/AnswerPanel/pickAnswer" to="." method="_on_pickAnswer_finished"]
+[connection signal="visibility_changed" from="ScorePanel3StarA" to="." method="_on_ScorePanel3StarA_visibility_changed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="visibility_changed" from="ScorePanel2StarB" to="." method="_on_ScorePanel2StarB_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="visibility_changed" from="ScorePanel2StarC" to="." method="_on_ScorePanel2StarC_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 
 [editable path="pausePanel"]

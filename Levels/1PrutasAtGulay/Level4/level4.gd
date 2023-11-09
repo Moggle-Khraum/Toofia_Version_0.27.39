@@ -182,7 +182,7 @@ func _on_home_pressed() -> void:
 	print("To Main Menu")
 	
 func _on_retry_pressed() -> void:
-	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level4/Level4.tscn")
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level4/level4.tscn")
 	print('Retry level')
 
 func _on_nextQuestion_pressed() -> void:

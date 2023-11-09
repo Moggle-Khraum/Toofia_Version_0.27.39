@@ -1,4 +1,4 @@
-[gd_scene load_steps=128 format=2]
+[gd_scene load_steps=130 format=2]
 
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=2]
@@ -24,6 +24,8 @@
 [ext_resource path="res://Assets/UIElements/Icon_Menu.png" type="Texture" id=22]
 [ext_resource path="res://Assets/Audio/Tama.mp3" type="AudioStream" id=23]
 [ext_resource path="res://Assets/Audio/Mali.mp3" type="AudioStream" id=24]
+[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintB.otf" type="DynamicFontData" id=25]
+[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintC.otf" type="DynamicFontData" id=26]
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=27]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_Star_WhiteOutline.png" type="Texture" id=28]
 [ext_resource path="res://Assets/BoxesBanners/Box_Square.png" type="Texture" id=29]
@@ -214,7 +216,7 @@ size = 24
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=55]
@@ -222,7 +224,7 @@ size = 24
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=56]
@@ -230,7 +232,7 @@ size = 23
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=57]
@@ -238,7 +240,7 @@ size = 23
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=58]
@@ -268,7 +270,7 @@ size = 25
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=62]
@@ -277,7 +279,7 @@ outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_mipmaps = true
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=63]
@@ -332,7 +334,7 @@ outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
 extra_spacing_top = 4
 extra_spacing_bottom = 1
-font_data = ExtResource( 6 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=68]
@@ -340,7 +342,7 @@ size = 25
 use_filter = true
 extra_spacing_top = 2
 extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="StyleBoxFlat" id=69]
@@ -379,13 +381,13 @@ size = 30
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=72]
 size = 30
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="StyleBoxTexture" id=18]
@@ -442,7 +444,7 @@ size = 24
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=28]
@@ -450,7 +452,7 @@ size = 24
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=29]
@@ -458,7 +460,7 @@ size = 23
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=30]
@@ -466,7 +468,7 @@ size = 23
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=31]
@@ -496,7 +498,7 @@ size = 25
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=35]
@@ -505,7 +507,7 @@ outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_mipmaps = true
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=36]
@@ -560,7 +562,7 @@ outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
 extra_spacing_top = 4
 extra_spacing_bottom = 1
-font_data = ExtResource( 6 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=41]
@@ -568,7 +570,7 @@ size = 25
 use_filter = true
 extra_spacing_top = 2
 extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="Animation" id=42]
@@ -593,13 +595,13 @@ size = 30
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=44]
 size = 30
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="StyleBoxTexture" id=73]
@@ -656,7 +658,7 @@ size = 24
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=83]
@@ -664,7 +666,7 @@ size = 24
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=84]
@@ -672,7 +674,7 @@ size = 23
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=85]
@@ -680,7 +682,7 @@ size = 23
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=86]
@@ -710,7 +712,7 @@ size = 25
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=90]
@@ -719,7 +721,7 @@ outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_mipmaps = true
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=91]
@@ -774,7 +776,7 @@ outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
 extra_spacing_top = 4
 extra_spacing_bottom = 1
-font_data = ExtResource( 6 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=96]
@@ -782,7 +784,7 @@ size = 25
 use_filter = true
 extra_spacing_top = 2
 extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="StyleBoxFlat" id=97]
@@ -823,7 +825,7 @@ outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
 extra_spacing_top = 4
 extra_spacing_bottom = 1
-font_data = ExtResource( 6 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=100]
@@ -831,7 +833,7 @@ size = 25
 use_filter = true
 extra_spacing_top = 2
 extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=101]
@@ -839,13 +841,13 @@ size = 30
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=102]
 size = 30
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [node name="Control" type="Control"]
@@ -1715,7 +1717,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 55 )
-text = "mga levels"
+text = "Mga Levels"
 align = 1
 valign = 1
 autowrap = true
@@ -1982,7 +1984,7 @@ __meta__ = {
 [node name="correctAns" type="Label" parent="ScorePanel2StarA/panelblock2"]
 anchor_left = 0.0420842
 anchor_top = 0.240214
-anchor_right = 0.719439
+anchor_right = 0.581162
 anchor_bottom = 0.318505
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
@@ -1995,7 +1997,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2009,12 +2010,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 62 )
-text = "ang tamang sagot:"
+text = "Ang tamang sagot:"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -2040,7 +2040,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 63 )
-text = "A
+text = "B
 "
 align = 1
 valign = 2
@@ -2059,7 +2059,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 64 )
-text = "A"
+text = "B"
 align = 1
 valign = 2
 autowrap = true
@@ -2098,11 +2098,10 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 67 )
-text = "A. Ang pangalan ay abokado."
+text = "B. Ito ay prutas."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2115,11 +2114,10 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 68 )
-text = "A. Ang pangalan ay abokado."
+text = "B. Ito ay prutas."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -2138,7 +2136,7 @@ __meta__ = {
 [node name="correctAns2" type="Label" parent="ScorePanel2StarA/panelblock2"]
 anchor_left = 0.0460922
 anchor_top = 0.505338
-anchor_right = 0.667335
+anchor_right = 0.529058
 anchor_bottom = 0.58363
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
@@ -2151,7 +2149,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2165,12 +2162,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 62 )
-text = "ang iyong sagot:"
+text = "Ang iyong sagot:"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -2198,7 +2194,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 63 )
-text = "B"
+text = "A"
 align = 1
 valign = 2
 autowrap = true
@@ -2216,7 +2212,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 64 )
-text = "B"
+text = "A"
 align = 1
 valign = 2
 autowrap = true
@@ -2256,11 +2252,10 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 67 )
-text = "B. Ang pangalan ay adokado."
+text = "A. Ito ay gulay."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2273,11 +2268,10 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 68 )
-text = "B. Ang pangalan ay adokado."
+text = "A. Ito ay gulay."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -2322,12 +2316,11 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 71 )
-text = "magpatuloy.."
+text = "Magpatuloy.."
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2341,12 +2334,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 72 )
-text = "magpatuloy.."
+text = "Magpatuloy.."
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2761,7 +2753,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 31 )
-text = "Mali ang napili
+text = "Tama ang napili
 mong sagot !"
 align = 1
 valign = 1
@@ -2781,7 +2773,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 32 )
-text = "Mali ang napili
+text = "Tama ang napili
 mong sagot !"
 align = 1
 valign = 1
@@ -2802,7 +2794,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 33 )
-text = "Mali ang napili
+text = "Tama ang napili
 mong sagot !"
 align = 1
 valign = 1
@@ -2816,7 +2808,7 @@ __meta__ = {
 [node name="correctAns" type="Label" parent="ScorePanel3StarB/panelblock2"]
 anchor_left = 0.0420842
 anchor_top = 0.240214
-anchor_right = 0.719439
+anchor_right = 0.579158
 anchor_bottom = 0.318505
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
@@ -2829,7 +2821,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2843,12 +2834,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 35 )
-text = "ang tamang sagot:"
+text = "Ang tamang sagot:"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -2874,7 +2864,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 36 )
-text = "A"
+text = "B"
 align = 1
 valign = 2
 autowrap = true
@@ -2892,7 +2882,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 37 )
-text = "A"
+text = "B"
 align = 1
 valign = 2
 autowrap = true
@@ -2931,11 +2921,10 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 40 )
-text = "A. Ang pangalan ay abokado."
+text = "B. Ito ay prutas."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2948,11 +2937,10 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 41 )
-text = "A. Ang pangalan ay abokado."
+text = "B. Ito ay prutas."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -2971,7 +2959,7 @@ __meta__ = {
 [node name="correctAns2" type="Label" parent="ScorePanel3StarB/panelblock2"]
 anchor_left = 0.0460922
 anchor_top = 0.505338
-anchor_right = 0.667335
+anchor_right = 0.523046
 anchor_bottom = 0.58363
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
@@ -2984,7 +2972,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -2998,12 +2985,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 35 )
-text = "ang iyong sagot:"
+text = "Ang iyong sagot:"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3031,7 +3017,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 36 )
-text = "A
+text = "B
 "
 align = 1
 valign = 2
@@ -3050,7 +3036,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 37 )
-text = "A"
+text = "B"
 align = 1
 valign = 2
 autowrap = true
@@ -3089,11 +3075,10 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 40 )
-text = "A. Ang pangalan ay abokado."
+text = "B. Ito ay prutas."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3106,11 +3091,10 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 41 )
-text = "A. Ang pangalan ay abokado."
+text = "B. Ito ay prutas."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3155,12 +3139,11 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 43 )
-text = "magpatuloy.."
+text = "Magpatuloy.."
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3174,12 +3157,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 44 )
-text = "magpatuloy.."
+text = "Magpatuloy.."
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3718,7 +3700,7 @@ __meta__ = {
 [node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0420842
 anchor_top = 0.240214
-anchor_right = 0.719439
+anchor_right = 0.587174
 anchor_bottom = 0.318505
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
@@ -3731,7 +3713,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3745,12 +3726,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 90 )
-text = "ang tamang sagot:"
+text = "Ang tamang sagot:"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3776,8 +3756,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 91 )
-text = "A
-"
+text = "B"
 align = 1
 valign = 2
 autowrap = true
@@ -3795,7 +3774,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 92 )
-text = "A"
+text = "B"
 align = 1
 valign = 2
 autowrap = true
@@ -3834,11 +3813,10 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 95 )
-text = "B. Ang pangalan ay abokado."
+text = "B. Ito ay prutas."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3851,11 +3829,10 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 96 )
-text = "B. Ang pangalan ay abokado."
+text = "B. Ito ay prutas."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3874,7 +3851,7 @@ __meta__ = {
 [node name="correctAns2" type="Label" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0460922
 anchor_top = 0.505338
-anchor_right = 0.667335
+anchor_right = 0.52505
 anchor_bottom = 0.58363
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
@@ -3887,7 +3864,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3901,12 +3877,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 90 )
-text = "ang iyong sagot:"
+text = "Ang iyong sagot:"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3992,11 +3967,10 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 99 )
-text = "C. Ang pangalan ay atis."
+text = "C. Wala sa mga binanggit."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -4009,11 +3983,10 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 100 )
-text = "C. ANg pangalan ay Atis"
+text = "C. Wala sa mga binanggit."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -4058,12 +4031,11 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 101 )
-text = "magpatuloy.."
+text = "Magpatuloy.."
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -4077,12 +4049,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 102 )
-text = "magpatuloy.."
+text = "Magpatuloy.."
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
