@@ -40,41 +40,30 @@ func _on_pauseButton_pressed():
 	#===========================================
 
 func _on_A_pressed():
-	print('The Answer is Correct!')
-	CorrectAnswer.play()
-	$"%avocado".hide()
-	print("Pressed A, Correct Answer")
-	$'%ScorePanel3StarA'.show()
+	WrongAnswer.play()
+	$'%ScorePanel2StarA'.show()
 
-func _on_ScorePanel3StarA_visibility_changed():
+func _on_ScorePanel2StarA_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%correctPick'.play()
+	$'%wrongPick'.play()
 	$'%animA2'.play('blink')
 	$"%animA".play('blink')
-	print("Shows 2 Star and Blink")
 #=====================================================
 	
 func _on_B_pressed():
-	print('The Answer is Wrong!')
-	WrongAnswer.play()
-	$"%avocado".hide()
-	print("Pressed B, Wrong Answer")
-	$'%ScorePanel2StarB'.show()
+	CorrectAnswer.play()
+	$'%ScorePanel3StarB'.show()
 	
-func _on_ScorePanel2StarB_visibility_changed():
+func _on_ScorePanel3StarB_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$ScorePanel2StarB/wrongpick.play()
-	print("Plays WrongPick")
+	$'%correctPick'.play()
 	$'%animB'.play('blink')
 	$'%animB2'.play('blink')
-	print("Shows 2 Star and Blinky")
+	print("Shows 3 Star and Blinky")
 #=============================================================
 	
 func _on_C_pressed():
-	print('The Answer is Wrong!')
 	WrongAnswer.play()
-	$"%avocado".hide()
-	print("Pressed C, Wrong Answer")
 	$'%ScorePanel2StarC'.show()
 	
 func _on_ScorePanel2StarC_visibility_changed():
@@ -158,7 +147,7 @@ func _on_pickAnswer_finished():
 
 
 func _on_levels_pressed() -> void:
-	$'%pausePanel'.hide()
+	var home = get_tree().change_scene('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
 	print('Go to Level Selection')
 	
 func _on_home_pressed() -> void:
@@ -166,12 +155,16 @@ func _on_home_pressed() -> void:
 	print("To Main Menu")
 	
 func _on_retry_pressed() -> void:
-	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Leve13/Level13.tscn")
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/nextLevel/Level13/level13.tscn")
 	print('Retry level')
 
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	#$'%PrutasAtGulay'.show()
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/nextLevel/Level14/level14.tscn")
+
+
+
+
 
 
