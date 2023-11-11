@@ -2292,6 +2292,7 @@ margin_left = 106.0
 margin_top = 478.0
 margin_right = 432.0
 margin_bottom = 542.0
+focus_mode = 0
 flat = true
 __meta__ = {
 "_edit_lock_": true
@@ -3115,6 +3116,7 @@ margin_left = 106.0
 margin_top = 478.0
 margin_right = 432.0
 margin_bottom = 542.0
+focus_mode = 0
 flat = true
 __meta__ = {
 "_edit_lock_": true
@@ -4007,6 +4009,7 @@ margin_left = 106.0
 margin_top = 478.0
 margin_right = 432.0
 margin_bottom = 542.0
+focus_mode = 0
 flat = true
 __meta__ = {
 "_edit_lock_": true
@@ -4089,6 +4092,7 @@ bus = "Voices"
 [connection signal="visibility_changed" from="ScorePanel3StarB" to="." method="_on_ScorePanel3StarB_visibility_changed"]
 [connection signal="pressed" from="ScorePanel3StarB/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="ScorePanel3StarB/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel3StarB/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="visibility_changed" from="ScorePanel2StarC" to="." method="_on_ScorePanel2StarC_visibility_changed"]
 [connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]

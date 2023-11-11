@@ -718,10 +718,6 @@ __meta__ = {
 unique_name_in_owner = true
 bus = "Voices"
 
-[node name="repeatInfo" type="AudioStreamPlayer" parent="Panel"]
-unique_name_in_owner = true
-bus = "Voices"
-
 [node name="pausePanel" parent="." instance=ExtResource( 13 )]
 unique_name_in_owner = true
 

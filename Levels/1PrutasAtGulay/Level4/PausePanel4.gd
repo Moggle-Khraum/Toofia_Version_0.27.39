@@ -25,7 +25,3 @@ func _on_x_pressed() -> void:
 	MenuClickSfxPlayer.play()
 	$'.'.hide()
 	print("Hides the Popup")
-
-func _on_PrutasAtGulay_visibility_changed() -> void:
-	$'PrutasAtGulay/fruitTheme'.play()
-	pass # Replace with function body.

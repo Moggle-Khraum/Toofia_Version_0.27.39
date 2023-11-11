@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=3]
@@ -14,112 +14,90 @@
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintC.otf" type="DynamicFontData" id=13]
 
 [sub_resource type="DynamicFont" id=1]
-size = 21
+size = 23
 outline_size = 2
-outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 3 )
+font_data = ExtResource( 13 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 23
-outline_size = 2
-outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
 font_data = ExtResource( 13 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 23
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
 font_data = ExtResource( 13 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 23
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
 font_data = ExtResource( 13 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 23
-outline_size = 1
-outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
 font_data = ExtResource( 13 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 23
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
 font_data = ExtResource( 13 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=7]
-size = 23
-outline_size = 1
-outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
-use_filter = true
-font_data = ExtResource( 13 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=8]
-size = 23
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
-use_filter = true
-font_data = ExtResource( 13 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=9]
-size = 23
-outline_size = 1
-outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
-use_filter = true
-font_data = ExtResource( 13 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=10]
 size = 26
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 26
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 26
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 27
 use_filter = true
 font_data = ExtResource( 3 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=11]
 size = 26
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
 font_data = ExtResource( 3 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=12]
-size = 26
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=13]
-size = 27
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=14]
-size = 26
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=15]
 size = 26
 use_filter = true
 font_data = ExtResource( 3 )
@@ -155,86 +133,16 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="babala" type="Label" parent="bg/box"]
-anchor_left = 0.354207
-anchor_top = 0.103865
-anchor_right = 0.673189
-anchor_bottom = 0.190821
-rect_rotation = 0.00723915
+[node name="theLevels" type="Label" parent="bg/box"]
+anchor_left = 0.084149
+anchor_top = 0.311594
+anchor_right = 0.318983
+anchor_bottom = 0.473429
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 1 )
-text = "Babala: "
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="label" type="Label" parent="bg/box"]
-anchor_left = 0.0489236
-anchor_top = 0.118358
-anchor_right = 0.954989
-anchor_bottom = 0.47343
-margin_top = -3.05176e-05
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 2 )
-text = "Hindi maitatala ng laro ang iyung progreso kapag hindi mo natapos ang mga tanong."
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="label" type="Label" parent="bg/box/label"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 3 )
-text = "Hindi maitatala ng laro ang iyung progreso kapag hindi mo natapos ang mga tanong."
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="HSeparator" type="HSeparator" parent="bg/box"]
-anchor_left = 0.0547945
-anchor_top = 0.326087
-anchor_right = 0.945204
-anchor_bottom = 0.584541
-margin_bottom = -1.52588e-05
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="theLevels" type="Label" parent="bg/box"]
-anchor_left = 0.0978473
-anchor_top = 0.492754
-anchor_right = 0.332681
-anchor_bottom = 0.654589
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 4 )
 text = "Mga Levels"
 align = 1
 valign = 1
@@ -252,7 +160,7 @@ margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 text = "Mga Levels"
 align = 1
 valign = 1
@@ -263,16 +171,16 @@ __meta__ = {
 }
 
 [node name="theHome" type="Label" parent="bg/box"]
-anchor_left = 0.373777
-anchor_top = 0.5
-anchor_right = 0.614481
-anchor_bottom = 0.649758
+anchor_left = 0.363992
+anchor_top = 0.311594
+anchor_right = 0.604696
+anchor_bottom = 0.461352
 margin_left = -1.52588e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 3 )
 text = "Main Menu"
 align = 1
 valign = 1
@@ -290,7 +198,7 @@ margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 4 )
 text = "Main Menu"
 align = 1
 valign = 1
@@ -301,15 +209,15 @@ __meta__ = {
 }
 
 [node name="theTopics" type="Label" parent="bg/box"]
-anchor_left = 0.651663
-anchor_top = 0.487923
-anchor_right = 0.911937
-anchor_bottom = 0.649759
+anchor_left = 0.643835
+anchor_top = 0.299517
+anchor_right = 0.904109
+anchor_bottom = 0.461353
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 5 )
 text = "Mga Paksa"
 align = 1
 valign = 1
@@ -327,7 +235,7 @@ margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
+custom_fonts/font = SubResource( 6 )
 text = "Mga Paksa"
 align = 1
 valign = 1
@@ -338,10 +246,10 @@ __meta__ = {
 }
 
 [node name="pausePanel" type="HBoxContainer" parent="bg/box"]
-anchor_left = 0.103718
-anchor_top = 0.65942
-anchor_right = 0.896281
-anchor_bottom = 0.939614
+anchor_left = 0.0958907
+anchor_top = 0.502415
+anchor_right = 0.888454
+anchor_bottom = 0.782609
 custom_constants/separation = 30
 __meta__ = {
 "_edit_lock_": true,
@@ -467,7 +375,7 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = SubResource( 7 )
 text = "pansa"
 align = 1
 valign = 1
@@ -488,7 +396,7 @@ size_flags_stretch_ratio = 0.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 11 )
+custom_fonts/font = SubResource( 8 )
 text = "pansa
 "
 align = 1
@@ -512,7 +420,7 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 12 )
+custom_fonts/font = SubResource( 9 )
 text = "mant"
 align = 1
 valign = 1
@@ -533,7 +441,7 @@ size_flags_stretch_ratio = 0.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 13 )
+custom_fonts/font = SubResource( 10 )
 text = "mant"
 align = 1
 valign = 1
@@ -557,7 +465,7 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 11 )
 text = "alang"
 align = 1
 valign = 1
@@ -578,7 +486,7 @@ size_flags_stretch_ratio = 0.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 15 )
+custom_fonts/font = SubResource( 12 )
 text = "alang"
 align = 1
 valign = 1
@@ -613,7 +521,7 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = SubResource( 7 )
 text = "pagt"
 align = 1
 valign = 1
@@ -634,7 +542,7 @@ size_flags_stretch_ratio = 0.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 11 )
+custom_fonts/font = SubResource( 8 )
 text = "pagt
 "
 align = 1
@@ -659,7 +567,7 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 12 )
+custom_fonts/font = SubResource( 9 )
 text = "igil"
 align = 1
 valign = 1
@@ -680,7 +588,7 @@ size_flags_stretch_ratio = 0.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 13 )
+custom_fonts/font = SubResource( 10 )
 text = "igil
 "
 align = 1
@@ -721,5 +629,6 @@ __meta__ = {
 }
 
 [connection signal="pressed" from="bg/box/pausePanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="bg/box/pausePanel/goMainMenu/home" to="." method="_on_home_pressed"]
 [connection signal="pressed" from="bg/box/pausePanel/goTopics/topics" to="." method="_on_topics_pressed"]
 [connection signal="pressed" from="bg/x" to="." method="_on_x_pressed"]

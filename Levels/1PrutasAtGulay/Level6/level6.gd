@@ -47,14 +47,14 @@ func _on_pauseButton_pressed():
 
 func _on_A_pressed():
 	print('The Answer is Correct!')
-	CorrectAnswer.play()
+	WrongAnswer.play()
 	$"%pakwan".hide()
 	print("Pressed A, Correct Answer")
 	$'%ScorePanel2StarA'.show()
 
 func _on_ScorePanel2StarA_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%correctPick'.play()
+	$'%wrongPick'.play()
 	$'%animA2'.play('blink')
 	$"%animA".play('blink')
 	print("Shows 2 Star and Blink")
@@ -62,13 +62,13 @@ func _on_ScorePanel2StarA_visibility_changed():
 	
 func _on_B_pressed():
 	print('The Answer is Wrong!')
-	WrongAnswer.play()
+	CorrectAnswer.play()
 	print("Pressed B, Wrong Answer")
 	$'%ScorePanel3StarB'.show()
 	
 func _on_ScorePanel3StarB_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%wrongPick'.play()
+	$'%correctPick'.play()
 	print("Plays WrongPick")
 	$'%animB'.play('blink')
 	$'%animB2'.play('blink')

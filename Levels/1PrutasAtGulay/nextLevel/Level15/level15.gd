@@ -12,13 +12,13 @@ func _ready():
 #===========================================
 func voiceOver():
 	yield(get_tree().create_timer(0.5), "timeout")
-	$'%infoPapaya'.play()
-	if $'%infoPapaya'.playing:
+	$'%infoMalunggay'.play()
+	if $'%infoMalunggay'.playing:
 		$"%coverButton".show()
 
 
 func _on_x_pressed():
-	$'%infoPapaya'.stream_paused = false
+	$'%infoMalunggay'.stream_paused = false
 	$'%askVoice15'.stream_paused = false
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
@@ -30,7 +30,7 @@ func _on_pauseButton_pressed():
 	MenuClickSfxPlayer.play()
 	$"%pausePanel".show()
 	print("Shows the Pause Panel")
-	$'%infoPapaya'.stream_paused = true
+	$'%infoMalunggay'.stream_paused = true
 	$'%askVoice15'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
@@ -40,40 +40,33 @@ func _on_pauseButton_pressed():
 	#===========================================
 
 func _on_A_pressed():
-	print('The Answer is Correct!')
-	CorrectAnswer.play()
-	$"%avocado".hide()
-	print("Pressed A, Correct Answer")
-	$'%ScorePanel3StarA'.show()
+	WrongAnswer.play()
+	$'%ScorePanel2StarA'.show()
 
-func _on_ScorePanel3StarA_visibility_changed():
+func _on_ScorePanel2StarA_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%correctPick'.play()
+	$'%wrongPick'.play()
 	$'%animA2'.play('blink')
 	$"%animA".play('blink')
 	print("Shows 2 Star and Blink")
 #=====================================================
 	
 func _on_B_pressed():
-	print('The Answer is Wrong!')
-	WrongAnswer.play()
-	$"%avocado".hide()
-	print("Pressed B, Wrong Answer")
-	$'%ScorePanel2StarB'.show()
+	CorrectAnswer.play()
+	$'%ScorePanel3StarB'.show()
 	
-func _on_ScorePanel2StarB_visibility_changed():
+func _on_ScorePanel3StarB_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$ScorePanel2StarB/wrongpick.play()
+	$'%correctPick'.play()
 	print("Plays WrongPick")
 	$'%animB'.play('blink')
 	$'%animB2'.play('blink')
-	print("Shows 2 Star and Blinky")
+	
 #=============================================================
 	
 func _on_C_pressed():
 	print('The Answer is Wrong!')
 	WrongAnswer.play()
-	$"%avocado".hide()
 	print("Pressed C, Wrong Answer")
 	$'%ScorePanel2StarC'.show()
 	
@@ -85,20 +78,20 @@ func _on_ScorePanel2StarC_visibility_changed():
 	$'%animC'.play('blink')
 	print("Shows 2 Star and Blinky")
 	
+	
 #=============================================s
 func _on_repeat_pressed():
-	$'%infoPapaya'.play()
+	$'%infoMalunggay'.play()
 	print("Repeat Info got Pressed")
 	emit_signal("repeat")
 	print("Emits Signal")
-	$'%infoPapaya'.stop()
-	print("Info Cabbage stop")
+	$'%infoMalunggay'.stop()
 	$'%coverButton'.show()
 	$"%A".hide()
 	$"%B".hide()
 	$"%C".hide()
 	print("Hide Repeat Button")
-	if not $'%infoPapaya'.playing or $"%askVoice15".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
+	if not $'%infoMalunggay'.playing or $"%askVoice15".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
 		$"%coverButton".show()
 		print("Cover Show")
 	else:
@@ -106,7 +99,7 @@ func _on_repeat_pressed():
 		print("Cover Hide")
 	
 
-func _on_infoPapaya_finished():
+func _on_infoMalunggay_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
 	$'%askVoice15'.play()
 
@@ -160,8 +153,7 @@ func _on_pickAnswer_finished():
 
 
 func _on_levels_pressed() -> void:
-	#$'%PrutasAtGulay'.show()
-	$'%pausePanel'.hide()
+	var home = get_tree().change_scene('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
 	print('Go to Level Selection')
 	
 func _on_home_pressed() -> void:
@@ -169,10 +161,13 @@ func _on_home_pressed() -> void:
 	print("To Main Menu")
 	
 func _on_retry_pressed() -> void:
-	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level3/Level3.tscn")
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/nextLevel/Level15/level15.tscn")
 	print('Retry level')
 
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	#$'%PrutasAtGulay'.show()
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/nextLevel/Level16/level16.tscn")
+
+
+

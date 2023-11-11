@@ -20,7 +20,7 @@ func _on_x_pressed() -> void:
 
 func _on_pauseButton_pressed() -> void:
 	MenuClickSfxPlayer.play()
-	$pausePanel.show()
+	$'%pausePanel'.show()
 	print("Shows the Pause Panel")
 	$"%infoPotato".stream_paused = true
 	print("Info Potato Stop")

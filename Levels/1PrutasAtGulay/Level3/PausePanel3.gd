@@ -19,12 +19,6 @@ func _on_topics_pressed():
 	MenuClickSfxPlayer.play()
 	var toMenuChoices = get_tree().change_scene("res://Scenes/MenuChoices.tscn")
 	print("To Home")
-	
-
-
-func _on_PrutasAtGulay_visibility_changed() -> void:
-	$'PrutasAtGulay/fruitTheme'.play()
-	print("Plays Fruit Theme")
 
 func _on_x_pressed() -> void:
 	MenuClickSfxPlayer.play()

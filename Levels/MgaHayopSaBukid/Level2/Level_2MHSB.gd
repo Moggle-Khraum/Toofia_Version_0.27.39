@@ -59,40 +59,50 @@ func _on_pauseButton_pressed() -> void:
 	$"%pickAnswer".stream_paused = true
 
 
-#==============================================================================
-func _on_A_pressed():
-	print('The Answer is Wrong!')
-	WrongAnswer.play()
-	$wrongAnswerA.show()
-	$background/imageText.hide()
-	$background/pauseButton.hide()
-	$"%chicken".hide()
-	print("Pressed A, wrong Answer")
+#===========================================
 
-	
-#==========================================================================
+func _on_A_pressed():
+	print('The Answer is Correct!')
+	WrongAnswer.play()
+	print("Pressed A, Correct Answer")
+	$'%ScorePanel2StarA'.show()
+
+func _on_ScorePanel2StarA_visibility_changed():
+	yield(get_tree().create_timer(0.12), "timeout")
+	$'%wrongPick'.play()
+	$'%animA2'.play('blink')
+	$"%animA".play('blink')
+	print("Shows 2 Star and Blink")
+#=====================================================
 	
 func _on_B_pressed():
-	print('The Answer is Correct!')
-	$correctAnswerB.show()
-	$background/imageText.hide()
-	$background/pauseButton.hide()
-	$"%chicken".hide()
-	print("Pressed B, Correct Answer")
+	print('The Answer is Wrong!')
+	WrongAnswer.play()
+	print("Pressed B, Wrong Answer")
+	$'%ScorePanel3StarB'.show()
 	
+func _on_ScorePanel3StarB_visibility_changed():
+	yield(get_tree().create_timer(0.12), "timeout")
+	$'%correctPick'.play()
+	print("Plays WrongPick")
+	$'%animB'.play('blink')
+	$'%animB2'.play('blink')
+	print("Shows 2 Star and Blinky")
+#=============================================================
 	
-	
-#============================================================================
-
-#========================================================================
 func _on_C_pressed():
 	print('The Answer is Wrong!')
 	WrongAnswer.play()
-	$background/imageText.hide()
-	$wrongAnswerC.show()
-	$background/pauseButton.hide()
-	$"%chicken".hide()
-	print('Pressed C, Wrong Answer')
+	print("Pressed C, Wrong Answer")
+	$'%ScorePanel2StarC'.show()
+	
+func _on_ScorePanel2StarC_visibility_changed():
+	yield(get_tree().create_timer(0.12), "timeout")
+	$'%wrongPick'.play()
+	print("Plays Wrong Pick")
+	$'%animA'.play('blink')
+	$'%animC'.play('blink')
+	print("Shows 2 Star and Blinky")
 	
 	
 #========================================================================
@@ -157,6 +167,27 @@ func _on_pickAnswer_finished() -> void:
 	
 	
 	
+#===================================================================
+
+func _on_levels_pressed() -> void:
+	var home = get_tree().change_scene('res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn')
+	print('Go to Level Selection')
+	
+func _on_home_pressed() -> void:
+	var home = get_tree().change_scene("res://Scenes/MainMenu.tscn")
+	print("To Main Menu")
+	
+func _on_retry_pressed() -> void:
+	var retry = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level2/Level_2MHSB.tscn")
+	print('Retry level')
+
+func _on_nextQuestion_pressed() -> void:
+	ScrollPop.play()
+	yield(get_tree().create_timer(0.12), "timeout")
+	var retry = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level3/Level_3MHSB.tscn")
+
+
+
 	
 	
 	

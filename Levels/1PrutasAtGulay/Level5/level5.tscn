@@ -4060,6 +4060,7 @@ bus = "Voices"
 [connection signal="pressed" from="ScorePanel2StarA/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="ScorePanel2StarA/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
 [connection signal="pressed" from="ScorePanel2StarA/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarA/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="visibility_changed" from="ScorePanel3StarB" to="." method="_on_ScorePanel3StarB_visibility_changed"]
 [connection signal="pressed" from="ScorePanel3StarB/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="ScorePanel3StarB/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]

@@ -659,7 +659,7 @@ size = 24
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 34 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=86]
@@ -667,7 +667,7 @@ size = 24
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=87]
@@ -675,7 +675,7 @@ size = 23
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=88]
@@ -683,7 +683,7 @@ size = 23
 outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=89]
@@ -713,7 +713,7 @@ size = 25
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=93]
@@ -722,7 +722,7 @@ outline_size = 1
 outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
 use_mipmaps = true
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=94]
@@ -777,7 +777,7 @@ outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
 extra_spacing_top = 4
 extra_spacing_bottom = 1
-font_data = ExtResource( 6 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=99]
@@ -785,7 +785,7 @@ size = 25
 use_filter = true
 extra_spacing_top = 2
 extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="StyleBoxFlat" id=100]
@@ -826,7 +826,7 @@ outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
 extra_spacing_top = 4
 extra_spacing_bottom = 1
-font_data = ExtResource( 6 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=103]
@@ -834,7 +834,7 @@ size = 25
 use_filter = true
 extra_spacing_top = 2
 extra_spacing_bottom = 2
-font_data = ExtResource( 6 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=104]
@@ -842,13 +842,13 @@ size = 30
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 26 )
 fallback/0 = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=105]
 size = 30
 use_filter = true
-font_data = ExtResource( 7 )
+font_data = ExtResource( 25 )
 fallback/0 = ExtResource( 4 )
 
 [node name="Control" type="Control"]
@@ -3172,6 +3172,7 @@ __meta__ = {
 
 [node name="ScorePanel2StarC" type="Panel" parent="."]
 unique_name_in_owner = true
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 76 )
@@ -3702,7 +3703,7 @@ __meta__ = {
 [node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0420842
 anchor_top = 0.240214
-anchor_right = 0.719439
+anchor_right = 0.581162
 anchor_bottom = 0.318505
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
@@ -3715,7 +3716,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3729,12 +3729,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 93 )
-text = "ang tamang sagot:"
+text = "Ang tamang sagot:"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3760,7 +3759,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 94 )
-text = "A
+text = "b
 "
 align = 1
 valign = 2
@@ -3779,7 +3778,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 95 )
-text = "A"
+text = "b"
 align = 1
 valign = 2
 autowrap = true
@@ -3818,11 +3817,10 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 98 )
-text = "B. Ang pangalan ay abokado."
+text = "B. Ito ay gulay."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3835,11 +3833,10 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 99 )
-text = "B. Ang pangalan ay abokado."
+text = "B. Ito ay gulay."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3858,7 +3855,7 @@ __meta__ = {
 [node name="correctAns2" type="Label" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0460922
 anchor_top = 0.505338
-anchor_right = 0.667335
+anchor_right = 0.513026
 anchor_bottom = 0.58363
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
@@ -3871,7 +3868,6 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3885,12 +3881,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 93 )
-text = "ang iyong sagot:"
+text = "Ang iyong sagot:"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -3976,11 +3971,10 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 102 )
-text = "C. Ang pangalan ay atis."
+text = "C. Wala sa pagpipilian."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -3993,11 +3987,10 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 103 )
-text = "C. ANg pangalan ay Atis"
+text = "C. Wala sa pagpipilian."
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -4042,12 +4035,11 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 104 )
-text = "magpatuloy.."
+text = "Magpatuloy.."
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -4061,12 +4053,11 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 105 )
-text = "magpatuloy.."
+text = "Magpatuloy.."
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -4104,5 +4095,9 @@ bus = "Voices"
 [connection signal="pressed" from="ScorePanel3StarB/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
 [connection signal="pressed" from="ScorePanel3StarB/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="visibility_changed" from="ScorePanel2StarC" to="." method="_on_ScorePanel2StarC_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 
 [editable path="pausePanel"]

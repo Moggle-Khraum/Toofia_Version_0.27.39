@@ -41,9 +41,7 @@ func _on_pauseButton_pressed():
 	#===========================================
 
 func _on_A_pressed():
-	print('The Answer is Correct!')
 	WrongAnswer.play()
-	print("Pressed A, Correct Answer")
 	$'%ScorePanel2StarA'.show()
 
 func _on_ScorePanel2StarA_visibility_changed():
@@ -55,9 +53,7 @@ func _on_ScorePanel2StarA_visibility_changed():
 #=====================================================
 	
 func _on_B_pressed():
-	print('The Answer is Wrong!')
 	CorrectAnswer.play()
-	print("Pressed B, Wrong Answer")
 	$'%ScorePanel3StarB'.show()
 	
 func _on_ScorePanel3StarB_visibility_changed():

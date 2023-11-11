@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice2.mp3-f18bf14dcf8d9dd9ee2cd833cf8d526e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Bird/askVoice2.mp3"
+dest_files=[ "res://.import/askVoice2.mp3-f18bf14dcf8d9dd9ee2cd833cf8d526e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
