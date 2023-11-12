@@ -1,4 +1,4 @@
-[gd_scene load_steps=126 format=2]
+[gd_scene load_steps=131 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -28,7 +28,12 @@
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintB.otf" type="DynamicFontData" id=26]
 [ext_resource path="res://Assets/Audio/levelsAudio/Goat/askVoice5.mp3" type="AudioStream" id=27]
 [ext_resource path="res://Assets/Images/levelImages/goat.png" type="Texture" id=28]
-[ext_resource path="res://Assets/Audio/levelsAudio/Goat/goat.mp3" type="AudioStream" id=29]
+[ext_resource path="res://Assets/Audio/levelsAudio/Goat/infoGoat.mp3" type="AudioStream" id=29]
+[ext_resource path="res://Assets/Audio/levelsAudio/Goat/Goat.mp3" type="AudioStream" id=30]
+[ext_resource path="res://Assets/Audio/levelsAudio/Goat/choiceC.mp3" type="AudioStream" id=31]
+[ext_resource path="res://Assets/Audio/levelsAudio/Goat/choiceA.mp3" type="AudioStream" id=32]
+[ext_resource path="res://Assets/Audio/levelsAudio/Goat/choiceB.mp3" type="AudioStream" id=33]
+[ext_resource path="res://Assets/Audio/levelsAudio/Goat/pickAnswer.mp3" type="AudioStream" id=34]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -1027,6 +1032,7 @@ bus = "Voices"
 
 [node name="kambingVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/kambing"]
 unique_name_in_owner = true
+stream = ExtResource( 30 )
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
@@ -1173,6 +1179,7 @@ __meta__ = {
 
 [node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
 unique_name_in_owner = true
+stream = ExtResource( 32 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1209,6 +1216,7 @@ __meta__ = {
 
 [node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
 unique_name_in_owner = true
+stream = ExtResource( 33 )
 bus = "Voices"
 
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1246,6 +1254,7 @@ __meta__ = {
 
 [node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
 unique_name_in_owner = true
+stream = ExtResource( 31 )
 bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
@@ -1432,10 +1441,8 @@ __meta__ = {
 
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+stream = ExtResource( 34 )
 bus = "Voices"
-
-[node name="pausePanel" parent="." instance=ExtResource( 14 )]
-unique_name_in_owner = true
 
 [node name="ScorePanel3StarA" type="Panel" parent="."]
 unique_name_in_owner = true
@@ -1915,6 +1922,7 @@ valign = 1
 autowrap = true
 clip_text = true
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
@@ -2013,7 +2021,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 38 )
-text = "A. Ito ay talong at ito ay gulay."
+text = "A. Ito ay kumakain ng damo."
 valign = 1
 autowrap = true
 clip_text = true
@@ -2029,7 +2037,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 39 )
-text = "A. Ito ay talong at ito ay gulay."
+text = "A. Ito ay kumakain ng damo."
 valign = 1
 autowrap = true
 clip_text = true
@@ -2167,7 +2175,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 38 )
-text = "A. Ito ay talong at ito ay gulay."
+text = "A. Ito ay kumakain ng damo."
 valign = 1
 autowrap = true
 clip_text = true
@@ -2183,7 +2191,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 39 )
-text = "A. Ito ay talong at ito ay gulay."
+text = "A. Ito ay kumakain ng damo."
 valign = 1
 autowrap = true
 clip_text = true
@@ -2906,7 +2914,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 63 )
-text = "A. Ito ay talong at ito ay gulay."
+text = "A. Ito ay kumakain ng damo."
 valign = 1
 autowrap = true
 clip_text = true
@@ -2922,7 +2930,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 64 )
-text = "A. Ito ay talong at ito ay gulay."
+text = "A. Ito ay kumakain ng damo."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3060,7 +3068,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 63 )
-text = "B. Ito ay talong at hindi ito gulay."
+text = "B. Ito ay kumakain ng karne."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3076,7 +3084,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 64 )
-text = "B. Ito ay talong at hindi ito gulay."
+text = "B. Ito ay kumakain ng karne."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3799,7 +3807,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 89 )
-text = "B. Ito ay talong at ito gulay."
+text = "A. Ito ay kumakain ng damo."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3815,7 +3823,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 90 )
-text = "B. Ito ay talong at ito gulay."
+text = "A. Ito ay kumakain ng damo."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3953,7 +3961,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 93 )
-text = "C. Wala sa binanggit ang sagot."
+text = "C. Ito ay kumakain ng kape."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3969,7 +3977,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 94 )
-text = "C. Wala sa binanggit ang sagot."
+text = "C. Ito ay kumakain ng kape."
 valign = 1
 autowrap = true
 clip_text = true
@@ -4045,6 +4053,9 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="pausePanel" parent="." instance=ExtResource( 14 )]
+unique_name_in_owner = true
+
 [node name="wrongPick" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource( 16 )
@@ -4067,9 +4078,20 @@ bus = "Voices"
 [connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/B" to="." method="_on_B_pressed"]
 [connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/C" to="." method="_on_C_pressed"]
 [connection signal="finished" from="Panel/NinePatchRect/AnswerPanel/pickAnswer" to="." method="_on_pickAnswer_finished"]
-[connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 [connection signal="visibility_changed" from="ScorePanel3StarA" to="." method="_on_ScorePanel3StarA_visibility_changed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel3StarA/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="visibility_changed" from="ScorePanel2StarB" to="." method="_on_ScorePanel2StarB_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarB/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 [connection signal="visibility_changed" from="ScorePanel2StarC" to="." method="_on_ScorePanel2StarC_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
 
 [editable path="pausePanel"]

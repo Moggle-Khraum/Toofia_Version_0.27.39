@@ -2,8 +2,6 @@ extends Control
 
 signal repeat
 
-const USERNAME_FILE_PATH = "user://settings/username.gmd"
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#This will play the Voiceover..

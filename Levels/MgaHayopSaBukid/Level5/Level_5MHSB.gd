@@ -10,6 +10,7 @@ func _ready() -> void:
 	
 
 func _on_x_pressed() -> void:
+	ScrollPop.play()
 	$"%infoKambing".stream_paused = false
 	$'%askVoice5'.stream_paused = false
 	$'%asoVoice'.stream_paused = true
@@ -33,14 +34,17 @@ func _on_pauseButton_pressed() -> void:
 #=============================================================================
 
 func _on_levels_pressed() -> void:
+	ScrollPop.play()
 	var home = get_tree().change_scene('res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn')
 	print('Go to Level Selection')
 	
 func _on_home_pressed() -> void:
+	ScrollPop.play()
 	var home = get_tree().change_scene("res://Scenes/MainMenu.tscn")
 	print("To Main Menu")
 	
 func _on_retry_pressed() -> void:
+	ScrollPop.play()
 	var retry = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level5/Level_5MHSB.tscn")
 	print('Retry level')
 	
