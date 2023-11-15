@@ -11,16 +11,16 @@ func _ready():
 #===========================================
 func voiceOver():
 	yield(get_tree().create_timer(1.0), "timeout")
-	$'%infoBaka'.play()
-	if $"%infoBaka".playing:
+	$'%infoBaboy'.play()
+	if $"%infoBaboy".playing:
 		$"%coverButton".show()
 
 
 func _on_x_pressed():
 	ScrollPop.play()
-	$"%infoBaka".stream_paused = false
-	$'%askVoice6'.stream_paused = false
-	$'%cowVoice'.stream_paused = true
+	$"%infoBaboy".stream_paused = false
+	$'%askVoice8'.stream_paused = false
+	$'%baboyVoice'.stream_paused = true
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
 	$'%choiceC'.stream_paused = false
@@ -31,9 +31,9 @@ func _on_pauseButton_pressed():
 	MenuClickSfxPlayer.play()
 	$"%pausePanel".show()
 	print("Shows the Pause Panel")
-	$"%infoBaka".stream_paused = false
-	$'%askVoice6'.stream_paused = false
-	$'%cowVoice'.stream_paused = true
+	$"%infoBaboy".stream_paused = false
+	$'%askVoice8'.stream_paused = false
+	$'%baboyVoice'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
 	$'%choiceC'.stream_paused = true
@@ -57,13 +57,13 @@ func _on_ScorePanel2StarA_visibility_changed():
 	
 func _on_B_pressed():
 	print('The Answer is Wrong!')
-	CorrectAnswer.play()
+	WrongAnswer.play()
 	print("Pressed B, Wrong Answer")
-	$'%ScorePanel3StarB'.show()
+	$'%ScorePanel2StarB'.show()
 	
-func _on_ScorePanel3StarB_visibility_changed():
+func _on_ScorePanel2StarB_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%correctPick'.play()
+	$'%wrongPick'.play()
 	print("Plays WrongPick")
 	$'%animB'.play('blink')
 	$'%animB2'.play('blink')
@@ -72,13 +72,13 @@ func _on_ScorePanel3StarB_visibility_changed():
 	
 func _on_C_pressed():
 	print('The Answer is Wrong!')
-	WrongAnswer.play()
+	CorrectAnswer.play()
 	print("Pressed C, Wrong Answer")
-	$'%ScorePanel2StarC'.show()
+	$'%ScorePanel3StarC'.show()
 	
-func _on_ScorePanel2StarC_visibility_changed():
+func _on_ScorePanel3StarC_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%wrongPick'.play()
+	$'%correctPick'.play()
 	print("Plays Wrong Pick")
 	$'%animA'.play('blink')
 	$'%animC'.play('blink')
@@ -87,17 +87,17 @@ func _on_ScorePanel2StarC_visibility_changed():
 #=============================================s
 func _on_repeat_pressed():
 	ScrollPop.play()
-	$'%infoBaka'.play()
+	$'%infoBaboy'.play()
 	print("Repeat Info got Pressed")
 	emit_signal("repeat")
 	print("Emits Signal")
-	$"%infoBaka".stop()
+	$"%infoBaboy".stop()
 	$'%coverButton'.show()
 	$"%A".hide()
 	$"%B".hide()
 	$"%C".hide()
 	print("Hide Repeat Button")
-	if not $"%infoBaka".playing or $'%cowVoice' or $"%askVoice6".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
+	if not $"%infoBaboy".playing or $'%baboyVoice' or $"%askVoice8".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
 		$"%coverButton".show()
 		print("Cover Show")
 	else:
@@ -105,15 +105,15 @@ func _on_repeat_pressed():
 		print("Cover Hide")
 	
 
-func _on_infoBaka_finished():
+func _on_infoBaboy_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%askVoice6'.play()
+	$'%askVoice8'.play()
 
-func _on_cowVoice_finished():
+func _on_baboyVoice_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%cowVoice'.play()
+	$'%baboyVoice'.play()
 
-func _on_askVoice6_finished():
+func _on_askVoice8_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
 	$'%choiceA'.play()
 	$'%A'.show()

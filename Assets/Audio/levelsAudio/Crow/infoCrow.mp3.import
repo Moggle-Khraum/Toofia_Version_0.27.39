@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoCrow.mp3-8c2e5cac569467c4f396310246bdc4da.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Crow/infoCrow.mp3"
+dest_files=[ "res://.import/infoCrow.mp3-8c2e5cac569467c4f396310246bdc4da.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
