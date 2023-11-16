@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Goat.mp3-0e9f466869f693e0618ff664816eae68.mp3str"
+path="res://.import/goat.mp3-c9c069028692a9c9810246096fb73e5b.mp3str"
 
 [deps]
 
-source_file="res://Assets/Audio/levelsAudio/Goat/Goat.mp3"
-dest_files=[ "res://.import/Goat.mp3-0e9f466869f693e0618ff664816eae68.mp3str" ]
+source_file="res://Assets/Audio/levelsAudio/Goat/goat.mp3"
+dest_files=[ "res://.import/goat.mp3-c9c069028692a9c9810246096fb73e5b.mp3str" ]
 
 [params]
 

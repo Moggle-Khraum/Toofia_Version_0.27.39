@@ -49,9 +49,9 @@ func _on_pauseButton_pressed() -> void:
 	MenuClickSfxPlayer.play()
 	$'%pausePanel'.show()
 	print("Shows the Pause Panel")
-	$"%infoKalabaw".stream_paused = false
-	$'%kalabawVoice'.stream_paused = false
-	$'%askVoice3'.stream_paused = false
+	$"%infoKalabaw".stream_paused = true
+	$'%kalabawVoice'.stream_paused = true
+	$'%askVoice3'.stream_paused = true
 	$"%choiceA".stream_paused = true
 	$"%choiceB".stream_paused = true
 	$"%choiceC".stream_paused = true

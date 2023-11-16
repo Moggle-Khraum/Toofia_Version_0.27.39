@@ -107,11 +107,11 @@ func _on_repeat_pressed():
 
 func _on_infoIbon_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%askVoice6'.play()
+	$'%ibonVoice'.play()
 
 func _on_ibonVoice_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%ibonVoice'.play()
+	$'%askVoice6'.play()
 
 func _on_askVoice6_finished():
 	yield(get_tree().create_timer(0.9), "timeout")

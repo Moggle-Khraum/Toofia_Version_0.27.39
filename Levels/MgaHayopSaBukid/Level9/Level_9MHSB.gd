@@ -11,16 +11,16 @@ func _ready():
 #===========================================
 func voiceOver():
 	yield(get_tree().create_timer(1.0), "timeout")
-	$'%infoBaka'.play()
-	if $"%infoBaka".playing:
+	$'%infoKuneho'.play()
+	if $"%infoKuneho".playing:
 		$"%coverButton".show()
 
 
 func _on_x_pressed():
 	ScrollPop.play()
-	$"%infoBaka".stream_paused = false
-	$'%askVoice6'.stream_paused = false
-	$'%cowVoice'.stream_paused = true
+	$"%infoKuneho".stream_paused = false
+	$'%askVoice9'.stream_paused = false
+	$'%kunehoVoice'.stream_paused = true
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
 	$'%choiceC'.stream_paused = false
@@ -31,9 +31,9 @@ func _on_pauseButton_pressed():
 	MenuClickSfxPlayer.play()
 	$"%pausePanel".show()
 	print("Shows the Pause Panel")
-	$"%infoBaka".stream_paused = false
-	$'%askVoice6'.stream_paused = false
-	$'%cowVoice'.stream_paused = true
+	$"%infoKuneho".stream_paused = false
+	$'%askVoice9'.stream_paused = false
+	$'%kunehoVoice'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
 	$'%choiceC'.stream_paused = true
@@ -87,17 +87,17 @@ func _on_ScorePanel2StarC_visibility_changed():
 #=============================================s
 func _on_repeat_pressed():
 	ScrollPop.play()
-	$'%infoBaka'.play()
+	$'%infoKuneho'.play()
 	print("Repeat Info got Pressed")
 	emit_signal("repeat")
 	print("Emits Signal")
-	$"%infoBaka".stop()
+	$"%infoKuneho".stop()
 	$'%coverButton'.show()
 	$"%A".hide()
 	$"%B".hide()
 	$"%C".hide()
 	print("Hide Repeat Button")
-	if not $"%infoBaka".playing or $'%cowVoice' or $"%askVoice6".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
+	if not $"%infoKuneho".playing or $'%kunehoVoice' or $"%askVoice9".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
 		$"%coverButton".show()
 		print("Cover Show")
 	else:
@@ -105,15 +105,15 @@ func _on_repeat_pressed():
 		print("Cover Hide")
 	
 
-func _on_infoBaka_finished():
+func _on_infoKuneho_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%askVoice6'.play()
+	$'%kunehoVoice'.play()
 
-func _on_cowVoice_finished():
+func _on_kunehoVoice_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%cowVoice'.play()
+	$'%askVoice9'.play()
 
-func _on_askVoice6_finished():
+func _on_askVoice9_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
 	$'%choiceA'.play()
 	$'%A'.show()

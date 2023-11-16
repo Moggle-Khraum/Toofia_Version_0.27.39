@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pigVoice.mp3-01e6927c442e3edd008bac68f856d932.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Pig/pigVoice.mp3"
+dest_files=[ "res://.import/pigVoice.mp3-01e6927c442e3edd008bac68f856d932.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

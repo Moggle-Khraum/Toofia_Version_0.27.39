@@ -1,4 +1,4 @@
-[gd_scene load_steps=104 format=2]
+[gd_scene load_steps=105 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -8,7 +8,7 @@
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=6]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=8]
-[ext_resource path="res://Assets/Audio/levelsAudio/Bird/pickAnswer.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Assets/Audio/levelsAudio/Crow/pickAnswer.mp3" type="AudioStream" id=9]
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
@@ -33,6 +33,7 @@
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintB.otf" type="DynamicFontData" id=31]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Home.png" type="Texture" id=32]
 [ext_resource path="res://Assets/UIElements/Icon_Menu.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Audio/levelsAudio/Bird/choiceA.mp3" type="AudioStream" id=34]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -973,6 +974,7 @@ __meta__ = {
 
 [node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
 unique_name_in_owner = true
+stream = ExtResource( 34 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -3603,7 +3605,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 66 )
-text = "C. Ang pangalan ay aso."
+text = "C. Lahat ng nabanggit."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3619,7 +3621,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 67 )
-text = "C. Ang pangalan ay aso."
+text = "C. Lahat ng nabanggit."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3755,7 +3757,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 66 )
-text = "C. Ang pangalan ay aso."
+text = "C. Lahat ng nabanggit."
 valign = 1
 autowrap = true
 clip_text = true
@@ -3773,7 +3775,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 67 )
-text = "C. Ang pangalan ay aso."
+text = "C. Lahat ng nabanggit."
 valign = 1
 autowrap = true
 clip_text = true

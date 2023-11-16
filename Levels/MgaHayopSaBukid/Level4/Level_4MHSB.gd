@@ -12,7 +12,7 @@ func _ready() -> void:
 func _on_x_pressed() -> void:
 	$"%infoAso".stream_paused = false
 	$'%askVoice4'.stream_paused = false
-	$'%asoVoice'.stream_paused = true
+	$'%asoVoice'.stream_paused = false
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
 	$'%choiceC'.stream_paused = false

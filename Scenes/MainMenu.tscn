@@ -731,7 +731,6 @@ __meta__ = {
 }
 
 [node name="CreditsPopup" parent="." instance=ExtResource( 7 )]
-visible = false
 
 [connection signal="pressed" from="HBoxContainer/creditContainer/CreditsButton" to="." method="_on_CreditsButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/playContainer/PlayButton" to="." method="_on_PlayButton_pressed"]

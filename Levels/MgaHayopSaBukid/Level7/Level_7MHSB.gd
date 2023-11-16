@@ -11,16 +11,16 @@ func _ready():
 #===========================================
 func voiceOver():
 	yield(get_tree().create_timer(1.0), "timeout")
-	$'%infoPato'.play()
-	if $"%infopato".playing:
+	$'%infoBaboy'.play()
+	if $"%infoBaboy".playing:
 		$"%coverButton".show()
 
 
 func _on_x_pressed():
 	ScrollPop.play()
-	$"%infoPato".stream_paused = false
+	$"%infoBaboy".stream_paused = false
 	$'%askVoice7'.stream_paused = false
-	$'%patoVoice'.stream_paused = true
+	$Panel/NinePatchRect/imageHolder/baboy/baboyVoice.stream_paused = false
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
 	$'%choiceC'.stream_paused = false
@@ -31,9 +31,9 @@ func _on_pauseButton_pressed():
 	MenuClickSfxPlayer.play()
 	$"%pausePanel".show()
 	print("Shows the Pause Panel")
-	$"%infoPato".stream_paused = false
-	$'%askVoice7'.stream_paused = false
-	$'%patoVoice'.stream_paused = true
+	$"%infoBaboy".stream_paused = true
+	$'%askVoice7'.stream_paused = true
+	$Panel/NinePatchRect/imageHolder/baboy/baboyVoice.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
 	$'%choiceC'.stream_paused = true
@@ -87,17 +87,17 @@ func _on_ScorePanel2StarC_visibility_changed():
 #=============================================s
 func _on_repeat_pressed():
 	ScrollPop.play()
-	$'%infoPato'.play()
+	$'%infoBaboy'.play()
 	print("Repeat Info got Pressed")
 	emit_signal("repeat")
 	print("Emits Signal")
-	$"%infoPato".stop()
+	$"%infoBaboy".stop()
 	$'%coverButton'.show()
 	$"%A".hide()
 	$"%B".hide()
 	$"%C".hide()
 	print("Hide Repeat Button")
-	if not $"%infoPato".playing or $'%patoVoice' or $"%askVoice7".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
+	if not $"%infoBaboy".playing or $Panel/NinePatchRect/imageHolder/baboy/baboyVoice or $"%askVoice7".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
 		$"%coverButton".show()
 		print("Cover Show")
 	else:
@@ -105,13 +105,13 @@ func _on_repeat_pressed():
 		print("Cover Hide")
 	
 
-func _on_infoPato_finished():
+func _on_infoBaboy_finished():
+	yield(get_tree().create_timer(0.9), "timeout")
+	$Panel/NinePatchRect/imageHolder/baboy/baboyVoice.play()
+
+func _on_baboyVoice_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
 	$'%askVoice7'.play()
-
-func _on_patoVoice_finished():
-	yield(get_tree().create_timer(0.9), "timeout")
-	$'%patoVoice'.play()
 
 func _on_askVoice7_finished():
 	yield(get_tree().create_timer(0.9), "timeout")

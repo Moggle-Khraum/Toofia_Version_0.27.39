@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-34357714a7ac33e9501c810b4e41c6d0.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Kuneho/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-34357714a7ac33e9501c810b4e41c6d0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

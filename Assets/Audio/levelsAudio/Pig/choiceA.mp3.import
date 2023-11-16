@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-1dbed6ad9761b866f91737087ae7400b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Pig/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-1dbed6ad9761b866f91737087ae7400b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

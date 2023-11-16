@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/horsey.mp3-590d8634abd36cdcd90b9970979bf227.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Horse/horsey.mp3"
+dest_files=[ "res://.import/horsey.mp3-590d8634abd36cdcd90b9970979bf227.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

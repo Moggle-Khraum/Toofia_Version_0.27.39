@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoHorse.mp3-1679c396e276acc5b1606f1402dc869a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Horse/infoHorse.mp3"
+dest_files=[ "res://.import/infoHorse.mp3-1679c396e276acc5b1606f1402dc869a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

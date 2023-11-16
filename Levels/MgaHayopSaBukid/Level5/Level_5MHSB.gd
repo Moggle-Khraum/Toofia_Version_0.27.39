@@ -13,7 +13,7 @@ func _on_x_pressed() -> void:
 	ScrollPop.play()
 	$"%infoKambing".stream_paused = false
 	$'%askVoice5'.stream_paused = false
-	$'%asoVoice'.stream_paused = true
+	$'%kambingVoice'.stream_paused = true
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
 	$'%choiceC'.stream_paused = false
@@ -25,7 +25,7 @@ func _on_pauseButton_pressed() -> void:
 	print("Shows the Pause Panel")
 	$"%infoKambing".stream_paused = true
 	$'%askVoice5'.stream_paused = true
-	$'%asoVoice'.stream_paused = true
+	$'%kambingVoice'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
 	$'%choiceC'.stream_paused = true

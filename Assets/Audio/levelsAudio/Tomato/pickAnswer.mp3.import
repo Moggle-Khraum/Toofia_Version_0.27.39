@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pickAnswer.mp3-6577289ca03caec93f01705fe7cd8d3a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Tomato/pickAnswer.mp3"
+dest_files=[ "res://.import/pickAnswer.mp3-6577289ca03caec93f01705fe7cd8d3a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
