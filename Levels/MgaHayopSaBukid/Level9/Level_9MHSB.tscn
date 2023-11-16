@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -19,6 +19,8 @@
 [ext_resource path="res://Assets/Audio/levelsAudio/Kuneho/choiceB.mp3" type="AudioStream" id=17]
 [ext_resource path="res://Assets/Audio/levelsAudio/Kuneho/pickAnswer.mp3" type="AudioStream" id=18]
 [ext_resource path="res://Assets/Audio/levelsAudio/Kuneho/askVoice9.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Assets/Audio/levelsAudio/Kuneho/rabbitcry.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Audio/levelsAudio/Kuneho/infoKuneho.mp3" type="AudioStream" id=21]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -325,10 +327,12 @@ __meta__ = {
 
 [node name="infoKuneho" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/kuneho"]
 unique_name_in_owner = true
+stream = ExtResource( 21 )
 bus = "Voices"
 
 [node name="kunehoVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/kuneho"]
 unique_name_in_owner = true
+stream = ExtResource( 20 )
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
