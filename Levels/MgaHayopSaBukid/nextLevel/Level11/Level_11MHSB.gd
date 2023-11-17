@@ -11,16 +11,16 @@ func _ready():
 #===========================================
 func voiceOver():
 	yield(get_tree().create_timer(1.0), "timeout")
-	$'%infoBaka'.play()
-	if $"%infoBaka".playing:
+	$'%infoTupa'.play()
+	if $"%infoTupa".playing:
 		$"%coverButton".show()
 
 
 func _on_x_pressed():
 	ScrollPop.play()
-	$"%infoBaka".stream_paused = false
-	$'%askVoice6'.stream_paused = false
-	$'%cowVoice'.stream_paused = true
+	$"%infoTupa".stream_paused = false
+	$'%askVoice11'.stream_paused = false
+	$'%tupaVoice'.stream_paused = false
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
 	$'%choiceC'.stream_paused = false
@@ -31,9 +31,9 @@ func _on_pauseButton_pressed():
 	MenuClickSfxPlayer.play()
 	$"%pausePanel".show()
 	print("Shows the Pause Panel")
-	$"%infoBaka".stream_paused = false
-	$'%askVoice6'.stream_paused = false
-	$'%cowVoice'.stream_paused = true
+	$"%infoTupa".stream_paused = true
+	$'%askVoice11'.stream_paused = true
+	$'%tupaVoice'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
 	$'%choiceC'.stream_paused = true
@@ -87,17 +87,17 @@ func _on_ScorePanel2StarC_visibility_changed():
 #=============================================s
 func _on_repeat_pressed():
 	ScrollPop.play()
-	$'%infoBaka'.play()
+	$'%infoTupa'.play()
 	print("Repeat Info got Pressed")
 	emit_signal("repeat")
 	print("Emits Signal")
-	$"%infoBaka".stop()
+	$"%infoTupa".stop()
 	$'%coverButton'.show()
 	$"%A".hide()
 	$"%B".hide()
 	$"%C".hide()
 	print("Hide Repeat Button")
-	if not $"%infoBaka".playing or $'%cowVoice' or $"%askVoice6".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
+	if not $"%infoTupa".playing or $'%tupaVoice' or $"%askVoice11".playing or $"%choiceA".playing or $"%choiceB".playing or $"%choiceC".playing or $"%pickAnswer".playing:
 		$"%coverButton".show()
 		print("Cover Show")
 	else:
@@ -105,15 +105,17 @@ func _on_repeat_pressed():
 		print("Cover Hide")
 	
 
-func _on_infoBaka_finished():
+func _on_infoTupa_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%askVoice6'.play()
+	print("Info Tupa Plays")
+	$'%tupaVoice'.play()
 
-func _on_cowVoice_finished():
+func _on_tupaVoice_finished():
+	print("TupaVoice Plays")
 	yield(get_tree().create_timer(0.9), "timeout")
-	$'%cowVoice'.play()
+	$'%askVoice11'.play()
 
-func _on_askVoice6_finished():
+func _on_askVoice11_finished():
 	yield(get_tree().create_timer(0.9), "timeout")
 	$'%choiceA'.play()
 	$'%A'.show()
@@ -172,13 +174,13 @@ func _on_home_pressed() -> void:
 	
 func _on_retry_pressed() -> void:
 	ScrollPop.play()
-	var retry = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level11/Level_11MHSB.tscn")
+	var retry = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level11/Level_11MHSB.tscn")
 	print('Retry level')
 
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	var retry = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level12/Level_12MHSB.tscn")
+	var retry = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level12/Level_12MHSB.tscn")
 
 
 

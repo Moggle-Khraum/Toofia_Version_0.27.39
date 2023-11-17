@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/levelImages/goose.jpg" type="Texture" id=13]
 [ext_resource path="res://Levels/MgaHayopSaBukid/nextLevel/Level12/PausePanel12.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=18]
@@ -276,32 +277,30 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pusa" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+[node name="goose" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
 unique_name_in_owner = true
-anchor_left = 0.0994746
-anchor_top = 0.0635747
-anchor_right = 0.913657
-anchor_bottom = 0.89866
-margin_left = -761.5
-margin_top = -740.761
-margin_right = -761.5
-margin_bottom = -740.761
+anchor_left = 0.0806172
+anchor_top = 0.0933926
+anchor_right = 0.948641
+anchor_bottom = 0.920594
+margin_left = -773.78
+margin_top = -773.144
+margin_right = -773.78
+margin_bottom = -773.144
+texture = ExtResource( 13 )
 expand = true
+flip_h = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/goose"]
 unique_name_in_owner = true
-anchor_left = -0.00818752
-anchor_top = 0.493314
-anchor_right = 1.01152
-anchor_bottom = 0.493314
-margin_top = 113.691
-margin_right = -350.13
-margin_bottom = 945.691
-rect_rotation = -51.9726
+anchor_left = 0.167142
+anchor_top = 0.100953
+anchor_right = 0.859012
+anchor_bottom = 0.932953
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -310,17 +309,12 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/goose"]
 unique_name_in_owner = true
-anchor_left = -0.302751
-anchor_top = 0.455531
-anchor_right = 1.21478
-anchor_bottom = 0.455531
-margin_left = -3.05176e-05
-margin_top = 158.496
-margin_right = -537.192
-margin_bottom = 1410.5
-rect_rotation = -52.3259
+anchor_left = -0.00946083
+anchor_top = -0.0586177
+anchor_right = 1.00518
+anchor_bottom = 1.05804
 input_pass_on_modal_close_click = false
 custom_styles/panel = SubResource( 4 )
 __meta__ = {
@@ -328,7 +322,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="infoPusa" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="infoGoose" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/goose"]
 unique_name_in_owner = true
 bus = "Voices"
 
@@ -350,7 +344,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 5 )
-text = "Kabayo"
+text = "Gansa"
 align = 1
 autowrap = true
 clip_text = true
@@ -367,7 +361,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 6 )
-text = "Kabayo"
+text = "Gansa"
 align = 1
 autowrap = true
 clip_text = true
@@ -383,7 +377,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 7 )
-text = "Kabayo"
+text = "Gansa"
 align = 1
 autowrap = true
 clip_text = true
@@ -413,8 +407,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 8 )
-text = "1. Batay sa iyong narinig, ano ang pangalan ng hayop na nasa larawan?"
-align = 3
+text = "1. Batay sa iyong narinig, ano ang kulay ng gansa na nasa larawan?"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -431,8 +424,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 9 )
-text = "1. Batay sa iyong narinig, ano ang pangalan ng hayop na nasa larawan?"
-align = 3
+text = "1. Batay sa iyong narinig, ano ang kulay ng gansa na nasa larawan?"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -449,7 +441,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 10 )
-text = "A. Ang pangalan ay manok."
+text = "A. Puti"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -464,7 +456,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 11 )
-text = "A. Ang pangalan ay manok."
+text = "A. Puti"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -481,7 +473,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 12 )
-text = "B. Ang pangalan ay pusa."
+text = "B. Ube"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -496,7 +488,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 13 )
-text = "B. Ang pangalan ay pusa."
+text = "B. Ube"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -513,7 +505,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 14 )
-text = "C. Wala sa mga binanggit."
+text = "C. Pula"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -529,7 +521,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 15 )
-text = "C. Wala sa mga binanggit."
+text = "C. Pula"
 autowrap = true
 clip_text = true
 __meta__ = {

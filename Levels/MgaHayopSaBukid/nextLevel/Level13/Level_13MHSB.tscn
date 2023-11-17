@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/levelImages/bull4.png" type="Texture" id=13]
 [ext_resource path="res://Levels/MgaHayopSaBukid/nextLevel/Level13/PausePanel13.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=18]
@@ -276,32 +277,29 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pusa" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+[node name="bull" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
 unique_name_in_owner = true
-anchor_left = 0.0994746
-anchor_top = 0.0635747
-anchor_right = 0.913657
-anchor_bottom = 0.89866
+anchor_left = 0.0511511
+anchor_top = 0.154255
+anchor_right = 0.951348
+anchor_bottom = 0.872389
 margin_left = -761.5
-margin_top = -740.761
+margin_top = -761.0
 margin_right = -761.5
-margin_bottom = -740.761
+margin_bottom = -761.0
+texture = ExtResource( 13 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/bull"]
 unique_name_in_owner = true
-anchor_left = -0.00818752
-anchor_top = 0.493314
-anchor_right = 1.01152
-anchor_bottom = 0.493314
-margin_top = 113.691
-margin_right = -350.13
-margin_bottom = 945.691
-rect_rotation = -51.9726
+anchor_left = 0.116442
+anchor_top = 0.103697
+anchor_right = 0.880767
+anchor_bottom = 0.864904
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
@@ -310,17 +308,12 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/bull"]
 unique_name_in_owner = true
-anchor_left = -0.302751
-anchor_top = 0.455531
-anchor_right = 1.21478
-anchor_bottom = 0.455531
-margin_left = -3.05176e-05
-margin_top = 158.496
-margin_right = -537.192
-margin_bottom = 1410.5
-rect_rotation = -52.3259
+anchor_left = -0.0182349
+anchor_top = -0.0997255
+anchor_right = 1.00584
+anchor_bottom = 1.04575
 input_pass_on_modal_close_click = false
 custom_styles/panel = SubResource( 4 )
 __meta__ = {
@@ -328,7 +321,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="infoPusa" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="infoBull" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/bull"]
 unique_name_in_owner = true
 bus = "Voices"
 
@@ -350,7 +343,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 5 )
-text = "Pusa"
+text = "Toro"
 align = 1
 autowrap = true
 clip_text = true
@@ -367,7 +360,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 6 )
-text = "Pusa"
+text = "Toro"
 align = 1
 autowrap = true
 clip_text = true
@@ -383,7 +376,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 7 )
-text = "Pusa"
+text = "Toro"
 align = 1
 autowrap = true
 clip_text = true

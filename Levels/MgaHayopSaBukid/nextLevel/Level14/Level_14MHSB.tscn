@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -12,10 +12,11 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
 [ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/levelImages/duck.png" type="Texture" id=13]
 [ext_resource path="res://Levels/MgaHayopSaBukid/nextLevel/Level14/PausePanel14.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=1]
-size = 33
+size = 28
 outline_size = 2
 outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
 use_filter = true
@@ -23,7 +24,7 @@ font_data = ExtResource( 1 )
 fallback/0 = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 33
+size = 28
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_filter = true
@@ -31,7 +32,7 @@ font_data = ExtResource( 1 )
 fallback/0 = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 33
+size = 28
 use_filter = true
 font_data = ExtResource( 1 )
 fallback/0 = ExtResource( 3 )
@@ -185,7 +186,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 1 )
-text = "pangalawang tanong"
+text = "panglabingapat na tanong"
 align = 1
 valign = 1
 autowrap = true
@@ -204,7 +205,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 2 )
-text = "pangalawang tanong"
+text = "panglabingapat na tanong"
 align = 1
 valign = 1
 autowrap = true
@@ -224,7 +225,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 3 )
-text = "pangalawang tanong"
+text = "panglabingapat na tanong"
 align = 1
 valign = 1
 autowrap = true
@@ -272,23 +273,24 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pusa" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+[node name="pato" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
 unique_name_in_owner = true
-anchor_left = 0.0994746
-anchor_top = 0.0635747
-anchor_right = 0.913657
-anchor_bottom = 0.89866
+anchor_left = 0.102218
+anchor_top = 0.154255
+anchor_right = 0.9164
+anchor_bottom = 0.861876
 margin_left = -761.5
-margin_top = -740.761
+margin_top = -761.0
 margin_right = -761.5
-margin_bottom = -740.761
+margin_bottom = -761.0
+texture = ExtResource( 13 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/pato"]
 unique_name_in_owner = true
 anchor_left = -0.00818752
 anchor_top = 0.493314
@@ -306,7 +308,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/pato"]
 unique_name_in_owner = true
 anchor_left = -0.302751
 anchor_top = 0.455531
@@ -324,7 +326,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="infoPusa" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pusa"]
+[node name="infoPato" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pato"]
 unique_name_in_owner = true
 bus = "Voices"
 
@@ -346,7 +348,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 5 )
-text = "Pusa"
+text = "Pato"
 align = 1
 autowrap = true
 clip_text = true
@@ -363,7 +365,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 6 )
-text = "Pusa"
+text = "Pato"
 align = 1
 autowrap = true
 clip_text = true
@@ -379,7 +381,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 7 )
-text = "Pusa"
+text = "Pato"
 align = 1
 autowrap = true
 clip_text = true

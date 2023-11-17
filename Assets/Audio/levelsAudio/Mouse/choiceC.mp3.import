@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceC.mp3-532959979026556ef6abe5c5b0011136.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Mouse/choiceC.mp3"
+dest_files=[ "res://.import/choiceC.mp3-532959979026556ef6abe5c5b0011136.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

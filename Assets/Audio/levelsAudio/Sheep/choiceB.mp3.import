@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceB.mp3-2c4d2d3be483176133c4ea79c6ce1780.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Sheep/choiceB.mp3"
+dest_files=[ "res://.import/choiceB.mp3-2c4d2d3be483176133c4ea79c6ce1780.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
