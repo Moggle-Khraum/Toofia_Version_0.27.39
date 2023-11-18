@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/MenuChoicesScript.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assets/Images/Tracing_Dd.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/speakLogo.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Images/farmAnimals.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/LevelScroll.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Fonts/ButtonThemes.tres" type="Theme" id=7]
@@ -251,7 +251,6 @@ anchor_right = 0.974609
 anchor_bottom = 1.27833
 grow_horizontal = 2
 grow_vertical = 2
-rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 13
 size_flags_horizontal = 3

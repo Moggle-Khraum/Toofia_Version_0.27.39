@@ -39,9 +39,9 @@ func _on_CardMenu2_pressed():
 func _on_CardMenu3_pressed():
 	MenuClickSfxPlayer.play()
 	print("Presses 3")
-	var letterspeak = get_tree().change_scene("res://Levels/PagguhitNgAlpabeto/PagguhitNgAlpabeto.tscn")
-	MainMenuThemePlayer.stream_paused = true
-	print("Popupshows AlphabetTracingInfo")
+	var letterspeak = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/LetterSpeak.tscn")
+	MainMenuThemePlayer.stop()
+	print("Going to Letter Speak")
 
 func _on_CardMenu4_pressed():
 	MenuClickSfxPlayer.play()
