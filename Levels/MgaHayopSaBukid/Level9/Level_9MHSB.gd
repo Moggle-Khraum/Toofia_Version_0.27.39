@@ -20,7 +20,7 @@ func _on_x_pressed():
 	ScrollPop.play()
 	$"%infoKuneho".stream_paused = false
 	$'%askVoice9'.stream_paused = false
-	$'%kunehoVoice'.stream_paused = true
+	$'%kunehoVoice'.stream_paused = false
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
 	$'%choiceC'.stream_paused = false
@@ -31,8 +31,8 @@ func _on_pauseButton_pressed():
 	MenuClickSfxPlayer.play()
 	$"%pausePanel".show()
 	print("Shows the Pause Panel")
-	$"%infoKuneho".stream_paused = false
-	$'%askVoice9'.stream_paused = false
+	$"%infoKuneho".stream_paused = true
+	$'%askVoice9'.stream_paused = true
 	$'%kunehoVoice'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true

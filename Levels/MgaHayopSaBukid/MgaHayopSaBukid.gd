@@ -192,34 +192,6 @@ func _on_15Button_pressed() -> void:
 	$'%animalsTheme'.stream_paused = true
 	
 
-# THIS IS LEVEL 16
-func _on_16Button_pressed() -> void:
-	LevelsButtons.play()
-	print("Presses Level 16")
-	var level16 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level16/Level_16MHSB.tscn")
-	emit_signal('pressed')
-	print ("You are now at Level 16")
-	$'%animalsTheme'.stream_paused = true
-	
-
-
-
-
-
-#THE BUTTONS BELOW IS FOR THE LEVEL ERROR
-#THIS IS FOR THE ERROR SOUND EFFECTS
-func _on_lockInfo_pressed() -> void:
-	LevelError.play()
-	print("Level Locked")
-	$'%bgPanel'.show()
-	print("Open Level Locked")
-	pass # Replace with function body.
-
-func _on_hide_pressed() -> void:
-	MenuClickSfxPlayer.play()
-	$'%bgPanel'.hide()
-	print("Hides LevelLock")
-
 func _on_MgaHayopSaBukid_visibility_changed() -> void:
 	$'%animalsTheme'.play()
 	print("Plays Animal Theme")

@@ -1540,90 +1540,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="16Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -50.0
-margin_top = -46.0
-margin_right = 55.0
-margin_bottom = 39.0
-focus_mode = 0
-enabled_focus_mode = 0
-flat = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16/16Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 10 )
-text = "level 16"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16/16Button/level"]
-anchor_top = -0.0193965
-anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 11 )
-text = "level 16"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16"]
-visible = false
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 13 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="GoBackButton" type="Button" parent="Panel"]
 anchor_left = 0.897461
 anchor_top = 0.025
@@ -1787,7 +1703,6 @@ bus = "Music"
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button13/13Button" to="." method="_on_13Button_pressed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button14/14Button" to="." method="_on_14Button_pressed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button15/15Button" to="." method="_on_15Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button16/16Button" to="." method="_on_16Button_pressed"]
 [connection signal="pressed" from="Panel/GoBackButton" to="." method="_on_GoBackButton_pressed"]
 [connection signal="pressed" from="Panel/LeftButton" to="." method="_on_LeftButton_pressed"]
 [connection signal="pressed" from="Panel/RightButton" to="." method="_on_RightButton_pressed"]

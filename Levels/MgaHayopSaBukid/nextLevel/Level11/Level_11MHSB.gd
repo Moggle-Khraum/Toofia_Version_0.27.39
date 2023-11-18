@@ -80,8 +80,8 @@ func _on_ScorePanel2StarC_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
 	$'%wrongPick'.play()
 	print("Plays Wrong Pick")
-	$'%animA'.play('blink')
-	$'%animC'.play('blink')
+	$'%animC0'.play('blink')
+	$'%animC1'.play('blink')
 	print("Shows 2 Star and Blinky")
 	
 #=============================================s

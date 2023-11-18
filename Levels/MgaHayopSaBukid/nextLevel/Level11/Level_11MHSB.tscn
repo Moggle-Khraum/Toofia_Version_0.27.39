@@ -1,4 +1,4 @@
-[gd_scene load_steps=104 format=2]
+[gd_scene load_steps=105 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintC.otf" type="DynamicFontData" id=31]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Home.png" type="Texture" id=32]
 [ext_resource path="res://Assets/UIElements/Icon_Menu.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Audio/levelsAudio/Sheep/askVoice.mp3" type="AudioStream" id=34]
 
 [sub_resource type="DynamicFont" id=18]
 size = 30
@@ -939,7 +940,7 @@ __meta__ = {
 
 [node name="askVoice11" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
 unique_name_in_owner = true
-stream = ExtResource( 18 )
+stream = ExtResource( 34 )
 bus = "Voices"
 
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1875,7 +1876,8 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ScorePanel2StarA/panelblock2/pickC/correctBarC"]
+[node name="animA2" type="AnimationPlayer" parent="ScorePanel2StarA/panelblock2/pickC/correctBarC"]
+unique_name_in_owner = true
 autoplay = "blink"
 anims/blink = SubResource( 40 )
 
@@ -2028,7 +2030,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="animB" type="AnimationPlayer" parent="ScorePanel2StarA/panelblock2/pickB/wrongBarB"]
+[node name="animA" type="AnimationPlayer" parent="ScorePanel2StarA/panelblock2/pickB/wrongBarB"]
 unique_name_in_owner = true
 autoplay = "blink"
 anims/blink = SubResource( 44 )
@@ -2697,7 +2699,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="animC1" type="AnimationPlayer" parent="ScorePanel3StarB/panelblock2/pickC/correctBarC"]
+[node name="animB" type="AnimationPlayer" parent="ScorePanel3StarB/panelblock2/pickC/correctBarC"]
 unique_name_in_owner = true
 autoplay = "blink"
 anims/blink = SubResource( 66 )
@@ -2850,7 +2852,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="animC" type="AnimationPlayer" parent="ScorePanel3StarB/panelblock2/pickC2/correctBarC"]
+[node name="animB2" type="AnimationPlayer" parent="ScorePanel3StarB/panelblock2/pickC2/correctBarC"]
 unique_name_in_owner = true
 autoplay = "blink"
 anims/blink = SubResource( 69 )
@@ -3579,7 +3581,6 @@ __meta__ = {
 }
 
 [node name="correctBarA" type="Panel" parent="ScorePanel2StarC/panelblock2/pickC"]
-modulate = Color( 1, 1, 1, 0.971731 )
 anchor_left = -0.0900002
 anchor_top = -0.0957446
 anchor_right = 4.46
@@ -3591,7 +3592,8 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ScorePanel2StarC/panelblock2/pickC/correctBarA"]
+[node name="animC0" type="AnimationPlayer" parent="ScorePanel2StarC/panelblock2/pickC/correctBarA"]
+unique_name_in_owner = true
 autoplay = "blink"
 anims/blink = SubResource( 72 )
 
@@ -3745,7 +3747,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="animA" type="AnimationPlayer" parent="ScorePanel2StarC/panelblock2/pickA/wrongBarA"]
+[node name="animC1" type="AnimationPlayer" parent="ScorePanel2StarC/panelblock2/pickA/wrongBarA"]
 unique_name_in_owner = true
 autoplay = "blink"
 anims/blink = SubResource( 73 )

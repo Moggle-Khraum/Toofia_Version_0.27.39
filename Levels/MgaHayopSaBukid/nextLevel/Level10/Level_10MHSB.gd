@@ -65,8 +65,8 @@ func _on_ScorePanel2StarB_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
 	$'%wrongPick'.play()
 	print("Plays WrongPick")
-	$'%animA'.play('blink')
 	$'%animA2'.play('blink')
+	$'%animA'.play('blink')
 	print("Shows 2 Star and Blinky")
 #=============================================================
 	
@@ -80,7 +80,7 @@ func _on_ScorePanel3StarC_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
 	$'%correctPick'.play()
 	print("Plays Wrong Pick")
-	$'%animA'.play('blink')
+	$'%animC1'.play('blink')
 	$'%animC'.play('blink')
 	print("Shows 2 Star and Blinky")
 	
