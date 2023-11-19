@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pickAnswer.mp3-07028aaa2c0e256cbd4e9573f824857f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Donkey/pickAnswer.mp3"
+dest_files=[ "res://.import/pickAnswer.mp3-07028aaa2c0e256cbd4e9573f824857f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

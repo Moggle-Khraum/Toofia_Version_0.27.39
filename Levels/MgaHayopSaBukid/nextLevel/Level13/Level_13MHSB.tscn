@@ -1,4 +1,4 @@
-[gd_scene load_steps=104 format=2]
+[gd_scene load_steps=105 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://Assets/Audio/levelsAudio/Bull/askVoice13.mp3" type="AudioStream" id=31]
 [ext_resource path="res://Assets/Audio/levelsAudio/Bull/choiceB.mp3" type="AudioStream" id=32]
 [ext_resource path="res://Assets/Audio/levelsAudio/Bull/choiceC.mp3" type="AudioStream" id=33]
+[ext_resource path="res://Assets/Audio/levelsAudio/Bull/bullmoan.mp3" type="AudioStream" id=34]
 
 [sub_resource type="DynamicFont" id=18]
 size = 28
@@ -823,6 +824,7 @@ bus = "Voices"
 
 [node name="bullVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/bull"]
 unique_name_in_owner = true
+stream = ExtResource( 34 )
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]

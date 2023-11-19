@@ -1,4 +1,4 @@
-[gd_scene load_steps=123 format=2]
+[gd_scene load_steps=130 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -28,6 +28,13 @@
 [ext_resource path="res://Assets/Audio/Mali.mp3" type="AudioStream" id=26]
 [ext_resource path="res://Assets/Sliders/ScrollBar_Blue_Scroller.png" type="Texture" id=27]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Return.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Audio/levelsAudio/Pato/askVoice14.mp3" type="AudioStream" id=29]
+[ext_resource path="res://Assets/Audio/levelsAudio/Pato/infoPato.mp3" type="AudioStream" id=30]
+[ext_resource path="res://Assets/Audio/levelsAudio/Pato/pickAnswer.mp3" type="AudioStream" id=31]
+[ext_resource path="res://Assets/Audio/levelsAudio/Pato/duckquack.mp3" type="AudioStream" id=32]
+[ext_resource path="res://Assets/Audio/levelsAudio/Pato/choiceA.mp3" type="AudioStream" id=33]
+[ext_resource path="res://Assets/Audio/levelsAudio/Pato/choiceB.mp3" type="AudioStream" id=34]
+[ext_resource path="res://Assets/Audio/levelsAudio/Pato/choiceC.mp3" type="AudioStream" id=35]
 
 [sub_resource type="DynamicFont" id=1]
 size = 28
@@ -81,7 +88,7 @@ extra_spacing_char = 3
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=8]
-size = 30
+size = 29
 outline_size = 2
 outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 use_mipmaps = true
@@ -91,7 +98,7 @@ font_data = ExtResource( 8 )
 fallback/0 = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=9]
-size = 30
+size = 29
 use_filter = true
 extra_spacing_top = -3
 font_data = ExtResource( 8 )
@@ -1019,10 +1026,12 @@ __meta__ = {
 
 [node name="infoPato" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pato"]
 unique_name_in_owner = true
+stream = ExtResource( 30 )
 bus = "Voices"
 
 [node name="patoVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/pato"]
 unique_name_in_owner = true
+stream = ExtResource( 32 )
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
@@ -1106,7 +1115,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 8 )
-text = "1. Batay sa iyong narinig, ano ang pangalan ng kinakain ng pato na nasa larawan?"
+text = "1. Batay, sa iyong narinig anong uri ng pagkain ang kinakain ng pato?"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1123,7 +1132,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 9 )
-text = "1. Batay sa iyong narinig, ano ang pangalan ng kinakain ng pato na nasa larawan?"
+text = "1. Batay, sa iyong narinig anong uri ng pagkain ang kinakain ng pato?"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1132,6 +1141,7 @@ __meta__ = {
 
 [node name="askVoice14" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
 unique_name_in_owner = true
+stream = ExtResource( 29 )
 bus = "Voices"
 
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1144,7 +1154,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 10 )
-text = "A. Uod"
+text = "A. Bigas"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1159,7 +1169,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 11 )
-text = "A. Uod"
+text = "A. Bigas"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1168,6 +1178,7 @@ __meta__ = {
 
 [node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
 unique_name_in_owner = true
+stream = ExtResource( 33 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1204,6 +1215,7 @@ __meta__ = {
 
 [node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
 unique_name_in_owner = true
+stream = ExtResource( 34 )
 bus = "Voices"
 
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1241,6 +1253,7 @@ __meta__ = {
 
 [node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
 unique_name_in_owner = true
+stream = ExtResource( 35 )
 bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
@@ -1427,6 +1440,7 @@ __meta__ = {
 
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+stream = ExtResource( 31 )
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 14 )]
@@ -2232,7 +2246,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 91 )
-text = "A. Uod"
+text = "A. Bigas"
 valign = 1
 autowrap = true
 clip_text = true
@@ -2248,7 +2262,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 92 )
-text = "A. Uod"
+text = "A. Bigas"
 valign = 1
 autowrap = true
 clip_text = true

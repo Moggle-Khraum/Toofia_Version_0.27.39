@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/duckquack.mp3-bd70205309ecb6e6add451ba9236735e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Pato/duckquack.mp3"
+dest_files=[ "res://.import/duckquack.mp3-bd70205309ecb6e6add451ba9236735e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
