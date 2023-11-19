@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice15.mp3-d6cc35b576142c77696a5c65bd81c2ba.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Donkey/askVoice15.mp3"
+dest_files=[ "res://.import/askVoice15.mp3-d6cc35b576142c77696a5c65bd81c2ba.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceB.mp3-098ab38e8921c9f3bd9161fb945d9f98.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Donkey/choiceB.mp3"
+dest_files=[ "res://.import/choiceB.mp3-098ab38e8921c9f3bd9161fb945d9f98.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
