@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceB.mp3-8ee5e1afc544a57a8aafd6a3cfab4616.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Duck/choiceB.mp3"
+dest_files=[ "res://.import/choiceB.mp3-8ee5e1afc544a57a8aafd6a3cfab4616.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

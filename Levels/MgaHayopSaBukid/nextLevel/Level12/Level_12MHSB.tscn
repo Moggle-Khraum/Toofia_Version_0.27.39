@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=2]
+[gd_scene load_steps=105 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -27,6 +27,13 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=25]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Return.png" type="Texture" id=26]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_StarGrey_WhiteOutline.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Audio/levelsAudio/Duck/GEESE.mp3" type="AudioStream" id=28]
+[ext_resource path="res://Assets/Audio/levelsAudio/Duck/infoGansa.mp3" type="AudioStream" id=29]
+[ext_resource path="res://Assets/Audio/levelsAudio/Duck/pickAnswer.mp3" type="AudioStream" id=30]
+[ext_resource path="res://Assets/Audio/levelsAudio/Duck/choiceB.mp3" type="AudioStream" id=31]
+[ext_resource path="res://Assets/Audio/levelsAudio/Duck/choiceC.mp3" type="AudioStream" id=32]
+[ext_resource path="res://Assets/Audio/levelsAudio/Duck/askVoice12.mp3" type="AudioStream" id=33]
+[ext_resource path="res://Assets/Audio/levelsAudio/Duck/choiceA.mp3" type="AudioStream" id=34]
 
 [sub_resource type="DynamicFont" id=18]
 size = 27
@@ -813,10 +820,12 @@ __meta__ = {
 
 [node name="infoGoose" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/goose"]
 unique_name_in_owner = true
+stream = ExtResource( 29 )
 bus = "Voices"
 
 [node name="gooseVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/goose"]
 unique_name_in_owner = true
+stream = ExtResource( 28 )
 bus = "Voices"
 
 [node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
@@ -926,6 +935,7 @@ __meta__ = {
 
 [node name="askVoice12" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
 unique_name_in_owner = true
+stream = ExtResource( 33 )
 bus = "Voices"
 
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -962,6 +972,7 @@ __meta__ = {
 
 [node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
 unique_name_in_owner = true
+stream = ExtResource( 34 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -998,6 +1009,7 @@ __meta__ = {
 
 [node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
 unique_name_in_owner = true
+stream = ExtResource( 31 )
 bus = "Voices"
 
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1035,6 +1047,7 @@ __meta__ = {
 
 [node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
 unique_name_in_owner = true
+stream = ExtResource( 32 )
 bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
@@ -1221,6 +1234,7 @@ __meta__ = {
 
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+stream = ExtResource( 30 )
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 14 )]

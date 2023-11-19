@@ -1,4 +1,8 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scroll.tres" type="Theme" id=1]
+
+[sub_resource type="Theme" id=1]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -16,8 +20,9 @@ __meta__ = {
 
 [node name="ScrollContainer" type="ScrollContainer" parent="bg"]
 anchor_top = 0.256667
-anchor_right = 1.0
-anchor_bottom = 0.995
+anchor_right = 0.985352
+anchor_bottom = 0.996667
+theme = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -33,10 +38,12 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="bg/ScrollContainer/Control"]
-anchor_left = 0.0297379
-anchor_right = 1.0247
-anchor_bottom = 1.0
-custom_constants/separation = 20
+anchor_left = 0.0231855
+anchor_top = -0.0561798
+anchor_right = 1.09173
+anchor_bottom = 0.94382
+theme = SubResource( 1 )
+custom_constants/separation = 45
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -47,19 +54,36 @@ margin_right = 445.0
 margin_bottom = 445.0
 rect_min_size = Vector2( 445, 0 )
 
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/TextureRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
 [node name="TextureRect2" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 465.0
-margin_right = 910.0
+margin_left = 490.0
+margin_right = 935.0
 margin_bottom = 445.0
 rect_min_size = Vector2( 445, 0 )
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/TextureRect2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 
 [node name="TextureRect3" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 930.0
-margin_right = 1375.0
+margin_left = 980.0
+margin_right = 1425.0
 margin_bottom = 445.0
 rect_min_size = Vector2( 445, 0 )
 
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/TextureRect3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
 [node name="TextureRect4" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 1395.0
-margin_right = 1395.0
+margin_left = 1470.0
+margin_right = 1915.0
 margin_bottom = 445.0
+rect_min_size = Vector2( 445, 0 )
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/TextureRect4"]
+anchor_right = 1.0
+anchor_bottom = 1.0

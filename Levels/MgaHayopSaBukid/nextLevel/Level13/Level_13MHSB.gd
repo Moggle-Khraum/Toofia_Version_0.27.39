@@ -74,9 +74,9 @@ func _on_C_pressed():
 	print('The Answer is Wrong!')
 	CorrectAnswer.play()
 	print("Pressed C, Wrong Answer")
-	$'%ScorePanel3StarC'.show()
+	$'%ScorePanel2StarC'.show()
 	
-func _on_ScorePanel3StarC_visibility_changed():
+func _on_ScorePanel2StarC_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
 	$'%correctPick'.play()
 	$'%animC1'.play('blink')

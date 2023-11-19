@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=2]
+[gd_scene load_steps=104 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
@@ -27,6 +27,12 @@
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=25]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Return.png" type="Texture" id=26]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_StarGrey_WhiteOutline.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Audio/levelsAudio/Bull/choiceA.mp3" type="AudioStream" id=28]
+[ext_resource path="res://Assets/Audio/levelsAudio/Bull/infoBull.mp3" type="AudioStream" id=29]
+[ext_resource path="res://Assets/Audio/levelsAudio/Bull/pickAnswer.mp3" type="AudioStream" id=30]
+[ext_resource path="res://Assets/Audio/levelsAudio/Bull/askVoice13.mp3" type="AudioStream" id=31]
+[ext_resource path="res://Assets/Audio/levelsAudio/Bull/choiceB.mp3" type="AudioStream" id=32]
+[ext_resource path="res://Assets/Audio/levelsAudio/Bull/choiceC.mp3" type="AudioStream" id=33]
 
 [sub_resource type="DynamicFont" id=18]
 size = 28
@@ -609,7 +615,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.2, 0.8, 1.4 ),
+"times": PoolRealArray( 0.3, 0.8, 1.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.509804 ), Color( 1, 1, 1, 1 ) ]
@@ -626,10 +632,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.2, 0.8, 1.4 ),
+"times": PoolRealArray( 0.3, 0.8, 1.3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.509804 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0.411765 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.45098 ) ]
 }
 
 [node name="Control" type="Control"]
@@ -812,6 +818,7 @@ __meta__ = {
 
 [node name="infoBull" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/bull"]
 unique_name_in_owner = true
+stream = ExtResource( 29 )
 bus = "Voices"
 
 [node name="bullVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/bull"]
@@ -925,6 +932,7 @@ __meta__ = {
 
 [node name="askVoice13" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
 unique_name_in_owner = true
+stream = ExtResource( 31 )
 bus = "Voices"
 
 [node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -961,6 +969,7 @@ __meta__ = {
 
 [node name="choiceA" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
 unique_name_in_owner = true
+stream = ExtResource( 28 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -973,7 +982,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 12 )
-text = "B. Papel"
+text = "B. Damit"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -988,7 +997,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 13 )
-text = "B. Papel"
+text = "B. Damit"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -997,6 +1006,7 @@ __meta__ = {
 
 [node name="choiceB" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
 unique_name_in_owner = true
+stream = ExtResource( 32 )
 bus = "Voices"
 
 [node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
@@ -1009,7 +1019,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 14 )
-text = "C. Pitaka"
+text = "C. Pagkain"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1025,7 +1035,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 15 )
-text = "C. Pitaka"
+text = "C. Pagkain"
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -1034,6 +1044,7 @@ __meta__ = {
 
 [node name="choiceC" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
 unique_name_in_owner = true
+stream = ExtResource( 33 )
 bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
@@ -1048,6 +1059,7 @@ __meta__ = {
 
 [node name="A" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_right = 95.0
 margin_bottom = 95.0
 rect_min_size = Vector2( 95, 95 )
@@ -1104,6 +1116,7 @@ __meta__ = {
 
 [node name="B" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 125.0
 margin_right = 220.0
 margin_bottom = 95.0
@@ -1161,6 +1174,7 @@ __meta__ = {
 
 [node name="C" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+visible = false
 margin_left = 250.0
 margin_right = 345.0
 margin_bottom = 95.0
@@ -1217,6 +1231,7 @@ __meta__ = {
 
 [node name="pickAnswer" type="AudioStreamPlayer" parent="Panel/NinePatchRect/AnswerPanel"]
 unique_name_in_owner = true
+stream = ExtResource( 30 )
 bus = "Voices"
 
 [node name="pausePanel" parent="." instance=ExtResource( 14 )]
@@ -2846,7 +2861,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 66 )
-text = "B. Papel"
+text = "B. Damit"
 valign = 1
 autowrap = true
 clip_text = true
@@ -2862,7 +2877,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 67 )
-text = "B. Papel"
+text = "B. Damit"
 valign = 1
 autowrap = true
 clip_text = true
@@ -2938,17 +2953,17 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="ScorePanel3StarC" type="Panel" parent="."]
+[node name="ScorePanel2StarC" type="Panel" parent="."]
 unique_name_in_owner = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 21 )
+custom_styles/panel = SubResource( 46 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="panelblock" type="NinePatchRect" parent="ScorePanel3StarC"]
+[node name="panelblock" type="NinePatchRect" parent="ScorePanel2StarC"]
 anchor_left = 0.0185547
 anchor_top = 0.14
 anchor_right = 0.486328
@@ -2960,7 +2975,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="banner2" type="TextureRect" parent="ScorePanel3StarC/panelblock"]
+[node name="banner2" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
 anchor_left = 0.0265487
 anchor_top = -0.0693642
 anchor_right = 0.977876
@@ -2972,7 +2987,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="ribbon" type="TextureRect" parent="ScorePanel3StarC/panelblock"]
+[node name="ribbon" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
 anchor_left = -0.0125261
 anchor_top = -0.145161
 anchor_right = 1.03132
@@ -2984,7 +2999,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="napakA" type="Label" parent="ScorePanel3StarC/panelblock/ribbon"]
+[node name="napakA" type="Label" parent="ScorePanel2StarC/panelblock/ribbon"]
 anchor_left = 0.126
 anchor_top = 0.169643
 anchor_right = 0.526377
@@ -2996,7 +3011,7 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 22 )
+custom_fonts/font = SubResource( 47 )
 text = "napaka"
 align = 1
 valign = 1
@@ -3008,7 +3023,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="napaka" type="Label" parent="ScorePanel3StarC/panelblock/ribbon/napakA"]
+[node name="napaka" type="Label" parent="ScorePanel2StarC/panelblock/ribbon/napakA"]
 anchor_left = -0.00106838
 anchor_top = -0.0491803
 anchor_right = 0.998932
@@ -3016,7 +3031,7 @@ anchor_bottom = 0.95082
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 23 )
+custom_fonts/font = SubResource( 48 )
 text = "napaka"
 align = 1
 valign = 1
@@ -3028,7 +3043,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="husaY" type="Label" parent="ScorePanel3StarC/panelblock/ribbon"]
+[node name="husaY" type="Label" parent="ScorePanel2StarC/panelblock/ribbon"]
 anchor_left = 0.472
 anchor_top = 0.0625
 anchor_right = 0.866185
@@ -3040,7 +3055,7 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 24 )
+custom_fonts/font = SubResource( 49 )
 text = "husay!!"
 align = 1
 valign = 1
@@ -3052,7 +3067,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="husay" type="Label" parent="ScorePanel3StarC/panelblock/ribbon/husaY"]
+[node name="husay" type="Label" parent="ScorePanel2StarC/panelblock/ribbon/husaY"]
 anchor_left = -0.00106838
 anchor_top = -0.0491803
 anchor_right = 0.998932
@@ -3060,7 +3075,7 @@ anchor_bottom = 0.95082
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 25 )
+custom_fonts/font = SubResource( 50 )
 text = "husay!!"
 align = 1
 valign = 1
@@ -3072,7 +3087,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="star0" type="TextureRect" parent="ScorePanel3StarC/panelblock"]
+[node name="star0" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
 anchor_left = 0.0647182
 anchor_top = 0.145161
 anchor_right = 0.327766
@@ -3084,7 +3099,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="star0" type="TextureRect" parent="ScorePanel3StarC/panelblock/star0"]
+[node name="star0" type="TextureRect" parent="ScorePanel2StarC/panelblock/star0"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 24 )
@@ -3093,7 +3108,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="star1" type="TextureRect" parent="ScorePanel3StarC/panelblock"]
+[node name="star1" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
 anchor_left = 0.31524
 anchor_top = 0.0120968
 anchor_right = 0.693111
@@ -3105,7 +3120,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="star1" type="TextureRect" parent="ScorePanel3StarC/panelblock/star1"]
+[node name="star1" type="TextureRect" parent="ScorePanel2StarC/panelblock/star1"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 24 )
@@ -3114,7 +3129,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="star2" type="TextureRect" parent="ScorePanel3StarC/panelblock"]
+[node name="star2" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
 anchor_left = 0.665971
 anchor_top = 0.15121
 anchor_right = 0.929019
@@ -3126,7 +3141,8 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="star2" type="TextureRect" parent="ScorePanel3StarC/panelblock/star2"]
+[node name="star2" type="TextureRect" parent="ScorePanel2StarC/panelblock/star2"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 24 )
@@ -3135,7 +3151,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="applause" type="Label" parent="ScorePanel3StarC/panelblock"]
+[node name="applause" type="Label" parent="ScorePanel2StarC/panelblock"]
 anchor_left = 0.0501044
 anchor_top = 0.375
 anchor_right = 0.94572
@@ -3144,7 +3160,7 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 26 )
+custom_fonts/font = SubResource( 51 )
 text = "Binabati kita!"
 align = 1
 valign = 1
@@ -3156,14 +3172,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="applause" type="Label" parent="ScorePanel3StarC/panelblock/applause"]
+[node name="applause" type="Label" parent="ScorePanel2StarC/panelblock/applause"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 27 )
+custom_fonts/font = SubResource( 52 )
 text = "binabati kita!"
 align = 1
 valign = 1
@@ -3174,16 +3190,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="theLevels" type="Label" parent="ScorePanel3StarC/panelblock"]
-anchor_left = 0.179541
-anchor_top = 0.600806
-anchor_right = 0.440501
-anchor_bottom = 0.75
+[node name="theLevels" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.0793319
+anchor_top = 0.610887
+anchor_right = 0.340293
+anchor_bottom = 0.760081
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 28 )
+custom_fonts/font = SubResource( 53 )
 text = "Mga Levels"
 align = 1
 valign = 1
@@ -3195,14 +3211,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="levelLabel" type="Label" parent="ScorePanel3StarC/panelblock/theLevels"]
+[node name="levelLabel" type="Label" parent="ScorePanel2StarC/panelblock/theLevels"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 29 )
+custom_fonts/font = SubResource( 54 )
 text = "mga levels"
 align = 1
 valign = 1
@@ -3213,16 +3229,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="theHome" type="Label" parent="ScorePanel3StarC/panelblock"]
-anchor_left = 0.563675
-anchor_top = 0.616935
-anchor_right = 0.76618
-anchor_bottom = 0.743951
+[node name="theHome" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.402923
+anchor_top = 0.629032
+anchor_right = 0.605428
+anchor_bottom = 0.756048
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 30 )
+custom_fonts/font = SubResource( 55 )
 text = "Main menu"
 align = 1
 valign = 1
@@ -3234,14 +3250,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="thehome" type="Label" parent="ScorePanel3StarC/panelblock/theHome"]
+[node name="thehome" type="Label" parent="ScorePanel2StarC/panelblock/theHome"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 31 )
+custom_fonts/font = SubResource( 56 )
 text = "main menu"
 align = 1
 valign = 1
@@ -3252,18 +3268,59 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="levelPanel" type="HBoxContainer" parent="ScorePanel3StarC/panelblock"]
-anchor_left = 0.217119
-anchor_top = 0.75
-anchor_right = 0.759917
-anchor_bottom = 0.921371
-custom_constants/separation = 80
+[node name="theRetry" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.643007
+anchor_top = 0.629032
+anchor_right = 0.941545
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 55 )
+text = "subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="goLevels" type="TextureRect" parent="ScorePanel3StarC/panelblock/levelPanel"]
+[node name="theretry" type="Label" parent="ScorePanel2StarC/panelblock/theRetry"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 56 )
+text = "subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelPanel" type="HBoxContainer" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.114823
+anchor_top = 0.768145
+anchor_right = 0.908142
+anchor_bottom = 0.939516
+custom_constants/separation = 50
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goLevels" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
 margin_right = 90.0
 margin_bottom = 85.0
 rect_min_size = Vector2( 90, 85 )
@@ -3274,7 +3331,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="levels" type="Button" parent="ScorePanel3StarC/panelblock/levelPanel/goLevels"]
+[node name="levels" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goLevels"]
 anchor_left = 0.130439
 anchor_top = 0.189657
 anchor_right = 0.878265
@@ -3290,9 +3347,9 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="goHome" type="TextureRect" parent="ScorePanel3StarC/panelblock/levelPanel"]
-margin_left = 170.0
-margin_right = 260.0
+[node name="goHome" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
+margin_left = 140.0
+margin_right = 230.0
 margin_bottom = 85.0
 rect_min_size = Vector2( 90, 85 )
 texture = ExtResource( 11 )
@@ -3302,7 +3359,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="home" type="Button" parent="ScorePanel3StarC/panelblock/levelPanel/goHome"]
+[node name="home" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goHome"]
 anchor_left = 0.122222
 anchor_top = 0.105882
 anchor_right = 0.870049
@@ -3318,7 +3375,34 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="panelblock2" type="NinePatchRect" parent="ScorePanel3StarC"]
+[node name="goRetry" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
+margin_left = 280.0
+margin_right = 370.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="retry" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goRetry"]
+anchor_left = 0.144445
+anchor_top = 0.129412
+anchor_right = 0.892272
+anchor_bottom = 0.870791
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 26 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="panelblock2" type="NinePatchRect" parent="ScorePanel2StarC"]
 anchor_left = 0.493164
 anchor_top = 0.0316667
 anchor_right = 0.980469
@@ -3329,7 +3413,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="block" type="Control" parent="ScorePanel3StarC/panelblock2"]
+[node name="block" type="Control" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0400802
 anchor_top = 0.0480427
 anchor_right = 0.96994
@@ -3339,15 +3423,15 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correctLabel" type="Label" parent="ScorePanel3StarC/panelblock2/block"]
+[node name="wrongLabel" type="Label" parent="ScorePanel2StarC/panelblock2/block"]
 anchor_top = 0.0116664
 anchor_right = 1.00121
 anchor_bottom = 1.00331
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 32 )
-text = "Tama ang napili
+custom_fonts/font = SubResource( 57 )
+text = "Mali ang napili
 mong sagot !"
 align = 1
 valign = 1
@@ -3359,15 +3443,15 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correctLabel2" type="Label" parent="ScorePanel3StarC/panelblock2/block"]
+[node name="wrongLabel2" type="Label" parent="ScorePanel2StarC/panelblock2/block"]
 anchor_right = 0.998208
 anchor_bottom = 0.979974
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 33 )
-text = "Tama ang napili
+custom_fonts/font = SubResource( 58 )
+text = "Mali ang napili
 mong sagot !"
 align = 1
 valign = 1
@@ -3379,7 +3463,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correctLabel" type="Label" parent="ScorePanel3StarC/panelblock2/block/correctLabel2"]
+[node name="wrongLabel" type="Label" parent="ScorePanel2StarC/panelblock2/block/wrongLabel2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -3.0
@@ -3387,8 +3471,8 @@ margin_bottom = -2.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 34 )
-text = "Tama ang napili
+custom_fonts/font = SubResource( 59 )
+text = "Mali ang napili
 mong sagot !"
 align = 1
 valign = 1
@@ -3399,17 +3483,17 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="correctAns" type="Label" parent="ScorePanel3StarC/panelblock2"]
+[node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0420842
 anchor_top = 0.240214
-anchor_right = 0.58517
+anchor_right = 0.589178
 anchor_bottom = 0.318505
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 35 )
+custom_fonts/font = SubResource( 60 )
 text = "Ang tamang sagot:"
 align = 1
 valign = 1
@@ -3420,14 +3504,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correctAns" type="Label" parent="ScorePanel3StarC/panelblock2/correctAns"]
+[node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock2/correctAns"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 36 )
+custom_fonts/font = SubResource( 61 )
 text = "Ang tamang sagot:"
 align = 1
 valign = 1
@@ -3437,7 +3521,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pickC" type="TextureRect" parent="ScorePanel3StarC/panelblock2"]
+[node name="pickC" type="TextureRect" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0641283
 anchor_top = 0.327402
 anchor_right = 0.264529
@@ -3449,7 +3533,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="pickC" type="Label" parent="ScorePanel3StarC/panelblock2/pickC"]
+[node name="pickC" type="Label" parent="ScorePanel2StarC/panelblock2/pickC"]
 anchor_right = 1.0
 anchor_bottom = 0.904255
 rect_min_size = Vector2( 75, 75 )
@@ -3457,8 +3541,8 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 37 )
-text = "A"
+custom_fonts/font = SubResource( 62 )
+text = "a"
 align = 1
 valign = 2
 autowrap = true
@@ -3469,13 +3553,13 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="pickC" type="Label" parent="ScorePanel3StarC/panelblock2/pickC/pickC"]
+[node name="pickC" type="Label" parent="ScorePanel2StarC/panelblock2/pickC/pickC"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 38 )
+custom_fonts/font = SubResource( 63 )
 text = "a"
 align = 1
 valign = 2
@@ -3486,24 +3570,23 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="correctBarC" type="Panel" parent="ScorePanel3StarC/panelblock2/pickC"]
+[node name="correctBarC" type="Panel" parent="ScorePanel2StarC/panelblock2/pickC"]
 anchor_left = -0.0900002
 anchor_top = -0.0957446
 anchor_right = 4.46
 anchor_bottom = 1.09574
 margin_left = 1.52588e-05
-custom_styles/panel = SubResource( 39 )
+custom_styles/panel = SubResource( 64 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="animC1" type="AnimationPlayer" parent="ScorePanel3StarC/panelblock2/pickC/correctBarC"]
-unique_name_in_owner = true
+[node name="animB1" type="AnimationPlayer" parent="ScorePanel2StarC/panelblock2/pickC/correctBarC"]
 autoplay = "blink"
 anims/blink = SubResource( 72 )
 
-[node name="answerLabelC" type="Label" parent="ScorePanel3StarC/panelblock2"]
+[node name="answerLabelC" type="Label" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.276553
 anchor_top = 0.33452
 anchor_right = 0.943888
@@ -3514,8 +3597,8 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 41 )
-text = "A. Puti"
+custom_fonts/font = SubResource( 66 )
+text = "A. Sinturon"
 valign = 1
 autowrap = true
 clip_text = true
@@ -3524,14 +3607,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="answerLabelC" type="Label" parent="ScorePanel3StarC/panelblock2/answerLabelC"]
+[node name="answerLabelC" type="Label" parent="ScorePanel2StarC/panelblock2/answerLabelC"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 42 )
-text = "A. Puti"
+custom_fonts/font = SubResource( 67 )
+text = "A. Sinturon"
 valign = 1
 autowrap = true
 clip_text = true
@@ -3539,7 +3622,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="border" type="HSeparator" parent="ScorePanel3StarC/panelblock2"]
+[node name="border" type="HSeparator" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0781563
 anchor_top = 0.209964
 anchor_right = 0.951904
@@ -3550,17 +3633,17 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correctAns2" type="Label" parent="ScorePanel3StarC/panelblock2"]
+[node name="correctAns2" type="Label" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0460922
 anchor_top = 0.505338
-anchor_right = 0.527054
+anchor_right = 0.539078
 anchor_bottom = 0.58363
 margin_left = -1.14441e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 35 )
+custom_fonts/font = SubResource( 60 )
 text = "Ang iyong sagot:"
 align = 1
 valign = 1
@@ -3571,14 +3654,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="correctAns" type="Label" parent="ScorePanel3StarC/panelblock2/correctAns2"]
+[node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock2/correctAns2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 36 )
+custom_fonts/font = SubResource( 61 )
 text = "Ang iyong sagot:"
 align = 1
 valign = 1
@@ -3588,7 +3671,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pickC2" type="TextureRect" parent="ScorePanel3StarC/panelblock2"]
+[node name="pickB" type="TextureRect" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0701403
 anchor_top = 0.587189
 anchor_right = 0.270541
@@ -3600,7 +3683,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="pickC" type="Label" parent="ScorePanel3StarC/panelblock2/pickC2"]
+[node name="pickB" type="Label" parent="ScorePanel2StarC/panelblock2/pickB"]
 anchor_left = 0.0842105
 anchor_top = 0.147368
 anchor_right = 0.915789
@@ -3610,8 +3693,8 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 37 )
-text = "a"
+custom_fonts/font = SubResource( 62 )
+text = "c"
 align = 1
 valign = 2
 autowrap = true
@@ -3622,14 +3705,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="pickC" type="Label" parent="ScorePanel3StarC/panelblock2/pickC2/pickC"]
+[node name="pickB" type="Label" parent="ScorePanel2StarC/panelblock2/pickB/pickB"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 38 )
-text = "a"
+custom_fonts/font = SubResource( 63 )
+text = "c"
 align = 1
 valign = 2
 autowrap = true
@@ -3639,24 +3722,24 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="correctBarC" type="Panel" parent="ScorePanel3StarC/panelblock2/pickC2"]
+[node name="wrongBarB" type="Panel" parent="ScorePanel2StarC/panelblock2/pickB"]
+modulate = Color( 1, 1, 1, 0.435294 )
 anchor_left = -0.1
 anchor_top = -0.074468
-anchor_right = 4.46
+anchor_right = 4.43
 anchor_bottom = 1.09574
 margin_left = 1.52588e-05
-custom_styles/panel = SubResource( 39 )
+custom_styles/panel = SubResource( 68 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="animC" type="AnimationPlayer" parent="ScorePanel3StarC/panelblock2/pickC2/correctBarC"]
-unique_name_in_owner = true
+[node name="animB" type="AnimationPlayer" parent="ScorePanel2StarC/panelblock2/pickB/wrongBarB"]
 autoplay = "blink"
 anims/blink = SubResource( 73 )
 
-[node name="answerLabelC2" type="Label" parent="ScorePanel3StarC/panelblock2"]
+[node name="answerLabelB" type="Label" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.282565
 anchor_top = 0.594306
 anchor_right = 0.9499
@@ -3667,8 +3750,8 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 41 )
-text = "A. Puti"
+custom_fonts/font = SubResource( 66 )
+text = "C. Pagkain"
 valign = 1
 autowrap = true
 clip_text = true
@@ -3677,16 +3760,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="answerLabelC" type="Label" parent="ScorePanel3StarC/panelblock2/answerLabelC2"]
+[node name="answerLabelB" type="Label" parent="ScorePanel2StarC/panelblock2/answerLabelB"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -2.00037
-margin_bottom = -9.15527e-05
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 42 )
-text = "A. Puti"
+custom_fonts/font = SubResource( 67 )
+text = "C. Pagkain"
 valign = 1
 autowrap = true
 clip_text = true
@@ -3694,7 +3775,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="border2" type="HSeparator" parent="ScorePanel3StarC/panelblock2"]
+[node name="border2" type="HSeparator" parent="ScorePanel2StarC/panelblock2"]
 anchor_left = 0.0761523
 anchor_top = 0.759786
 anchor_right = 0.9499
@@ -3705,17 +3786,17 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="nextQuestion" type="Button" parent="ScorePanel3StarC/panelblock2"]
-margin_left = 95.0001
-margin_top = 475.0
-margin_right = 421.0
-margin_bottom = 539.0
+[node name="nextQuestion" type="Button" parent="ScorePanel2StarC/panelblock2"]
+margin_left = 106.0
+margin_top = 478.0
+margin_right = 432.0
+margin_bottom = 542.0
 flat = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="block" type="TextureRect" parent="ScorePanel3StarC/panelblock2/nextQuestion"]
+[node name="block" type="TextureRect" parent="ScorePanel2StarC/panelblock2/nextQuestion"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 20 )
@@ -3726,14 +3807,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="continue" type="Label" parent="ScorePanel3StarC/panelblock2/nextQuestion"]
+[node name="continue" type="Label" parent="ScorePanel2StarC/panelblock2/nextQuestion"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 44 )
+custom_fonts/font = SubResource( 70 )
 text = "Magpatuloy.."
 align = 1
 valign = 1
@@ -3744,14 +3825,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="continue" type="Label" parent="ScorePanel3StarC/panelblock2/nextQuestion/continue"]
+[node name="continue" type="Label" parent="ScorePanel2StarC/panelblock2/nextQuestion/continue"]
 anchor_top = 0.0232558
 anchor_right = 1.0
 anchor_bottom = 0.953488
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 45 )
+custom_fonts/font = SubResource( 71 )
 text = "Magpatuloy.."
 align = 1
 valign = 1
@@ -3794,9 +3875,10 @@ bus = "Voices"
 [connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
 [connection signal="pressed" from="ScorePanel2StarB/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="ScorePanel2StarB/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
-[connection signal="visibility_changed" from="ScorePanel3StarC" to="." method="_on_ScorePanel3StarC_visibility_changed"]
-[connection signal="pressed" from="ScorePanel3StarC/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
-[connection signal="pressed" from="ScorePanel3StarC/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
-[connection signal="pressed" from="ScorePanel3StarC/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="visibility_changed" from="ScorePanel2StarC" to="." method="_on_ScorePanel2StarC_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goHome/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock2/nextQuestion" to="." method="_on_nextQuestion_pressed"]
 
 [editable path="pausePanel"]

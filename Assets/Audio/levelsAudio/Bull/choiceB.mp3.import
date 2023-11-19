@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceB.mp3-f039ff4bfc0bc6783fc955e47a744dad.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Bull/choiceB.mp3"
+dest_files=[ "res://.import/choiceB.mp3-f039ff4bfc0bc6783fc955e47a744dad.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
