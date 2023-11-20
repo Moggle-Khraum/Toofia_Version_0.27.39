@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.gd" type="Script" id=1]
 [ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/sample.ogv" type="VideoStream" id=2]
@@ -9,9 +9,10 @@
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=8]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=9]
+[ext_resource path="res://Assets/GUI/gears2d2.png" type="Texture" id=10]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 68
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
@@ -20,11 +21,15 @@ font_data = ExtResource( 9 )
 fallback/0 = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 50
+size = 68
 use_filter = true
 extra_spacing_char = -3
 font_data = ExtResource( 9 )
 fallback/0 = ExtResource( 8 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 356, 357 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -40,6 +45,46 @@ anchor_bottom = 1.0
 texture = ExtResource( 5 )
 __meta__ = {
 "_edit_lock_": true
+}
+
+[node name="alphabet" type="Label" parent="NinePatchRect"]
+anchor_left = 0.108398
+anchor_top = 0.0433333
+anchor_right = 0.912109
+anchor_bottom = 0.168333
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "Alphabet Song"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="alphabet" type="Label" parent="NinePatchRect/alphabet"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 2 )
+text = "Alphabet Song"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
 }
 
 [node name="VideoPlayer" type="VideoPlayer" parent="NinePatchRect"]
@@ -68,6 +113,123 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="Node2D" type="Node2D" parent="NinePatchRect"]
+position = Vector2( 100, 542 )
+scale = Vector2( 0.22, 0.22 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="cog" type="Sprite" parent="NinePatchRect/Node2D"]
+unique_name_in_owner = true
+show_behind_parent = true
+scale = Vector2( 0.0671386, 0.069413 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="cog0" type="Sprite" parent="NinePatchRect/Node2D"]
+unique_name_in_owner = true
+show_behind_parent = true
+position = Vector2( 3736.36, -4.54688 )
+scale = Vector2( 0.0671386, 0.069413 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D0" type="Node2D" parent="NinePatchRect"]
+position = Vector2( 100, 117 )
+scale = Vector2( 0.22, 0.22 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="cog1" type="Sprite" parent="NinePatchRect/Node2D0"]
+unique_name_in_owner = true
+show_behind_parent = true
+scale = Vector2( 0.0671386, 0.069413 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="cog2" type="Sprite" parent="NinePatchRect/Node2D0"]
+unique_name_in_owner = true
+show_behind_parent = true
+position = Vector2( 3736.36, -4.54688 )
+scale = Vector2( 0.0671386, 0.069413 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="knobs" type="Control" parent="NinePatchRect"]
+anchor_left = 0.0195313
+anchor_top = 0.79
+anchor_right = 1.01953
+anchor_bottom = 0.965
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="knob" type="Panel" parent="NinePatchRect/knobs"]
+anchor_left = 0.0693359
+anchor_top = 0.561905
+anchor_right = 0.0869141
+anchor_bottom = 0.733333
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="knob0" type="Panel" parent="NinePatchRect/knobs"]
+anchor_left = 0.87207
+anchor_top = 0.552381
+anchor_right = 0.889648
+anchor_bottom = 0.72381
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="knobs0" type="Control" parent="NinePatchRect"]
+anchor_left = 0.0195313
+anchor_top = 0.0816667
+anchor_right = 1.01953
+anchor_bottom = 0.256667
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="knob" type="Panel" parent="NinePatchRect/knobs0"]
+anchor_left = 0.0693359
+anchor_top = 0.561905
+anchor_right = 0.0869141
+anchor_bottom = 0.733333
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="knob0" type="Panel" parent="NinePatchRect/knobs0"]
+anchor_left = 0.87207
+anchor_top = 0.552381
+anchor_right = 0.889648
+anchor_bottom = 0.72381
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="PLAYTHEVIDEO" type="TextureButton" parent="."]
 unique_name_in_owner = true
 anchor_left = 0.419922
@@ -86,10 +248,10 @@ __meta__ = {
 }
 
 [node name="return" type="Button" parent="."]
-anchor_left = 0.0166016
-anchor_top = 0.0316667
-anchor_right = 0.102539
-anchor_bottom = 0.16
+anchor_left = 0.0185547
+anchor_top = 0.508333
+anchor_right = 0.0849609
+anchor_bottom = 0.623333
 focus_mode = 0
 enabled_focus_mode = 0
 icon = ExtResource( 6 )
@@ -109,45 +271,6 @@ anchor_bottom = 0.792208
 texture = ExtResource( 7 )
 expand = true
 flip_h = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="alphabet" type="Label" parent="."]
-anchor_left = 0.108398
-anchor_top = 0.0433333
-anchor_right = 0.912109
-anchor_bottom = 0.168333
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 1 )
-text = "Alphabet Song"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="alphabet" type="Label" parent="alphabet"]
-anchor_top = -0.0193965
-anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 2 )
-text = "Alphabet Song"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true

@@ -1,9 +1,10 @@
 extends Control
 
+
 #This is for the Right Button
 func _on_RightButton_pressed() -> void:
 	ScrollPop.play()
-	var goLvl2 = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/NextLevelP2Z/LetterSpeak2.tscn")
+	var goLvl1 = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/LetterSpeak.tscn")
 	print("Pressed Rigght Button '=>'")
 
 
@@ -19,28 +20,23 @@ func _on_GoBackButton_pressed() -> void:
 
 #THIS HERE IS FOR THE BUTTONS
 #LETTERS A
-func _on_Aa_pressed() -> void:
+func _on_Pp_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.15), "timeout")
-	$'%bigA'.play()
-	print("Play Big A")
+	$'%bigP'.play()
+	print("Play Big P")
 
-func _on_bigA_finished() -> void:
+func _on_bigP_finished() -> void:
 	yield(get_tree().create_timer(0.18), "timeout")
 	$'%Label3'.show()
-	$'%smallA'.play()
-	print("Play Small A")
+	$'%smallP'.play()
+	print("Play Small P")
 
+#THIS IS FOR THE ALPHABET SONG------
+func _on_alphabetsong_pressed() -> void:
+	ScrollPop.play()
+	yield(get_tree().create_timer(0.5), "timeout")
+	var goingToAlphabetSong = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.tscn")
+	print("Going to Song")
 
-
-
-
-
-
-
-
-
-
-
-
-
+	

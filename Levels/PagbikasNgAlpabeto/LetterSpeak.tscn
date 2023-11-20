@@ -1,9 +1,8 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://scroll.tres" type="Theme" id=1]
-[ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=2]
-[ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=3]
-[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UIElements/Icon_Down.png" type="Texture" id=2]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Circle.png" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=7]
@@ -14,13 +13,15 @@
 [ext_resource path="res://Assets/GUI/IconButton_Large_Blue_Square.png" type="Texture" id=12]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Square.png" type="Texture" id=13]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Square.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Audio/Letters/BigA.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Audio/Letters/SmallA.mp3" type="AudioStream" id=16]
 
 [sub_resource type="Theme" id=1]
 
 [sub_resource type="StyleBoxEmpty" id=12]
 
 [sub_resource type="DynamicFont" id=6]
-size = 58
+size = 62
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 10 )
@@ -51,6 +52,7 @@ font_data = ExtResource( 10 )
 size = 55
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_mipmaps = true
 use_filter = true
 extra_spacing_char = -3
 font_data = ExtResource( 7 )
@@ -81,10 +83,10 @@ __meta__ = {
 
 [node name="ScrollContainer" type="ScrollContainer" parent="bg"]
 unique_name_in_owner = true
-anchor_left = -0.00390625
-anchor_top = 0.165
-anchor_right = 0.957031
-anchor_bottom = 0.968333
+anchor_left = 0.0283203
+anchor_top = 0.166667
+anchor_right = 0.894531
+anchor_bottom = 0.943333
 theme = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true,
@@ -92,21 +94,21 @@ __meta__ = {
 }
 
 [node name="Control" type="Control" parent="bg/ScrollContainer"]
-margin_right = 1984.0
+margin_right = 890.0
 margin_bottom = 445.0
-rect_min_size = Vector2( 1984, 445 )
+rect_min_size = Vector2( 890, 445 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="bg/ScrollContainer/Control"]
-anchor_left = 0.0408266
-anchor_top = 0.0382022
-anchor_right = 1.21018
-anchor_bottom = 0.364045
+anchor_left = 0.0126008
+anchor_top = 0.0112359
+anchor_right = 0.451109
+anchor_bottom = 0.337079
 theme = SubResource( 1 )
-custom_constants/separation = 45
+custom_constants/separation = 30
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -133,19 +135,19 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel"]
 anchor_left = 0.04
-anchor_top = 0.0367647
+anchor_top = -0.0294118
 anchor_right = 0.953333
-anchor_bottom = 0.492647
+anchor_bottom = 0.698529
 custom_fonts/font = SubResource( 6 )
 text = "Aa"
 align = 1
-valign = 2
+valign = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="a-g" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel"]
+[node name="Aa" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel"]
 anchor_left = 0.12
 anchor_top = 0.0514706
 anchor_right = 0.906667
@@ -160,39 +162,34 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label2" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel"]
-visible = false
-anchor_left = 0.04
-anchor_top = 0.529412
-anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 16 )
-text = "/ey/"
-align = 1
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel"]
+unique_name_in_owner = true
 anchor_left = 0.04
-anchor_top = 0.529412
+anchor_top = 0.522059
 anchor_right = 0.953333
-anchor_bottom = 0.823529
+anchor_bottom = 0.852941
 custom_fonts/font = SubResource( 16 )
 text = "/ah/"
 align = 1
+valign = 2
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="letterA" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel"]
+[node name="bigA" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel"]
 unique_name_in_owner = true
+stream = ExtResource( 15 )
+bus = "Voices"
+
+[node name="smallA" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 16 )
+bus = "Voices"
 
 [node name="LettersB" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 195.0
-margin_right = 345.0
+margin_left = 180.0
+margin_right = 330.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 13 )
@@ -211,12 +208,12 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersB/Panel"]
-visible = false
-anchor_top = 0.267532
-anchor_right = 1.00238
-anchor_bottom = 0.750649
+anchor_left = 0.04
+anchor_top = -0.0294118
+anchor_right = 0.953333
+anchor_bottom = 0.698529
 custom_fonts/font = SubResource( 6 )
-text = "Hh-Nn"
+text = "Bb"
 align = 1
 valign = 1
 __meta__ = {
@@ -224,7 +221,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="h-n" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersB/Panel"]
+[node name="Bb" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersB/Panel"]
 anchor_left = 0.15
 anchor_top = 0.145455
 anchor_right = 0.840476
@@ -239,9 +236,22 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersB/Panel"]
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="LettersC" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 390.0
-margin_right = 540.0
+margin_left = 360.0
+margin_right = 510.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 14 )
@@ -259,12 +269,12 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersC/Panel"]
-visible = false
-anchor_top = 0.267532
-anchor_right = 1.00238
-anchor_bottom = 0.750649
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
 custom_fonts/font = SubResource( 6 )
-text = "Oo-Uu"
+text = "Cc"
 align = 1
 valign = 1
 __meta__ = {
@@ -272,7 +282,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="o-u" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersC/Panel"]
+[node name="Cc" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersC/Panel"]
 anchor_left = 0.15
 anchor_top = 0.145455
 anchor_right = 0.840476
@@ -287,9 +297,22 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersC/Panel"]
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="LettersD" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 585.0
-margin_right = 735.0
+margin_left = 540.0
+margin_right = 690.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 12 )
@@ -307,12 +330,12 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersD/Panel"]
-visible = false
-anchor_top = 0.267532
-anchor_right = 1.00238
-anchor_bottom = 0.750649
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
 custom_fonts/font = SubResource( 6 )
-text = "Vv-Zz"
+text = "Dd"
 align = 1
 valign = 1
 __meta__ = {
@@ -320,7 +343,674 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="v-z" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersD/Panel"]
+[node name="Dd" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersD/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersD/Panel"]
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersE" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
+margin_left = 720.0
+margin_right = 870.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/LettersE"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersE/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Ee"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Ee" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersE/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersE/Panel"]
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="bg/ScrollContainer/Control"]
+anchor_left = 0.0126008
+anchor_top = 0.364045
+anchor_right = 0.451109
+anchor_bottom = 0.689887
+theme = SubResource( 1 )
+custom_constants/separation = 30
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersF" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
+margin_right = 150.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersF"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1.0
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersF/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Ff"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Ff" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersF/Panel"]
+anchor_left = 0.12
+anchor_top = 0.0514706
+anchor_right = 0.906667
+anchor_bottom = 0.845588
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersF/Panel"]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bigF" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersF/Panel"]
+stream = ExtResource( 15 )
+bus = "Voices"
+
+[node name="smallF" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersF/Panel"]
+stream = ExtResource( 16 )
+bus = "Voices"
+
+[node name="LettersG" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 180.0
+margin_right = 330.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 13 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersG"]
+anchor_top = 0.00694444
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 13 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersG/Panel"]
+anchor_left = 0.0466663
+anchor_top = 0.0349641
+anchor_right = 0.96
+anchor_bottom = 0.758845
+custom_fonts/font = SubResource( 6 )
+text = "Gg"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Gg" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersG/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersG/Panel"]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersH" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 360.0
+margin_right = 510.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersH"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 14 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersH/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Hh"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Hh" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersH/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersH/Panel"]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersI" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 540.0
+margin_right = 690.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersI/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Ii"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Ii" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersI/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersI/Panel"]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersJ" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 720.0
+margin_right = 870.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersJ"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersJ/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Jj"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersJ/Panel"]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="bg/ScrollContainer/Control"]
+anchor_left = 0.0126008
+anchor_top = 0.707865
+anchor_right = 0.451109
+anchor_bottom = 1.03371
+theme = SubResource( 1 )
+custom_constants/separation = 30
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersK" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
+margin_right = 150.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersK"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersK/Panel"]
+anchor_left = 0.0466672
+anchor_top = 0.0413785
+anchor_right = 0.96
+anchor_bottom = 0.696551
+margin_bottom = 1.52588e-05
+custom_fonts/font = SubResource( 6 )
+text = "Kk"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Kk" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersK/Panel"]
+anchor_left = 0.12
+anchor_top = 0.0514706
+anchor_right = 0.906667
+anchor_bottom = 0.845588
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersK/Panel"]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.529412
+anchor_right = 0.953333
+anchor_bottom = 0.823529
+custom_fonts/font = SubResource( 16 )
+text = "/ah/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bigK" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersK/Panel"]
+bus = "Voices"
+
+[node name="smallK" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersK/Panel"]
+stream = ExtResource( 16 )
+bus = "Voices"
+
+[node name="LettersL" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 180.0
+margin_right = 330.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 13 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersL"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1.0
+custom_styles/panel = SubResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersL/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Ll"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Ll" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersL/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersM" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 360.0
+margin_right = 510.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersM"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 14 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersM/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Mm"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Mm" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersM/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersN" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 540.0
+margin_right = 690.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersN"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersN/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Nn"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Nn" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersN/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersOo" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 720.0
+margin_right = 870.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersOo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 15 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersOo/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 6 )
+text = "Oo"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Oo" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersOo/Panel"]
 anchor_left = 0.15
 anchor_top = 0.145455
 anchor_right = 0.840476
@@ -375,26 +1065,15 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="LeftButton" type="Button" parent="bg"]
-anchor_left = 0.015625
-anchor_top = 0.463333
-anchor_right = 0.0712891
-anchor_bottom = 0.68
-focus_mode = 0
-enabled_focus_mode = 0
-icon = ExtResource( 3 )
-flat = true
-expand_icon = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="RightButton" type="Button" parent="bg"]
-anchor_left = 0.935547
-anchor_top = 0.463333
-anchor_right = 0.991212
-anchor_bottom = 0.68
+anchor_left = 0.907227
+anchor_top = 0.463295
+anchor_right = 0.97946
+anchor_bottom = 0.463295
+margin_top = 108.023
+margin_right = 34.0332
+margin_bottom = 182.023
+rect_rotation = -90.0176
 focus_mode = 0
 enabled_focus_mode = 0
 icon = ExtResource( 2 )
@@ -406,10 +1085,10 @@ __meta__ = {
 }
 
 [node name="GoBackButton" type="Button" parent="bg"]
-anchor_left = 0.904297
-anchor_top = 0.02
-anchor_right = 0.987305
-anchor_bottom = 0.16
+anchor_left = 0.913086
+anchor_top = 0.025
+anchor_right = 0.984375
+anchor_bottom = 0.145
 size_flags_horizontal = 3
 size_flags_vertical = 3
 icon = ExtResource( 4 )
@@ -422,22 +1101,18 @@ __meta__ = {
 }
 
 [node name="pressedX" type="TextureRect" parent="bg/GoBackButton"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 23.0
-margin_top = 19.0
-margin_right = -22.0
-margin_bottom = -23.0
+anchor_left = 0.232877
+anchor_top = 0.222222
+anchor_right = 0.767123
+anchor_bottom = 0.763889
 texture = ExtResource( 5 )
 expand = true
 __meta__ = {
-"_edit_lock_": true
+"_edit_lock_": true,
+"_edit_use_anchors_": true
 }
 
-[connection signal="pressed" from="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel/a-g" to="." method="_on_ag_pressed"]
-[connection signal="pressed" from="bg/ScrollContainer/Control/HBoxContainer/LettersB/Panel/h-n" to="." method="_on_hn_pressed"]
-[connection signal="pressed" from="bg/ScrollContainer/Control/HBoxContainer/LettersC/Panel/o-u" to="." method="_on_ou_pressed"]
-[connection signal="pressed" from="bg/ScrollContainer/Control/HBoxContainer/LettersD/Panel/v-z" to="." method="_on_vz_pressed"]
-[connection signal="pressed" from="bg/LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel/Aa" to="." method="_on_Aa_pressed"]
+[connection signal="finished" from="bg/ScrollContainer/Control/HBoxContainer/LettersA/Panel/bigA" to="." method="_on_bigA_finished"]
 [connection signal="pressed" from="bg/RightButton" to="." method="_on_RightButton_pressed"]
 [connection signal="pressed" from="bg/GoBackButton" to="." method="_on_GoBackButton_pressed"]
