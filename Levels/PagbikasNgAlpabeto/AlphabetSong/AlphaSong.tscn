@@ -1,0 +1,158 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.gd" type="Script" id=1]
+[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/sample.ogv" type="VideoStream" id=2]
+[ext_resource path="res://Assets/UIElements/Icon_Tube.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/blackScreen.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=5]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Blue_Circle.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=8]
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+extra_spacing_char = -3
+font_data = ExtResource( 9 )
+fallback/0 = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+use_filter = true
+extra_spacing_char = -3
+font_data = ExtResource( 9 )
+fallback/0 = ExtResource( 8 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VideoPlayer" type="VideoPlayer" parent="NinePatchRect"]
+unique_name_in_owner = true
+anchor_left = 0.0888672
+anchor_top = 0.183333
+anchor_right = 0.910156
+anchor_bottom = 0.92
+stream = ExtResource( 2 )
+autoplay = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="curtain" type="TextureRect" parent="NinePatchRect"]
+unique_name_in_owner = true
+anchor_left = 0.0888672
+anchor_top = 0.183333
+anchor_right = 0.910156
+anchor_bottom = 0.918333
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="PLAYTHEVIDEO" type="TextureButton" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.419922
+anchor_top = 0.453333
+anchor_right = 0.529297
+anchor_bottom = 0.63
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="return" type="Button" parent="."]
+anchor_left = 0.0166016
+anchor_top = 0.0316667
+anchor_right = 0.102539
+anchor_bottom = 0.16
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 6 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exit" type="TextureRect" parent="return"]
+anchor_left = 0.204545
+anchor_top = 0.207792
+anchor_right = 0.75
+anchor_bottom = 0.792208
+texture = ExtResource( 7 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="alphabet" type="Label" parent="."]
+anchor_left = 0.108398
+anchor_top = 0.0433333
+anchor_right = 0.912109
+anchor_bottom = 0.168333
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "Alphabet Song"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="alphabet" type="Label" parent="alphabet"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 2 )
+text = "Alphabet Song"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[connection signal="finished" from="NinePatchRect/VideoPlayer" to="." method="_on_VideoPlayer_finished"]
+[connection signal="button_down" from="PLAYTHEVIDEO" to="." method="_on_PLAYTHEVIDEO_button_down"]
+[connection signal="pressed" from="return" to="." method="_on_return_pressed"]
