@@ -6,9 +6,9 @@ func _ready() -> void:
 	$'%VideoPlayer'.stop()
 	print("VP is Stop")
 
-func _on_return_pressed() -> void:
+func _on_LeftButton_pressed() -> void:
 	ScrollPop.play()
-	yield(get_tree().create_timer(0.5), "timeout")
+	#yield(get_tree().create_timer(0.5), "timeout")
 	var goLvl2 = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/NextLevelP2Z/LetterSpeak2.tscn")
 	print("Going Back")
 

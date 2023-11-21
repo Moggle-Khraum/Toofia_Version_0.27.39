@@ -31,16 +31,86 @@ func _on_bigA_finished() -> void:
 	$'%smallA'.play()
 	print("Play Small A")
 
+#LETTERS B
+func _on_Bb_pressed() -> void:
+	ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigB'.play()
+	print("Play Big B")
+	
+
+#LETTERS C
+func _on_Cc_pressed() -> void:
+	pass # Replace with function body.
 
 
 
 
 
+#LETTERS D
+func _on_Dd_pressed() -> void:
+	pass # Replace with function body.
 
 
 
 
+#LETTERS E
+func _on_Ee_pressed() -> void:
+	pass # Replace with function body.
 
 
+
+#LETTERS F
+func _on_Ff_pressed() -> void:
+	pass # Replace with function body.
+
+
+
+#LETTERS G
+func _on_Gg_pressed() -> void:
+	pass # Replace with function body.
+
+
+
+#LETTERS H
+func _on_Hh_pressed() -> void:
+	pass # Replace with function body.
+
+
+#LETTERS I
+func _on_Ii_pressed() -> void:
+	pass # Replace with function body.
+
+
+#LETTERS J
+func _on_Jj_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_Kk_pressed() -> void:
+	pass # Replace with function body.
+
+#LETTERS L
+func _on_Ll_pressed() -> void:
+	pass # Replace with function body.
+
+
+
+#LETTERS M
+func _on_Mm_pressed() -> void:
+	pass # Replace with function body.
+
+
+
+#LETTERS N
+func _on_Nn_pressed() -> void:
+	pass # Replace with function body.
+
+
+
+
+#LETTERS Ñ (Enye)
+func _on_Enye_pressed() -> void:
+	pass # Replace with function body.
 
 

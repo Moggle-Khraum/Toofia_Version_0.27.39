@@ -1,7 +1,7 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://Levels/PagbikasNgAlpabeto/NextLevelP2Z/LetterSpeak2.gd" type="Script" id=1]
-[ext_resource path="res://scroll.tres" type="Theme" id=2]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Yellow_Square.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UIElements/Icon_Down.png" type="Texture" id=3]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=5]
@@ -9,57 +9,138 @@
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Square.png" type="Texture" id=7]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Blue_Square.png" type="Texture" id=8]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Circle.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Audio/Letters/SmallA.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Assets/GUI/IconButton_Large_FadeBlue_Square.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Square.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Audio/Letters/BigA.mp3" type="AudioStream" id=12]
+[ext_resource path="res://Assets/GUI/IconButton_Large_FadeGreen_Square.png" type="Texture" id=12]
 [ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=13]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Green_Square.png" type="Texture" id=14]
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintA.otf" type="DynamicFontData" id=15]
-[ext_resource path="res://Assets/GUI/ButtonHalfs/ButtonTopHalfBlue.png" type="Texture" id=16]
-[ext_resource path="res://Assets/GUI/ButtonHalfs/ButtonBottomHalfBlue.png" type="Texture" id=17]
-[ext_resource path="res://Assets/GUI/ButtonHalfs/ButtonRightHalfBlue.png" type="Texture" id=18]
-[ext_resource path="res://Assets/GUI/ButtonHalfs/ButtonTopCentertHalfBlue.png" type="Texture" id=19]
-[ext_resource path="res://Assets/GUI/ButtonHalfs/ButtonBottomCenterHalfBlue.png" type="Texture" id=20]
-[ext_resource path="res://Assets/GUI/ButtonHalfs/ButtonMiddleCenterHalfBlue.png" type="Texture" id=21]
-[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintC.otf" type="DynamicFontData" id=22]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Pink_Square.png" type="Texture" id=16]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Violet_Square.png" type="Texture" id=17]
 
-[sub_resource type="Theme" id=1]
+[sub_resource type="Theme" id=16]
 
-[sub_resource type="StyleBoxEmpty" id=2]
+[sub_resource type="StyleBoxEmpty" id=17]
 
-[sub_resource type="DynamicFont" id=3]
-size = 62
+[sub_resource type="DynamicFont" id=18]
+size = 43
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 15 )
 
-[sub_resource type="StyleBoxEmpty" id=4]
+[sub_resource type="StyleBoxEmpty" id=19]
 
-[sub_resource type="StyleBoxEmpty" id=5]
+[sub_resource type="StyleBoxEmpty" id=20]
 
-[sub_resource type="StyleBoxEmpty" id=6]
+[sub_resource type="StyleBoxEmpty" id=21]
 
-[sub_resource type="StyleBoxEmpty" id=7]
+[sub_resource type="StyleBoxEmpty" id=22]
 
-[sub_resource type="StyleBoxEmpty" id=8]
+[sub_resource type="StyleBoxEmpty" id=23]
 
-[sub_resource type="DynamicFont" id=9]
+[sub_resource type="DynamicFont" id=24]
+size = 33
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxEmpty" id=25]
+
+[sub_resource type="DynamicFont" id=55]
+size = 58
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=26]
 size = 36
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 15 )
 
-[sub_resource type="StyleBoxEmpty" id=10]
+[sub_resource type="StyleBoxEmpty" id=28]
 
-[sub_resource type="StyleBoxEmpty" id=11]
-
-[sub_resource type="StyleBoxEmpty" id=12]
-
-[sub_resource type="DynamicFont" id=15]
-size = 57
+[sub_resource type="DynamicFont" id=27]
+size = 62
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxEmpty" id=29]
+
+[sub_resource type="Theme" id=30]
+
+[sub_resource type="StyleBoxEmpty" id=31]
+
+[sub_resource type="DynamicFont" id=32]
+size = 62
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxEmpty" id=33]
+
+[sub_resource type="StyleBoxEmpty" id=34]
+
+[sub_resource type="StyleBoxEmpty" id=35]
+
+[sub_resource type="StyleBoxEmpty" id=36]
+
+[sub_resource type="StyleBoxEmpty" id=37]
+
+[sub_resource type="DynamicFont" id=38]
+size = 36
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxEmpty" id=39]
+
+[sub_resource type="StyleBoxEmpty" id=40]
+
+[sub_resource type="StyleBoxEmpty" id=41]
+
+[sub_resource type="DynamicFont" id=42]
+size = 59
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=43]
+size = 34
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="Theme" id=44]
+
+[sub_resource type="StyleBoxEmpty" id=45]
+
+[sub_resource type="DynamicFont" id=46]
+size = 62
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxEmpty" id=47]
+
+[sub_resource type="StyleBoxEmpty" id=48]
+
+[sub_resource type="StyleBoxEmpty" id=49]
+
+[sub_resource type="StyleBoxEmpty" id=50]
+
+[sub_resource type="StyleBoxEmpty" id=51]
+
+[sub_resource type="DynamicFont" id=52]
+size = 36
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxEmpty" id=53]
+
+[sub_resource type="StyleBoxEmpty" id=54]
 
 [sub_resource type="DynamicFont" id=13]
 size = 55
@@ -77,12 +158,6 @@ extra_spacing_char = -3
 font_data = ExtResource( 6 )
 fallback/0 = ExtResource( 5 )
 
-[sub_resource type="DynamicFont" id=16]
-size = 55
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 22 )
-
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -99,64 +174,178 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="ScrollContainer" type="ScrollContainer" parent="bg"]
-unique_name_in_owner = true
-anchor_left = 0.105469
-anchor_top = 0.16
-anchor_right = 0.97168
-anchor_bottom = 0.936667
-theme = ExtResource( 2 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Control" type="Control" parent="bg/ScrollContainer"]
-margin_right = 890.0
-margin_bottom = 445.0
+[node name="Control" type="Control" parent="bg"]
+margin_left = 108.0
+margin_top = 96.0
+margin_right = 998.0
+margin_bottom = 541.0
 rect_min_size = Vector2( 890, 445 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="HBoxContainer" type="HBoxContainer" parent="bg/ScrollContainer/Control"]
-anchor_left = 0.0126008
-anchor_top = 0.0112359
-anchor_right = 0.451109
-anchor_bottom = 0.337079
-theme = SubResource( 1 )
+[node name="HBoxContainer4" type="HBoxContainer" parent="bg/Control"]
+anchor_left = -0.0348315
+anchor_top = 0.00898875
+anchor_right = 0.942697
+anchor_bottom = 0.334832
+theme = SubResource( 16 )
 custom_constants/separation = 30
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersP" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
+[node name="LettersNGng" type="TextureRect" parent="bg/Control/HBoxContainer4"]
 margin_right = 150.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 14 )
+texture = ExtResource( 2 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/LettersP"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersNGng"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 9.0
-custom_styles/panel = SubResource( 2 )
+custom_styles/panel = SubResource( 17 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersP/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersNGng/Panel"]
 anchor_left = 0.04
-anchor_top = -0.0294118
+anchor_top = -0.0220588
+anchor_right = 0.96
+anchor_bottom = 0.470588
+custom_fonts/font = SubResource( 18 )
+text = "NGng"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="NGng" type="Button" parent="bg/Control/HBoxContainer4/LettersNGng/Panel"]
+anchor_left = 0.12
+anchor_top = 0.0514706
+anchor_right = 0.906667
+anchor_bottom = 0.845588
+custom_styles/hover = SubResource( 19 )
+custom_styles/pressed = SubResource( 20 )
+custom_styles/focus = SubResource( 21 )
+custom_styles/disabled = SubResource( 22 )
+custom_styles/normal = SubResource( 23 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersNGng/Panel"]
+anchor_left = 0.0466667
+anchor_top = 0.507353
+anchor_right = 0.966667
+anchor_bottom = 0.897059
+custom_fonts/font = SubResource( 24 )
+text = "/nguh/"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersOo" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+margin_left = 180.0
+margin_right = 330.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersOo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 10.0
+custom_styles/panel = SubResource( 25 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersOo/Panel"]
+anchor_left = 0.04
+anchor_top = -0.0296296
+anchor_right = 0.96
+anchor_bottom = 0.503704
+custom_fonts/font = SubResource( 55 )
+text = "Oo"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Oo" type="Button" parent="bg/Control/HBoxContainer4/LettersOo/Panel"]
+anchor_left = 0.15
+anchor_top = 0.145455
+anchor_right = 0.840476
+anchor_bottom = 0.825974
+custom_styles/hover = SubResource( 19 )
+custom_styles/pressed = SubResource( 20 )
+custom_styles/focus = SubResource( 21 )
+custom_styles/disabled = SubResource( 22 )
+custom_styles/normal = SubResource( 23 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersOo/Panel"]
+anchor_left = 0.0400002
+anchor_top = 0.644445
 anchor_right = 0.953333
-anchor_bottom = 0.698529
-custom_fonts/font = SubResource( 3 )
+anchor_bottom = 0.938561
+custom_fonts/font = SubResource( 26 )
+text = "/oh/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersPp" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+margin_left = 360.0
+margin_right = 510.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersPp"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 28 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersPp/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.953333
+anchor_bottom = 0.696552
+custom_fonts/font = SubResource( 27 )
 text = "Pp"
 align = 1
 valign = 1
@@ -165,73 +354,59 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Pp" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersP/Panel"]
-anchor_left = 0.12
-anchor_top = 0.0514706
-anchor_right = 0.906667
-anchor_bottom = 0.845588
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+[node name="Pp" type="Button" parent="bg/Control/HBoxContainer4/LettersPp/Panel"]
+anchor_left = 0.06
+anchor_top = 0.0482759
+anchor_right = 0.933333
+anchor_bottom = 0.937931
+custom_styles/hover = SubResource( 19 )
+custom_styles/pressed = SubResource( 20 )
+custom_styles/focus = SubResource( 21 )
+custom_styles/disabled = SubResource( 22 )
+custom_styles/normal = SubResource( 23 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersP/Panel"]
-unique_name_in_owner = true
-visible = false
-anchor_left = 0.04
-anchor_top = 0.522059
-anchor_right = 0.953333
-anchor_bottom = 0.852941
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersPp/Panel"]
+anchor_left = 0.0333335
+anchor_top = 0.634483
+anchor_right = 0.946667
+anchor_bottom = 0.9286
+custom_fonts/font = SubResource( 26 )
+text = "/puh/"
 align = 1
-valign = 2
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="bigP" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer/LettersP/Panel"]
-unique_name_in_owner = true
-stream = ExtResource( 12 )
-bus = "Voices"
-
-[node name="smallP" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer/LettersP/Panel"]
-unique_name_in_owner = true
-stream = ExtResource( 10 )
-bus = "Voices"
-
-[node name="LettersQ" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 180.0
-margin_right = 330.0
+[node name="LettersQq" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+margin_left = 540.0
+margin_right = 690.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/LettersQ"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersQq"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 10.0
-custom_styles/panel = SubResource( 10 )
+custom_styles/panel = SubResource( 29 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersQ/Panel"]
-anchor_left = 0.04
-anchor_top = -0.0294118
-anchor_right = 0.953333
-anchor_bottom = 0.698529
-custom_fonts/font = SubResource( 3 )
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersQq/Panel"]
+anchor_left = 0.0466667
+anchor_top = 0.0413793
+anchor_right = 0.96
+anchor_bottom = 0.703448
+custom_fonts/font = SubResource( 27 )
 text = "Qq"
 align = 1
 valign = 1
@@ -240,60 +415,58 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Qq" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersQ/Panel"]
+[node name="Qq" type="Button" parent="bg/Control/HBoxContainer4/LettersQq/Panel"]
 anchor_left = 0.15
 anchor_top = 0.145455
 anchor_right = 0.840476
 anchor_bottom = 0.825974
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+custom_styles/hover = SubResource( 19 )
+custom_styles/pressed = SubResource( 20 )
+custom_styles/focus = SubResource( 21 )
+custom_styles/disabled = SubResource( 22 )
+custom_styles/normal = SubResource( 23 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersQ/Panel"]
-visible = false
-anchor_left = 0.04
-anchor_top = 0.529412
-anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersQq/Panel"]
+anchor_left = 0.0533333
+anchor_top = 0.641379
+anchor_right = 0.966666
+anchor_bottom = 0.935497
+custom_fonts/font = SubResource( 26 )
+text = "/quh/"
 align = 1
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersR" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 360.0
-margin_right = 510.0
+[node name="LettersRr" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+margin_left = 720.0
+margin_right = 870.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 11 )
+texture = ExtResource( 10 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/LettersR"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersRr"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 11 )
+custom_styles/panel = SubResource( 29 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersR/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersRr/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0413793
-anchor_right = 0.953333
+anchor_right = 0.96
 anchor_bottom = 0.696552
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 27 )
 text = "Rr"
 align = 1
 valign = 1
@@ -302,227 +475,73 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Qq" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersR/Panel"]
-anchor_left = 0.15
-anchor_top = 0.145455
-anchor_right = 0.840476
-anchor_bottom = 0.825974
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+[node name="Rr" type="Button" parent="bg/Control/HBoxContainer4/LettersRr/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0551724
+anchor_right = 0.973333
+anchor_bottom = 0.937931
+custom_styles/hover = SubResource( 19 )
+custom_styles/pressed = SubResource( 20 )
+custom_styles/focus = SubResource( 21 )
+custom_styles/disabled = SubResource( 22 )
+custom_styles/normal = SubResource( 23 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersR/Panel"]
-visible = false
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersRr/Panel"]
 anchor_left = 0.04
-anchor_top = 0.529412
+anchor_top = 0.62069
 anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
+anchor_bottom = 0.914807
+custom_fonts/font = SubResource( 26 )
+text = "/rrh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersS" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 540.0
-margin_right = 690.0
-margin_bottom = 145.0
-rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 8 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/LettersS"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_styles/panel = SubResource( 12 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersS/Panel"]
-anchor_left = 0.04
-anchor_top = 0.0413793
-anchor_right = 0.953333
-anchor_bottom = 0.696552
-custom_fonts/font = SubResource( 3 )
-text = "Ss"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Ss" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersS/Panel"]
-anchor_left = 0.15
-anchor_top = 0.145455
-anchor_right = 0.840476
-anchor_bottom = 0.825974
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersS/Panel"]
-visible = false
-anchor_left = 0.04
-anchor_top = 0.529412
-anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
-align = 1
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="LettersT" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer"]
-margin_left = 720.0
-margin_right = 870.0
-margin_bottom = 145.0
-rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 8 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer/LettersT"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_styles/panel = SubResource( 12 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersT/Panel"]
-anchor_left = 0.04
-anchor_top = 0.0413793
-anchor_right = 0.953333
-anchor_bottom = 0.696552
-custom_fonts/font = SubResource( 3 )
-text = "Tt"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Tt" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer/LettersT/Panel"]
-anchor_left = 0.15
-anchor_top = 0.145455
-anchor_right = 0.840476
-anchor_bottom = 0.825974
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer/LettersT/Panel"]
-visible = false
-anchor_left = 0.04
-anchor_top = 0.529412
-anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
-align = 1
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="bg/ScrollContainer/Control"]
-anchor_left = 0.0126008
-anchor_top = 0.364045
-anchor_right = 0.451109
-anchor_bottom = 0.689887
-theme = SubResource( 1 )
+[node name="HBoxContainer5" type="HBoxContainer" parent="bg/Control"]
+anchor_left = -0.0348315
+anchor_top = 0.359551
+anchor_right = 0.942697
+anchor_bottom = 0.687641
+margin_right = -6.10352e-05
+theme = SubResource( 30 )
 custom_constants/separation = 30
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersU" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
+[node name="LettersSs" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_right = 150.0
-margin_bottom = 144.0
+margin_bottom = 146.0
 rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 14 )
+texture = ExtResource( 8 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersU"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersSs"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 1.0
-custom_styles/panel = SubResource( 2 )
+margin_top = 9.0
+custom_styles/panel = SubResource( 31 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersU/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersSs/Panel"]
 anchor_left = 0.04
-anchor_top = 0.0413793
+anchor_top = -0.0291971
 anchor_right = 0.953333
-anchor_bottom = 0.696552
-custom_fonts/font = SubResource( 3 )
-text = "Uu"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Uu" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersU/Panel"]
-anchor_left = 0.12
-anchor_top = 0.0514706
-anchor_right = 0.906667
-anchor_bottom = 0.845588
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersU/Panel"]
-visible = false
-anchor_left = 0.04
-anchor_top = 0.529412
-anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
+anchor_bottom = 0.583942
+custom_fonts/font = SubResource( 32 )
+text = "Ss"
 align = 1
 valign = 2
 __meta__ = {
@@ -530,179 +549,161 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigU" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersU/Panel"]
-stream = ExtResource( 12 )
-bus = "Voices"
+[node name="Ss" type="Button" parent="bg/Control/HBoxContainer5/LettersSs/Panel"]
+anchor_left = 0.12
+anchor_top = 0.0514706
+anchor_right = 0.906667
+anchor_bottom = 0.845588
+custom_styles/hover = SubResource( 33 )
+custom_styles/pressed = SubResource( 34 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/disabled = SubResource( 36 )
+custom_styles/normal = SubResource( 37 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
 
-[node name="smallU" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersU/Panel"]
-stream = ExtResource( 10 )
-bus = "Voices"
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersSs/Panel"]
+anchor_left = 0.0466663
+anchor_top = 0.622221
+anchor_right = 0.959999
+anchor_bottom = 0.916338
+custom_fonts/font = SubResource( 38 )
+text = "/ss/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
 
-[node name="LettersV" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
+[node name="LettersTt" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 180.0
 margin_right = 330.0
-margin_bottom = 144.0
+margin_bottom = 146.0
 rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 7 )
+texture = ExtResource( 12 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersV"]
-anchor_top = 0.00694444
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersTt"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 10 )
+margin_top = 10.0
+custom_styles/panel = SubResource( 39 )
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersV/Panel"]
-anchor_left = 0.0466663
-anchor_top = 0.0349641
-anchor_right = 0.96
-anchor_bottom = 0.758845
-custom_fonts/font = SubResource( 3 )
-text = "Vv"
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersTt/Panel"]
+anchor_left = 0.0466667
+anchor_top = -0.0294118
+anchor_right = 0.94
+anchor_bottom = 0.588235
+custom_fonts/font = SubResource( 32 )
+text = "Tt"
 align = 1
-valign = 1
+valign = 2
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Vv" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersV/Panel"]
-anchor_left = 0.15
-anchor_top = 0.145455
-anchor_right = 0.840476
-anchor_bottom = 0.825974
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersV/Panel"]
-visible = false
+[node name="Tt" type="Button" parent="bg/Control/HBoxContainer5/LettersTt/Panel"]
 anchor_left = 0.04
-anchor_top = 0.529412
+anchor_top = -0.0149254
+anchor_right = 0.94
+anchor_bottom = 0.940298
+custom_styles/hover = SubResource( 33 )
+custom_styles/pressed = SubResource( 34 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/disabled = SubResource( 36 )
+custom_styles/normal = SubResource( 37 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersTt/Panel"]
+anchor_left = 0.0399996
+anchor_top = 0.619402
 anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
+anchor_bottom = 0.913519
+custom_fonts/font = SubResource( 38 )
+text = "/tuh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersW" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
+[node name="LetterUu" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 360.0
 margin_right = 510.0
-margin_bottom = 144.0
+margin_bottom = 146.0
 rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 11 )
+texture = ExtResource( 17 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersW"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LetterUu"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 11 )
+custom_styles/panel = SubResource( 40 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersW/Panel"]
-anchor_left = 0.04
-anchor_top = 0.0413793
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LetterUu/Panel"]
+anchor_left = 0.0466667
+anchor_top = 0.0479451
 anchor_right = 0.953333
-anchor_bottom = 0.696552
-custom_fonts/font = SubResource( 15 )
-text = "Ww"
+anchor_bottom = 0.589041
+custom_fonts/font = SubResource( 32 )
+text = "Uu"
 align = 1
-valign = 1
+valign = 2
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Ww" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersW/Panel"]
-anchor_left = 0.15
-anchor_top = 0.145455
-anchor_right = 0.840476
-anchor_bottom = 0.825974
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+[node name="Uu" type="Button" parent="bg/Control/HBoxContainer5/LetterUu/Panel"]
+anchor_left = 0.0666667
+anchor_top = 0.0625
+anchor_right = 0.926667
+anchor_bottom = 0.9375
+custom_styles/hover = SubResource( 33 )
+custom_styles/pressed = SubResource( 34 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/disabled = SubResource( 36 )
+custom_styles/normal = SubResource( 37 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer2/LettersW/Panel"]
-visible = false
-anchor_left = 0.04
-anchor_top = 0.529412
-anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LetterUu/Panel"]
+anchor_left = 0.0333329
+anchor_top = 0.631944
+anchor_right = 0.946666
+anchor_bottom = 0.926061
+custom_fonts/font = SubResource( 38 )
+text = "/uh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="DummySpace" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
-visible = false
+[node name="LettersVv" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 540.0
 margin_right = 690.0
-margin_bottom = 144.0
-rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 8 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Dummmy2" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer2"]
-visible = false
-margin_left = 720.0
-margin_right = 870.0
-margin_bottom = 144.0
-rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 8 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="bg/ScrollContainer/Control"]
-anchor_left = 0.0126008
-anchor_top = 0.707865
-anchor_right = 0.451109
-anchor_bottom = 1.03371
-theme = SubResource( 1 )
-custom_constants/separation = 30
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="LettersX" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
-margin_right = 150.0
-margin_bottom = 145.0
+margin_bottom = 146.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 14 )
 expand = true
@@ -710,70 +711,60 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersX"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersVv"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 2 )
+custom_styles/panel = SubResource( 41 )
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersX/Panel"]
-anchor_left = 0.0466672
-anchor_top = 0.0413785
-anchor_right = 0.96
-anchor_bottom = 0.696551
-margin_bottom = 1.52588e-05
-custom_fonts/font = SubResource( 3 )
-text = "Xx"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Xx" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersX/Panel"]
-anchor_left = 0.12
-anchor_top = 0.0514706
-anchor_right = 0.906667
-anchor_bottom = 0.845588
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Label3" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersX/Panel"]
-visible = false
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersVv/Panel"]
 anchor_left = 0.04
-anchor_top = 0.529412
-anchor_right = 0.953333
-anchor_bottom = 0.823529
-custom_fonts/font = SubResource( 9 )
-text = "/ah/"
+anchor_top = 0.0410959
+anchor_right = 0.96
+anchor_bottom = 0.609589
+custom_fonts/font = SubResource( 32 )
+text = "Vv"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Vv" type="Button" parent="bg/Control/HBoxContainer5/LettersVv/Panel"]
+anchor_left = 0.0466667
+anchor_top = 0.0625
+anchor_right = 0.946667
+anchor_bottom = 0.923611
+custom_styles/hover = SubResource( 33 )
+custom_styles/pressed = SubResource( 34 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/disabled = SubResource( 36 )
+custom_styles/normal = SubResource( 37 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersVv/Panel"]
+anchor_left = 0.0333329
+anchor_top = 0.618055
+anchor_right = 0.946666
+anchor_bottom = 0.912172
+custom_fonts/font = SubResource( 38 )
+text = "/vvv/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="bigX" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersX/Panel"]
-bus = "Voices"
-
-[node name="smallX" type="AudioStreamPlayer" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersX/Panel"]
-stream = ExtResource( 10 )
-bus = "Voices"
-
-[node name="LettersY" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
-margin_left = 180.0
-margin_right = 330.0
-margin_bottom = 145.0
+[node name="LettersWw" type="TextureRect" parent="bg/Control/HBoxContainer5"]
+margin_left = 720.0
+margin_right = 870.0
+margin_bottom = 146.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 7 )
 expand = true
@@ -781,22 +772,38 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersY"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersWw"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 1.0
-custom_styles/panel = SubResource( 10 )
+custom_styles/panel = SubResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersY/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersWw/Panel"]
 anchor_left = 0.04
-anchor_top = 0.0413793
+anchor_top = 0.0410958
+anchor_right = 0.96
+anchor_bottom = 0.582192
+margin_top = 1.38283e-05
+margin_bottom = 1.52588e-05
+custom_fonts/font = SubResource( 42 )
+text = "Ww"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersWw/Panel"]
+anchor_left = 0.04
+anchor_top = 0.520548
 anchor_right = 0.953333
-anchor_bottom = 0.696552
-custom_fonts/font = SubResource( 3 )
-text = "Yy"
+anchor_bottom = 0.89726
+margin_bottom = -1.52588e-05
+custom_fonts/font = SubResource( 43 )
+text = "/wuh/"
 align = 1
 valign = 1
 __meta__ = {
@@ -804,24 +811,35 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Yy" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersY/Panel"]
-anchor_left = 0.15
-anchor_top = 0.145455
-anchor_right = 0.840476
-anchor_bottom = 0.825974
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+[node name="Ww" type="Button" parent="bg/Control/HBoxContainer5/LettersWw"]
+anchor_left = 0.0466667
+anchor_top = 0.0625
+anchor_right = 0.946667
+anchor_bottom = 0.923611
+custom_styles/hover = SubResource( 33 )
+custom_styles/pressed = SubResource( 34 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/disabled = SubResource( 36 )
+custom_styles/normal = SubResource( 37 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersZ" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
-margin_left = 360.0
-margin_right = 510.0
+[node name="HBoxContainer6" type="HBoxContainer" parent="bg/Control"]
+anchor_left = -0.0325843
+anchor_top = 0.714607
+anchor_right = 0.540449
+anchor_bottom = 1.04045
+theme = SubResource( 44 )
+custom_constants/separation = 30
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersXx" type="TextureRect" parent="bg/Control/HBoxContainer6"]
+margin_right = 150.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 11 )
@@ -830,65 +848,177 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersZ"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer6/LettersXx"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 11 )
+custom_styles/panel = SubResource( 45 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer6/LettersXx/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.96
+anchor_bottom = 0.6
+custom_fonts/font = SubResource( 46 )
+text = "Xx"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Xx" type="Button" parent="bg/Control/HBoxContainer6/LettersXx/Panel"]
+anchor_left = 0.04
+anchor_top = -0.0367647
+anchor_right = 0.966667
+anchor_bottom = 0.941176
+custom_styles/hover = SubResource( 47 )
+custom_styles/pressed = SubResource( 48 )
+custom_styles/focus = SubResource( 49 )
+custom_styles/disabled = SubResource( 50 )
+custom_styles/normal = SubResource( 51 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer6/LettersXx/Panel"]
+anchor_left = 0.0266672
+anchor_top = 0.661764
+anchor_right = 0.940001
+anchor_bottom = 0.92647
+custom_fonts/font = SubResource( 52 )
+text = "/ksss/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersYy" type="TextureRect" parent="bg/Control/HBoxContainer6"]
+margin_left = 180.0
+margin_right = 330.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 2 )
+expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersZ/Panel"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer6/LettersYy"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 53 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer6/LettersYy/Panel"]
+anchor_left = 0.04
+anchor_top = 0.0413793
+anchor_right = 0.96
+anchor_bottom = 0.6
+custom_fonts/font = SubResource( 46 )
+text = "Yy"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Yy" type="Button" parent="bg/Control/HBoxContainer6/LettersYy/Panel"]
+anchor_left = 0.0466667
+anchor_top = -0.0296296
+anchor_right = 0.946667
+anchor_bottom = 0.97037
+custom_styles/hover = SubResource( 47 )
+custom_styles/pressed = SubResource( 48 )
+custom_styles/focus = SubResource( 49 )
+custom_styles/disabled = SubResource( 50 )
+custom_styles/normal = SubResource( 51 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer6/LettersYy"]
+anchor_left = 0.0266672
+anchor_top = 0.661764
+anchor_right = 0.940001
+anchor_bottom = 0.92647
+custom_fonts/font = SubResource( 52 )
+text = "/yuh/"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LettersZz" type="TextureRect" parent="bg/Control/HBoxContainer6"]
+margin_left = 360.0
+margin_right = 510.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 150, 0 )
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer6/LettersZz"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 54 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer6/LettersZz/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0413793
 anchor_right = 0.953333
-anchor_bottom = 0.696552
-custom_fonts/font = SubResource( 3 )
+anchor_bottom = 0.6
+custom_fonts/font = SubResource( 46 )
 text = "Zz"
 align = 1
-valign = 1
+valign = 2
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Zz" type="Button" parent="bg/ScrollContainer/Control/HBoxContainer3/LettersZ/Panel"]
-anchor_left = 0.15
-anchor_top = 0.145455
-anchor_right = 0.840476
-anchor_bottom = 0.825974
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-custom_styles/focus = SubResource( 6 )
-custom_styles/disabled = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+[node name="Zz" type="Button" parent="bg/Control/HBoxContainer6/LettersZz/Panel"]
+anchor_left = 0.0466667
+anchor_top = 0.0551724
+anchor_right = 0.946667
+anchor_bottom = 0.958621
+custom_styles/hover = SubResource( 47 )
+custom_styles/pressed = SubResource( 48 )
+custom_styles/focus = SubResource( 49 )
+custom_styles/disabled = SubResource( 50 )
+custom_styles/normal = SubResource( 51 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersN" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
-visible = false
-margin_left = 540.0
-margin_right = 690.0
-margin_bottom = 145.0
-rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 8 )
-expand = true
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer6/LettersZz"]
+anchor_left = 0.0266672
+anchor_top = 0.661764
+anchor_right = 0.940001
+anchor_bottom = 0.92647
+custom_fonts/font = SubResource( 52 )
+text = "/zzz/"
+align = 1
 __meta__ = {
-"_edit_lock_": true
-}
-
-[node name="LettersOo" type="TextureRect" parent="bg/ScrollContainer/Control/HBoxContainer3"]
-visible = false
-margin_left = 540.0
-margin_right = 690.0
-margin_bottom = 145.0
-rect_min_size = Vector2( 150, 0 )
-texture = ExtResource( 8 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
+"_edit_lock_": true,
+"_edit_use_anchors_": true
 }
 
 [node name="alphabet" type="Label" parent="bg"]
@@ -931,14 +1061,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="RightButton" type="Button" parent="bg"]
-anchor_left = 0.0244141
-anchor_top = 0.451667
-anchor_right = 0.0244141
-anchor_bottom = 0.631667
-margin_left = 74.0
-margin_right = 182.0
-margin_bottom = -34.0
+[node name="LeftButton" type="Button" parent="bg"]
+anchor_left = 0.0195312
+anchor_top = 0.485
+anchor_right = 0.0195313
+anchor_bottom = 0.608333
+margin_left = 51.0
+margin_right = 125.0
+margin_bottom = -23.0
 rect_rotation = 90.0
 focus_mode = 0
 enabled_focus_mode = 0
@@ -978,168 +1108,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="top" type="TextureRect" parent="."]
-anchor_left = 0.646484
-anchor_top = 0.436667
-anchor_right = 0.790039
-anchor_bottom = 0.665
-margin_right = 3.0
-margin_bottom = 8.0
-texture = ExtResource( 16 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="topleft" type="TextureRect" parent="."]
-anchor_left = 0.818359
-anchor_top = 0.436667
-anchor_right = 0.964844
-anchor_bottom = 0.678333
-texture = ExtResource( 16 )
-expand = true
-flip_h = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="bottom" type="TextureRect" parent="."]
-anchor_left = 0.646484
-anchor_top = 0.686667
-anchor_right = 0.792969
-anchor_bottom = 0.928333
-texture = ExtResource( 17 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="bottomleft" type="TextureRect" parent="."]
-anchor_left = 0.818359
-anchor_top = 0.686667
-anchor_right = 0.964844
-anchor_bottom = 0.928333
-texture = ExtResource( 17 )
-expand = true
-flip_h = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="right" type="TextureRect" parent="."]
-anchor_left = 0.646484
-anchor_top = 0.555
-anchor_right = 0.792969
-anchor_bottom = 0.796667
-texture = ExtResource( 18 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="left" type="TextureRect" parent="."]
-anchor_left = 0.818359
-anchor_top = 0.558333
-anchor_right = 0.964844
-anchor_bottom = 0.8
-texture = ExtResource( 18 )
-expand = true
-flip_h = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="topcenter" type="TextureRect" parent="."]
-margin_left = 736.0
-margin_top = 262.0
-margin_right = 886.0
-margin_bottom = 407.0
-texture = ExtResource( 19 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="topcenter2" type="TextureRect" parent="."]
-margin_left = 767.0
-margin_top = 262.0
-margin_right = 917.0
-margin_bottom = 407.0
-texture = ExtResource( 19 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="bottomcenter" type="TextureRect" parent="."]
-margin_left = 712.0
-margin_top = 412.0
-margin_right = 862.0
-margin_bottom = 557.0
-texture = ExtResource( 20 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="bottomcenter2" type="TextureRect" parent="."]
-margin_left = 791.0
-margin_top = 412.0
-margin_right = 941.0
-margin_bottom = 557.0
-texture = ExtResource( 20 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="center" type="TextureRect" parent="."]
-anchor_left = 0.740234
-anchor_top = 0.573333
-anchor_right = 0.886719
-anchor_bottom = 0.815
-texture = ExtResource( 21 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Label" type="Label" parent="."]
-anchor_left = 0.652344
-anchor_top = 0.446667
-anchor_right = 0.958984
-anchor_bottom = 0.918333
-custom_fonts/font = SubResource( 16 )
-text = "The Alphabet Song"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="alphabetsong" type="Button" parent="Label"]
-anchor_left = 0.066879
-anchor_top = 0.0848057
-anchor_right = 0.936306
-anchor_bottom = 0.908127
+[node name="RightButton2" type="Button" parent="bg"]
+anchor_left = 0.931641
+anchor_top = 0.488307
+anchor_right = 0.981423
+anchor_bottom = 0.488307
+margin_top = 74.0157
+margin_right = 23.0227
+margin_bottom = 125.016
+rect_rotation = -90.0176
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 3 )
 flat = true
+expand_icon = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[connection signal="pressed" from="bg/ScrollContainer/Control/HBoxContainer/LettersP/Panel/Pp" to="." method="_on_Pp_pressed"]
-[connection signal="finished" from="bg/ScrollContainer/Control/HBoxContainer/LettersP/Panel/bigP" to="." method="_on_bigP_finished"]
-[connection signal="pressed" from="bg/RightButton" to="." method="_on_RightButton_pressed"]
+[connection signal="pressed" from="bg/LeftButton" to="." method="_on_RightButton_pressed"]
 [connection signal="pressed" from="bg/GoBackButton" to="." method="_on_GoBackButton_pressed"]
-[connection signal="pressed" from="Label/alphabetsong" to="." method="_on_alphabetsong_pressed"]
+[connection signal="pressed" from="bg/RightButton2" to="." method="_on_RightButton2_pressed"]

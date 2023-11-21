@@ -6,7 +6,7 @@
 [ext_resource path="res://Assets/Images/blackScreen.png" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=5]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Blue_Circle.png" type="Texture" id=6]
-[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UIElements/Icon_Down.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=8]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=9]
 [ext_resource path="res://Assets/GUI/gears2d2.png" type="Texture" id=10]
@@ -247,30 +247,20 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="return" type="Button" parent="."]
-anchor_left = 0.0185547
-anchor_top = 0.508333
-anchor_right = 0.0849609
-anchor_bottom = 0.623333
+[node name="LeftButton" type="Button" parent="."]
+anchor_left = 0.0195313
+anchor_top = 0.455
+anchor_right = 0.0195313
+anchor_bottom = 0.6
+margin_left = 65.0
+margin_right = 152.0
+margin_bottom = -22.0
+rect_rotation = 90.0
 focus_mode = 0
 enabled_focus_mode = 0
-icon = ExtResource( 6 )
+icon = ExtResource( 7 )
 flat = true
-icon_align = 1
 expand_icon = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="exit" type="TextureRect" parent="return"]
-anchor_left = 0.204545
-anchor_top = 0.207792
-anchor_right = 0.75
-anchor_bottom = 0.792208
-texture = ExtResource( 7 )
-expand = true
-flip_h = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -278,4 +268,4 @@ __meta__ = {
 
 [connection signal="finished" from="NinePatchRect/VideoPlayer" to="." method="_on_VideoPlayer_finished"]
 [connection signal="button_down" from="PLAYTHEVIDEO" to="." method="_on_PLAYTHEVIDEO_button_down"]
-[connection signal="pressed" from="return" to="." method="_on_return_pressed"]
+[connection signal="pressed" from="LeftButton" to="." method="_on_LeftButton_pressed"]

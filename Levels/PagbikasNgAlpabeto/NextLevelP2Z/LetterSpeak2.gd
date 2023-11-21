@@ -7,6 +7,14 @@ func _on_RightButton_pressed() -> void:
 	var goLvl1 = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/LetterSpeak.tscn")
 	print("Pressed Rigght Button '=>'")
 
+#THIS IS FOR THE ALPHABET SONG------
+func _on_RightButton2_pressed() -> void:
+	print("Pressed '=>' ")
+	ScrollPop.play()
+	#yield(get_tree().create_timer(0.5), "timeout")
+	var goingToAlphabetSong = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.tscn")
+	print("Going to Song")
+
 
 func _on_GoBackButton_pressed() -> void:
 	print("Presses Go Back")
@@ -32,11 +40,6 @@ func _on_bigP_finished() -> void:
 	$'%smallP'.play()
 	print("Play Small P")
 
-#THIS IS FOR THE ALPHABET SONG------
-func _on_alphabetsong_pressed() -> void:
-	ScrollPop.play()
-	yield(get_tree().create_timer(0.5), "timeout")
-	var goingToAlphabetSong = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.tscn")
-	print("Going to Song")
+
 
 	
