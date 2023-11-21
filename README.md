@@ -33,12 +33,12 @@
 - :arrow_right: Download [Here](https://github.com/Moggle-Khraum/Toofia_Version_0.27.39/archive/refs/heads/secondBranch.zip) <br>
 <br>
 
-<! --- :raising_hand_man::grey_question: **About the Game**<br>
+[][:raising_hand_man::grey_question: **About the Game**<br>]
 
- <! --- <p align="center">
- <! ---   <b>The Toofia Game's Icon:</b>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<b>Made with Godot Engine</b> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<b>Made By ABS Studios</b><br>
- <! ---   <img width="200" src="Assets/Icons/win7icon.ico" alt="The Icon for the game Toofia" title="Toofia Icon"> &emsp; &emsp; &emsp; &emsp; &emsp; <img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/2048px-Godot_icon.svg.png" alt="Godot Engine Logo" title="Godot Engine"> &emsp; &emsp; &emsp; &emsp; &emsp; <img width="200" height="195" src="Assets/Images/abs5.png" alt="The Studio for the game Toofia" title="Studio Logo">
-    <br>
-</p>
+ [][<p align="center">]
+ [][<b>The Toofia Game's Icon:</b>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<b>Made with Godot Engine</b> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<b>Made By ABS Studios</b><br>
+ <img width="200" src="Assets/Icons/win7icon.ico" alt="The Icon for the game Toofia" title="Toofia Icon"> &emsp; &emsp; &emsp; &emsp; &emsp; <img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/2048px-Godot_icon.svg.png" alt="Godot Engine Logo" title="Godot Engine"> &emsp; &emsp; &emsp; &emsp; &emsp; <img width="200" height="195" src="Assets/Images/abs5.png" alt="The Studio for the game Toofia" title="Studio Logo">]
+    [][<br>]
+[][</p>]
 
     
