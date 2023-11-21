@@ -20,12 +20,12 @@
 - [x] Displays Stars (Suggested to make Stars Static)
 - [x] Implemented the Static Stars to other Levels
 - [x] Done Adding Levels to Vegetables, Animals, and Alphabets.
-- [ ] Complete Alphabet with simplistic systematic design.
+- [x] Complete Alphabet with simplistic systematic design.
   
 :pushpin: **Next Goal:**
-- [x] Adds Videos to the Slide 3 of Alphabets
-- [x] Adds Game Tutorials (Videos)
-- [x] Finish the game.. :tada:
+- [ ] Adds Videos to the Slide 3 of Alphabets
+- [ ] Adds Game Tutorials (Videos)
+- [ ] Finish the game.. :tada:
 
  
 
