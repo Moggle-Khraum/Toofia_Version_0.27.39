@@ -1,10 +1,10 @@
-[gd_scene load_steps=74 format=2]
+[gd_scene load_steps=87 format=2]
 
 [ext_resource path="res://Assets/GUI/IconButton_Large_Yellow_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/UIElements/Icon_Down.png" type="Texture" id=2]
 [ext_resource path="res://Assets/GUI/IconButton_Large_FadeGreen_Square.png" type="Texture" id=3]
-[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Circle.png" type="Texture" id=4]
-[ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=8]
@@ -14,11 +14,24 @@
 [ext_resource path="res://Assets/GUI/IconButton_Large_Blue_Square.png" type="Texture" id=12]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Square.png" type="Texture" id=13]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Square.png" type="Texture" id=14]
-[ext_resource path="res://Assets/Audio/Letters/BigA.mp3" type="AudioStream" id=15]
-[ext_resource path="res://Assets/Audio/Letters/SmallA.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/Letters/Aa.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Audio/Letters/Bb.mp3" type="AudioStream" id=16]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Pink_Square.png" type="Texture" id=17]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Grass_Square.png" type="Texture" id=18]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Violet_Square.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Audio/Letters/Cc.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Audio/Letters/Ee.mp3" type="AudioStream" id=21]
+[ext_resource path="res://Assets/Audio/Letters/Dd.mp3" type="AudioStream" id=22]
+[ext_resource path="res://Assets/Audio/Letters/Hh.mp3" type="AudioStream" id=23]
+[ext_resource path="res://Assets/Audio/Letters/Ii.mp3" type="AudioStream" id=24]
+[ext_resource path="res://Assets/Audio/Letters/Jj.mp3" type="AudioStream" id=25]
+[ext_resource path="res://Assets/Audio/Letters/Gg.mp3" type="AudioStream" id=26]
+[ext_resource path="res://Assets/Audio/Letters/Kk.mp3" type="AudioStream" id=27]
+[ext_resource path="res://Assets/Audio/Letters/Mm.mp3" type="AudioStream" id=28]
+[ext_resource path="res://Assets/Audio/Letters/Ññ.mp3" type="AudioStream" id=29]
+[ext_resource path="res://Assets/Audio/Letters/Ll.mp3" type="AudioStream" id=30]
+[ext_resource path="res://Assets/Audio/Letters/Nn.mp3" type="AudioStream" id=31]
+[ext_resource path="res://Assets/Audio/Letters/Ff.mp3" type="AudioStream" id=32]
 
 [sub_resource type="Theme" id=1]
 
@@ -258,10 +271,10 @@ __meta__ = {
 }
 
 [node name="Aa" type="Button" parent="bg/Control/HBoxContainer/LettersA/Panel"]
-anchor_left = 0.12
-anchor_top = 0.144828
-anchor_right = 0.866667
-anchor_bottom = 0.848276
+anchor_left = 0.173333
+anchor_top = 0.22069
+anchor_right = 0.806667
+anchor_bottom = 0.8
 custom_styles/hover = SubResource( 7 )
 custom_styles/pressed = SubResource( 8 )
 custom_styles/focus = SubResource( 9 )
@@ -290,11 +303,6 @@ __meta__ = {
 [node name="bigA" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersA/Panel"]
 unique_name_in_owner = true
 stream = ExtResource( 15 )
-bus = "Voices"
-
-[node name="smallA" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersA/Panel"]
-unique_name_in_owner = true
-stream = ExtResource( 16 )
 bus = "Voices"
 
 [node name="LettersB" type="TextureRect" parent="bg/Control/HBoxContainer"]
@@ -333,10 +341,10 @@ __meta__ = {
 }
 
 [node name="Bb" type="Button" parent="bg/Control/HBoxContainer/LettersB/Panel"]
-anchor_left = 0.06
-anchor_top = 0.0625
-anchor_right = 0.946667
-anchor_bottom = 0.923611
+anchor_left = 0.153333
+anchor_top = 0.194444
+anchor_right = 0.82
+anchor_bottom = 0.770833
 custom_styles/hover = SubResource( 50 )
 custom_styles/pressed = SubResource( 51 )
 custom_styles/focus = SubResource( 52 )
@@ -362,6 +370,8 @@ __meta__ = {
 
 [node name="bigB" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersB/Panel"]
 unique_name_in_owner = true
+stream = ExtResource( 16 )
+bus = "Voices"
 
 [node name="LettersC" type="TextureRect" parent="bg/Control/HBoxContainer"]
 margin_left = 360.0
@@ -398,10 +408,10 @@ __meta__ = {
 }
 
 [node name="Cc" type="Button" parent="bg/Control/HBoxContainer/LettersC/Panel"]
-anchor_left = 0.08
-anchor_top = 0.0896552
-anchor_right = 0.946667
-anchor_bottom = 0.917241
+anchor_left = 0.166667
+anchor_top = 0.213793
+anchor_right = 0.806667
+anchor_bottom = 0.758621
 custom_styles/hover = SubResource( 50 )
 custom_styles/pressed = SubResource( 51 )
 custom_styles/focus = SubResource( 52 )
@@ -418,12 +428,17 @@ anchor_top = 0.662069
 anchor_right = 0.953333
 anchor_bottom = 0.956186
 custom_fonts/font = SubResource( 55 )
-text = "/cuh/"
+text = "/kuh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigC" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersC/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 20 )
+bus = "Voices"
 
 [node name="LettersD" type="TextureRect" parent="bg/Control/HBoxContainer"]
 margin_left = 540.0
@@ -446,10 +461,10 @@ __meta__ = {
 }
 
 [node name="Dd" type="Button" parent="bg/Control/HBoxContainer/LettersD/Panel"]
-anchor_left = 0.0666667
-anchor_top = 0.0758621
-anchor_right = 0.966667
-anchor_bottom = 0.924138
+anchor_left = 0.153333
+anchor_top = 0.2
+anchor_right = 0.826667
+anchor_bottom = 0.813793
 custom_styles/hover = SubResource( 50 )
 custom_styles/pressed = SubResource( 51 )
 custom_styles/focus = SubResource( 52 )
@@ -487,6 +502,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="bigD" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersD/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 22 )
+bus = "Voices"
+
 [node name="LettersE" type="TextureRect" parent="bg/Control/HBoxContainer"]
 margin_left = 720.0
 margin_right = 870.0
@@ -521,16 +541,17 @@ __meta__ = {
 }
 
 [node name="Ee" type="Button" parent="bg/Control/HBoxContainer/LettersE/Panel"]
-anchor_left = 0.15
-anchor_top = 0.145455
-anchor_right = 0.840476
-anchor_bottom = 0.825974
+anchor_left = 0.18
+anchor_top = 0.144828
+anchor_right = 0.84
+anchor_bottom = 0.793103
 custom_styles/hover = SubResource( 50 )
 custom_styles/pressed = SubResource( 51 )
 custom_styles/focus = SubResource( 52 )
 custom_styles/disabled = SubResource( 53 )
 custom_styles/normal = SubResource( 54 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
@@ -546,6 +567,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigE" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersE/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 21 )
+bus = "Voices"
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="bg/Control"]
 anchor_left = 0.058427
@@ -592,10 +618,10 @@ __meta__ = {
 }
 
 [node name="Ff" type="Button" parent="bg/Control/HBoxContainer4/LettersF/Panel"]
-anchor_left = 0.106666
-anchor_top = -0.022223
-anchor_right = 0.893333
-anchor_bottom = 0.771894
+anchor_left = 0.153333
+anchor_top = 0.194444
+anchor_right = 0.793333
+anchor_bottom = 0.770833
 custom_styles/hover = SubResource( 20 )
 custom_styles/pressed = SubResource( 21 )
 custom_styles/focus = SubResource( 22 )
@@ -605,6 +631,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigF" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersF/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 32 )
+bus = "Voices"
 
 [node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersF"]
 anchor_left = 0.0466663
@@ -656,10 +687,10 @@ __meta__ = {
 }
 
 [node name="Gg" type="Button" parent="bg/Control/HBoxContainer4/LettersG/Panel"]
-anchor_left = 0.04
-anchor_top = 0.034965
-anchor_right = 0.96
-anchor_bottom = 0.965035
+anchor_left = 0.16
+anchor_top = 0.195804
+anchor_right = 0.8
+anchor_bottom = 0.748252
 custom_styles/hover = SubResource( 20 )
 custom_styles/pressed = SubResource( 21 )
 custom_styles/focus = SubResource( 22 )
@@ -682,6 +713,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigG" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersG/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 26 )
+bus = "Voices"
 
 [node name="LettersH" type="TextureRect" parent="bg/Control/HBoxContainer4"]
 margin_left = 360.0
@@ -716,11 +752,16 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="bigH" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersH/Panel/Label"]
+unique_name_in_owner = true
+stream = ExtResource( 23 )
+bus = "Voices"
+
 [node name="Hh" type="Button" parent="bg/Control/HBoxContainer4/LettersH/Panel"]
-anchor_left = 0.0533333
-anchor_top = 0.0486111
-anchor_right = 0.94
-anchor_bottom = 0.930556
+anchor_left = 0.153333
+anchor_top = 0.201389
+anchor_right = 0.826667
+anchor_bottom = 0.798611
 custom_styles/hover = SubResource( 20 )
 custom_styles/pressed = SubResource( 21 )
 custom_styles/focus = SubResource( 22 )
@@ -777,11 +818,16 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="bigI" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersI/Panel/Label"]
+unique_name_in_owner = true
+stream = ExtResource( 24 )
+bus = "Voices"
+
 [node name="Ii" type="Button" parent="bg/Control/HBoxContainer4/LettersI/Panel"]
-anchor_left = 0.08
-anchor_top = 0.0416667
-anchor_right = 0.926667
-anchor_bottom = 0.965278
+anchor_left = 0.16
+anchor_top = 0.215278
+anchor_right = 0.78
+anchor_bottom = 0.777778
 custom_styles/hover = SubResource( 20 )
 custom_styles/pressed = SubResource( 21 )
 custom_styles/focus = SubResource( 22 )
@@ -853,11 +899,16 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="bigJ" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersJ/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 25 )
+bus = "Voices"
+
 [node name="Jj" type="Button" parent="bg/Control/HBoxContainer4/LettersJ"]
-anchor_left = 0.08
-anchor_top = 0.0416667
-anchor_right = 0.926667
-anchor_bottom = 0.965278
+anchor_left = 0.186667
+anchor_top = 0.215278
+anchor_right = 0.8
+anchor_bottom = 0.805556
 custom_styles/hover = SubResource( 20 )
 custom_styles/pressed = SubResource( 21 )
 custom_styles/focus = SubResource( 22 )
@@ -913,10 +964,10 @@ __meta__ = {
 }
 
 [node name="Kk" type="Button" parent="bg/Control/HBoxContainer5/LettersK/Panel"]
-anchor_left = 0.12
-anchor_top = 0.0514706
-anchor_right = 0.906667
-anchor_bottom = 0.845588
+anchor_left = 0.16
+anchor_top = 0.151724
+anchor_right = 0.84
+anchor_bottom = 0.793103
 custom_styles/hover = SubResource( 32 )
 custom_styles/pressed = SubResource( 33 )
 custom_styles/focus = SubResource( 34 )
@@ -939,6 +990,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigK" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersK/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 27 )
+bus = "Voices"
 
 [node name="LettersL" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 180.0
@@ -974,10 +1030,10 @@ __meta__ = {
 }
 
 [node name="Ll" type="Button" parent="bg/Control/HBoxContainer5/LettersL/Panel"]
-anchor_left = 0.186667
-anchor_top = 0.177777
-anchor_right = 0.877143
-anchor_bottom = 0.858296
+anchor_left = 0.146667
+anchor_top = 0.17931
+anchor_right = 0.84
+anchor_bottom = 0.813793
 custom_styles/hover = SubResource( 32 )
 custom_styles/pressed = SubResource( 33 )
 custom_styles/focus = SubResource( 34 )
@@ -987,6 +1043,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigL" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersL/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 30 )
+bus = "Voices"
 
 [node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersL"]
 anchor_left = 0.0400006
@@ -1035,10 +1096,10 @@ __meta__ = {
 }
 
 [node name="Mm" type="Button" parent="bg/Control/HBoxContainer5/LettersM/Panel"]
-anchor_left = 0.0533333
-anchor_top = 0.0689655
-anchor_right = 0.96
-anchor_bottom = 0.951724
+anchor_left = 0.14
+anchor_top = 0.206897
+anchor_right = 0.82
+anchor_bottom = 0.786207
 custom_styles/hover = SubResource( 32 )
 custom_styles/pressed = SubResource( 33 )
 custom_styles/focus = SubResource( 34 )
@@ -1048,6 +1109,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigM" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersM/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 28 )
+bus = "Voices"
 
 [node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersM"]
 anchor_left = 0.0400006
@@ -1096,10 +1162,10 @@ __meta__ = {
 }
 
 [node name="Nn" type="Button" parent="bg/Control/HBoxContainer5/LettersN/Panel"]
-anchor_left = 0.04
-anchor_top = 0.0551724
-anchor_right = 0.966667
-anchor_bottom = 0.931035
+anchor_left = 0.14
+anchor_top = 0.172414
+anchor_right = 0.846667
+anchor_bottom = 0.841379
 custom_styles/hover = SubResource( 32 )
 custom_styles/pressed = SubResource( 33 )
 custom_styles/focus = SubResource( 34 )
@@ -1109,6 +1175,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigN" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersN/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 31 )
+bus = "Voices"
 
 [node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersN"]
 anchor_left = 0.0400006
@@ -1158,10 +1229,10 @@ __meta__ = {
 }
 
 [node name="Enye" type="Button" parent="bg/Control/HBoxContainer5/LettersÑñ/Panel"]
-anchor_left = 0.0533333
-anchor_top = 0.0344828
-anchor_right = 0.966667
-anchor_bottom = 0.937931
+anchor_left = 0.14
+anchor_top = 0.158621
+anchor_right = 0.86
+anchor_bottom = 0.793103
 custom_styles/hover = SubResource( 43 )
 custom_styles/pressed = SubResource( 44 )
 custom_styles/focus = SubResource( 45 )
@@ -1171,6 +1242,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="bigEnye" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersÑñ/Panel"]
+unique_name_in_owner = true
+stream = ExtResource( 29 )
+bus = "Voices"
 
 [node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersÑñ"]
 anchor_left = 0.0400006
@@ -1186,10 +1262,10 @@ __meta__ = {
 }
 
 [node name="alphabet" type="Label" parent="bg"]
-anchor_left = 0.0634766
-anchor_top = 0.0233333
-anchor_right = 0.911133
-anchor_bottom = 0.148333
+anchor_left = 0.0800781
+anchor_top = 0.0316667
+anchor_right = 0.927734
+anchor_bottom = 0.156666
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
@@ -1245,13 +1321,13 @@ __meta__ = {
 }
 
 [node name="GoBackButton" type="Button" parent="bg"]
-anchor_left = 0.913086
-anchor_top = 0.025
-anchor_right = 0.984375
-anchor_bottom = 0.145
+anchor_left = 0.0195313
+anchor_top = 0.035
+anchor_right = 0.0908203
+anchor_bottom = 0.155
 size_flags_horizontal = 3
 size_flags_vertical = 3
-icon = ExtResource( 4 )
+icon = ExtResource( 5 )
 flat = true
 icon_align = 1
 expand_icon = true
@@ -1261,19 +1337,19 @@ __meta__ = {
 }
 
 [node name="pressedX" type="TextureRect" parent="bg/GoBackButton"]
-anchor_left = 0.232877
-anchor_top = 0.222222
-anchor_right = 0.767123
-anchor_bottom = 0.763889
-texture = ExtResource( 5 )
+anchor_left = 0.191781
+anchor_top = 0.180556
+anchor_right = 0.794521
+anchor_bottom = 0.777778
+texture = ExtResource( 4 )
 expand = true
+flip_h = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [connection signal="pressed" from="bg/Control/HBoxContainer/LettersA/Panel/Aa" to="." method="_on_Aa_pressed"]
-[connection signal="finished" from="bg/Control/HBoxContainer/LettersA/Panel/bigA" to="." method="_on_bigA_finished"]
 [connection signal="pressed" from="bg/Control/HBoxContainer/LettersB/Panel/Bb" to="." method="_on_Bb_pressed"]
 [connection signal="pressed" from="bg/Control/HBoxContainer/LettersC/Panel/Cc" to="." method="_on_Cc_pressed"]
 [connection signal="pressed" from="bg/Control/HBoxContainer/LettersD/Panel/Dd" to="." method="_on_Dd_pressed"]

@@ -27,19 +27,97 @@ func _on_GoBackButton_pressed() -> void:
 
 
 #THIS HERE IS FOR THE BUTTONS
-#LETTERS A
+#LETTERS NGng
+func _on_NGng_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigNg'.play()
+	print("Play Big P")
+
+#LETTERS O
+func _on_Oo_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigO'.play()
+	print("Play Big P")
+
+#LETTERS P
 func _on_Pp_pressed() -> void:
-	ScrollPop.play()
+	#ScrollPop.play()
 	yield(get_tree().create_timer(0.15), "timeout")
 	$'%bigP'.play()
 	print("Play Big P")
 
-func _on_bigP_finished() -> void:
-	yield(get_tree().create_timer(0.18), "timeout")
-	$'%Label3'.show()
-	$'%smallP'.play()
-	print("Play Small P")
+#LETTERS Q
+func _on_Qq_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigQ'.play()
+	print("Play Big P")
+
+#LETTERS R
+func _on_Rr_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigR'.play()
+	print("Play Big P")
+
+#LETTERS S
+func _on_Ss_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigS'.play()
+	print("Play Big P")
+
+#LETTERS T
+func _on_Tt_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigT'.play()
+	print("Play Big P")
+
+#LETTERS U
+func _on_Uu_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigU'.play()
+	print("Play Big P")
+
+#LETTERS V
+func _on_Vv_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigV'.play()
+	print("Play Big P")
+
+#LETTERS W
+func _on_Ww_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigW'.play()
+	print("Play Big P")
+
+#LETTERS X
+func _on_Xx_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigX'.play()
+	print("Play Big P")
+
+#LETTERS Y
+func _on_Yy_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigY'.play()
+	print("Play Big P")
+
+#LETTERS Z
+func _on_Zz_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigZ'.play()
+	print("Play Big P")
 
 
 
-	
+

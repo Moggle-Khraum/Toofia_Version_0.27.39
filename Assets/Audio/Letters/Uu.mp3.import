@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Uu.mp3-5310e12529490ebae210591d25876ade.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Letters/Uu.mp3"
+dest_files=[ "res://.import/Uu.mp3-5310e12529490ebae210591d25876ade.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

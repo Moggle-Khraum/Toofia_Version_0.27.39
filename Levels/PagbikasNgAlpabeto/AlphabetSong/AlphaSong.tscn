@@ -248,13 +248,13 @@ __meta__ = {
 }
 
 [node name="LeftButton" type="Button" parent="."]
-anchor_left = 0.0195313
-anchor_top = 0.455
+anchor_left = 0.0195312
+anchor_top = 0.485
 anchor_right = 0.0195313
-anchor_bottom = 0.6
-margin_left = 65.0
-margin_right = 152.0
-margin_bottom = -22.0
+anchor_bottom = 0.608333
+margin_left = 51.0
+margin_right = 125.0
+margin_bottom = -23.0
 rect_rotation = 90.0
 focus_mode = 0
 enabled_focus_mode = 0

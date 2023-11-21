@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ff.mp3-f7643c1135978416dae9842438926f08.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Letters/Ff.mp3"
+dest_files=[ "res://.import/Ff.mp3-f7643c1135978416dae9842438926f08.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
