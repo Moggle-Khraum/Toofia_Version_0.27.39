@@ -1,18 +1,21 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.gd" type="Script" id=1]
 [ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/sample.ogv" type="VideoStream" id=2]
 [ext_resource path="res://Assets/UIElements/Icon_Tube.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Images/blackScreen.png" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=5]
-[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Blue_Circle.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UIElements/Icon_Writing.png" type="Texture" id=6]
 [ext_resource path="res://Assets/UIElements/Icon_Down.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=8]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=9]
-[ext_resource path="res://Assets/GUI/gears2d2.png" type="Texture" id=10]
+[ext_resource path="res://Assets/UIElements/Icon_Write.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=11]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Circle.png" type="Texture" id=12]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_X.png" type="Texture" id=13]
 
-[sub_resource type="DynamicFont" id=1]
-size = 68
+[sub_resource type="DynamicFont" id=5]
+size = 65
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
@@ -20,16 +23,18 @@ extra_spacing_char = -3
 font_data = ExtResource( 9 )
 fallback/0 = ExtResource( 8 )
 
-[sub_resource type="DynamicFont" id=2]
-size = 68
+[sub_resource type="DynamicFont" id=6]
+size = 65
 use_filter = true
 extra_spacing_char = -3
 font_data = ExtResource( 9 )
 fallback/0 = ExtResource( 8 )
 
-[sub_resource type="StyleBoxTexture" id=3]
-texture = ExtResource( 6 )
-region_rect = Rect2( 0, 0, 356, 357 )
+[sub_resource type="DynamicFont" id=4]
+size = 55
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 11 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -56,8 +61,8 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 1 )
-text = "Alphabet Song"
+custom_fonts/font = SubResource( 5 )
+text = "Aralin Natin 'to!"
 align = 1
 valign = 1
 autowrap = true
@@ -75,8 +80,8 @@ anchor_bottom = 1.02938
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 2 )
-text = "Alphabet Song"
+custom_fonts/font = SubResource( 6 )
+text = "Aralin Natin 'to!"
 align = 1
 valign = 1
 autowrap = true
@@ -87,160 +92,24 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="VideoPlayer" type="VideoPlayer" parent="NinePatchRect"]
-unique_name_in_owner = true
-anchor_left = 0.0888672
-anchor_top = 0.183333
-anchor_right = 0.910156
-anchor_bottom = 0.92
-stream = ExtResource( 2 )
-autoplay = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="curtain" type="TextureRect" parent="NinePatchRect"]
-unique_name_in_owner = true
-anchor_left = 0.0888672
-anchor_top = 0.183333
-anchor_right = 0.910156
-anchor_bottom = 0.918333
-texture = ExtResource( 4 )
+[node name="pen" type="TextureRect" parent="NinePatchRect"]
+anchor_left = 0.875977
+anchor_top = 0.0583333
+anchor_right = 0.943359
+anchor_bottom = 0.16
+texture = ExtResource( 6 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Node2D" type="Node2D" parent="NinePatchRect"]
-position = Vector2( 100, 542 )
-scale = Vector2( 0.22, 0.22 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="cog" type="Sprite" parent="NinePatchRect/Node2D"]
-unique_name_in_owner = true
-show_behind_parent = true
-scale = Vector2( 0.0671386, 0.069413 )
+[node name="write" type="TextureRect" parent="NinePatchRect"]
+anchor_left = 0.0830078
+anchor_top = 0.06
+anchor_right = 0.150391
+anchor_bottom = 0.161667
 texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="cog0" type="Sprite" parent="NinePatchRect/Node2D"]
-unique_name_in_owner = true
-show_behind_parent = true
-position = Vector2( 3736.36, -4.54688 )
-scale = Vector2( 0.0671386, 0.069413 )
-texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D0" type="Node2D" parent="NinePatchRect"]
-position = Vector2( 100, 117 )
-scale = Vector2( 0.22, 0.22 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="cog1" type="Sprite" parent="NinePatchRect/Node2D0"]
-unique_name_in_owner = true
-show_behind_parent = true
-scale = Vector2( 0.0671386, 0.069413 )
-texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="cog2" type="Sprite" parent="NinePatchRect/Node2D0"]
-unique_name_in_owner = true
-show_behind_parent = true
-position = Vector2( 3736.36, -4.54688 )
-scale = Vector2( 0.0671386, 0.069413 )
-texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="knobs" type="Control" parent="NinePatchRect"]
-anchor_left = 0.0195313
-anchor_top = 0.79
-anchor_right = 1.01953
-anchor_bottom = 0.965
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="knob" type="Panel" parent="NinePatchRect/knobs"]
-anchor_left = 0.0693359
-anchor_top = 0.561905
-anchor_right = 0.0869141
-anchor_bottom = 0.733333
-custom_styles/panel = SubResource( 3 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="knob0" type="Panel" parent="NinePatchRect/knobs"]
-anchor_left = 0.87207
-anchor_top = 0.552381
-anchor_right = 0.889648
-anchor_bottom = 0.72381
-custom_styles/panel = SubResource( 3 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="knobs0" type="Control" parent="NinePatchRect"]
-anchor_left = 0.0195313
-anchor_top = 0.0816667
-anchor_right = 1.01953
-anchor_bottom = 0.256667
-mouse_filter = 2
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="knob" type="Panel" parent="NinePatchRect/knobs0"]
-anchor_left = 0.0693359
-anchor_top = 0.561905
-anchor_right = 0.0869141
-anchor_bottom = 0.733333
-custom_styles/panel = SubResource( 3 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="knob0" type="Panel" parent="NinePatchRect/knobs0"]
-anchor_left = 0.87207
-anchor_top = 0.552381
-anchor_right = 0.889648
-anchor_bottom = 0.72381
-custom_styles/panel = SubResource( 3 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="PLAYTHEVIDEO" type="TextureButton" parent="."]
-unique_name_in_owner = true
-anchor_left = 0.419922
-anchor_top = 0.453333
-anchor_right = 0.529297
-anchor_bottom = 0.63
-focus_mode = 0
-action_mode = 0
-enabled_focus_mode = 0
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 3 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
@@ -248,6 +117,7 @@ __meta__ = {
 }
 
 [node name="LeftButton" type="Button" parent="."]
+unique_name_in_owner = true
 anchor_left = 0.0195312
 anchor_top = 0.485
 anchor_right = 0.0195313
@@ -266,6 +136,233 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[connection signal="finished" from="NinePatchRect/VideoPlayer" to="." method="_on_VideoPlayer_finished"]
-[connection signal="button_down" from="PLAYTHEVIDEO" to="." method="_on_PLAYTHEVIDEO_button_down"]
+[node name="firstVideo" type="TextureRect" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.0771484
+anchor_top = 0.178333
+anchor_right = 0.353516
+anchor_bottom = 0.943333
+margin_bottom = 3.05176e-05
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Panel" type="Panel" parent="firstVideo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ponetaka" type="TextureButton" parent="firstVideo/Panel"]
+anchor_left = 0.261484
+anchor_top = 0.27451
+anchor_right = 0.777385
+anchor_bottom = 0.557734
+margin_right = 1.52588e-05
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="firstVideo/Panel"]
+anchor_top = 0.555556
+anchor_right = 1.0
+anchor_bottom = 0.71024
+custom_fonts/font = SubResource( 4 )
+text = "Ponetaka"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="secondVideo" type="TextureRect" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.374023
+anchor_top = 0.18
+anchor_right = 0.650391
+anchor_bottom = 0.945
+margin_bottom = 3.05176e-05
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Panel" type="Panel" parent="secondVideo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pagsulat" type="TextureButton" parent="secondVideo/Panel"]
+anchor_left = 0.261484
+anchor_top = 0.27451
+anchor_right = 0.777385
+anchor_bottom = 0.557734
+margin_right = 1.52588e-05
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="secondVideo/Panel"]
+anchor_top = 0.555556
+anchor_right = 1.0
+anchor_bottom = 0.71024
+custom_fonts/font = SubResource( 4 )
+text = "Pagsulat"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="thirdVideo" type="TextureRect" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.673828
+anchor_top = 0.178333
+anchor_right = 0.950195
+anchor_bottom = 0.943333
+margin_bottom = 3.05176e-05
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Panel" type="Panel" parent="thirdVideo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pag-awit" type="TextureButton" parent="thirdVideo/Panel"]
+anchor_left = 0.261484
+anchor_top = 0.27451
+anchor_right = 0.777385
+anchor_bottom = 0.557734
+margin_right = 1.52588e-05
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="thirdVideo/Panel"]
+anchor_top = 0.555556
+anchor_right = 1.0
+anchor_bottom = 0.71024
+custom_fonts/font = SubResource( 4 )
+text = "Pag-awit"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Ponetaka" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.0419922
+anchor_top = 0.0583333
+anchor_right = 0.952148
+anchor_bottom = 0.94
+margin_bottom = 6.10352e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Panel" type="Panel" parent="Ponetaka"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VPponetaka" type="VideoPlayer" parent="Ponetaka/Panel"]
+unique_name_in_owner = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+stream = ExtResource( 2 )
+autoplay = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="curtain" type="TextureRect" parent="Ponetaka/Panel"]
+unique_name_in_owner = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="PlayVPonetaka" type="TextureButton" parent="Ponetaka/Panel"]
+unique_name_in_owner = true
+anchor_left = 0.399142
+anchor_top = 0.357278
+anchor_right = 0.549356
+anchor_bottom = 0.604915
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exitPonetaka" type="TextureButton" parent="Ponetaka"]
+unique_name_in_owner = true
+anchor_left = 0.919528
+anchor_top = -0.00189036
+anchor_right = 1.00107
+anchor_bottom = 0.134216
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="x" type="TextureRect" parent="Ponetaka/exitPonetaka"]
+anchor_left = 0.191488
+anchor_top = 0.191489
+anchor_right = 0.829786
+anchor_bottom = 0.80851
+texture = ExtResource( 13 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [connection signal="pressed" from="LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="firstVideo/Panel/Ponetaka" to="." method="_on_Ponetaka_pressed"]
+[connection signal="finished" from="Ponetaka/Panel/VPponetaka" to="." method="_on_VPponetaka_finished"]
+[connection signal="button_down" from="Ponetaka/Panel/PlayVPonetaka" to="." method="_on_PlayVPonetaka_button_down"]
+[connection signal="pressed" from="Ponetaka/exitPonetaka" to="." method="_on_exitPonetaka_pressed"]
