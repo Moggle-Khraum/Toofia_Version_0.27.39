@@ -1,4 +1,4 @@
-extends BaseScroll
+extends Control
 #The above is referencing the Template base called BaseScroll
 
 #THIS IS FOR SIGNAL that was used by Buttons
@@ -8,15 +8,15 @@ signal pressed
 func _on_LeftButton_pressed() -> void:
 	ScrollPop.play()
 	# Calculate the target horizontal scroll position
-	scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, scrollerContainer.scroll_horizontal - scrollStep, scrollWeight)
-	scrollerContainer.scroll_horizontal -= scrollStep
+	#scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, scrollerContainer.scroll_horizontal - scrollStep, scrollWeight)
+	#scrollerContainer.scroll_horizontal -= scrollStep
 	print("Pressed Left Button '<='")
 	
 #This is for the Right Button
 func _on_RightButton_pressed() -> void:
 	ScrollPop.play()
-	scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, scrollerContainer.scroll_horizontal + scrollStep, scrollWeight)
-	scrollerContainer.scroll_horizontal += scrollStep
+	#scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, scrollerContainer.scroll_horizontal + scrollStep, scrollWeight)
+	#scrollerContainer.scroll_horizontal += scrollStep
 	print("Pressed Rigght Button '=>'")
 
 func _on_GoBackButton_pressed() -> void:
