@@ -11,6 +11,22 @@ func _on_LeftButton_pressed() -> void:
 #----------------------------------------------
 #BEGIN PONETAKA
 
+func _on_Ponetaka_pressed() -> void:
+	$'%Ponetaka'.show()
+	print("Show Ponetaka")
+	$'%thirdVideo'.hide()
+	$'%secondVideo'.hide()
+	$'%firstVideo'.hide()
+	$'%LeftButton'.hide()
+	print("Hides Left Button and 2 Videos")
+	$'%VPponetaka'.play()
+	print("Plays Ponitika")
+
+func _on_VPponetaka_finished() -> void:
+	$'%curtain'.show()
+	$'%PlayVPonetaka'.show()
+	print("Show Button | Curtain")
+
 func _on_PlayVPonetaka_button_down() -> void:
 	$'%VPponetaka'.play()
 	$'%curtain'.hide()
@@ -25,23 +41,6 @@ func _on_PlayVPonetaka_button_down() -> void:
 	#	$'%PlayVPonetaka'.show()
 	#	#$'%curtain'.show()
 	#	print("Ponetaka is Not Playing")
-		
-	
-func _on_VPponetaka_finished() -> void:
-	$'%curtain'.show()
-	$'%PlayVPonetaka'.show()
-	
-	print("Show Button | Curtain")
-	
-func _on_Ponetaka_pressed() -> void:
-	$'%Ponetaka'.show()
-	print("Show Ponetaka")
-	
-	$'%thirdVideo'.hide()
-	$'%secondVideo'.hide()
-	$'%firstVideo'.hide()
-	$'%LeftButton'.hide()
-	print("Hides Left Button and 2 Videos")
 
 #Exit Video
 func _on_exitPonetaka_pressed() -> void:
