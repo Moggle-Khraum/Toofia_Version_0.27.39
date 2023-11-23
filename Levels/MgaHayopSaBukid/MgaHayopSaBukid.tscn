@@ -1,14 +1,15 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Assets/Audio/levelsAudio/Music/Running_Through_The_Jungle.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Rounded.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Circle.png" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=5]
 [ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=6]
 [ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Themes/levelsTheme.tres" type="Theme" id=8]
 [ext_resource path="res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.gd" type="Script" id=9]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=11]
-[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=13]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Square.png" type="Texture" id=15]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=17]
 
@@ -1124,17 +1125,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Button16" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
-margin_left = 1554.0
-margin_right = 1754.0
-margin_bottom = 200.0
-rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="farmAnimals" type="Label" parent="Panel"]
 anchor_left = 0.0751953
 anchor_top = 0.0233333
@@ -1245,17 +1235,17 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="GoBackButton2" type="Button" parent="Panel"]
-anchor_left = 0.897461
-anchor_top = 0.025
-anchor_right = 0.980469
-anchor_bottom = 0.165
+[node name="GoBackButton2" type="TextureButton" parent="Panel"]
+anchor_left = 0.900391
+anchor_top = 0.0266667
+anchor_right = 0.983399
+anchor_bottom = 0.166667
 size_flags_horizontal = 3
 size_flags_vertical = 3
-icon = ExtResource( 13 )
-flat = true
-icon_align = 1
-expand_icon = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true

@@ -10,10 +10,10 @@
 [ext_resource path="res://Assets/UIIcons/Icon_Large_StarSrey_SeethroughOutline.png" type="Texture" id=8]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Square.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UIIcons/Icon_Large_Star_SeethroughOutline.png" type="Texture" id=10]
-[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Rounded.png" type="Texture" id=11]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=12]
 [ext_resource path="res://Assets/UIElements/Icon_Lock.png" type="Texture" id=13]
-[ext_resource path="res://Levels/LevelLocked.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Circle.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=17]
 
 [sub_resource type="DynamicFont" id=10]
@@ -1529,46 +1529,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Button16" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
-margin_left = 1554.0
-margin_right = 1754.0
-margin_bottom = 200.0
-rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 9 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="GoBackButton" type="Button" parent="Panel"]
-anchor_left = 0.897461
-anchor_top = 0.025
-anchor_right = 0.980469
-anchor_bottom = 0.165
-size_flags_horizontal = 3
-size_flags_vertical = 3
-icon = ExtResource( 11 )
-flat = true
-icon_align = 1
-expand_icon = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="pressedX" type="TextureRect" parent="Panel/GoBackButton"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 23.0
-margin_top = 19.0
-margin_right = -22.0
-margin_bottom = -23.0
-texture = ExtResource( 2 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="prutasatgulay" type="Label" parent="Panel"]
 anchor_left = 0.125977
 anchor_top = 0.0266667
@@ -1679,8 +1639,34 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bgPanel" parent="." instance=ExtResource( 15 )]
-unique_name_in_owner = true
+[node name="GoBackButton" type="TextureButton" parent="Panel"]
+anchor_left = 0.899414
+anchor_top = 0.0266667
+anchor_right = 0.982422
+anchor_bottom = 0.166667
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pressedX" type="TextureRect" parent="Panel/GoBackButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 23.0
+margin_top = 19.0
+margin_right = -22.0
+margin_bottom = -23.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="fruitTheme" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
@@ -1703,8 +1689,6 @@ bus = "Music"
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button13/13Button" to="." method="_on_13Button_pressed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button14/14Button" to="." method="_on_14Button_pressed"]
 [connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button15/15Button" to="." method="_on_15Button_pressed"]
-[connection signal="pressed" from="Panel/GoBackButton" to="." method="_on_GoBackButton_pressed"]
 [connection signal="pressed" from="Panel/LeftButton" to="." method="_on_LeftButton_pressed"]
 [connection signal="pressed" from="Panel/RightButton" to="." method="_on_RightButton_pressed"]
-
-[editable path="bgPanel"]
+[connection signal="pressed" from="Panel/GoBackButton" to="." method="_on_GoBackButton_pressed"]

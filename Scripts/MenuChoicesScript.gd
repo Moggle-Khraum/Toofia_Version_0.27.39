@@ -46,8 +46,8 @@ func _on_CardMenu3_pressed():
 func _on_CardMenu4_pressed():
 	MenuClickSfxPlayer.play()
 	print("Presses 4")
-	#var humanBody = get_tree().change_scene("res://Levels/ParteNgKatawanNgTao/ParteNgKatawanNgTao.tscn")
-	#MainMenuThemePlayer.stream_paused = true
-	#print("Popupshows PartsOfTheHumanBodyInfo")
+	var humanBody = get_tree().change_scene("res://Levels/ParteNgKatawanNgTao/ParteNgKatawanNgTao.tscn")
+	MainMenuThemePlayer.stream_paused = true
+	print("Going to BodyParts")
 
 

@@ -1,10 +1,10 @@
-[gd_scene load_steps=87 format=2]
+[gd_scene load_steps=88 format=2]
 
 [ext_resource path="res://Assets/GUI/IconButton_Large_Yellow_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/UIElements/Icon_Down.png" type="Texture" id=2]
 [ext_resource path="res://Assets/GUI/IconButton_Large_FadeGreen_Square.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=4]
-[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=5]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Circle.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=8]
@@ -32,6 +32,7 @@
 [ext_resource path="res://Assets/Audio/Letters/Ll.mp3" type="AudioStream" id=30]
 [ext_resource path="res://Assets/Audio/Letters/Nn.mp3" type="AudioStream" id=31]
 [ext_resource path="res://Assets/Audio/Letters/Ff.mp3" type="AudioStream" id=32]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Rounded.png" type="Texture" id=33]
 
 [sub_resource type="Theme" id=1]
 
@@ -933,7 +934,7 @@ __meta__ = {
 
 [node name="LettersK" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_right = 150.0
-margin_bottom = 145.0
+margin_bottom = 144.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 14 )
 expand = true
@@ -999,7 +1000,7 @@ bus = "Voices"
 [node name="LettersL" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 180.0
 margin_right = 330.0
-margin_bottom = 145.0
+margin_bottom = 144.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 12 )
 expand = true
@@ -1065,7 +1066,7 @@ __meta__ = {
 [node name="LettersM" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 360.0
 margin_right = 510.0
-margin_bottom = 145.0
+margin_bottom = 144.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 3 )
 expand = true
@@ -1131,7 +1132,7 @@ __meta__ = {
 [node name="LettersN" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 540.0
 margin_right = 690.0
-margin_bottom = 145.0
+margin_bottom = 144.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 19 )
 expand = true
@@ -1197,7 +1198,7 @@ __meta__ = {
 [node name="LettersÑñ" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 720.0
 margin_right = 870.0
-margin_bottom = 145.0
+margin_bottom = 144.0
 rect_min_size = Vector2( 150, 0 )
 texture = ExtResource( 18 )
 expand = true
@@ -1320,20 +1321,19 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="GoBackButton" type="Button" parent="bg"]
+[node name="GoBackButton" type="TextureButton" parent="bg"]
 anchor_left = 0.0195313
 anchor_top = 0.035
 anchor_right = 0.0908203
 anchor_bottom = 0.155
 size_flags_horizontal = 3
 size_flags_vertical = 3
-icon = ExtResource( 5 )
-flat = true
-icon_align = 1
-expand_icon = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 33 )
+texture_hover = ExtResource( 33 )
+expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
 [node name="pressedX" type="TextureRect" parent="bg/GoBackButton"]
