@@ -5,18 +5,26 @@
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Green_Rounded.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=4]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Green_Circle.png" type="Texture" id=5]
-[ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=6]
-[ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=7]
+[ext_resource path="res://dropPoint.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/DragNDropTest/dragNdrop.tscn" type="PackedScene" id=7]
 
-[node name="Control" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
+[node name="Control" type="Control" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+mouse_filter = 2
+mouse_default_cursor_shape = 13
+input_pass_on_modal_close_click = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 2 )
@@ -24,7 +32,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="goBack" type="TextureButton" parent="NinePatchRect"]
+[node name="goBack" type="TextureButton" parent="Control/NinePatchRect"]
 anchor_left = 0.0214844
 anchor_top = 0.035
 anchor_right = 0.0810547
@@ -41,7 +49,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="arrow" type="TextureRect" parent="NinePatchRect/goBack"]
+[node name="arrow" type="TextureRect" parent="Control/NinePatchRect/goBack"]
 anchor_left = 0.131148
 anchor_top = 0.135593
 anchor_right = 0.852459
@@ -54,43 +62,22 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="scrollCage" type="Panel" parent="NinePatchRect"]
-anchor_left = 0.176758
-anchor_top = 0.745
-anchor_right = 0.814453
-anchor_bottom = 0.943333
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
+[node name="Panel" type="Panel" parent="Control/NinePatchRect"]
+margin_left = 858.0
+margin_top = 44.0
+margin_right = 990.0
+margin_bottom = 562.0
+mouse_filter = 2
+mouse_default_cursor_shape = 13
+input_pass_on_modal_close_click = false
 
-[node name="leftButton" type="TextureButton" parent="NinePatchRect/scrollCage"]
-anchor_top = 0.0588235
-anchor_right = 0.0658499
-anchor_bottom = 0.941176
-action_mode = 0
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 6 )
-texture_hover = ExtResource( 6 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
+[node name="drop_zone" parent="." instance=ExtResource( 6 )]
+position = Vector2( 931, 188 )
 
-[node name="rightButton" type="TextureButton" parent="NinePatchRect/scrollCage"]
-anchor_left = 0.937213
-anchor_top = 0.0588235
-anchor_right = 1.0
-anchor_bottom = 0.941176
-action_mode = 0
-texture_normal = ExtResource( 7 )
-texture_pressed = ExtResource( 7 )
-texture_hover = ExtResource( 7 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
+[node name="drop_zone2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 475, 97 )
 
-[connection signal="pressed" from="NinePatchRect/goBack" to="." method="_on_goBack_pressed"]
+[node name="Node2D" parent="." instance=ExtResource( 7 )]
+position = Vector2( 927, 95 )
+
+[connection signal="pressed" from="Control/NinePatchRect/goBack" to="." method="_on_goBack_pressed"]
