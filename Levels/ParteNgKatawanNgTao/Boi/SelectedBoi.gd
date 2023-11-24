@@ -1,8 +1,4 @@
-extends Node2D
-
-
-
-
+extends Control
 
 
 
