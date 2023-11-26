@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=2]
+[gd_scene load_steps=76 format=2]
 
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=1]
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Audio/Tama.mp3" type="AudioStream" id=8]
-[ext_resource path="res://Assets/Audio/levelsAudio/Apple/choiceA.mp3" type="AudioStream" id=9]
 [ext_resource path="res://Assets/Images/levelImages/apple1.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Audio/Mali.mp3" type="AudioStream" id=11]
 [ext_resource path="res://Assets/Sliders/ScrollBar_Blue_Scroller.png" type="Texture" id=12]
@@ -21,8 +20,6 @@
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=20]
 [ext_resource path="res://Levels/1PrutasAtGulay/Level1/1stQuestion/PausePanel0.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Assets/Audio/levelsAudio/askVoice.wav" type="AudioStream" id=22]
-[ext_resource path="res://Assets/Audio/levelsAudio/Apple/choiceB.mp3" type="AudioStream" id=23]
-[ext_resource path="res://Assets/Audio/levelsAudio/Apple/choiceC.mp3" type="AudioStream" id=24]
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintB.otf" type="DynamicFontData" id=25]
 [ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=26]
 [ext_resource path="res://Assets/UIElements/Item4.png" type="Texture" id=27]
@@ -486,7 +483,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 33 )
-text = "unang tanong"
+text = "Level 1"
 align = 1
 valign = 1
 autowrap = true
@@ -504,7 +501,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 34 )
-text = "unang tanong"
+text = "Level 1"
 align = 1
 valign = 1
 autowrap = true
@@ -522,7 +519,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 35 )
-text = "unang tanong"
+text = "Level 1"
 align = 1
 valign = 1
 autowrap = true
@@ -749,7 +746,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 129 )
-text = "A. Ito ay isang gulay."
+text = "A. Gulay."
 valign = 1
 autowrap = true
 clip_text = true
@@ -766,7 +763,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 130 )
-text = "A. Ito ay isang gulay."
+text = "A. Gulay."
 valign = 1
 autowrap = true
 clip_text = true
@@ -776,7 +773,6 @@ __meta__ = {
 
 [node name="choiceA" type="AudioStreamPlayer" parent="background/askHolder/answerLabelA"]
 unique_name_in_owner = true
-stream = ExtResource( 9 )
 bus = "Voices"
 
 [node name="answerLabelB" type="Label" parent="background/askHolder"]
@@ -789,7 +785,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 138 )
-text = "B. Ito ay isang prutas."
+text = "B. Prutas."
 valign = 1
 autowrap = true
 clip_text = true
@@ -805,7 +801,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 139 )
-text = "B. Ito ay isang prutas."
+text = "B. Prutas."
 valign = 1
 autowrap = true
 clip_text = true
@@ -815,7 +811,6 @@ __meta__ = {
 
 [node name="choiceB" type="AudioStreamPlayer" parent="background/askHolder/answerLabelB"]
 unique_name_in_owner = true
-stream = ExtResource( 23 )
 bus = "Voices"
 
 [node name="answerLabelC" type="Label" parent="background/askHolder"]
@@ -828,7 +823,7 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 140 )
-text = "C. Wala sa nabanggit."
+text = "C. Hayop"
 valign = 1
 autowrap = true
 clip_text = true
@@ -844,7 +839,7 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 141 )
-text = "C. Wala sa nabanggit."
+text = "C. Hayop"
 valign = 1
 autowrap = true
 clip_text = true
@@ -854,7 +849,6 @@ __meta__ = {
 
 [node name="choiceC" type="AudioStreamPlayer" parent="background/askHolder/answerLabelC"]
 unique_name_in_owner = true
-stream = ExtResource( 24 )
 bus = "Voices"
 
 [node name="AnswerPanel" type="Control" parent="background"]

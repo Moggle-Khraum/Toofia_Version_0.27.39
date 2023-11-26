@@ -4,7 +4,7 @@ extends Control
 func _on_RightButton_pressed() -> void:
 	ScrollPop.play()
 	var goLvl2 = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/NextLevelP2Z/LetterSpeak2.tscn")
-	print("Pressed Rigght Button '=>'")
+	print("Pressed Right Button '=>'")
 
 
 func _on_GoBackButton_pressed() -> void:
