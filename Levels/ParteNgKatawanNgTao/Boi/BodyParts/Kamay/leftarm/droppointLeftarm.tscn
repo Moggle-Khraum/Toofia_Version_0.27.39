@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/BodyParts/Kamay/leftarm/droppointLeftarm.gd" type="Script" id=1]
-
-[node name="dropLeft" type="Position2D" groups=["leftarm"]]
-position = Vector2( 532, 267 )
-script = ExtResource( 1 )

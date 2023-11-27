@@ -12,8 +12,4 @@ position = Vector2( 508, 246 )
 position = Vector2( 173, 480 )
 
 [node name="Node2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 548, 410 )
-
-[node name="Control" type="Control" parent="."]
-margin_right = 1024.0
-margin_bottom = 597.0
+position = Vector2( 508, 245 )
