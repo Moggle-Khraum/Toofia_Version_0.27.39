@@ -32,3 +32,5 @@ __meta__ = {
 }
 
 [connection signal="input_event" from="Icon1/Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Icon1/Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Icon1/Area2D" to="." method="_on_Area2D_mouse_exited"]

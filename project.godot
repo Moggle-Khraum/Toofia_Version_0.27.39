@@ -41,6 +41,7 @@ ScrollPop="*res://ThemePlayers/Scroll Pop.tscn"
 CorrectAnswer="*res://ThemePlayers/CorrectAnswer.tscn"
 WrongAnswer="*res://ThemePlayers/WrongAnswer.tscn"
 LevelError="*res://ThemePlayers/LevelError.tscn"
+global="*res://Templates/global.gd"
 
 [debug]
 

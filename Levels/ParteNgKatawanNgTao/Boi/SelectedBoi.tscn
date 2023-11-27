@@ -1,51 +1,43 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/SelectedBoi.gd" type="Script" id=1]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=2]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Green_Rounded.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=4]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Green_Circle.png" type="Texture" id=5]
-[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/BodyParts/Kamay/leftarm/armleft.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/BodyParts/Kamay/leftarm/droppointLeftarm.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/BodyParts/aa.png" type="Texture" id=8]
-[ext_resource path="res://Assets/GUI/Box_Rounded_Pressed.png" type="Texture" id=9]
-[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/BodyParts/bodyOutline.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=11]
-[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=12]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/leftArm/leftArm.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/leftArm/leftPoint.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Images/Boy/wholeBody.png" type="Texture" id=8]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightArm/rightArm.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/Images/Boy/BodyOutline.png" type="Texture" id=10]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightArm/rightPoint.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/upperBody/upperBody.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/upperBody/upperBPoint.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/lowerBody/lowerBody.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/lowerBody/lowerBPoint.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/leftFoot/leftFoot.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/leftFoot/leftFPoint.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightFoot/rightFoot.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightFoot/rightFPoint.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/topHair/topHair.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/topHair/topHairPoint.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/leftEars/leftEar.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/leftEars/leftEarPoint.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightEar/rightEar.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightEar/rightEarPoint.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/leftEyeBrow/leftEyebrow.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/leftEyeBrow/leftEybPoint.tscn" type="PackedScene" id=27]
 
-[sub_resource type="DynamicFont" id=1]
-size = 32
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
-use_filter = true
-font_data = ExtResource( 12 )
-fallback/0 = ExtResource( 11 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 32
-use_filter = true
-font_data = ExtResource( 12 )
-fallback/0 = ExtResource( 11 )
-
-[node name="Control" type="Control"]
+[node name="NinePatchRect" type="NinePatchRect"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-mouse_filter = 2
-mouse_default_cursor_shape = 13
+texture = ExtResource( 2 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 2 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="goBack" type="TextureButton" parent="NinePatchRect"]
+[node name="goBack" type="TextureButton" parent="."]
 anchor_left = 0.0214844
 anchor_top = 0.035
 anchor_right = 0.0810547
@@ -62,7 +54,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="arrow" type="TextureRect" parent="NinePatchRect/goBack"]
+[node name="arrow" type="TextureRect" parent="goBack"]
 anchor_left = 0.131148
 anchor_top = 0.135593
 anchor_right = 0.852459
@@ -75,37 +67,22 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Panel" type="Panel" parent="NinePatchRect"]
-margin_left = 858.0
-margin_top = 44.0
-margin_right = 990.0
-margin_bottom = 562.0
+[node name="white" type="ColorRect" parent="."]
+anchor_left = 0.168945
+anchor_top = 0.0483333
+anchor_right = 0.416992
+anchor_bottom = 0.893333
 mouse_filter = 2
-mouse_default_cursor_shape = 13
-input_pass_on_modal_close_click = false
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="white" type="TextureRect" parent="."]
-anchor_left = 0.444336
-anchor_top = 0.0533333
-anchor_right = 0.754883
-anchor_bottom = 0.933333
-mouse_filter = 2
-texture = ExtResource( 9 )
-expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="outline" type="TextureRect" parent="."]
-anchor_left = 0.477539
-anchor_top = 0.085
-anchor_right = 0.694336
-anchor_bottom = 0.901667
-margin_bottom = 6.10352e-05
+[node name="outline" type="TextureRect" parent="white"]
+anchor_left = 0.015748
+anchor_top = 0.0157791
+anchor_right = 0.976377
+anchor_bottom = 0.996055
 mouse_filter = 2
 texture = ExtResource( 10 )
 expand = true
@@ -114,111 +91,249 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="bg" type="ColorRect" parent="."]
+anchor_left = 0.0332031
+anchor_top = 0.208333
+anchor_right = 0.158203
+anchor_bottom = 0.58
+mouse_filter = 2
 __meta__ = {
-"_edit_lock_": true
+"_edit_lock_": true,
+"_edit_use_anchors_": true
 }
 
-[node name="Node2D" parent="Node2D" instance=ExtResource( 6 )]
-position = Vector2( 907, 125 )
-
-[node name="dropLeft" parent="Node2D" instance=ExtResource( 7 )]
-position = Vector2( 908, 118 )
-
-[node name="dropLeft2" parent="Node2D" instance=ExtResource( 7 )]
-position = Vector2( 533, 228 )
-
-[node name="orig" type="TextureRect" parent="."]
-anchor_left = 0.160156
-anchor_top = 0.07
-anchor_right = 0.347656
-anchor_bottom = 0.861667
+[node name="orig" type="TextureRect" parent="bg"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 mouse_filter = 2
 texture = ExtResource( 8 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="boi" type="Label" parent="."]
-anchor_left = 0.138672
-anchor_top = 0.856667
-anchor_right = 0.432617
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.432617
+anchor_top = 0.0383333
+anchor_right = 0.966797
 anchor_bottom = 0.936667
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 1 )
-text = "Boy Picture"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="boi" type="Label" parent="boi"]
-anchor_top = -0.0193965
-anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 2 )
-text = "Boy Picture"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
+mouse_filter = 2
+mouse_default_cursor_shape = 13
+input_pass_on_modal_close_click = false
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="outlineboi" type="Label" parent="."]
-visible = false
-anchor_left = 0.451172
-anchor_top = 0.893333
-anchor_right = 0.745117
-anchor_bottom = 0.973333
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 1 )
-text = "Outline"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
+[node name="leftArm" type="Node2D" parent="."]
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="outlineboi" type="Label" parent="outlineboi"]
-visible = false
-anchor_top = -0.0193965
-anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 2 )
-text = "Outline"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
+[node name="Node2D" parent="leftArm" instance=ExtResource( 6 )]
+position = Vector2( 775, 388 )
+
+[node name="originPoint" parent="leftArm" instance=ExtResource( 7 )]
+position = Vector2( 775, 388 )
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[connection signal="pressed" from="NinePatchRect/goBack" to="Node2D" method="_on_goBack_pressed"]
+[node name="LdropPoint" parent="leftArm" instance=ExtResource( 7 )]
+position = Vector2( 219, 305 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightArm" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="rightArm" instance=ExtResource( 9 )]
+position = Vector2( 791, 221 )
+rotation = 0.0162811
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="origin" parent="rightArm" instance=ExtResource( 11 )]
+position = Vector2( 791, 221 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RdropPoint" parent="rightArm" instance=ExtResource( 11 )]
+position = Vector2( 383, 308 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="upperBody" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="upperBody" instance=ExtResource( 12 )]
+position = Vector2( 889, 229 )
+
+[node name="origin" parent="upperBody" instance=ExtResource( 15 )]
+position = Vector2( 889, 229 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="UpBdropPoint" parent="upperBody" instance=ExtResource( 13 )]
+position = Vector2( 911, 361 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lowerBody" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="lowerBody" instance=ExtResource( 14 )]
+position = Vector2( 911, 361 )
+
+[node name="origin" parent="lowerBody" instance=ExtResource( 13 )]
+position = Vector2( 301, 380 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LowBdropPoint" parent="lowerBody" instance=ExtResource( 15 )]
+position = Vector2( 299, 282 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftFoot" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="leftFoot" instance=ExtResource( 16 )]
+position = Vector2( 864, 496 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="origin" parent="leftFoot" instance=ExtResource( 17 )]
+position = Vector2( 864, 496 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftFdropPoint" parent="leftFoot" instance=ExtResource( 17 )]
+position = Vector2( 265, 484 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightFoot" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="rightFoot" instance=ExtResource( 18 )]
+position = Vector2( 941, 497 )
+
+[node name="origin" parent="rightFoot" instance=ExtResource( 19 )]
+position = Vector2( 941, 497 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightFdropPoint" parent="rightFoot" instance=ExtResource( 19 )]
+position = Vector2( 331, 482 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="topHair" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="topHair" instance=ExtResource( 20 )]
+position = Vector2( 890, 99 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="origin" parent="topHair" instance=ExtResource( 21 )]
+position = Vector2( 890, 99 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="topHdropPoint" parent="topHair" instance=ExtResource( 21 )]
+position = Vector2( 307, 103 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftEar" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="leftEar" instance=ExtResource( 22 )]
+position = Vector2( 788, 495 )
+
+[node name="origin" parent="leftEar" instance=ExtResource( 23 )]
+position = Vector2( 788, 495 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftErdropPoint" parent="leftEar" instance=ExtResource( 23 )]
+position = Vector2( 238, 164 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightEar" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="rightEar" instance=ExtResource( 24 )]
+position = Vector2( 766, 71 )
+
+[node name="origin" parent="rightEar" instance=ExtResource( 25 )]
+position = Vector2( 766, 71 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightErdropPoint" parent="rightEar" instance=ExtResource( 25 )]
+position = Vector2( 371, 166 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftEyebrow" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="leftEyebrow" instance=ExtResource( 26 )]
+position = Vector2( 755, 122 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="origin" parent="leftEyebrow" instance=ExtResource( 27 )]
+position = Vector2( 755, 122 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftEybdropPoint" parent="leftEyebrow" instance=ExtResource( 27 )]
+position = Vector2( 272, 138 )
+__meta__ = {
+"_edit_lock_": true
+}
