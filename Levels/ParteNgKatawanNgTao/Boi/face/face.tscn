@@ -14,6 +14,7 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
+unique_name_in_owner = true
 scale = Vector2( 0.192, 0.185 )
 texture = ExtResource( 1 )
 __meta__ = {
@@ -21,13 +22,14 @@ __meta__ = {
 }
 
 [node name="Area2D" type="Area2D" parent="Sprite"]
+unique_name_in_owner = true
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Area2D"]
+unique_name_in_owner = true
 position = Vector2( -5.20833, 0 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true

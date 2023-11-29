@@ -1,0 +1,2146 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://Assets/Images/background/blackcircle.png" type="Texture" id=1]
+[ext_resource path="res://Levels/LevelLocked.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Eggplant.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/levelImages/papaya.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/background/yard.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UIElements/Icon_Lock.png" type="Texture" id=8]
+[ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=9]
+[ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Corn.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=12]
+[ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Potato.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Images/levelImages/guyabano.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Pineapple.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Images/levelImages/malunggay.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Squash.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Carrot.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Images/levelImages/singkamas.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Orange.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Images/levelImages/okra.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Images/levelImages/sili.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Images/levelImages/pitahaya.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Grapes.png" type="Texture" id=25]
+[ext_resource path="res://Levels/1PrutasAtGulay/PrutasNGulayLevelScroller.gd" type="Script" id=26]
+[ext_resource path="res://Assets/Audio/levelsAudio/Music/Fruit.mp3" type="AudioStream" id=27]
+[ext_resource path="res://Assets/Themes/levelsTheme.tres" type="Theme" id=28]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Watermelon.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Durian.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Apple.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Images/levelImages/sibuyaspng.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Avocado.png" type="Texture" id=33]
+
+[sub_resource type="DynamicFont" id=10]
+size = 32
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 12 )
+fallback/0 = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 32
+use_filter = true
+font_data = ExtResource( 12 )
+fallback/0 = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 60
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 12 )
+fallback/0 = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 60
+use_filter = true
+font_data = ExtResource( 12 )
+fallback/0 = ExtResource( 6 )
+
+[node name="PrutasGulay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 26 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+unique_name_in_owner = true
+anchor_left = 0.078125
+anchor_top = 0.218333
+anchor_right = 0.932617
+anchor_bottom = 0.968333
+theme = ExtResource( 28 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Control" type="Control" parent="Panel/ScrollContainer"]
+margin_right = 1763.0
+margin_bottom = 450.0
+rect_min_size = Vector2( 1763, 450 )
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/ScrollContainer/Control"]
+anchor_right = 1.0
+anchor_bottom = 0.444444
+rect_min_size = Vector2( 880, 200 )
+custom_constants/separation = 22
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="APPLE" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="apple" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/APPLE"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = 25.0002
+margin_right = -34.0
+margin_bottom = -24.9998
+texture = ExtResource( 31 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1Apple" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/APPLE/apple"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="POTATO" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 222.0
+margin_right = 422.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1Potato" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/POTATO"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="potato" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/POTATO"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = 25.0
+margin_right = -28.0
+margin_bottom = -25.0
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CARROT" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 444.0
+margin_right = 644.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="3Carrot" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/CARROT"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = -1.0
+margin_bottom = -4.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/CARROT"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/CARROT/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -1.23288
+anchor_top = -0.897436
+anchor_right = 0.643836
+anchor_bottom = 0.461538
+focus_mode = 0
+enabled_focus_mode = 0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="carrot" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/CARROT"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 38.0
+margin_top = 15.0
+margin_right = -28.0
+margin_bottom = -20.0
+texture = ExtResource( 19 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AVOCADO" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 666.0
+margin_right = 866.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="4Avocado" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/AVOCADO"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/AVOCADO/4Avocado"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 04"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/AVOCADO/4Avocado/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 04"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/AVOCADO"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/AVOCADO/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="avocado" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/AVOCADO"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 37.0
+margin_top = 28.0
+margin_right = -23.0
+margin_bottom = -25.0
+texture = ExtResource( 33 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SQUASH" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 888.0
+margin_right = 1088.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="5Squash" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/SQUASH"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/SQUASH/5Squash"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 09"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/SQUASH/5Squash/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 09"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/SQUASH"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/SQUASH/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="squash" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/SQUASH"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 28.0
+margin_top = 19.0002
+margin_right = -23.0
+margin_bottom = -36.9998
+texture = ExtResource( 18 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="OKRA" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 1110.0
+margin_right = 1310.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="6OkrA" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/OKRA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/OKRA/6OkrA"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 10"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/OKRA/6OkrA/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 10"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/OKRA"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/OKRA/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="okra" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/OKRA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = -0.999802
+margin_right = -34.0
+margin_bottom = -0.999802
+texture = ExtResource( 22 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ORANGE" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 1332.0
+margin_right = 1532.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="7Orange" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/ORANGE"]
+anchor_right = 666.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/ORANGE/7Orange"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 11"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/ORANGE/7Orange/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 11"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/ORANGE"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/ORANGE/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="dalandan" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/ORANGE"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 29.0
+margin_top = 8.0002
+margin_right = -31.0
+margin_bottom = -25.9998
+texture = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CORN" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+margin_left = 1554.0
+margin_right = 1754.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="8Corn" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/CORN"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/CORN/8Corn"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/CORN/8Corn/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/CORN"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/CORN/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="corn" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/CORN"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 27.0
+margin_top = 23.0
+margin_right = -44.0
+margin_bottom = -27.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SILI" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+visible = false
+margin_left = 1776.0
+margin_right = 1976.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="9Sili" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/SILI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/SILI/9Sili"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/SILI/9Sili/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/SILI"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/SILI/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="sili" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/SILI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 25.0
+margin_top = 22.0002
+margin_right = -35.0
+margin_bottom = -18.9998
+texture = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PAPAYA" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+visible = false
+margin_left = 1998.0
+margin_right = 2198.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="10Papaya" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/PAPAYA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/PAPAYA/10Papaya"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/PAPAYA/10Papaya/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/PAPAYA"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/PAPAYA/lockIcon"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="papaya" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/PAPAYA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 31.0
+margin_top = 19.0002
+margin_right = -29.0
+margin_bottom = 1.0002
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ONION" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+visible = false
+margin_left = 2220.0
+margin_right = 2420.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="12Onion" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/ONION"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/ONION/12Onion"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/ONION/12Onion/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/ONION"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/ONION/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="sibuyas" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/ONION"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 9.0
+margin_right = -40.0
+margin_bottom = -16.0
+texture = ExtResource( 32 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DRAGONFRUIT" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3"]
+visible = false
+margin_left = 2442.0
+margin_right = 2642.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="11Dragonfruit" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/DRAGONFRUIT"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/DRAGONFRUIT/11Dragonfruit"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 05"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer3/DRAGONFRUIT/11Dragonfruit/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 05"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/DRAGONFRUIT"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer3/DRAGONFRUIT/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pitahaya" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer3/DRAGONFRUIT"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = 20.0
+margin_right = -19.0
+margin_bottom = -16.0
+texture = ExtResource( 24 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/ScrollContainer/Control"]
+anchor_top = 0.444444
+anchor_right = 1.0
+anchor_bottom = 0.888889
+margin_top = 20.0002
+margin_bottom = 20.0002
+rect_min_size = Vector2( 880, 200 )
+custom_constants/separation = 22
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GRAPE" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="13Grapes" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/GRAPE"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/GRAPE/13Grapes"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 05"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/GRAPE/13Grapes/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 05"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/GRAPE"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/GRAPE/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="grapes" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/GRAPE"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 22.0
+margin_top = 13.0
+margin_right = -36.0
+margin_bottom = -15.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WATERMELON" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 222.0
+margin_right = 422.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="14Watermelon" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/WATERMELON"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/WATERMELON/14Watermelon"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 06"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/WATERMELON/14Watermelon/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 06"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/WATERMELON"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/WATERMELON/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="watermelon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/WATERMELON"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 21.0
+margin_top = 15.0
+margin_right = -18.0
+margin_bottom = -19.0
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="EGGPLANT" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 444.0
+margin_right = 644.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="15Eggplant" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/EGGPLANT"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/EGGPLANT/15Eggplant"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 07"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/EGGPLANT/15Eggplant/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 07"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/EGGPLANT"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/EGGPLANT/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="eggplant" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/EGGPLANT"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 18.0
+margin_top = 8.00018
+margin_right = -15.0
+margin_bottom = -16.9998
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PINEAPPLE" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 666.0
+margin_right = 866.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="16Pineapple" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/PINEAPPLE"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/PINEAPPLE/16Pineapple"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 08"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/PINEAPPLE/16Pineapple/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 08"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/PINEAPPLE"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/PINEAPPLE/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pineapple" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/PINEAPPLE"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 17.0
+margin_top = 39.0
+margin_right = -27.0
+margin_bottom = -23.0
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DURIAN" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 888.0
+margin_right = 1088.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="17Durian" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/DURIAN"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/DURIAN/17Durian"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 13"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/DURIAN/17Durian/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 13"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/DURIAN"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/DURIAN/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="durian" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/DURIAN"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 27.0
+margin_top = 23.0
+margin_right = -41.0
+margin_bottom = -23.0
+texture = ExtResource( 30 )
+expand = true
+
+[node name="SINGKAMAS" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 1110.0
+margin_right = 1310.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="18Singkamas" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/SINGKAMAS"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/SINGKAMAS/18Singkamas"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 14"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/SINGKAMAS/18Singkamas/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 14"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/SINGKAMAS"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/SINGKAMAS/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="singkamas" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/SINGKAMAS"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 28.0
+margin_top = 14.0
+margin_right = -23.0
+margin_bottom = -29.0
+texture = ExtResource( 20 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MALUNGGAY" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 1332.0
+margin_right = 1532.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="19malunggay" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/MALUNGGAY"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/MALUNGGAY/19malunggay"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 15"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/MALUNGGAY/19malunggay/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 15"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/MALUNGGAY"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/MALUNGGAY/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="malunggay" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/MALUNGGAY"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 22.0
+margin_top = 9.0
+margin_right = -36.0
+margin_bottom = 2.0
+texture = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GUYABANO" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 1554.0
+margin_right = 1754.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="20Guyabano" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/GUYABANO"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/GUYABANO/20Guyabano"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 05"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/GUYABANO/20Guyabano/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 05"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/GUYABANO"]
+visible = false
+anchor_left = 0.587033
+anchor_top = 0.568262
+anchor_right = 0.952033
+anchor_bottom = 0.958262
+margin_left = 0.593399
+margin_top = 0.347832
+margin_right = 0.593399
+margin_bottom = 0.347824
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/GUYABANO/lockIcon"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = -0.917808
+anchor_top = -0.692308
+anchor_right = 0.465753
+anchor_bottom = 0.166667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="guyabano" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2/GUYABANO"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 27.0
+margin_top = 31.0
+margin_right = -17.0
+margin_bottom = -24.0
+texture = ExtResource( 15 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GoBackButton" type="Button" parent="Panel"]
+anchor_left = 0.897461
+anchor_top = 0.025
+anchor_right = 0.980469
+anchor_bottom = 0.165
+size_flags_horizontal = 3
+size_flags_vertical = 3
+icon = ExtResource( 7 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pressedX" type="TextureRect" parent="Panel/GoBackButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 23.0
+margin_top = 19.0
+margin_right = -22.0
+margin_bottom = -23.0
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="prutasatgulay" type="Label" parent="Panel"]
+anchor_left = 0.125977
+anchor_top = 0.0266667
+anchor_right = 0.835938
+anchor_bottom = 0.151667
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 8 )
+text = "prutas at gulay"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="prutasatgulay" type="Label" parent="Panel/prutasatgulay"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 9 )
+text = "Prutas at gulay"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="Panel"]
+visible = false
+anchor_left = 0.152344
+anchor_top = 0.105
+anchor_right = 0.824219
+anchor_bottom = 0.23
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "pumili ng level sa ibaba"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="Panel/selectLevel"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "pumili ng level sa ibaba"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LeftButton" type="Button" parent="Panel"]
+anchor_left = 0.0224609
+anchor_top = 0.468333
+anchor_right = 0.078125
+anchor_bottom = 0.685
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 10 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="RightButton" type="Button" parent="Panel"]
+anchor_left = 0.922852
+anchor_top = 0.471667
+anchor_right = 0.978516
+anchor_bottom = 0.686667
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 13 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bgPanel" parent="." instance=ExtResource( 2 )]
+unique_name_in_owner = true
+
+[node name="fruitTheme" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 27 )
+bus = "Music"
+
+[connection signal="visibility_changed" from="." to="." method="_on_PrutasGulay_visibility_changed"]
+[connection signal="pressed" from="Panel/GoBackButton" to="." method="_on_GoBackButton_pressed"]
+[connection signal="pressed" from="Panel/LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="Panel/RightButton" to="." method="_on_RightButton_pressed"]
+
+[editable path="bgPanel"]

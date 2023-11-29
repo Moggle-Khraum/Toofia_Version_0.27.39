@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/SelectedBoi.gd" type="Script" id=1]
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=2]
@@ -36,6 +36,27 @@
 [ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightEye/rightEye.tscn" type="PackedScene" id=34]
 [ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightEye/rightEyePoint.tscn" type="PackedScene" id=35]
 [ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/nose/nose.tscn" type="PackedScene" id=36]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/nose/nosePoint.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/tongue/tongue.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/tongue/tonguePoint.tscn" type="PackedScene" id=39]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/mouth/mouth.tscn" type="PackedScene" id=40]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/mouth/mouthPoint.tscn" type="PackedScene" id=41]
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=42]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=43]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 42 )
+fallback/0 = ExtResource( 43 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+use_filter = true
+font_data = ExtResource( 42 )
+fallback/0 = ExtResource( 43 )
 
 [node name="NinePatchRect" type="NinePatchRect"]
 anchor_right = 1.0
@@ -77,21 +98,21 @@ __meta__ = {
 }
 
 [node name="white" type="ColorRect" parent="."]
-anchor_left = 0.168945
-anchor_top = 0.0483333
-anchor_right = 0.416992
-anchor_bottom = 0.893333
+anchor_left = 0.27832
+anchor_top = 0.0533333
+anchor_right = 0.557617
+anchor_bottom = 0.936667
 mouse_filter = 2
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="outline" type="TextureRect" parent="white"]
-anchor_left = 0.015748
-anchor_top = 0.0157791
-anchor_right = 0.976377
-anchor_bottom = 0.996055
+[node name="outline" type="TextureRect" parent="."]
+anchor_left = 0.301758
+anchor_top = 0.0766667
+anchor_right = 0.540039
+anchor_bottom = 0.901667
 mouse_filter = 2
 texture = ExtResource( 10 )
 expand = true
@@ -101,10 +122,10 @@ __meta__ = {
 }
 
 [node name="bg" type="ColorRect" parent="."]
-anchor_left = 0.0332031
-anchor_top = 0.208333
-anchor_right = 0.158203
-anchor_bottom = 0.58
+anchor_left = 0.141602
+anchor_top = 0.055
+anchor_right = 0.266601
+anchor_bottom = 0.426667
 mouse_filter = 2
 __meta__ = {
 "_edit_lock_": true,
@@ -122,10 +143,10 @@ __meta__ = {
 }
 
 [node name="Panel" type="Panel" parent="."]
-anchor_left = 0.432617
+anchor_left = 0.619141
 anchor_top = 0.0383333
 anchor_right = 0.966797
-anchor_bottom = 0.936667
+anchor_bottom = 0.96
 mouse_filter = 2
 mouse_default_cursor_shape = 13
 input_pass_on_modal_close_click = false
@@ -134,272 +155,22 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="leftArm" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="leftArm" instance=ExtResource( 6 )]
-position = Vector2( 856, 376 )
-
-[node name="originPoint" parent="leftArm" instance=ExtResource( 7 )]
-position = Vector2( 856, 376 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="LdropPoint" parent="leftArm" instance=ExtResource( 7 )]
-position = Vector2( 219, 305 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="rightArm" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="rightArm" instance=ExtResource( 9 )]
-position = Vector2( 825, 223 )
-rotation = 0.0162811
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="origin" parent="rightArm" instance=ExtResource( 11 )]
-position = Vector2( 825, 223 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="RdropPoint" parent="rightArm" instance=ExtResource( 11 )]
-position = Vector2( 383, 308 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="upperBody" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="upperBody" instance=ExtResource( 12 )]
-position = Vector2( 919, 224 )
-
-[node name="origin" parent="upperBody" instance=ExtResource( 15 )]
-position = Vector2( 919, 224 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="UpBdropPoint" parent="upperBody" instance=ExtResource( 13 )]
-position = Vector2( 925, 485 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="lowerBody" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="lowerBody" instance=ExtResource( 14 )]
-position = Vector2( 925, 485 )
-
-[node name="origin" parent="lowerBody" instance=ExtResource( 13 )]
-position = Vector2( 301, 380 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="LowBdropPoint" parent="lowerBody" instance=ExtResource( 15 )]
-position = Vector2( 299, 282 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="leftFoot" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="leftFoot" instance=ExtResource( 16 )]
-position = Vector2( 947, 340 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="origin" parent="leftFoot" instance=ExtResource( 17 )]
-position = Vector2( 947, 340 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="LeftFdropPoint" parent="leftFoot" instance=ExtResource( 17 )]
-position = Vector2( 265, 484 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="rightFoot" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="rightFoot" instance=ExtResource( 18 )]
-position = Vector2( 833, 498 )
-
-[node name="origin" parent="rightFoot" instance=ExtResource( 19 )]
-position = Vector2( 833, 498 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="rightFdropPoint" parent="rightFoot" instance=ExtResource( 19 )]
-position = Vector2( 331, 482 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="topHair" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="topHair" instance=ExtResource( 20 )]
-position = Vector2( 890, 99 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="origin" parent="topHair" instance=ExtResource( 21 )]
-position = Vector2( 890, 99 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="topHdropPoint" parent="topHair" instance=ExtResource( 21 )]
-position = Vector2( 307, 103 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="leftEar" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="leftEar" instance=ExtResource( 22 )]
-position = Vector2( 829, 320 )
-
-[node name="origin" parent="leftEar" instance=ExtResource( 23 )]
-position = Vector2( 829, 320 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="leftErdropPoint" parent="leftEar" instance=ExtResource( 23 )]
-position = Vector2( 238, 164 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="rightEar" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="rightEar" instance=ExtResource( 24 )]
-position = Vector2( 766, 71 )
-
-[node name="origin" parent="rightEar" instance=ExtResource( 25 )]
-position = Vector2( 766, 71 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="rightErdropPoint" parent="rightEar" instance=ExtResource( 25 )]
-position = Vector2( 371, 166 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="leftEyebrow" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="leftEyebrow" instance=ExtResource( 26 )]
-position = Vector2( 770, 123 )
-
-[node name="origin" parent="leftEyebrow" instance=ExtResource( 27 )]
-position = Vector2( 770, 123 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="leftEybdropPoint" parent="leftEyebrow" instance=ExtResource( 27 )]
-position = Vector2( 271, 137 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="rightEyebrow" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="rightEyebrow" instance=ExtResource( 29 )]
-position = Vector2( 813, 362 )
-
-[node name="origin" parent="rightEyebrow" instance=ExtResource( 28 )]
-position = Vector2( 813, 362 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="rightEybdropPoint" parent="rightEyebrow" instance=ExtResource( 28 )]
-position = Vector2( 331, 137 )
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="face" type="Node2D" parent="."]
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="Node2D" parent="face" instance=ExtResource( 30 )]
-position = Vector2( 305, 160 )
+position = Vector2( 777, 230 )
 
-[node name="origin" parent="face" instance=ExtResource( 31 )]
-position = Vector2( 740, 293 )
+[node name="originFace" parent="face" instance=ExtResource( 31 )]
+position = Vector2( 777, 230 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="facedropPoint" parent="face" instance=ExtResource( 31 )]
-position = Vector2( 305, 160 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="leftEye" type="Node2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Node2D" parent="leftEye" instance=ExtResource( 32 )]
-position = Vector2( 732, 103 )
-
-[node name="origin" parent="leftEye" instance=ExtResource( 33 )]
-position = Vector2( 732, 103 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="leftEyedropPoint" parent="leftEye" instance=ExtResource( 33 )]
-position = Vector2( 272, 159 )
+position = Vector2( 437, 168 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -410,21 +181,373 @@ __meta__ = {
 }
 
 [node name="Node2D" parent="rightEye" instance=ExtResource( 34 )]
-position = Vector2( 728, 67 )
+position = Vector2( 680, 408 )
 
-[node name="origin" parent="rightEye" instance=ExtResource( 35 )]
-position = Vector2( 728, 67 )
+[node name="originReEye" parent="rightEye" instance=ExtResource( 35 )]
+position = Vector2( 680, 408 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="rightEyedropPoint" parent="rightEye" instance=ExtResource( 35 )]
-position = Vector2( 334, 159 )
+position = Vector2( 466, 167 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftEye" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="leftEye" instance=ExtResource( 32 )]
+position = Vector2( 677, 291 )
+
+[node name="originLeEye" parent="leftEye" instance=ExtResource( 33 )]
+position = Vector2( 677, 291 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftEyedropPoint" parent="leftEye" instance=ExtResource( 33 )]
+position = Vector2( 404, 167 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightEyebrow" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="rightEyebrow" instance=ExtResource( 29 )]
+position = Vector2( 676, 232 )
+
+[node name="originReBrow" parent="rightEyebrow" instance=ExtResource( 28 )]
+position = Vector2( 676, 232 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightEybdropPoint" parent="rightEyebrow" instance=ExtResource( 28 )]
+position = Vector2( 463, 145 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftEyebrow" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="leftEyebrow" instance=ExtResource( 26 )]
+position = Vector2( 680, 552 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="originLeBrow" parent="leftEyebrow" instance=ExtResource( 27 )]
+position = Vector2( 680, 552 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftEybdropPoint" parent="leftEyebrow" instance=ExtResource( 27 )]
+position = Vector2( 403, 145 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="topHair" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="topHair" instance=ExtResource( 20 )]
+position = Vector2( 893, 503 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="originHair" parent="topHair" instance=ExtResource( 21 )]
+position = Vector2( 893, 503 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="topHdropPoint" parent="topHair" instance=ExtResource( 21 )]
+position = Vector2( 439, 112 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="nose" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Node2D" parent="nose" instance=ExtResource( 36 )]
-position = Vector2( 297, 172 )
+position = Vector2( 674, 169 )
+
+[node name="originNose" parent="nose" instance=ExtResource( 37 )]
+position = Vector2( 674, 169 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="nosedropPoint" parent="nose" instance=ExtResource( 37 )]
+position = Vector2( 429, 180 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightEar" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="rightEar" instance=ExtResource( 24 )]
+position = Vector2( 681, 352 )
+
+[node name="originReEar" parent="rightEar" instance=ExtResource( 25 )]
+position = Vector2( 681, 352 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightErdropPoint" parent="rightEar" instance=ExtResource( 25 )]
+position = Vector2( 503, 175 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftEar" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="leftEar" instance=ExtResource( 22 )]
+position = Vector2( 670, 103 )
+
+[node name="originLeEar" parent="leftEar" instance=ExtResource( 23 )]
+position = Vector2( 670, 103 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftErdropPoint" parent="leftEar" instance=ExtResource( 23 )]
+position = Vector2( 370, 173 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="upperBody" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="upperBody" instance=ExtResource( 12 )]
+position = Vector2( 920, 203 )
+
+[node name="originUpBody" parent="upperBody" instance=ExtResource( 15 )]
+position = Vector2( 920, 203 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="UpBdropPoint" parent="upperBody" instance=ExtResource( 13 )]
+position = Vector2( 768, 94 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lowerBody" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="lowerBody" instance=ExtResource( 14 )]
+position = Vector2( 768, 94 )
+
+[node name="lowBPoint" parent="lowerBody" instance=ExtResource( 13 )]
+position = Vector2( 433, 387 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="originLoBody" parent="lowerBody" instance=ExtResource( 15 )]
+position = Vector2( 432, 289 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftArm" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="leftArm" instance=ExtResource( 6 )]
+position = Vector2( 919, 351 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="originLeArm" parent="leftArm" instance=ExtResource( 7 )]
+position = Vector2( 919, 351 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LdropPoint" parent="leftArm" instance=ExtResource( 7 )]
+position = Vector2( 350, 311 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightArm" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="rightArm" instance=ExtResource( 9 )]
+position = Vector2( 756, 491 )
+rotation = 0.0162811
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="originReArm" parent="rightArm" instance=ExtResource( 11 )]
+position = Vector2( 756, 491 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RdropPoint" parent="rightArm" instance=ExtResource( 11 )]
+position = Vector2( 517, 315 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftFoot" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="leftFoot" instance=ExtResource( 16 )]
+position = Vector2( 915, 79 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="originLeFoot" parent="leftFoot" instance=ExtResource( 17 )]
+position = Vector2( 915, 79 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LeftFdropPoint" parent="leftFoot" instance=ExtResource( 17 )]
+position = Vector2( 397, 491 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightFoot" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="rightFoot" instance=ExtResource( 18 )]
+position = Vector2( 790, 363 )
+
+[node name="originReFoot" parent="rightFoot" instance=ExtResource( 19 )]
+position = Vector2( 790, 363 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rightFdropPoint" parent="rightFoot" instance=ExtResource( 19 )]
+position = Vector2( 463, 490 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="mouth" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="mouth" instance=ExtResource( 40 )]
+position = Vector2( 681, 506 )
+
+[node name="originMouth" parent="mouth" instance=ExtResource( 41 )]
+position = Vector2( 681, 506 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="mouthdropPoint" parent="mouth" instance=ExtResource( 41 )]
+position = Vector2( 433, 207 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="tongue" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Node2D" parent="tongue" instance=ExtResource( 38 )]
+position = Vector2( 674, 456 )
+
+[node name="originTongue" parent="tongue" instance=ExtResource( 39 )]
+position = Vector2( 674, 456 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Position2D" parent="tongue" instance=ExtResource( 39 )]
+position = Vector2( 431, 215 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="selectLevel" type="Label" parent="."]
+anchor_left = 0.0244141
+anchor_top = 0.52
+anchor_right = 0.272461
+anchor_bottom = 0.82
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "Drag and Drop"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="selectLevel"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 2 )
+text = "Drag and Drop"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="goBack" to="." method="_on_goBack_pressed"]

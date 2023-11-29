@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Scripts/MenuChoicesScript.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
@@ -11,29 +11,16 @@
 [ext_resource path="res://Assets/Images/Fruits4.png" type="Texture" id=9]
 [ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/background/board2.jpg" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/background/board2Cover.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=15]
 [ext_resource path="res://Assets/GUI/Blue_Rectangle.png" type="Texture" id=16]
-[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Images/pilot-logo.png" type="Texture" id=18]
 [ext_resource path="res://Assets/Icons/ic_launcher.png" type="Texture" id=19]
 [ext_resource path="res://Assets/GUI/Icon_Return.png" type="Texture" id=20]
 [ext_resource path="res://Assets/GUI/Icon_LongSquare.png" type="Texture" id=21]
 [ext_resource path="res://Assets/UIElements/Icon_SqiuareTilt.png" type="Texture" id=22]
-
-[sub_resource type="DynamicFont" id=38]
-size = 60
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=39]
-size = 60
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=40]
 size = 45
@@ -79,6 +66,22 @@ use_filter = true
 font_data = ExtResource( 3 )
 fallback/0 = ExtResource( 2 )
 
+[sub_resource type="StyleBoxTexture" id=29]
+texture = ExtResource( 19 )
+region_rect = Rect2( 0, 0, 192, 192 )
+
+[sub_resource type="StyleBoxTexture" id=30]
+texture = ExtResource( 18 )
+region_rect = Rect2( 0, 0, 176, 159 )
+
+[sub_resource type="StyleBoxTexture" id=20]
+texture = ExtResource( 16 )
+region_rect = Rect2( 0, 0, 1208, 653 )
+
+[sub_resource type="StyleBoxEmpty" id=16]
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 1
 
@@ -89,22 +92,6 @@ region_rect = Rect2( 0, 0, 1208, 653 )
 [sub_resource type="StyleBoxEmpty" id=14]
 
 [sub_resource type="StyleBoxEmpty" id=15]
-
-[sub_resource type="StyleBoxTexture" id=20]
-texture = ExtResource( 16 )
-region_rect = Rect2( 0, 0, 1208, 653 )
-
-[sub_resource type="StyleBoxEmpty" id=16]
-
-[sub_resource type="StyleBoxEmpty" id=17]
-
-[sub_resource type="StyleBoxTexture" id=29]
-texture = ExtResource( 19 )
-region_rect = Rect2( 0, 0, 192, 192 )
-
-[sub_resource type="StyleBoxTexture" id=30]
-texture = ExtResource( 18 )
-region_rect = Rect2( 0, 0, 176, 159 )
 
 [sub_resource type="DynamicFont" id=26]
 resource_local_to_scene = true
@@ -128,6 +115,20 @@ use_filter = true
 font_data = ExtResource( 14 )
 fallback/0 = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=38]
+size = 60
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=39]
+size = 60
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 2 )
+
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -143,52 +144,13 @@ anchor_bottom = 1.0
 rect_clip_content = true
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 17 )
+texture = ExtResource( 12 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="bloxoftime" type="Label" parent="Panel"]
-anchor_left = 0.160156
-anchor_top = 0.0266667
-anchor_right = 0.835938
-anchor_bottom = 0.151667
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 38 )
-text = "Blocks of Time"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="bloxoftime" type="Label" parent="Panel/bloxoftime"]
-anchor_top = -0.0193965
-anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 39 )
-text = "blocks of time"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="selectTopic" type="Label" parent="Panel"]
+visible = false
 anchor_left = 0.174805
 anchor_top = 0.113333
 anchor_right = 0.84668
@@ -227,7 +189,7 @@ __meta__ = {
 }
 
 [node name="Panel" type="Panel" parent="Panel"]
-self_modulate = Color( 1, 1, 1, 0.0392157 )
+self_modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.352539
 anchor_top = 0.228333
 anchor_right = 0.680664
@@ -290,7 +252,6 @@ mouse_filter = 2
 texture = ExtResource( 9 )
 stretch_mode = 1
 __meta__ = {
-"_edit_group_": true,
 "_edit_lock_": true
 }
 
@@ -443,7 +404,10 @@ anchor_left = -0.131356
 anchor_top = 0.849515
 anchor_right = 1.16525
 anchor_bottom = 1.0
-margin_right = -1.52588e-05
+margin_left = -3.99998
+margin_top = -9.15527e-05
+margin_right = -4.00003
+margin_bottom = -9.15527e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
@@ -547,44 +511,40 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="VisibleBlockerRight" type="Panel" parent="."]
-self_modulate = Color( 1, 1, 1, 0.596078 )
-light_mask = 5
-material = SubResource( 7 )
-anchor_left = 0.68457
-anchor_top = 0.241667
-anchor_right = 0.979492
-anchor_bottom = 0.778333
-margin_top = -4.0
-margin_bottom = -4.0
-custom_styles/panel = SubResource( 19 )
+[node name="GameIcon" type="Panel" parent="."]
+visible = false
+anchor_left = 0.0234375
+anchor_top = 0.036674
+anchor_right = 0.169922
+anchor_bottom = 0.269573
+custom_styles/panel = SubResource( 29 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="RightButton" type="Button" parent="VisibleBlockerRight"]
-anchor_right = 0.192811
-anchor_bottom = 0.999999
-margin_right = -11.3811
-margin_bottom = 8.0004
-focus_mode = 0
-custom_styles/hover = SubResource( 14 )
-custom_styles/focus = SubResource( 15 )
-enabled_focus_mode = 0
-icon = ExtResource( 11 )
-flat = true
-clip_text = true
-align = 2
-icon_align = 1
-expand_icon = true
+[node name="SchoolLogo" type="Panel" parent="."]
+visible = false
+anchor_left = 0.830078
+anchor_top = 0.036674
+anchor_right = 0.976563
+anchor_bottom = 0.271202
+custom_styles/panel = SubResource( 30 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
+}
+
+[node name="Cover" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_lock_": true
 }
 
 [node name="VisibleBlockerLeft" type="Panel" parent="."]
-self_modulate = Color( 1, 1, 1, 0.313726 )
+self_modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.0214844
 anchor_top = 0.213333
 anchor_right = 0.306641
@@ -614,23 +574,37 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="GameIcon" type="Panel" parent="."]
-anchor_left = 0.0234375
-anchor_top = 0.036674
-anchor_right = 0.169922
-anchor_bottom = 0.269573
-custom_styles/panel = SubResource( 29 )
+[node name="VisibleBlockerRight" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+light_mask = 5
+material = SubResource( 7 )
+anchor_left = 0.68457
+anchor_top = 0.241667
+anchor_right = 0.979492
+anchor_bottom = 0.778333
+margin_top = -4.0
+margin_bottom = -4.0
+custom_styles/panel = SubResource( 19 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="SchoolLogo" type="Panel" parent="."]
-anchor_left = 0.830078
-anchor_top = 0.036674
-anchor_right = 0.976563
-anchor_bottom = 0.271202
-custom_styles/panel = SubResource( 30 )
+[node name="RightButton" type="Button" parent="VisibleBlockerRight"]
+anchor_right = 0.192811
+anchor_bottom = 0.999999
+margin_right = -11.3811
+margin_bottom = 8.0004
+focus_mode = 0
+custom_styles/hover = SubResource( 14 )
+custom_styles/focus = SubResource( 15 )
+enabled_focus_mode = 0
+icon = ExtResource( 11 )
+flat = true
+clip_text = true
+align = 2
+icon_align = 1
+expand_icon = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -730,10 +704,50 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="bloxoftime" type="Label" parent="."]
+anchor_left = 0.160156
+anchor_top = 0.0266667
+anchor_right = 0.835938
+anchor_bottom = 0.151667
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 38 )
+text = "Blocks of Time"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bloxoftime" type="Label" parent="bloxoftime"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 39 )
+text = "blocks of time"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [connection signal="pressed" from="ScrollContainer/MarginContainer/HBoxContainer/Choice1/CardMenu1" to="." method="_on_CardMenu1_pressed"]
 [connection signal="pressed" from="ScrollContainer/MarginContainer/HBoxContainer/Choice2/CardMenu2" to="." method="_on_CardMenu2_pressed"]
 [connection signal="pressed" from="ScrollContainer/MarginContainer/HBoxContainer/Choice3/CardMenu3" to="." method="_on_CardMenu3_pressed"]
 [connection signal="pressed" from="ScrollContainer/MarginContainer/HBoxContainer/Choice4/CardMenu4" to="." method="_on_CardMenu4_pressed"]
-[connection signal="pressed" from="VisibleBlockerRight/RightButton" to="ScrollContainer" method="_on_RightButton_pressed"]
 [connection signal="pressed" from="VisibleBlockerLeft/LeftButton" to="ScrollContainer" method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="VisibleBlockerRight/RightButton" to="ScrollContainer" method="_on_RightButton_pressed"]
 [connection signal="pressed" from="gobackCage/GoBackButton" to="." method="_on_GoBackButton_pressed"]

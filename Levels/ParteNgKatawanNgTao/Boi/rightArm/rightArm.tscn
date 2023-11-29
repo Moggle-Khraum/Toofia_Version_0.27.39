@@ -11,13 +11,10 @@ height = 587.721
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1.88118, 0.445188 )
+position = Vector2( 1.04637, 0.550129 )
 rotation = -0.00679909
-scale = Vector2( 0.194541, 0.183571 )
+scale = Vector2( 0.196824, 0.185265 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Area2D" type="Area2D" parent="Sprite"]
 position = Vector2( -28.3774, -4.7561 )

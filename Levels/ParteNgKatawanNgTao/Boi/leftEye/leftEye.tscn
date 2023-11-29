@@ -31,3 +31,7 @@ shape = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[connection signal="input_event" from="Sprite/Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Sprite/Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Sprite/Area2D" to="." method="_on_Area2D_mouse_exited"]
