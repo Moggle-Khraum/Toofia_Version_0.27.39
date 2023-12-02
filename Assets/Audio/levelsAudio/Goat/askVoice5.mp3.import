@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice5.mp3-aed1ec239742b0d67471fa034a25c373.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Goat/askVoice5.mp3"
+dest_files=[ "res://.import/askVoice5.mp3-aed1ec239742b0d67471fa034a25c373.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

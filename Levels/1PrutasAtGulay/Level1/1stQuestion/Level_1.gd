@@ -11,10 +11,7 @@ func _ready() -> void:
 func _on_x_pressed() -> void:
 	$"%infoApple".stream_paused = false
 	print("Info Apple Plays")
-	$"%repeatInfo".stream_paused = false
-	print("Repeat Info Plays")
 	$'%askVoice'.stream_paused = false
-	$'%repeatInfo'.stream_paused = false
 	$"%choiceA".stream_paused = false
 	$"%choiceB".stream_paused = false
 	$"%choiceC".stream_paused = false
@@ -26,14 +23,13 @@ func _on_pauseButton_pressed() -> void:
 	print("Shows the Pause Panel")
 	$"%infoApple".stream_paused = true
 	print("Info Apple Stop")
-	$"%repeatInfo".stream_paused = true
-	print("Repeat Info Stop")
 	$'%askVoice'.stream_paused = true
-	$'%repeatInfo'.stream_paused = true
 	$"%choiceA".stream_paused = true
 	$"%choiceB".stream_paused = true
 	$"%choiceC".stream_paused = true
 	$"%pickAnswer".stream_paused = true
+	
+	
 
 #==============================================================================
 func _on_A_pressed():
@@ -61,7 +57,7 @@ func _on_B_pressed():
 
 func _on_ScorePanel3StarB_visibility_changed() -> void:
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%correcto'.play()
+	$'%correctPick'.play()
 	$'%animB'.play('blink')
 	print("Plays Correcto")
 	
@@ -75,7 +71,7 @@ func _on_C_pressed():
 	
 func _on_ScorePanel2StarC_visibility_changed() -> void:
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%wrongC'.play()
+	$'%wrongPick'.play()
 	$'%AnimationPlayer'.play('blink')
 	
 #========================================================================
@@ -152,22 +148,32 @@ func _on_choiceC_finished() -> void:
 	$'%B'.show()
 	print("Show A, B, C")
 	
+	
 
 func _on_pickAnswer_finished() -> void:
-	$'%repeatInfo'.play()
-	print("Repeat Info Plays")
-#==================================================
-
-func _on_repeatInfo_finished():
-	if $'%repeatInfo'.playing:
-		$'%coverButton'.show()
-		print("Cover Repeat buttons")
-	else:
-		$'%coverButton'.hide()
-		$"%C".disabled = false
-		$"%B".disabled = false
-		$"%A".disabled = false
-		print("Enabled Button A, B, C")
+	$'%coverButton'.hide()
+	$"%C".disabled = false
+	$"%B".disabled = false
+	$"%A".disabled = false
+	print("Enabled Button A, B, C")
 
 
+
+
+
+func _on_levels_pressed() -> void:
+	var home = get_tree().change_scene('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
+	print('Go to Level Selection')
 	
+func _on_home_pressed() -> void:
+	var home = get_tree().change_scene("res://Scenes/MainMenu.tscn")
+	print("To Main Menu")
+	
+func _on_retry_pressed() -> void:
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level1/Level1.tscn")
+	print('Retry level')
+
+func _on_nextQuestion_pressed() -> void:
+	ScrollPop.play()
+	yield(get_tree().create_timer(0.12), "timeout")
+	var nextQ = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level2/2ndQuestion/Level_2.tscn")

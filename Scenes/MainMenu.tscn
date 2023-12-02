@@ -1,10 +1,10 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Images/blackScreen.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Fonts/therok_regular.tres" type="DynamicFont" id=4]
-[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintC.otf" type="DynamicFontData" id=5]
 [ext_resource path="res://Scripts/MainMenuLogic.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/CreditsScene.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=8]
@@ -15,6 +15,8 @@
 [ext_resource path="res://Assets/GUI/Icon_Play.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Images/pilot-logo.png" type="Texture" id=14]
 [ext_resource path="res://Assets/Icons/ic_launcher.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.ttf" type="DynamicFontData" id=16]
+[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintMC.otf" type="DynamicFontData" id=17]
 
 [sub_resource type="DynamicFont" id=35]
 size = 130
@@ -37,53 +39,41 @@ outline_color = Color( 0.878431, 0.639216, 0.352941, 1 )
 use_filter = true
 font_data = ExtResource( 8 )
 
-[sub_resource type="DynamicFont" id=30]
-size = 23
+[sub_resource type="DynamicFont" id=38]
+size = 30
 outline_size = 2
 outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
 use_mipmaps = true
 use_filter = true
-font_data = ExtResource( 8 )
+font_data = ExtResource( 17 )
 fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=25]
-size = 23
+size = 30
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_mipmaps = true
 use_filter = true
-font_data = ExtResource( 8 )
+font_data = ExtResource( 17 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=26]
-size = 23
-use_filter = true
-font_data = ExtResource( 8 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=31]
-size = 25
+[sub_resource type="DynamicFont" id=39]
+size = 35
 outline_size = 2
 outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
 use_filter = true
-font_data = ExtResource( 8 )
+font_data = ExtResource( 16 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=27]
-size = 25
+[sub_resource type="DynamicFont" id=40]
+size = 35
 outline_size = 2
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
 use_filter = true
-font_data = ExtResource( 8 )
+font_data = ExtResource( 16 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=28]
-size = 25
-use_filter = true
-font_data = ExtResource( 8 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=32]
+[sub_resource type="DynamicFont" id=41]
 size = 25
 outline_size = 1
 outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
@@ -91,7 +81,7 @@ use_filter = true
 font_data = ExtResource( 5 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=33]
+[sub_resource type="DynamicFont" id=42]
 size = 25
 use_filter = true
 font_data = ExtResource( 5 )
@@ -111,6 +101,72 @@ fallback/0 = ExtResource( 2 )
 [sub_resource type="StyleBoxTexture" id=37]
 texture = ExtResource( 15 )
 region_rect = Rect2( 0, 0, 192, 192 )
+
+[sub_resource type="DynamicFont" id=43]
+size = 35
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=44]
+size = 35
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=45]
+size = 35
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=47]
+size = 35
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=48]
+size = 35
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=46]
+size = 35
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=49]
+size = 35
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=50]
+size = 35
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=51]
+size = 35
+use_filter = true
+font_data = ExtResource( 16 )
+fallback/0 = ExtResource( 2 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -200,13 +256,12 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 30 )
-text = "Kasangkapang Tulong pang-edukasyon"
+custom_fonts/font = SubResource( 38 )
+text = "Kasangkapang Tulong Pang-edukasyon"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -222,95 +277,51 @@ custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 25 )
-text = "Kasangkapang Tulong pang-edukasyon"
+text = "Kasangkapang Tulong Pang-edukasyon"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="SubTitleLabel2" type="Label" parent="Panel/SubTitleLabel"]
-visible = false
-anchor_left = -0.00106838
-anchor_top = -0.0491803
-anchor_right = 0.998932
-anchor_bottom = 0.95082
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 26 )
-text = "Kasangkapang Tulong pang-edukasyon"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="displayGreet2" type="Label" parent="Panel"]
-anchor_left = 0.198242
-anchor_top = 0.353404
-anchor_right = 0.811523
-anchor_bottom = 0.421808
+anchor_left = 0.201172
+anchor_top = 0.335067
+anchor_right = 0.814453
+anchor_bottom = 0.444188
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 31 )
-text = "maligayang pagbabalik !"
+custom_fonts/font = SubResource( 39 )
+text = "Maligayang Pagbabalik !"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="displayGreet" type="Label" parent="Panel"]
-anchor_left = 0.196289
-anchor_top = 0.351737
-anchor_right = 0.813477
-anchor_bottom = 0.418513
+anchor_left = 0.199219
+anchor_top = 0.330066
+anchor_right = 0.816406
+anchor_bottom = 0.444073
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 27 )
-text = "maligayang pagbabalik !"
+custom_fonts/font = SubResource( 40 )
+text = "Maligayang Pagbabalik !"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="displayLabel2" type="Label" parent="Panel/displayGreet"]
-visible = false
-anchor_top = -0.0249648
-anchor_right = 1.0
-anchor_bottom = 0.863925
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 28 )
-text = "maligayang pagbabalik !"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -326,12 +337,11 @@ custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 32 )
+custom_fonts/font = SubResource( 41 )
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -344,12 +354,11 @@ anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 33 )
+custom_fonts/font = SubResource( 42 )
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -421,18 +430,17 @@ __meta__ = {
 anchor_left = 0.229492
 anchor_top = 0.786645
 anchor_right = 0.373047
-anchor_bottom = 0.848534
+anchor_bottom = 0.858306
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 31 )
+custom_fonts/font = SubResource( 43 )
 text = "Kredits"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -440,20 +448,19 @@ __meta__ = {
 
 [node name="credits" type="Label" parent="."]
 anchor_left = 0.229492
-anchor_top = 0.781824
+anchor_top = 0.781759
 anchor_right = 0.373047
-anchor_bottom = 0.848599
+anchor_bottom = 0.856678
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 27 )
-text = "kredits"
+custom_fonts/font = SubResource( 44 )
+text = "Kredits"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -466,57 +473,54 @@ anchor_bottom = 1.02938
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 28 )
-text = "kredits"
+custom_fonts/font = SubResource( 45 )
+text = "Kredits"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="play2" type="Label" parent="."]
-anchor_left = 0.427734
-anchor_top = 0.826833
-anchor_right = 0.578125
-anchor_bottom = 0.885465
+anchor_left = 0.426758
+anchor_top = 0.81183
+anchor_right = 0.610352
+anchor_bottom = 0.912807
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 31 )
-text = "maglaro"
+custom_fonts/font = SubResource( 47 )
+text = "Maglaro"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="play" type="Label" parent="."]
-anchor_left = 0.420898
-anchor_top = 0.825166
-anchor_right = 0.584961
-anchor_bottom = 0.882169
+anchor_left = 0.419922
+anchor_top = 0.791531
+anchor_right = 0.618164
+anchor_bottom = 0.925082
 margin_top = -3.05176e-05
 margin_bottom = -6.10352e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 27 )
-text = "maglaro"
+custom_fonts/font = SubResource( 48 )
+text = "Maglaro"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -528,13 +532,12 @@ anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 28 )
-text = "maglaro"
+custom_fonts/font = SubResource( 46 )
+text = "Maglaro"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -542,41 +545,39 @@ __meta__ = {
 
 [node name="exit2" type="Label" parent="."]
 anchor_left = 0.640625
-anchor_top = 0.791826
-anchor_right = 0.759766
-anchor_bottom = 0.845572
+anchor_top = 0.791531
+anchor_right = 0.773438
+anchor_bottom = 0.871336
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 31 )
-text = "umalis"
+custom_fonts/font = SubResource( 49 )
+text = "Umalis"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="exit" type="Label" parent="."]
-anchor_left = 0.641602
-anchor_top = 0.788492
-anchor_right = 0.758789
-anchor_bottom = 0.840609
+anchor_left = 0.633789
+anchor_top = 0.786825
+anchor_right = 0.779297
+anchor_bottom = 0.869887
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 27 )
-text = "umalis"
+custom_fonts/font = SubResource( 50 )
+text = "Umalis"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -588,13 +589,12 @@ anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 28 )
-text = "umalis"
+custom_fonts/font = SubResource( 51 )
+text = "Umalis"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
-uppercase = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -731,7 +731,6 @@ __meta__ = {
 }
 
 [node name="CreditsPopup" parent="." instance=ExtResource( 7 )]
-visible = false
 
 [connection signal="pressed" from="HBoxContainer/creditContainer/CreditsButton" to="." method="_on_CreditsButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/playContainer/PlayButton" to="." method="_on_PlayButton_pressed"]

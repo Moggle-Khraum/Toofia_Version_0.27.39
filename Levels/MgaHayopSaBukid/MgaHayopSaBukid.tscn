@@ -1,23 +1,32 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=35 format=2]
 
-[ext_resource path="res://Assets/Audio/Running_Through_The_Jungle.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Audio/levelsAudio/Music/Running_Through_The_Jungle.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/cat.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/rat.png" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=5]
 [ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=6]
 [ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Themes/levelsTheme.tres" type="Theme" id=8]
 [ext_resource path="res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.gd" type="Script" id=9]
-[ext_resource path="res://Levels/MgaHayopSaBukid/QuestLevels1/QuestDummy1.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=11]
-[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=13]
-[ext_resource path="res://Assets/UIElements/Icon_Lock.png" type="Texture" id=14]
-[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Square.png" type="Texture" id=15]
-[ext_resource path="res://Levels/LevelLocked.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/donkey.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/bird.png" type="Texture" id=11]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/dog.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/duck.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/pig.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/goat.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=17]
-
-[sub_resource type="StyleBoxTexture" id=5]
-texture = ExtResource( 11 )
-region_rect = Rect2( 0, 0, 1280, 720 )
+[ext_resource path="res://Assets/Images/Animals(canva.source)/rabbit.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/cow.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/toro.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Images/background/black.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Images/background/rainbow.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/lama.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/horse.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/chicken.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/gansa.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/carabao.png" type="Texture" id=27]
 
 [sub_resource type="DynamicFont" id=8]
 size = 32
@@ -65,7 +74,7 @@ use_filter = true
 font_data = ExtResource( 17 )
 fallback/0 = ExtResource( 3 )
 
-[node name="MgaHayopSaBukid" type="Popup"]
+[node name="MgaHayopSaBukid" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 9 )
@@ -73,15 +82,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="NinePatchRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 5 )
+texture = ExtResource( 22 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+unique_name_in_owner = true
 anchor_left = 0.0742188
 anchor_top = 0.218333
 anchor_right = 0.927735
@@ -97,6 +107,7 @@ __meta__ = {
 margin_right = 1763.0
 margin_bottom = 450.0
 rect_min_size = Vector2( 1763, 450 )
+rect_clip_content = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -112,17 +123,17 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Texture1" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+[node name="Manok" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
 margin_right = 200.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="1Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture1"]
+[node name="1Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Manok"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -138,7 +149,8 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture1/1Button"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Manok/1Button"]
+visible = false
 anchor_left = -0.333333
 anchor_top = -0.0941153
 anchor_right = 1.28571
@@ -159,7 +171,8 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture1/1Button/level"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Manok/1Button/level"]
+visible = false
 anchor_top = -0.0193965
 anchor_right = 1.0
 anchor_bottom = 1.02938
@@ -178,19 +191,31 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Texture2" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+[node name="1" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Manok"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 8.0
+margin_right = -3.0
+texture = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pusa" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
 margin_left = 222.0
 margin_right = 422.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
 theme = SubResource( 6 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="2Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture2"]
+[node name="2Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Pusa"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -206,7 +231,8 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture2/2Button"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Pusa/2Button"]
+visible = false
 anchor_left = -0.333333
 anchor_top = -0.0941153
 anchor_right = 1.28571
@@ -227,7 +253,8 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture2/2Button/level"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Pusa/2Button/level"]
+visible = false
 anchor_top = -0.0193965
 anchor_right = 1.0
 anchor_bottom = 1.02938
@@ -246,18 +273,31 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Texture3" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+[node name="2" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Pusa"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.99994
+margin_top = 7.0002
+margin_right = -7.00006
+margin_bottom = -7.9998
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Kalabaw" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
 margin_left = 444.0
 margin_right = 644.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="3Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture3"]
+[node name="3Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Kalabaw"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -273,7 +313,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture3/3Button"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Kalabaw/3Button"]
 anchor_left = -0.333333
 anchor_top = -0.0941153
 anchor_right = 1.28571
@@ -294,7 +334,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture3/3Button/level"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Kalabaw/3Button/level"]
 anchor_top = -0.0193965
 anchor_right = 1.0
 anchor_bottom = 1.02938
@@ -313,45 +353,31 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture3"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+[node name="3" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Kalabaw"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.99994
+margin_top = 12.0002
+margin_right = -6.00006
+margin_bottom = 0.000198364
+texture = ExtResource( 27 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture3/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Texture4" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+[node name="Aso" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
 margin_left = 666.0
 margin_right = 866.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="4Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture4"]
+[node name="4Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Aso"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -367,7 +393,8 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture4/4Button"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Aso/4Button"]
+visible = false
 anchor_left = -0.333333
 anchor_top = -0.0941153
 anchor_right = 1.28571
@@ -388,7 +415,8 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture4/4Button/level"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Aso/4Button/level"]
+visible = false
 anchor_top = -0.0193965
 anchor_right = 1.0
 anchor_bottom = 1.02938
@@ -407,45 +435,29 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture4"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+[node name="4" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Aso"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 6.0
+margin_right = -7.0
+texture = ExtResource( 13 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture4/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button5" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+[node name="Kuneho" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
 margin_left = 888.0
 margin_right = 1088.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="5Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5"]
+[node name="5Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Kuneho"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -461,85 +473,31 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5/5Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 09"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5/5Button/level"]
-anchor_top = -0.0193965
+[node name="9" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Kuneho"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 09"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+anchor_bottom = 1.0
+margin_left = 30.9999
+margin_top = 11.0002
+margin_right = -7.00006
+margin_bottom = 0.000198364
+texture = ExtResource( 18 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button6" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+[node name="Daga" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
 margin_left = 1110.0
 margin_right = 1310.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="6Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6"]
+[node name="6Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Daga"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -555,85 +513,31 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6/6Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 10"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6/6Button/level"]
-anchor_top = -0.0193965
+[node name="9" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Daga"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 10"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 34.0002
+margin_right = 2.0
+margin_bottom = -13.9998
+texture = ExtResource( 4 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button7" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+[node name="Tupa" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
 margin_left = 1332.0
 margin_right = 1532.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="7Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7"]
+[node name="7Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Tupa"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -649,7 +553,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7/7Button"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Tupa/7Button"]
 anchor_left = -0.333333
 anchor_top = -0.0941153
 anchor_right = 1.28571
@@ -670,7 +574,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7/7Button/level"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Tupa/7Button/level"]
 anchor_top = -0.0193965
 anchor_right = 1.0
 anchor_bottom = 1.02938
@@ -689,45 +593,29 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+[node name="11" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Tupa"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 4.0
+margin_right = -6.0
+texture = ExtResource( 23 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button8" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+[node name="Gansa" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
 margin_left = 1554.0
 margin_right = 1754.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="8Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8"]
+[node name="8Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Gansa"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -743,7 +631,8 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8/8Button"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Gansa/8Button"]
+visible = false
 anchor_left = -0.333333
 anchor_top = -0.0941153
 anchor_right = 1.28571
@@ -764,7 +653,8 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8/8Button/level"]
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Gansa/8Button/level"]
+visible = false
 anchor_top = -0.0193965
 anchor_right = 1.0
 anchor_bottom = 1.02938
@@ -783,28 +673,13 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+[node name="12" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Gansa"]
+anchor_left = 0.135
+anchor_top = 0.05
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 26 )
 expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -823,17 +698,17 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Button9" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+[node name="Kambing" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
 margin_right = 200.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="9Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button9"]
+[node name="9Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Kambing"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -849,85 +724,31 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button9/9Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 05"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button9/9Button/level"]
-anchor_top = -0.0193965
+[node name="5" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Kambing"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 05"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button9"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 7.0
+margin_right = -3.0
+margin_bottom = -3.0
+texture = ExtResource( 16 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button9/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button10" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+[node name="Ibon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
 margin_left = 222.0
 margin_right = 422.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="10Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button10"]
+[node name="10Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Ibon"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -943,85 +764,24 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button10/10Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 06"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button10/10Button/level"]
-anchor_top = -0.0193965
+[node name="6" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Ibon"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 06"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button10"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+anchor_bottom = 1.0
+texture = ExtResource( 11 )
 expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button10/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button11" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+[node name="Baboy" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
 margin_left = 444.0
 margin_right = 644.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="11Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button11"]
+[node name="11Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Baboy"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1037,85 +797,29 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button11/11Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 07"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button11/11Button/level"]
-anchor_top = -0.0193965
+[node name="7" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Baboy"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 07"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button11"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+anchor_bottom = 1.0
+margin_top = 6.0
+margin_right = -8.0
+texture = ExtResource( 15 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button11/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button12" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+[node name="Kabayo" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
 margin_left = 666.0
 margin_right = 866.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="12Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button12"]
+[node name="12Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Kabayo"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1131,85 +835,28 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button12/12Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 08"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button12/12Button/level"]
-anchor_top = -0.0193965
+[node name="8" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Kabayo"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 08"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button12"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+anchor_bottom = 1.0
+margin_left = 6.99994
+margin_top = 16.0002
+margin_right = -10.0001
+margin_bottom = -0.999817
+texture = ExtResource( 24 )
 expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button12/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button13" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+[node name="Toro" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
 margin_left = 888.0
 margin_right = 1088.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="13Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button13"]
+[node name="13Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Toro"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1225,85 +872,26 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button13/13Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 13"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button13/13Button/level"]
-anchor_top = -0.0193965
+[node name="13" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Toro"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 13"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button13"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+anchor_bottom = 1.0
+margin_top = 15.0
+margin_right = -1.0
+texture = ExtResource( 20 )
 expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button13/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button14" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+[node name="Pato" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
 margin_left = 1110.0
 margin_right = 1310.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="14Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button14"]
+[node name="14Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Pato"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1319,85 +907,31 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button14/14Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 14"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button14/14Button/level"]
-anchor_top = -0.0193965
+[node name="14" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Pato"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 14"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button14"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 13.0002
+margin_right = -12.0
+margin_bottom = 0.000183105
 texture = ExtResource( 14 )
 expand = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button14/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button15" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+[node name="Asno" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
 margin_left = 1332.0
 margin_right = 1532.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="15Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button15"]
+[node name="15Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Asno"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1413,121 +947,48 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button15/15Button"]
-anchor_left = -0.333333
-anchor_top = -0.0941153
-anchor_right = 1.28571
-anchor_bottom = 0.941179
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "level 15"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button15/15Button/level"]
-anchor_top = -0.0193965
+[node name="15" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Asno"]
 anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "level 15"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="lockIcon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button15"]
-anchor_left = 0.587033
-anchor_top = 0.568262
-anchor_right = 0.952033
-anchor_bottom = 0.958262
-margin_left = 0.593399
-margin_top = 0.347832
-margin_right = 0.593399
-margin_bottom = 0.347824
-texture = ExtResource( 14 )
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 3.0
+texture = ExtResource( 10 )
 expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
 
-[node name="lockInfo" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button15/lockIcon"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = -0.917808
-anchor_top = -0.692308
-anchor_right = 0.465753
-anchor_bottom = 0.166667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Button16" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+[node name="Baka" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
 margin_left = 1554.0
 margin_right = 1754.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 200, 200 )
-texture = ExtResource( 15 )
+texture = ExtResource( 21 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button16"]
-anchor_left = 0.035
-anchor_top = 0.05
-anchor_right = 0.96
-anchor_bottom = 0.955
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 8 )
-text = "COMING SOON..!"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
+[node name="16Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Baka"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
-[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer0/Button16/level"]
-anchor_top = -0.0193965
-anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 9 )
-text = "coming soon..!"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
+[node name="16" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Baka"]
+anchor_top = 0.0900009
+anchor_right = 0.995
+anchor_bottom = 0.995001
+texture = ExtResource( 19 )
+expand = true
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
@@ -1572,6 +1033,7 @@ __meta__ = {
 }
 
 [node name="selectLevel" type="Label" parent="Panel"]
+visible = false
 anchor_left = 0.149414
 anchor_top = 0.113333
 anchor_right = 0.84668
@@ -1593,6 +1055,7 @@ __meta__ = {
 }
 
 [node name="selectLevel" type="Label" parent="Panel/selectLevel"]
+visible = false
 anchor_top = -0.0193965
 anchor_right = 1.0
 anchor_bottom = 1.02938
@@ -1641,8 +1104,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="1QuestDummy" parent="Panel" instance=ExtResource( 10 )]
-
 [node name="GoBackButton2" type="Button" parent="Panel"]
 anchor_left = 0.897461
 anchor_top = 0.025
@@ -1650,7 +1111,7 @@ anchor_right = 0.980469
 anchor_bottom = 0.165
 size_flags_horizontal = 3
 size_flags_vertical = 3
-icon = ExtResource( 13 )
+icon = ExtResource( 12 )
 flat = true
 icon_align = 1
 expand_icon = true
@@ -1672,45 +1133,28 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="bgPanel" parent="." instance=ExtResource( 16 )]
-unique_name_in_owner = true
-
 [node name="animalsTheme" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource( 1 )
 bus = "Music"
 
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture1/1Button" to="." method="_on_1Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture2/2Button" to="." method="_on_2Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture3/3Button" to="." method="_on_3Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture3/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture4/4Button" to="." method="_on_4Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture4/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button5/5Button" to="." method="_on_5Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button5/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button6/6Button" to="." method="_on_6Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button6/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button7/7Button" to="." method="_on_7Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button7/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button8/8Button" to="." method="_on_8Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button8/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button9/9Button" to="." method="_on_9Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button9/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button10/10Button" to="." method="_on_10Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button10/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button11/11Button" to="." method="_on_11Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button11/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button12/12Button" to="." method="_on_12Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button12/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button13/13Button" to="." method="_on_13Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button13/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button14/14Button" to="." method="_on_14Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button14/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button15/15Button" to="." method="_on_15Button_pressed"]
-[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Button15/lockIcon/lockInfo" to="." method="_on_lockInfo_pressed"]
+[connection signal="visibility_changed" from="." to="." method="_on_MgaHayopSaBukid_visibility_changed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Manok/1Button" to="." method="_on_1Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Pusa/2Button" to="." method="_on_2Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Kalabaw/3Button" to="." method="_on_3Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Aso/4Button" to="." method="_on_4Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Kuneho/5Button" to="." method="_on_5Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Daga/6Button" to="." method="_on_6Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Tupa/7Button" to="." method="_on_7Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Gansa/8Button" to="." method="_on_8Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Kambing/9Button" to="." method="_on_9Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Ibon/10Button" to="." method="_on_10Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Baboy/11Button" to="." method="_on_11Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Kabayo/12Button" to="." method="_on_12Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Toro/13Button" to="." method="_on_13Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Pato/14Button" to="." method="_on_14Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Asno/15Button" to="." method="_on_15Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Baka/16Button" to="." method="_on_8Button_pressed"]
 [connection signal="pressed" from="Panel/LeftButton" to="." method="_on_LeftButton_pressed"]
 [connection signal="pressed" from="Panel/RightButton" to="." method="_on_RightButton_pressed"]
 [connection signal="pressed" from="Panel/GoBackButton2" to="." method="_on_GoBackButton_pressed"]
-[connection signal="pressed" from="bgPanel/hide" to="." method="_on_hide_pressed"]
-
-[editable path="bgPanel"]

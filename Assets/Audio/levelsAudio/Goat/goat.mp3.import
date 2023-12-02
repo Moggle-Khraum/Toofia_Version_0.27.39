@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/goat.mp3-c9c069028692a9c9810246096fb73e5b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Goat/goat.mp3"
+dest_files=[ "res://.import/goat.mp3-c9c069028692a9c9810246096fb73e5b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

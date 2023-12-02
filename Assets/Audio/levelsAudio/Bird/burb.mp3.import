@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/burb.mp3-0d239034d31316fda1dd867f4c75ec13.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Bird/burb.mp3"
+dest_files=[ "res://.import/burb.mp3-0d239034d31316fda1dd867f4c75ec13.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

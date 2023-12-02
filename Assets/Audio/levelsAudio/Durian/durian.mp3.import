@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/durian.mp3-4a2617f239693ef61350da0fdcb6033f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Durian/durian.mp3"
+dest_files=[ "res://.import/durian.mp3-4a2617f239693ef61350da0fdcb6033f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

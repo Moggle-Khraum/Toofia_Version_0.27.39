@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice.mp3-31d6680700746d9bf6ef1894a7189d44.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Sheep/askVoice.mp3"
+dest_files=[ "res://.import/askVoice.mp3-31d6680700746d9bf6ef1894a7189d44.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

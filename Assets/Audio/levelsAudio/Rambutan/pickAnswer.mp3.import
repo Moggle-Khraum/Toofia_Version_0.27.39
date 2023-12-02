@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pickAnswer.mp3-464f68ec08ef250a229c648610c2c28c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Rambutan/pickAnswer.mp3"
+dest_files=[ "res://.import/pickAnswer.mp3-464f68ec08ef250a229c648610c2c28c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

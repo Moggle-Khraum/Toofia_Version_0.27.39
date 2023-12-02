@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/apple.mp3-49d21277649021f2f678917cb396af6f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Apple/apple.mp3"
+dest_files=[ "res://.import/apple.mp3-49d21277649021f2f678917cb396af6f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

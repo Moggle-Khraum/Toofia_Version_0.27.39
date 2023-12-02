@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-9e98c27ff4a68e2c00876424ba156cb9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Kalabasa/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-9e98c27ff4a68e2c00876424ba156cb9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

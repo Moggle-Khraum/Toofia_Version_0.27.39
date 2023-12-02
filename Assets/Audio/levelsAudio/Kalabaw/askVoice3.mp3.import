@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice3.mp3-28dd7488c22415d138e48b12e8390061.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Kalabaw/askVoice3.mp3"
+dest_files=[ "res://.import/askVoice3.mp3-28dd7488c22415d138e48b12e8390061.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

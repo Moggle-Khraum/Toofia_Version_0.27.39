@@ -1,10 +1,23 @@
-extends BaseScroll
-#The above is referencing the Template base called BaseScroll
+extends Control
 
-var backtoTopic = load('res://Scenes/MenuChoices.tscn')
+#THIS IS FOR THE SCROLL EFFECTS
+var scrollerContainer: ScrollContainer
+var targetScroll = 0.0
+var scrollStep = 600
+var scrollWeight = 0.5
 
-#THIS IS FOR SIGNAL that was used by Buttons
 signal pressed
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	#getting the Node by calling it through by get_node
+	scrollerContainer = $'%ScrollContainer'
+
+# warning-ignore:unused_argument
+func _process(delta: float) -> void:
+	# Check if the ScrollContainer's content width is larger than its view width
+	targetScroll = scrollerContainer.scroll_horizontal
+	scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, targetScroll, scrollWeight)
 
 
 #This is for the Left Button
@@ -28,9 +41,9 @@ func _on_GoBackButton_pressed() -> void:
 	print("Presses Go Back")
 	MenuClickSfxPlayer.play()
 	#handles the Go back button
-	$'.'.hide()
+	var backtoTopic = load('res://Scenes/MenuChoices.tscn')
 	var levelSelect = get_tree().change_scene_to(backtoTopic)
-	$'%animalsTheme'.stop()
+	$'%animalsTheme'.stream_paused = true
 	print("Going to Topic Selector")
 	
 	
@@ -49,143 +62,136 @@ func _on_1Button_pressed() -> void:
 	var level1 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level1/1stQuestion/Level_1MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 1")
-	
-	print ("You are now at Level 1")
 	MainMenuThemePlayer.stop()
 	
 # THIS IS LEVEL 2
 func _on_2Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 2")
-	$'Panel/1QuestDummy'.show()
+	var level2 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level2/Level_2MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 2")
+	$'%animalsTheme'.stream_paused = true
 	
 # THIS IS LEVEL 3
 func _on_3Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 3")
-	$'Panel/1QuestDummy'.show()
+	var level3 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level3/Level_3MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 3")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 4
 func _on_4Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 4")
-	$'Panel/1QuestDummy'.show()
+	var level4 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level4/Level_4MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 4")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 5
 func _on_9Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 5")
-	$'Panel/1QuestDummy'.show()
+	var level5 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level5/Level_5MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 5")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 6
 func _on_10Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 6")
-	$'Panel/1QuestDummy'.show()
+	var level6 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level6/Level_6MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 6")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 7
 func _on_11Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 7")
-	$'Panel/1QuestDummy'.show()
+	var level7 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level7/Level_7MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 7")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 8
 func _on_12Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 8")
-	$'Panel/1QuestDummy'.show()
+	var level8 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level8/Level_8MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 8")
+	$'%animalsTheme'.stream_paused = true
 
 ### LOW ROW BUTTONS
 # THIS IS LEVEL 9
 func _on_5Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 9")
-	$'Panel/1QuestDummy'.show()
+	var level9 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/Level9/Level_9MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 9")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 10
 func _on_6Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 10")
-	$'Panel/1QuestDummy'.show()
+	var level10 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level10/Level_10MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 10")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 11
 func _on_7Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 11")
-	$'Panel/1QuestDummy'.show()
+	var level11 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level11/Level_11MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 11")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 12
 func _on_8Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 12")
-	$'Panel/1QuestDummy'.show()
+	var level12 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level12/Level_12MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 12")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 13
 func _on_13Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 13")
-	$'Panel/1QuestDummy'.show()
+	var level13 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level13/Level_13MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 13")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 14
 func _on_14Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 14")
-	$'Panel/1QuestDummy'.show()
+	var level14 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level14/Level_14MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 14")
+	$'%animalsTheme'.stream_paused = true
 
 # THIS IS LEVEL 15
 func _on_15Button_pressed() -> void:
 	LevelsButtons.play()
 	print("Presses Level 15")
-	$'Panel/1QuestDummy'.show()
+	var level15 = get_tree().change_scene("res://Levels/MgaHayopSaBukid/nextLevel/Level15/Level_15MHSB.tscn")
 	emit_signal('pressed')
 	print ("You are now at Level 15")
+	$'%animalsTheme'.stream_paused = true
 	
-
-
-
-
-
-#THE BUTTONS BELOW IS FOR THE LEVEL ERROR
-#THIS IS FOR THE ERROR SOUND EFFECTS
-func _on_lockInfo_pressed() -> void:
-	LevelError.play()
-	print("Level Locked")
-	$'%bgPanel'.show()
-	print("Open Level Locked")
-	pass # Replace with function body.
-
-func _on_hide_pressed() -> void:
-	MenuClickSfxPlayer.play()
-	$'%bgPanel'.hide()
-	print("Hides LevelLock")
 
 func _on_MgaHayopSaBukid_visibility_changed() -> void:
 	$'%animalsTheme'.play()
-	print("Plays Animals Music")
-	
+	print("Plays Animal Theme")

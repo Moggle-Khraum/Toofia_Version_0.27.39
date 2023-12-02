@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wrongPickCabbage.mp3-84b92679a725d13b80ca9d007484d3d8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Carrot/wrongPickCabbage.mp3"
+dest_files=[ "res://.import/wrongPickCabbage.mp3-84b92679a725d13b80ca9d007484d3d8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

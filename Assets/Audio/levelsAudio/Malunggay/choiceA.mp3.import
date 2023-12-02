@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-b1984ed328708a83c4695d78d2230cfc.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Malunggay/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-b1984ed328708a83c4695d78d2230cfc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

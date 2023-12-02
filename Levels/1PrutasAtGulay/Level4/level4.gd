@@ -23,8 +23,6 @@ func voiceOver():
 func _on_x_pressed():
 	$"%infoAvocado".stream_paused = false
 	print("Info Avocado Plays")
-	$"%repeatInfo".stream_paused = false
-	print("Repeat Info Plays")
 	$'%askVoice4'.stream_paused = false
 	$'%choiceA'.stream_paused = false
 	$'%choiceB'.stream_paused = false
@@ -38,8 +36,6 @@ func _on_pauseButton_pressed():
 	print("Shows the Pause Panel")
 	$"%infoAvocado".stream_paused = true
 	print("Info Avocado Stop")
-	$"%repeatInfo".stream_paused = true
-	print("Repeat Info Stop")
 	$'%askVoice4'.stream_paused = true
 	$'%choiceA'.stream_paused = true
 	$'%choiceB'.stream_paused = true
@@ -72,7 +68,7 @@ func _on_B_pressed():
 	
 func _on_ScorePanel2StarB_visibility_changed():
 	yield(get_tree().create_timer(0.12), "timeout")
-	$ScorePanel2StarB/wrongpick.play()
+	$'%wrongPick'.play()
 	print("Plays WrongPick")
 	$'%animB'.play('blink')
 	$'%animB2'.play('blink')
@@ -170,13 +166,15 @@ func _on_repeatInfo_finished():
 		print("Enabled Button A, B, C")
 
 func _on_pickAnswer_finished():
-	$'%repeatInfo'.play()
-	print("Plays Repeat Info")
+	$'%coverButton'.hide()
+	$"%C".disabled = false
+	$"%B".disabled = false
+	$"%A".disabled = false
+	print("Enabled Button A, B, C")
 
 
 func _on_levels_pressed() -> void:
-	$'%PrutasAtGulay'.show()
-	$'%pausePanel'.hide()
+	var home = get_tree().change_scene('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
 	print('Go to Level Selection')
 	
 func _on_home_pressed() -> void:
@@ -184,10 +182,10 @@ func _on_home_pressed() -> void:
 	print("To Main Menu")
 	
 func _on_retry_pressed() -> void:
-	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level3/Level3.tscn")
+	var retry = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level4/level4.tscn")
 	print('Retry level')
 
 func _on_nextQuestion_pressed() -> void:
 	ScrollPop.play()
 	yield(get_tree().create_timer(0.12), "timeout")
-	$'%PrutasAtGulay'.show()
+	var nextQ = get_tree().change_scene("res://Levels/1PrutasAtGulay/Level5/level5.tscn")

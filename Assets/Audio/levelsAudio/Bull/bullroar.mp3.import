@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bullroar.mp3-b57f5ab101c547cd6b4344ec06ef1ec8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Bull/bullroar.mp3"
+dest_files=[ "res://.import/bullroar.mp3-b57f5ab101c547cd6b4344ec06ef1ec8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

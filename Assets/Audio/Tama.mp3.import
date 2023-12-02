@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tama.mp3-6928a9355a01a36f8fe6302ca3aaf639.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Tama.mp3"
+dest_files=[ "res://.import/Tama.mp3-6928a9355a01a36f8fe6302ca3aaf639.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

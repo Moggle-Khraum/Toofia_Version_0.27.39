@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Qq.mp3-2016278e28a08ba8cbc6ce9ad082d2c4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Letters/Qq.mp3"
+dest_files=[ "res://.import/Qq.mp3-2016278e28a08ba8cbc6ce9ad082d2c4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

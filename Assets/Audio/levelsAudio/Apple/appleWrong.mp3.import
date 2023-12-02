@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/appleWrong.mp3-ffc7178bcf35786da0a2028f2c7cba71.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Apple/appleWrong.mp3"
+dest_files=[ "res://.import/appleWrong.mp3-ffc7178bcf35786da0a2028f2c7cba71.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

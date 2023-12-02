@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/singkamas.mp3-a2616b4e536bd686bfb31d52737f6e99.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Turnip/singkamas.mp3"
+dest_files=[ "res://.import/singkamas.mp3-a2616b4e536bd686bfb31d52737f6e99.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

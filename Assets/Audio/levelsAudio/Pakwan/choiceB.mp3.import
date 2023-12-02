@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceB.mp3-a1d3792188a3992d2782ac3330677ce3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Pakwan/choiceB.mp3"
+dest_files=[ "res://.import/choiceB.mp3-a1d3792188a3992d2782ac3330677ce3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceC.mp3-55b8b82e724fd294e287066ec1a5e8df.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Rambutan/choiceC.mp3"
+dest_files=[ "res://.import/choiceC.mp3-55b8b82e724fd294e287066ec1a5e8df.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

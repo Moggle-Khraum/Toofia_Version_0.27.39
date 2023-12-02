@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pickAnswer.mp3-f8c2c0bf4e40a8ac5fc5bb2140a1d965.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Orange/pickAnswer.mp3"
+dest_files=[ "res://.import/pickAnswer.mp3-f8c2c0bf4e40a8ac5fc5bb2140a1d965.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

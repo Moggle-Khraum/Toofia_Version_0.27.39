@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rambutan.mp3-f3031cf53ac221e66c8e96cb072c139c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Rambutan/rambutan.mp3"
+dest_files=[ "res://.import/rambutan.mp3-f3031cf53ac221e66c8e96cb072c139c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

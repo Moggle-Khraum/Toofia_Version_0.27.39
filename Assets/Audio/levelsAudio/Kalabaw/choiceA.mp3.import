@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-94ebea995ceb2312deb4d9d30087ee5b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Kalabaw/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-94ebea995ceb2312deb4d9d30087ee5b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

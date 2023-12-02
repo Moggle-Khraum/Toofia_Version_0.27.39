@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoPato.mp3-623dac0e0ea3fb8f8563a39962adc80f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/levelsAudio/Pato/infoPato.mp3"
+dest_files=[ "res://.import/infoPato.mp3-623dac0e0ea3fb8f8563a39962adc80f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

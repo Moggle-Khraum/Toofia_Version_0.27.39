@@ -2,7 +2,7 @@ extends Popup
 
 func _on_levels_pressed() -> void:
 	MenuClickSfxPlayer.play()
-	$"%PrutasAtGulay".show()
+	var pag = get_tree().change_scene('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
 	#This will go to level selection
 	print("To Levels")
 
@@ -25,7 +25,3 @@ func _on_x_pressed() -> void:
 	$'.'.hide()
 	print("Hides the Popup")
 
-
-func _on_PrutasAtGulay_visibility_changed() -> void:
-	$'PrutasAtGulay/fruitTheme'.play()
-	print("Plays Fruit")
