@@ -7,7 +7,7 @@
 
 :desktop_computer: **Language Used:** *GDScript*
 
-:hourglass_flowing_sand: **Progress:** *85% out of 100%*
+:hourglass_flowing_sand: **Progress:** *90% out of 100%*
 
 :dart: **Completed Goal:**
 - [x] Add a Persistent Music system that persists even when restarting the game.
@@ -24,7 +24,8 @@
 - [x] Adds Videos to the Slide 3 of Alphabets
   
 :pushpin: **Next Goal:**
-- [ ] Adds and Complete Drag N Drop for the Final Level.
+- [ ] Adds Internal Organs and Audio
+- [ ] Edit the Alphabet
 - [ ] Adds Game Tutorials (Videos)
 - [ ] Finish the game.. :tada:
 
