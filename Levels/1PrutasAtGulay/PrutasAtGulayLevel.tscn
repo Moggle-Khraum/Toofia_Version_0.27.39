@@ -1,0 +1,1323 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Audio/levelsAudio/Music/Fruit.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Themes/levelsTheme.tres" type="Theme" id=6]
+[ext_resource path="res://Levels/1PrutasAtGulay/PrutasNGulayLevelScroller.gd" type="Script" id=7]
+[ext_resource path="res://Assets/Images/background/blackcircle.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Fruits&Vegs/Apple.png" type="Texture" id=9]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Rounded.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/background/yard.png" type="Texture" id=12]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Circle.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=17]
+
+[sub_resource type="DynamicFont" id=10]
+size = 32
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 32
+use_filter = true
+font_data = ExtResource( 17 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="DynamicFont" id=8]
+size = 60
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 17 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 60
+use_filter = true
+font_data = ExtResource( 17 )
+fallback/0 = ExtResource( 1 )
+
+[node name="PrutasGulay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+unique_name_in_owner = true
+anchor_left = 0.078125
+anchor_top = 0.218333
+anchor_right = 0.932617
+anchor_bottom = 0.968333
+rect_clip_content = false
+theme = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Control" type="Control" parent="Panel/ScrollContainer"]
+margin_right = 1763.0
+margin_bottom = 450.0
+rect_min_size = Vector2( 1763, 450 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/ScrollContainer/Control"]
+anchor_right = 1.0
+anchor_bottom = 0.444444
+rect_min_size = Vector2( 880, 200 )
+custom_constants/separation = 22
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Texture1" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="apple" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = 25.0002
+margin_right = -34.0
+margin_bottom = -24.9998
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture1/apple"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture1/apple/1Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level
+01"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture1/apple/1Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 01"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Texture2" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 222.0
+margin_right = 422.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+theme = SubResource( 1 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="2Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Texture3" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 444.0
+margin_right = 644.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="3Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture3/3Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 03"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture3/3Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 03"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Texture4" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 666.0
+margin_right = 866.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="4Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture4"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture4/4Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 04"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Texture4/4Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 04"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button5" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 888.0
+margin_right = 1088.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="5Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5/5Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 09"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button5/5Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 09"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button6" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 1110.0
+margin_right = 1310.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="6Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6/6Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 10"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button6/6Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 10"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button7" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 1332.0
+margin_right = 1532.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="7Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7/7Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 11"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button7/7Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 11"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button8" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 1554.0
+margin_right = 1754.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="8Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8/8Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer/Button8/8Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 12"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/ScrollContainer/Control"]
+anchor_top = 0.444444
+anchor_right = 1.0
+anchor_bottom = 0.888889
+margin_top = 20.0002
+margin_bottom = 20.0002
+rect_min_size = Vector2( 880, 200 )
+custom_constants/separation = 22
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button9" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="9Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button9"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button9/9Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 05"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button9/9Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 05"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button10" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 222.0
+margin_right = 422.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="10Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button10"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button10/10Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 06"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button10/10Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 06"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button11" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 444.0
+margin_right = 644.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="11Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button11"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button11/11Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 07"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button11/11Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 07"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button12" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 666.0
+margin_right = 866.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="12Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button12"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button12/12Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 08"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button12/12Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 08"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button13" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 888.0
+margin_right = 1088.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="13Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button13"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button13/13Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 13"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button13/13Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 13"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button14" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 1110.0
+margin_right = 1310.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="14Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button14"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button14/14Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 14"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button14/14Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 14"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button15" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 1332.0
+margin_right = 1532.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="15Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button15"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button15/15Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 15"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button15/15Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 15"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button16" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer2"]
+margin_left = 1554.0
+margin_right = 1754.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="16Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -46.0
+margin_right = 55.0
+margin_bottom = 39.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16/16Button"]
+visible = false
+anchor_left = -0.333333
+anchor_top = -0.0941153
+anchor_right = 1.28571
+anchor_bottom = 0.941179
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "level 15"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="level" type="Label" parent="Panel/ScrollContainer/Control/HBoxContainer2/Button16/16Button/level"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "level 15"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="prutasatgulay" type="Label" parent="Panel"]
+anchor_left = 0.125977
+anchor_top = 0.0266667
+anchor_right = 0.835938
+anchor_bottom = 0.151667
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 8 )
+text = "prutas at gulay"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="prutasatgulay" type="Label" parent="Panel/prutasatgulay"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 9 )
+text = "Prutas at gulay"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="Panel"]
+anchor_left = 0.152344
+anchor_top = 0.105
+anchor_right = 0.824219
+anchor_bottom = 0.23
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "pumili ng level sa ibaba"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="Panel/selectLevel"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "pumili ng level sa ibaba"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LeftButton" type="Button" parent="Panel"]
+anchor_left = 0.0224609
+anchor_top = 0.468333
+anchor_right = 0.078125
+anchor_bottom = 0.685
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="RightButton" type="Button" parent="Panel"]
+anchor_left = 0.922852
+anchor_top = 0.471667
+anchor_right = 0.978516
+anchor_bottom = 0.686667
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="GoBackButton" type="TextureButton" parent="Panel"]
+anchor_left = 0.899414
+anchor_top = 0.0266667
+anchor_right = 0.982422
+anchor_bottom = 0.166667
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pressedX" type="TextureRect" parent="Panel/GoBackButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 23.0
+margin_top = 19.0
+margin_right = -22.0
+margin_bottom = -23.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="fruitTheme" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 3 )
+bus = "Music"
+
+[connection signal="visibility_changed" from="." to="." method="_on_PrutasGulay_visibility_changed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture1/apple/1Button" to="." method="_on_1Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture2/2Button" to="." method="_on_2Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture3/3Button" to="." method="_on_3Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Texture4/4Button" to="." method="_on_4Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button5/5Button" to="." method="_on_5Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button6/6Button" to="." method="_on_6Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button7/7Button" to="." method="_on_7Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Button8/8Button" to="." method="_on_8Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button9/9Button" to="." method="_on_9Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button10/10Button" to="." method="_on_10Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button11/11Button" to="." method="_on_11Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button12/12Button" to="." method="_on_12Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button13/13Button" to="." method="_on_13Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button14/14Button" to="." method="_on_14Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer2/Button15/15Button" to="." method="_on_15Button_pressed"]
+[connection signal="pressed" from="Panel/LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="Panel/RightButton" to="." method="_on_RightButton_pressed"]
+[connection signal="pressed" from="Panel/GoBackButton" to="." method="_on_GoBackButton_pressed"]

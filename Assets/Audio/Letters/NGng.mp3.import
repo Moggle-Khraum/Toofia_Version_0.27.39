@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/NGng.mp3-7be41746342f0ecc8f9f10986b57babe.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Letters/NGng.mp3"
+dest_files=[ "res://.import/NGng.mp3-7be41746342f0ecc8f9f10986b57babe.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

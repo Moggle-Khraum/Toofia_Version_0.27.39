@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Images/Boy/rightArm.png" type="Texture" id=1]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/Boi/rightArm/rightArm.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 110.791
+height = 587.721
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1.04637, 0.550129 )
+rotation = -0.00679909
+scale = Vector2( 0.196824, 0.185265 )
+texture = ExtResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="Sprite"]
+position = Vector2( -28.3774, -4.7561 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Area2D"]
+position = Vector2( -0.120717, -0.382621 )
+rotation = -0.343242
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="input_event" from="Sprite/Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Sprite/Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Sprite/Area2D" to="." method="_on_Area2D_mouse_exited"]

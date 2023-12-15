@@ -7,31 +7,31 @@
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Circle.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=7]
-[ext_resource path="res://Assets/Images/background/abc.png" type="Texture" id=8]
+[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=8]
 [ext_resource path="res://Levels/PagbikasNgAlpabeto/LetterSpeak.gd" type="Script" id=9]
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintA.otf" type="DynamicFontData" id=10]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Green_Square.png" type="Texture" id=11]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Blue_Square.png" type="Texture" id=12]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Square.png" type="Texture" id=13]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Square.png" type="Texture" id=14]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Aa.mp3" type="AudioStream" id=15]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Ss.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/Letters/Aa.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Audio/Letters/Bb.mp3" type="AudioStream" id=16]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Pink_Square.png" type="Texture" id=17]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Grass_Square.png" type="Texture" id=18]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Violet_Square.png" type="Texture" id=19]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Ii.mp3" type="AudioStream" id=20]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Oo.mp3" type="AudioStream" id=21]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Mm.mp3" type="AudioStream" id=22]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Uu.mp3" type="AudioStream" id=23]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Tt.mp3" type="AudioStream" id=24]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Yy.mp3" type="AudioStream" id=25]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Gg.mp3" type="AudioStream" id=26]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Kk.mp3" type="AudioStream" id=27]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Ee.mp3" type="AudioStream" id=28]
-[ext_resource path="res://Assets/Audio/Alpha Sound/NGng.mp3" type="AudioStream" id=29]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Ll.mp3" type="AudioStream" id=30]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Nn.mp3" type="AudioStream" id=31]
-[ext_resource path="res://Assets/Audio/Alpha Sound/Bb.mp3" type="AudioStream" id=32]
+[ext_resource path="res://Assets/Audio/Letters/Cc.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Audio/Letters/Ee.mp3" type="AudioStream" id=21]
+[ext_resource path="res://Assets/Audio/Letters/Dd.mp3" type="AudioStream" id=22]
+[ext_resource path="res://Assets/Audio/Letters/Hh.mp3" type="AudioStream" id=23]
+[ext_resource path="res://Assets/Audio/Letters/Ii.mp3" type="AudioStream" id=24]
+[ext_resource path="res://Assets/Audio/Letters/Jj.mp3" type="AudioStream" id=25]
+[ext_resource path="res://Assets/Audio/Letters/Gg.mp3" type="AudioStream" id=26]
+[ext_resource path="res://Assets/Audio/Letters/Kk.mp3" type="AudioStream" id=27]
+[ext_resource path="res://Assets/Audio/Letters/Mm.mp3" type="AudioStream" id=28]
+[ext_resource path="res://Assets/Audio/Letters/Ññ.mp3" type="AudioStream" id=29]
+[ext_resource path="res://Assets/Audio/Letters/Ll.mp3" type="AudioStream" id=30]
+[ext_resource path="res://Assets/Audio/Letters/Nn.mp3" type="AudioStream" id=31]
+[ext_resource path="res://Assets/Audio/Letters/Ff.mp3" type="AudioStream" id=32]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Rounded.png" type="Texture" id=33]
 
 [sub_resource type="Theme" id=1]
@@ -160,8 +160,8 @@ font_data = ExtResource( 10 )
 
 [sub_resource type="StyleBoxEmpty" id=41]
 
-[sub_resource type="DynamicFont" id=61]
-size = 42
+[sub_resource type="DynamicFont" id=59]
+size = 57
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 10 )
@@ -176,8 +176,8 @@ font_data = ExtResource( 10 )
 
 [sub_resource type="StyleBoxEmpty" id=47]
 
-[sub_resource type="DynamicFont" id=62]
-size = 35
+[sub_resource type="DynamicFont" id=48]
+size = 36
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 10 )
@@ -239,7 +239,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="LettersM" type="TextureRect" parent="bg/Control/HBoxContainer"]
+[node name="LettersA" type="TextureRect" parent="bg/Control/HBoxContainer"]
 margin_right = 150.0
 margin_bottom = 145.0
 rect_min_size = Vector2( 150, 0 )
@@ -249,7 +249,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersM"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersA"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 12 )
@@ -257,13 +257,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersM/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersA/Panel"]
 anchor_left = 0.0385685
 anchor_top = 0.0413794
 anchor_right = 0.951902
 anchor_bottom = 0.76932
 custom_fonts/font = SubResource( 6 )
-text = "Mm"
+text = "Aa"
 align = 1
 valign = 1
 __meta__ = {
@@ -271,7 +271,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Mm" type="Button" parent="bg/Control/HBoxContainer/LettersM/Panel"]
+[node name="Aa" type="Button" parent="bg/Control/HBoxContainer/LettersA/Panel"]
 anchor_left = 0.173333
 anchor_top = 0.22069
 anchor_right = 0.806667
@@ -286,14 +286,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersM/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersA/Panel"]
 unique_name_in_owner = true
 anchor_left = 0.04
 anchor_top = 0.522059
 anchor_right = 0.953333
 anchor_bottom = 0.852941
 custom_fonts/font = SubResource( 16 )
-text = "/muh/"
+text = "/ah/"
 align = 1
 valign = 2
 __meta__ = {
@@ -301,12 +301,12 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigM" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersM/Panel"]
+[node name="bigA" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersA/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 22 )
+stream = ExtResource( 15 )
 bus = "Voices"
 
-[node name="LettersS" type="TextureRect" parent="bg/Control/HBoxContainer"]
+[node name="LettersB" type="TextureRect" parent="bg/Control/HBoxContainer"]
 margin_left = 180.0
 margin_right = 330.0
 margin_bottom = 145.0
@@ -317,7 +317,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersS"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersB"]
 anchor_top = 0.00689655
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -327,13 +327,13 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersS/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersB/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0416667
 anchor_right = 0.953333
 anchor_bottom = 0.769607
 custom_fonts/font = SubResource( 56 )
-text = "Ss"
+text = "Bb"
 align = 1
 valign = 1
 __meta__ = {
@@ -341,7 +341,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Ss" type="Button" parent="bg/Control/HBoxContainer/LettersS/Panel"]
+[node name="Bb" type="Button" parent="bg/Control/HBoxContainer/LettersB/Panel"]
 anchor_left = 0.153333
 anchor_top = 0.194444
 anchor_right = 0.82
@@ -356,25 +356,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersS/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersB/Panel"]
 anchor_left = 0.0466669
 anchor_top = 0.651852
 anchor_right = 0.96
 anchor_bottom = 0.945969
 custom_fonts/font = SubResource( 55 )
-text = "/ss/"
+text = "/buh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="bigS" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersS/Panel"]
+[node name="bigB" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersB/Panel"]
 unique_name_in_owner = true
 stream = ExtResource( 16 )
 bus = "Voices"
 
-[node name="LettersA" type="TextureRect" parent="bg/Control/HBoxContainer"]
+[node name="LettersC" type="TextureRect" parent="bg/Control/HBoxContainer"]
 margin_left = 360.0
 margin_right = 510.0
 margin_bottom = 145.0
@@ -385,7 +385,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersA"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersC"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 57 )
@@ -394,13 +394,13 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersA/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersC/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0413793
 anchor_right = 0.953333
 anchor_bottom = 0.62069
 custom_fonts/font = SubResource( 56 )
-text = "Aa"
+text = "Cc"
 align = 1
 valign = 2
 __meta__ = {
@@ -408,7 +408,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Aa" type="Button" parent="bg/Control/HBoxContainer/LettersA/Panel"]
+[node name="Cc" type="Button" parent="bg/Control/HBoxContainer/LettersC/Panel"]
 anchor_left = 0.166667
 anchor_top = 0.213793
 anchor_right = 0.806667
@@ -423,25 +423,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersA/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersC/Panel"]
 anchor_left = 0.0400002
 anchor_top = 0.662069
 anchor_right = 0.953333
 anchor_bottom = 0.956186
 custom_fonts/font = SubResource( 55 )
-text = "/aah/"
+text = "/kuh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="bigA" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersA/Panel"]
+[node name="bigC" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersC/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 15 )
+stream = ExtResource( 20 )
 bus = "Voices"
 
-[node name="LettersIi" type="TextureRect" parent="bg/Control/HBoxContainer"]
+[node name="LettersD" type="TextureRect" parent="bg/Control/HBoxContainer"]
 margin_left = 540.0
 margin_right = 690.0
 margin_bottom = 145.0
@@ -452,7 +452,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersIi"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersD"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 58 )
@@ -461,7 +461,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Ii" type="Button" parent="bg/Control/HBoxContainer/LettersIi/Panel"]
+[node name="Dd" type="Button" parent="bg/Control/HBoxContainer/LettersD/Panel"]
 anchor_left = 0.153333
 anchor_top = 0.2
 anchor_right = 0.826667
@@ -476,26 +476,26 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersIi/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersD/Panel"]
 anchor_left = 0.04
 anchor_top = 0.641379
 anchor_right = 0.953333
 anchor_bottom = 0.935497
 custom_fonts/font = SubResource( 55 )
-text = "/iih/"
+text = "/duh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersIi/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersD/Panel"]
 anchor_left = 0.0533333
 anchor_top = 0.0482759
 anchor_right = 0.966666
 anchor_bottom = 0.776217
 custom_fonts/font = SubResource( 56 )
-text = "Ii"
+text = "Dd"
 align = 1
 valign = 1
 __meta__ = {
@@ -503,12 +503,12 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigI" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersIi/Panel"]
+[node name="bigD" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersD/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 20 )
+stream = ExtResource( 22 )
 bus = "Voices"
 
-[node name="LettersOo" type="TextureRect" parent="bg/Control/HBoxContainer"]
+[node name="LettersE" type="TextureRect" parent="bg/Control/HBoxContainer"]
 margin_left = 720.0
 margin_right = 870.0
 margin_bottom = 145.0
@@ -519,7 +519,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersOo"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer/LettersE"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 58 )
@@ -527,13 +527,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersOo/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer/LettersE/Panel"]
 anchor_left = 0.0333333
 anchor_top = 0.0551724
 anchor_right = 0.946667
 anchor_bottom = 0.62069
 custom_fonts/font = SubResource( 56 )
-text = "Oo"
+text = "Ee"
 align = 1
 valign = 2
 __meta__ = {
@@ -541,7 +541,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Oo" type="Button" parent="bg/Control/HBoxContainer/LettersOo/Panel"]
+[node name="Ee" type="Button" parent="bg/Control/HBoxContainer/LettersE/Panel"]
 anchor_left = 0.18
 anchor_top = 0.144828
 anchor_right = 0.84
@@ -556,20 +556,20 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersOo/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer/LettersE/Panel"]
 anchor_left = 0.04
 anchor_top = 0.662069
 anchor_right = 0.953333
 anchor_bottom = 0.956186
 custom_fonts/font = SubResource( 55 )
-text = "/ooh/"
+text = "/eh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="bigO" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersOo/Panel"]
+[node name="bigE" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer/LettersE/Panel"]
 unique_name_in_owner = true
 stream = ExtResource( 21 )
 bus = "Voices"
@@ -586,7 +586,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="LettersBb" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+[node name="LettersF" type="TextureRect" parent="bg/Control/HBoxContainer4"]
 margin_right = 150.0
 margin_bottom = 144.0
 rect_min_size = Vector2( 150, 0 )
@@ -596,7 +596,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersBb"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersF"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 18 )
@@ -604,13 +604,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersBb/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersF/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0416667
 anchor_right = 0.96
 anchor_bottom = 0.645833
 custom_fonts/font = SubResource( 19 )
-text = "Bb"
+text = "Ff"
 align = 1
 valign = 2
 __meta__ = {
@@ -618,7 +618,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Bb" type="Button" parent="bg/Control/HBoxContainer4/LettersBb/Panel"]
+[node name="Ff" type="Button" parent="bg/Control/HBoxContainer4/LettersF/Panel"]
 anchor_left = 0.153333
 anchor_top = 0.194444
 anchor_right = 0.793333
@@ -633,25 +633,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigB" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersBb/Panel"]
+[node name="bigF" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersF/Panel"]
 unique_name_in_owner = true
 stream = ExtResource( 32 )
 bus = "Voices"
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersBb"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersF"]
 anchor_left = 0.0466663
 anchor_top = 0.659721
 anchor_right = 0.959999
 anchor_bottom = 0.953838
 custom_fonts/font = SubResource( 25 )
-text = "/buh/"
+text = "/fuh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersEe" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+[node name="LettersG" type="TextureRect" parent="bg/Control/HBoxContainer4"]
 margin_left = 180.0
 margin_right = 330.0
 margin_bottom = 144.0
@@ -662,7 +662,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersEe"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersG"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 1.0
@@ -671,15 +671,15 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersEe/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersG/Panel"]
 anchor_left = 0.04
 anchor_top = 0.111888
 anchor_right = 0.953333
 anchor_bottom = 0.629371
 custom_fonts/font = SubResource( 60 )
-text = "Ee"
+text = "Gg"
 align = 1
-valign = 2
+valign = 1
 autowrap = true
 clip_text = true
 __meta__ = {
@@ -687,7 +687,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Ee" type="Button" parent="bg/Control/HBoxContainer4/LettersEe/Panel"]
+[node name="Gg" type="Button" parent="bg/Control/HBoxContainer4/LettersG/Panel"]
 anchor_left = 0.16
 anchor_top = 0.195804
 anchor_right = 0.8
@@ -702,25 +702,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersEe/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersG/Panel"]
 anchor_left = 0.0399996
 anchor_top = 0.634327
 anchor_right = 0.953333
 anchor_bottom = 0.928444
 custom_fonts/font = SubResource( 25 )
-text = "/ehh/"
+text = "/guh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="bigE" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersEe/Panel"]
+[node name="bigG" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersG/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 28 )
+stream = ExtResource( 26 )
 bus = "Voices"
 
-[node name="LettersUu" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+[node name="LettersH" type="TextureRect" parent="bg/Control/HBoxContainer4"]
 margin_left = 360.0
 margin_right = 510.0
 margin_bottom = 144.0
@@ -731,7 +731,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersUu"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersH"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 27 )
@@ -739,13 +739,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersUu/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersH/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0416666
 anchor_right = 0.96
 anchor_bottom = 0.611111
 custom_fonts/font = SubResource( 19 )
-text = "Uu"
+text = "Hh"
 align = 1
 valign = 2
 __meta__ = {
@@ -753,12 +753,12 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigU" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersUu/Panel/Label"]
+[node name="bigH" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersH/Panel/Label"]
 unique_name_in_owner = true
 stream = ExtResource( 23 )
 bus = "Voices"
 
-[node name="Uu" type="Button" parent="bg/Control/HBoxContainer4/LettersUu/Panel"]
+[node name="Hh" type="Button" parent="bg/Control/HBoxContainer4/LettersH/Panel"]
 anchor_left = 0.153333
 anchor_top = 0.201389
 anchor_right = 0.826667
@@ -773,20 +773,20 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersUu/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersH/Panel"]
 anchor_left = 0.0333329
 anchor_top = 0.645832
 anchor_right = 0.946666
 anchor_bottom = 0.93995
 custom_fonts/font = SubResource( 25 )
-text = "/uhh/"
+text = "/hah/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersTt" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+[node name="LettersI" type="TextureRect" parent="bg/Control/HBoxContainer4"]
 margin_left = 540.0
 margin_right = 690.0
 margin_bottom = 144.0
@@ -797,7 +797,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersTt"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersI"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 28 )
@@ -805,13 +805,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersTt/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersI/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0416667
 anchor_right = 0.953333
 anchor_bottom = 0.625
 custom_fonts/font = SubResource( 19 )
-text = "Tt"
+text = "Ii"
 align = 1
 valign = 2
 __meta__ = {
@@ -819,12 +819,12 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigT" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersTt/Panel/Label"]
+[node name="bigI" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersI/Panel/Label"]
 unique_name_in_owner = true
 stream = ExtResource( 24 )
 bus = "Voices"
 
-[node name="Tt" type="Button" parent="bg/Control/HBoxContainer4/LettersTt/Panel"]
+[node name="Ii" type="Button" parent="bg/Control/HBoxContainer4/LettersI/Panel"]
 anchor_left = 0.16
 anchor_top = 0.215278
 anchor_right = 0.78
@@ -839,20 +839,20 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersTt/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersI/Panel"]
 anchor_left = 0.0399996
 anchor_top = 0.666666
 anchor_right = 0.953333
 anchor_bottom = 0.960783
 custom_fonts/font = SubResource( 25 )
-text = "/tuh/"
+text = "/ih/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersKk" type="TextureRect" parent="bg/Control/HBoxContainer4"]
+[node name="LettersJ" type="TextureRect" parent="bg/Control/HBoxContainer4"]
 margin_left = 720.0
 margin_right = 870.0
 margin_bottom = 144.0
@@ -863,7 +863,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersKk"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer4/LettersJ"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 28 )
@@ -871,13 +871,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersKk/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer4/LettersJ/Panel"]
 anchor_left = 0.0333333
 anchor_top = 0.0416667
 anchor_right = 0.96
-anchor_bottom = 0.618056
+anchor_bottom = 1.02083
 custom_fonts/font = SubResource( 19 )
-text = "Kk"
+text = "Jj
+"
 align = 1
 valign = 2
 __meta__ = {
@@ -885,13 +886,13 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersKk/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer4/LettersJ/Panel"]
 anchor_left = 0.0333333
 anchor_top = 0.625
 anchor_right = 0.946666
 anchor_bottom = 0.919117
 custom_fonts/font = SubResource( 25 )
-text = "/kuh/"
+text = "/juh/"
 align = 1
 valign = 2
 __meta__ = {
@@ -899,12 +900,12 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigK" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersKk/Panel"]
+[node name="bigJ" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer4/LettersJ/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 27 )
+stream = ExtResource( 25 )
 bus = "Voices"
 
-[node name="Kk" type="Button" parent="bg/Control/HBoxContainer4/LettersKk"]
+[node name="Jj" type="Button" parent="bg/Control/HBoxContainer4/LettersJ"]
 anchor_left = 0.186667
 anchor_top = 0.215278
 anchor_right = 0.8
@@ -931,7 +932,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="LettersLl" type="TextureRect" parent="bg/Control/HBoxContainer5"]
+[node name="LettersK" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_right = 150.0
 margin_bottom = 144.0
 rect_min_size = Vector2( 150, 0 )
@@ -941,7 +942,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersLl"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersK"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 30 )
@@ -949,13 +950,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersLl/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersK/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0413793
 anchor_right = 0.96
 anchor_bottom = 0.606897
 custom_fonts/font = SubResource( 31 )
-text = "Ll"
+text = "Kk"
 align = 1
 valign = 2
 __meta__ = {
@@ -963,7 +964,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Ll" type="Button" parent="bg/Control/HBoxContainer5/LettersLl/Panel"]
+[node name="Kk" type="Button" parent="bg/Control/HBoxContainer5/LettersK/Panel"]
 anchor_left = 0.16
 anchor_top = 0.151724
 anchor_right = 0.84
@@ -978,25 +979,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersLl/Panel"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersK/Panel"]
 anchor_left = 0.0400006
 anchor_top = 0.661764
 anchor_right = 0.953334
 anchor_bottom = 0.955881
 custom_fonts/font = SubResource( 37 )
-text = "/ehl/"
+text = "/kuh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="bigL" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersLl/Panel"]
+[node name="bigK" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersK/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 30 )
+stream = ExtResource( 27 )
 bus = "Voices"
 
-[node name="LettersYy" type="TextureRect" parent="bg/Control/HBoxContainer5"]
+[node name="LettersL" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 180.0
 margin_right = 330.0
 margin_bottom = 144.0
@@ -1007,7 +1008,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersYy"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersL"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 38 )
@@ -1015,13 +1016,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersYy/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersL/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0413793
 anchor_right = 0.96
 anchor_bottom = 0.613793
 custom_fonts/font = SubResource( 31 )
-text = "Yy"
+text = "Ll"
 align = 1
 valign = 2
 __meta__ = {
@@ -1029,7 +1030,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Yy" type="Button" parent="bg/Control/HBoxContainer5/LettersYy/Panel"]
+[node name="Ll" type="Button" parent="bg/Control/HBoxContainer5/LettersL/Panel"]
 anchor_left = 0.146667
 anchor_top = 0.17931
 anchor_right = 0.84
@@ -1044,25 +1045,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigY" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersYy/Panel"]
+[node name="bigL" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersL/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 25 )
+stream = ExtResource( 30 )
 bus = "Voices"
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersYy"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersL"]
 anchor_left = 0.0400006
 anchor_top = 0.661764
 anchor_right = 0.953334
 anchor_bottom = 0.955881
 custom_fonts/font = SubResource( 37 )
-text = "/yuh/"
+text = "/l/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersNn" type="TextureRect" parent="bg/Control/HBoxContainer5"]
+[node name="LettersM" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 360.0
 margin_right = 510.0
 margin_bottom = 144.0
@@ -1073,7 +1074,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersNn"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersM"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 39 )
@@ -1081,13 +1082,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersNn/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersM/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0413793
 anchor_right = 0.96
 anchor_bottom = 0.606897
 custom_fonts/font = SubResource( 31 )
-text = "Nn"
+text = "Mm"
 align = 1
 valign = 2
 __meta__ = {
@@ -1095,7 +1096,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Nn" type="Button" parent="bg/Control/HBoxContainer5/LettersNn/Panel"]
+[node name="Mm" type="Button" parent="bg/Control/HBoxContainer5/LettersM/Panel"]
 anchor_left = 0.14
 anchor_top = 0.206897
 anchor_right = 0.82
@@ -1110,25 +1111,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigN" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersNn/Panel"]
+[node name="bigM" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersM/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 31 )
+stream = ExtResource( 28 )
 bus = "Voices"
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersNn"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersM"]
 anchor_left = 0.0400006
 anchor_top = 0.661764
 anchor_right = 0.953334
 anchor_bottom = 0.955881
 custom_fonts/font = SubResource( 37 )
-text = "/nuh/"
+text = "/muh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersGg" type="TextureRect" parent="bg/Control/HBoxContainer5"]
+[node name="LettersN" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 540.0
 margin_right = 690.0
 margin_bottom = 144.0
@@ -1139,7 +1140,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersGg"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersN"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 40 )
@@ -1147,13 +1148,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersGg/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersN/Panel"]
 anchor_left = 0.04
 anchor_top = 0.0413793
 anchor_right = 0.96
 anchor_bottom = 0.6
 custom_fonts/font = SubResource( 31 )
-text = "Gg"
+text = "Nn"
 align = 1
 valign = 2
 __meta__ = {
@@ -1161,7 +1162,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Gg" type="Button" parent="bg/Control/HBoxContainer5/LettersGg/Panel"]
+[node name="Nn" type="Button" parent="bg/Control/HBoxContainer5/LettersN/Panel"]
 anchor_left = 0.14
 anchor_top = 0.172414
 anchor_right = 0.846667
@@ -1176,25 +1177,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigG" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersGg/Panel"]
+[node name="bigN" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersN/Panel"]
 unique_name_in_owner = true
-stream = ExtResource( 26 )
+stream = ExtResource( 31 )
 bus = "Voices"
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersGg"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersN"]
 anchor_left = 0.0400006
 anchor_top = 0.661764
 anchor_right = 0.953334
 anchor_bottom = 0.955881
 custom_fonts/font = SubResource( 37 )
-text = "/guh/"
+text = "/nuh/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="LettersNGng" type="TextureRect" parent="bg/Control/HBoxContainer5"]
+[node name="LettersÑñ" type="TextureRect" parent="bg/Control/HBoxContainer5"]
 margin_left = 720.0
 margin_right = 870.0
 margin_bottom = 144.0
@@ -1205,7 +1206,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersNGng"]
+[node name="Panel" type="Panel" parent="bg/Control/HBoxContainer5/LettersÑñ"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 41 )
@@ -1213,13 +1214,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersNGng/Panel"]
+[node name="Label" type="Label" parent="bg/Control/HBoxContainer5/LettersÑñ/Panel"]
 anchor_left = 0.0466667
-anchor_top = 0.201389
-anchor_right = 0.98
-anchor_bottom = 0.576389
-custom_fonts/font = SubResource( 61 )
-text = "NGng"
+anchor_top = 0.2
+anchor_right = 0.966667
+anchor_bottom = 1.02069
+custom_fonts/font = SubResource( 59 )
+text = "Ññ
+"
 align = 1
 valign = 2
 __meta__ = {
@@ -1227,7 +1229,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="NGng" type="Button" parent="bg/Control/HBoxContainer5/LettersNGng/Panel"]
+[node name="Enye" type="Button" parent="bg/Control/HBoxContainer5/LettersÑñ/Panel"]
 anchor_left = 0.14
 anchor_top = 0.158621
 anchor_right = 0.86
@@ -1242,18 +1244,18 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="bigNG" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersNGng/Panel"]
+[node name="bigEnye" type="AudioStreamPlayer" parent="bg/Control/HBoxContainer5/LettersÑñ/Panel"]
 unique_name_in_owner = true
 stream = ExtResource( 29 )
 bus = "Voices"
 
-[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersNGng"]
+[node name="Label3" type="Label" parent="bg/Control/HBoxContainer5/LettersÑñ"]
 anchor_left = 0.0400006
 anchor_top = 0.655172
 anchor_right = 0.953334
 anchor_bottom = 0.949288
-custom_fonts/font = SubResource( 62 )
-text = "/nguh/"
+custom_fonts/font = SubResource( 48 )
+text = "/nye/"
 align = 1
 __meta__ = {
 "_edit_lock_": true,
@@ -1347,20 +1349,20 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[connection signal="pressed" from="bg/Control/HBoxContainer/LettersM/Panel/Mm" to="." method="_on_Mm_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer/LettersS/Panel/Ss" to="." method="_on_Ss_pressed"]
 [connection signal="pressed" from="bg/Control/HBoxContainer/LettersA/Panel/Aa" to="." method="_on_Aa_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer/LettersIi/Panel/Ii" to="." method="_on_Ii_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer/LettersOo/Panel/Oo" to="." method="_on_Oo_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersBb/Panel/Bb" to="." method="_on_Bb_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersEe/Panel/Ee" to="." method="_on_Ee_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersUu/Panel/Uu" to="." method="_on_Uu_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersTt/Panel/Tt" to="." method="_on_Tt_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersKk/Kk" to="." method="_on_Kk_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersLl/Panel/Ll" to="." method="_on_Ll_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersYy/Panel/Yy" to="." method="_on_Yy_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersNn/Panel/Nn" to="." method="_on_Nn_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersGg/Panel/Gg" to="." method="_on_Gg_pressed"]
-[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersNGng/Panel/NGng" to="." method="_on_NGng_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer/LettersB/Panel/Bb" to="." method="_on_Bb_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer/LettersC/Panel/Cc" to="." method="_on_Cc_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer/LettersD/Panel/Dd" to="." method="_on_Dd_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer/LettersE/Panel/Ee" to="." method="_on_Ee_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersF/Panel/Ff" to="." method="_on_Ff_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersG/Panel/Gg" to="." method="_on_Gg_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersH/Panel/Hh" to="." method="_on_Hh_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersI/Panel/Ii" to="." method="_on_Ii_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer4/LettersJ/Jj" to="." method="_on_Jj_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersK/Panel/Kk" to="." method="_on_Kk_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersL/Panel/Ll" to="." method="_on_Ll_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersM/Panel/Mm" to="." method="_on_Mm_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersN/Panel/Nn" to="." method="_on_Nn_pressed"]
+[connection signal="pressed" from="bg/Control/HBoxContainer5/LettersÑñ/Panel/Enye" to="." method="_on_Enye_pressed"]
 [connection signal="pressed" from="bg/RightButton" to="." method="_on_RightButton_pressed"]
 [connection signal="pressed" from="bg/GoBackButton" to="." method="_on_GoBackButton_pressed"]

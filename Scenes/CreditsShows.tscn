@@ -1,11 +1,12 @@
 [gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=1]
-[ext_resource path="res://Assets/Fonts/Titillium-RegularItalic.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Fonts/Titillium/Titillium-RegularItalic.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Scripts/CreditsDummy.gd" type="Script" id=3]
-[ext_resource path="res://Assets/Fonts/Titillium-Bold.otf" type="DynamicFontData" id=4]
-[ext_resource path="res://Assets/Fonts/Titillium-Regular.otf" type="DynamicFontData" id=5]
-[ext_resource path="res://Assets/Fonts/Titillium-BoldItalic.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/Fonts/Titillium/Titillium-Bold.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/Fonts/Titillium/Titillium-Regular.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/Fonts/Titillium/Titillium-BoldItalic.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=7]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle_Pressed.png" type="Texture" id=8]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Home.png" type="Texture" id=10]
@@ -13,7 +14,6 @@
 [ext_resource path="res://Assets/UIElements/Icon_Award.png" type="Texture" id=12]
 [ext_resource path="res://Assets/UIElements/Icon_SqiuareTilt.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=14]
-[ext_resource path="res://Assets/Images/background/wall3.png" type="Texture" id=15]
 
 [sub_resource type="DynamicFont" id=17]
 size = 37
@@ -48,8 +48,7 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 corner_detail = 10
-expand_margin_left = 22.0
-expand_margin_top = 3.0
+expand_margin_left = 25.0
 
 [sub_resource type="StyleBoxFlat" id=30]
 border_width_left = 5
@@ -156,7 +155,7 @@ __meta__ = {
 [node name="CenterContainer" type="NinePatchRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 15 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -278,7 +277,7 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 879.0
-margin_bottom = 2297.0
+margin_bottom = 3576.0
 rect_clip_content = true
 __meta__ = {
 "_edit_lock_": true
@@ -286,7 +285,7 @@ __meta__ = {
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/VBoxContainer"]
 margin_right = 879.0
-margin_bottom = 2297.0
+margin_bottom = 3576.0
 rect_min_size = Vector2( 879, 0 )
 custom_fonts/bold_italics_font = SubResource( 3 )
 custom_fonts/italics_font = SubResource( 4 )
@@ -299,75 +298,96 @@ bbcode_text = "
 [center][i]Toofia: Kasangkapang Tulong Pang-edukasiyon [/i][/center]
 
 [center]• ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •[/center]
-[center][b]Ang Grupo ng mga Developers.[/b][/center]
-[center]Mga Miyembro ng Pangkat:[/center]
+[center][b]The Developer Group.[/b][/center]
+[center]Team Members:[/center]
 
 [center][b] -[u] Dave T. Alabado BSIT-4[/u][/b]
-Ang Pangunahing Developer ng Proyekto, Kasamang Tagapagdisenyo, Pangunahing
-Alpha Tester at Kasamang Responsable sa Dokumentasyon
+The Lead Project Developer, Co-Designer, Lead Project Tester, and
+Co-Documentation Author
 
 [b] -[u] Princess P. Jai Bicol BSIT-4[/u][/b]
-Ang Pangunahing Responsable sa Dokumentasyon ng Proyekto, Pangunahing
-Tagapagdisenyo, Kasamang Mangongolekta ng Datos,  at Pangunahing Beta Tester
+The Lead Project Documentation Author, Lead Designer, Co-Data Researcher, and
+Lead Project Tester
 
-[b] -[u] Karen G. Samaranos BSIT-4[/u][/b]
-Ang Kasamang Responsable sa Dokumentasyon ng Proyekto, Pangunahing Pagsusuri
-ng Kalidad, Pangunahing Mangongolekta ng Datos, at Kasamang Beta Tester[/center]
+[b] -[u] Karen Samaranos[/u][/b]
+The Co-Documentation Author, Lead Quality Checker, Lead Data Researcher, and
+Co-Project Tester[/center]
 
 [center]• ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •[/center]
 
-[center][b][u]Mga Pagkilala[/u][/b]
-[u]Mga Taong may Parte sa Proyekto[/u][/center]
+[center][b][u]The Acknowledgementsu][/b]
+[u]Credited Individuals[/u][/center]
 
-[center][b] Para sa Musika ng Laro[/b][/center]
+[center][b] For the Music of the Game[/b][/center]
 
-[center][b]Jan 'Tzaot' Schulte[/b] | [b]Ismael Cobble[/b] | [b]Eric Matyas[/b] | [b]Moodmode[/b] | [b] Nojisuma[/b] | [b] Alexander Blu[/b]
+[center][b]Jan 'Tzaot' Schulte[/b] | [b]Ismael Cobble[/b] | [b]Eric Matyas[/b] | [b]Moodmode[/b] | [b] Nojisuma[/b]
 
-[i][u]Para sa mga sumusunod :[/u][/i]
+[i][u]For the following musics :[/u][/i]
 Intro, Idle & Mellow Tune, More Monkey Island Band & The Monkey Island
-Band Returns, Running Through The Jungle,  Fruit, at Silly [/center]
+Band Returns, Running Through The Jungle, at Fruit [/center]
 
-[center][b]Para sa Sound Effects(SFX) ng Laro :[/b][/center]
+[center][b]For the Sound Effects(SFX) of the Game:[/b][/center]
 
 [center][b]NenadSimic[/b] | [b]David 'ViRiX' McKee[/b] | [b]Pixabay[/b] | [b]UNIVERSFIELD[/b]
 
-[i][u]Para sa mga sumusunod :[/u][/i]
+[i][u]For the following sound effects :[/u][/i]
 Menu Selection Click, Accept, Correct Answer & Scroll Pop, at Wrong Answer,
 Level Error & Button Pop[/center]
 
+
+[center][b]For the Voice of the Game : Text2Speech Online Tools[/b][/center]
+[center][b]TTSMaker[/b] [Site:[u]https://ttsmaker.com/[/u] | [b]TTSFree[/b] [Site:[u]https://ttsfree.com/[/u]
+
+[i][u]For the following voice used in the game :[/u][/i]
+
+[b]Gloria (TTSMaker)[/b] | [b]Blessica (TTSFree)[/b] 
+
 [center]• ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •[/center]
 
-[center][b]Para sa Art Assets ng Laro :[/b][/center]
+[center][b]For the Game's Art Assets :[/b][/center]
 
 [center][b]Penzilla Design[/b] | [b]Prinbles[/b]
 
-[i][u]Para sa mga sumusunod :[/u][/i]
+[i][u]For the following Packs :[/u][/i]
 Vector Icon Pack - [Pixel Art] at Basic GUI/UI Bundle - Raster
 and Vector [Royalty Free], at Prinbles - GUI Asset Bliss [/center]
 
 [center]• ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •[/center]
 
-[center][b]Para sa Fonts ng Laro :[/b][/center]
+[center][b]For the Fonts of the Game :[/b][/center]
 
 [center][b]GGBotNet Designs[/b] | [b]Pablo Lizardo[/b] | [b]Accademia di
-Belle Arti Urbino & Peter Wiegel[/b]
+Belle Arti Urbino & Peter Wiegel | KineticPlasma Fonts | Milena Brandão [/b]
 
-[i][u]Para sa mga sumusunod :[/u][/i]
-Kaph Font, KiriFont, at Titillium-Bold, Titillium BoldItalic, Titillium-Regular at Titillium-RegularItalic [/center]
+[i][u]For the following fonts :[/u][/i]
+Kaph Font, KiriFont, at Titillium-Bold, Titillium BoldItalic, Titillium-Regular and Titillium-RegularItalic, HussarPrint, and Fredoka One[/center]
 
 [center]• ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •[/center]
 
-[center][b]Mga Gabay na Ginamit sa Pagbuo ng Proyektong Laro[/b]
+[center][b]Tutorials and Youtube Guide in making the Game[/b]
 
 [b]Volter[/b] [YT:[u]@MewPurPur][/u] | [b]David Satrio[/b] [YT:[u]@davidsatrio3847][/u] | [b]Kron[/b] 
 [YT:[u]@actuallyKron][/u] | [b]Chevifier[/b] [YT:[u]@Chevifier][/u] | [b]The Shaggy Dev[/b]
 [YT:[u]@TheShaggyDev][/u] | [b]rocket 007[/b] [YT:[u]@rocket007][/u] | [b]Jon Topielski[/b]
 [YT:[u]@jontopielski6227][/u] |  [b]MelonDev[/b] [DC:[u]@melonndev][/u]
 
-[u][i]Para sa mga sumusunod :[/i][/u]
+[u][i]For the following tutorial video :[/i][/u]
 Tween Introduction Tutorial, Godot Swipe Menu Tutorial, Intro Maker Tutorial,
 Interactive Loading Screen Tutorial, Scene Transitions Tutorial, Super Cool Button
 Tutorial, Fade Transition Tutorial, Viewport Tutorial
+
+
+[center]• ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •[/center]
+
+[center][b]Videos Used in the Alphabet Level[/b]
+
+[b]Edu The Wise Owl[/b] [YT:[u]@EduTheWiseOw[/u] | [b]Kids Buzz[/b] [YT:[u]@kidsbuzz7379[/u] | 
+[b]Knowledge Channel[/b] [YT:[u]@knowledgechannelorg[/u]
+
+[u][i]For the following videos :[/i][/u]
+Phonics with mouth formations, Vlog #17 Pagsulat ng mga Letra (Writing Letters), and Alpabetong Filipino | Musikantahan 
+
+
 
 
 [/center]
@@ -383,75 +403,96 @@ Alabado, Bicol, Samaranos Studios
 Toofia: Kasangkapang Tulong Pang-edukasiyon 
 
 • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •
-Ang Grupo ng mga Developers.
-Mga Miyembro ng Pangkat:
+The Developer Group.
+Team Members:
 
  - Dave T. Alabado BSIT-4
-Ang Pangunahing Developer ng Proyekto, Kasamang Tagapagdisenyo, Pangunahing
-Alpha Tester at Kasamang Responsable sa Dokumentasyon
+The Lead Project Developer, Co-Designer, Lead Project Tester, and
+Co-Documentation Author
 
  - Princess P. Jai Bicol BSIT-4
-Ang Pangunahing Responsable sa Dokumentasyon ng Proyekto, Pangunahing
-Tagapagdisenyo, Kasamang Mangongolekta ng Datos,  at Pangunahing Beta Tester
+The Lead Project Documentation Author, Lead Designer, Co-Data Researcher, and
+Lead Project Tester
 
- - Karen G. Samaranos BSIT-4
-Ang Kasamang Responsable sa Dokumentasyon ng Proyekto, Pangunahing Pagsusuri
-ng Kalidad, Pangunahing Mangongolekta ng Datos, at Kasamang Beta Tester
+ - Karen Samaranos
+The Co-Documentation Author, Lead Quality Checker, Lead Data Researcher, and
+Co-Project Tester
 
 • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •
 
-Mga Pagkilala
-Mga Taong may Parte sa Proyekto
+The Acknowledgementsu][/b]
+Credited Individuals[/center]
 
- Para sa Musika ng Laro
+ For the Music of the Game
 
-Jan 'Tzaot' Schulte | Ismael Cobble | Eric Matyas | Moodmode |  Nojisuma |  Alexander Blu
+Jan 'Tzaot' Schulte | Ismael Cobble | Eric Matyas | Moodmode |  Nojisuma
 
-Para sa mga sumusunod :
+For the following musics :
 Intro, Idle & Mellow Tune, More Monkey Island Band & The Monkey Island
-Band Returns, Running Through The Jungle,  Fruit, at Silly 
+Band Returns, Running Through The Jungle, at Fruit 
 
-Para sa Sound Effects(SFX) ng Laro :
+For the Sound Effects(SFX) of the Game:
 
 NenadSimic | David 'ViRiX' McKee | Pixabay | UNIVERSFIELD
 
-Para sa mga sumusunod :
+For the following sound effects :
 Menu Selection Click, Accept, Correct Answer & Scroll Pop, at Wrong Answer,
 Level Error & Button Pop
 
+
+For the Voice of the Game : Text2Speech Online Tools
+TTSMaker [Site:https://ttsmaker.com/ | TTSFree [Site:https://ttsfree.com/
+
+For the following voice used in the game :
+
+Gloria (TTSMaker) | Blessica (TTSFree) 
+
 • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •
 
-Para sa Art Assets ng Laro :
+For the Game's Art Assets :
 
 Penzilla Design | Prinbles
 
-Para sa mga sumusunod :
+For the following Packs :
 Vector Icon Pack - [Pixel Art] at Basic GUI/UI Bundle - Raster
 and Vector [Royalty Free], at Prinbles - GUI Asset Bliss 
 
 • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •
 
-Para sa Fonts ng Laro :
+For the Fonts of the Game :
 
 GGBotNet Designs | Pablo Lizardo | Accademia di
-Belle Arti Urbino & Peter Wiegel
+Belle Arti Urbino & Peter Wiegel | KineticPlasma Fonts | Milena Brandão 
 
-Para sa mga sumusunod :
-Kaph Font, KiriFont, at Titillium-Bold, Titillium BoldItalic, Titillium-Regular at Titillium-RegularItalic 
+For the following fonts :
+Kaph Font, KiriFont, at Titillium-Bold, Titillium BoldItalic, Titillium-Regular and Titillium-RegularItalic, HussarPrint, and Fredoka One
 
 • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •
 
-Mga Gabay na Ginamit sa Pagbuo ng Proyektong Laro
+Tutorials and Youtube Guide in making the Game
 
 Volter [YT:@MewPurPur] | David Satrio [YT:@davidsatrio3847] | Kron 
 [YT:@actuallyKron] | Chevifier [YT:@Chevifier] | The Shaggy Dev
 [YT:@TheShaggyDev] | rocket 007 [YT:@rocket007] | Jon Topielski
 [YT:@jontopielski6227] |  MelonDev [DC:@melonndev]
 
-Para sa mga sumusunod :
+For the following tutorial video :
 Tween Introduction Tutorial, Godot Swipe Menu Tutorial, Intro Maker Tutorial,
 Interactive Loading Screen Tutorial, Scene Transitions Tutorial, Super Cool Button
 Tutorial, Fade Transition Tutorial, Viewport Tutorial
+
+
+• ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ • ~ •
+
+Videos Used in the Alphabet Level
+
+Edu The Wise Owl [YT:@EduTheWiseOw | Kids Buzz [YT:@kidsbuzz7379 | 
+Knowledge Channel [YT:@knowledgechannelorg
+
+For the following videos :
+Phonics with mouth formations, Vlog #17 Pagsulat ng mga Letra (Writing Letters), and Alpabetong Filipino | Musikantahan 
+
+
 
 
 

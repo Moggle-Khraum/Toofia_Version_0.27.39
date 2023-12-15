@@ -1,0 +1,358 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Green_Circle.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Green_Rounded.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=5]
+[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=6]
+[ext_resource path="res://Levels/ParteNgKatawanNgTao/KatawanNgTao.gd" type="Script" id=9]
+[ext_resource path="res://Assets/Images/dragNDrop/gurl.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/dragNDrop/boy.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=9]
+size = 50
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+extra_spacing_char = -3
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 50
+use_filter = true
+extra_spacing_char = -3
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 32
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 32
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.0784314, 0.133333, 0.737255, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.0705882, 0.415686, 0.694118, 1 )
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=14]
+size = 32
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 32
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.780392, 0, 0.403922, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.937255, 0.027451, 0.729412, 1 )
+border_blend = true
+
+[node name="ParteNgKatawanNgTao" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GoBackButton" type="TextureButton" parent="Panel"]
+anchor_left = 0.0214844
+anchor_top = 0.035
+anchor_right = 0.0810547
+anchor_bottom = 0.133333
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 4 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="arrow" type="TextureRect" parent="Panel/GoBackButton"]
+anchor_left = 0.131148
+anchor_top = 0.135593
+anchor_right = 0.852459
+anchor_bottom = 0.847458
+texture = ExtResource( 5 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bodypart" type="Label" parent="Panel"]
+anchor_left = 0.0195313
+anchor_top = 0.0233333
+anchor_right = 0.981445
+anchor_bottom = 0.148333
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 9 )
+text = "Mga Parte ng Katawan"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bodypart" type="Label" parent="Panel/bodypart"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 10 )
+text = "Mga Parte ng Katawan"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="Panel"]
+anchor_left = 0.0185547
+anchor_top = 0.133333
+anchor_right = 0.979492
+anchor_bottom = 0.203333
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 11 )
+text = "pumili sa dalawa"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="Panel/selectLevel"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 12 )
+text = "pumili sa dalawa"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Boi" type="Panel" parent="."]
+anchor_left = 0.136719
+anchor_top = 0.226667
+anchor_right = 0.433594
+anchor_bottom = 0.946667
+custom_styles/panel = SubResource( 13 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="boi" type="Label" parent="Boi"]
+anchor_left = 0.154605
+anchor_top = -0.00231481
+anchor_right = 0.848684
+anchor_bottom = 0.125
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 14 )
+text = "Lalaki"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="boi" type="Label" parent="Boi/boi"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 15 )
+text = "Lalaki"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="mahboi" type="TextureRect" parent="Boi"]
+anchor_left = 0.0493421
+anchor_top = 0.148148
+anchor_right = 0.953947
+anchor_bottom = 0.914352
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickBoi" type="Button" parent="Boi"]
+anchor_left = 0.138158
+anchor_top = 0.143519
+anchor_right = 0.855263
+anchor_bottom = 0.821759
+focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Gurl" type="Panel" parent="."]
+anchor_left = 0.56543
+anchor_top = 0.226667
+anchor_right = 0.862305
+anchor_bottom = 0.946667
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="gurl" type="Label" parent="Gurl"]
+anchor_left = 0.154605
+anchor_top = -0.00231481
+anchor_right = 0.848684
+anchor_bottom = 0.125
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 14 )
+text = "Babae"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="gurl" type="Label" parent="Gurl/gurl"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 15 )
+text = "Babae"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="mahgurl" type="TextureRect" parent="Gurl"]
+anchor_left = 0.0493421
+anchor_top = 0.148148
+anchor_right = 0.953947
+anchor_bottom = 0.914352
+texture = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickGurl" type="Button" parent="Gurl"]
+anchor_left = 0.138158
+anchor_top = 0.143519
+anchor_right = 0.855263
+anchor_bottom = 0.821759
+focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="Panel/GoBackButton" to="." method="_on_GoBackButton_pressed"]
+[connection signal="pressed" from="Boi/pickBoi" to="." method="_on_pickBoi_pressed"]
+[connection signal="pressed" from="Gurl/pickGurl" to="." method="_on_pickGurl_pressed"]

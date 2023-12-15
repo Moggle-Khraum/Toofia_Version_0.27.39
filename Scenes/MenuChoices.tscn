@@ -1,14 +1,14 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Scripts/MenuChoicesScript.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assets/Images/MenuChoice/ABC1.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Images/MenuChoice/FARM2.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/speakLogo.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/farmAnimals.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/LevelScroll.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Fonts/ButtonThemes.tres" type="Theme" id=7]
-[ext_resource path="res://Assets/Images/MenuChoice/fruitNvegs.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Images/MenuChoice/blankBox.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/humanbody.jpg" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Fruits4.png" type="Texture" id=9]
 [ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Images/background/board2.jpg" type="Texture" id=12]
@@ -16,7 +16,6 @@
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=15]
 [ext_resource path="res://Assets/GUI/Blue_Rectangle.png" type="Texture" id=16]
-[ext_resource path="res://Assets/Images/bodyparts/humanCards.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Images/pilot-logo.png" type="Texture" id=18]
 [ext_resource path="res://Assets/Icons/ic_launcher.png" type="Texture" id=19]
 [ext_resource path="res://Assets/GUI/Icon_Return.png" type="Texture" id=20]
@@ -207,7 +206,6 @@ anchor_right = 0.974609
 anchor_bottom = 1.27833
 grow_horizontal = 2
 grow_vertical = 2
-rect_min_size = Vector2( 978, 603.998 )
 mouse_filter = 1
 mouse_default_cursor_shape = 13
 size_flags_horizontal = 3
@@ -222,8 +220,8 @@ __meta__ = {
 scroll_duration = 0.3
 
 [node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
-margin_right = 2302.0
-margin_bottom = 236.0
+margin_right = 2254.0
+margin_bottom = 226.0
 mouse_filter = 2
 custom_constants/margin_right = 430
 custom_constants/margin_top = 10
@@ -236,8 +234,8 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer"]
 margin_left = 430.0
 margin_top = 10.0
-margin_right = 1872.0
-margin_bottom = 226.0
+margin_right = 1824.0
+margin_bottom = 216.0
 size_flags_horizontal = 5
 size_flags_vertical = 5
 theme = ExtResource( 7 )
@@ -248,8 +246,8 @@ __meta__ = {
 }
 
 [node name="Choice1" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer"]
-margin_right = 248.0
-margin_bottom = 216.0
+margin_right = 236.0
+margin_bottom = 206.0
 mouse_filter = 2
 texture = ExtResource( 9 )
 stretch_mode = 1
@@ -257,33 +255,18 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="fruits" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice1"]
-anchor_left = 0.0403226
-anchor_top = 0.0509259
-anchor_right = 0.947581
-anchor_bottom = 0.912037
-mouse_filter = 2
-texture = ExtResource( 8 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="CardMenu1" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice1"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -72.0
-margin_top = -69.5
-margin_right = 72.0
-margin_bottom = 69.5
+self_modulate = Color( 1, 1, 1, 0.32549 )
+anchor_left = 0.217262
+anchor_top = 0.281818
+anchor_right = 0.616071
+anchor_bottom = 0.636364
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
 __meta__ = {
-"_edit_lock_": true
+"_edit_lock_": true,
+"_edit_use_anchors_": true
 }
 
 [node name="prutasAtGulay" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice1"]
@@ -328,43 +311,27 @@ __meta__ = {
 }
 
 [node name="Choice2" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer"]
-margin_left = 398.0
-margin_right = 646.0
-margin_bottom = 216.0
+margin_left = 386.0
+margin_right = 622.0
+margin_bottom = 206.0
 mouse_filter = 2
-texture = ExtResource( 9 )
+texture = ExtResource( 5 )
 stretch_mode = 4
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="animals" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice2"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 25.0001
-margin_top = 19.9999
-margin_right = -19.9999
-margin_bottom = -19.0001
-texture = ExtResource( 5 )
-expand = true
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="CardMenu2" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice2"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -54.0
-margin_top = -49.0
-margin_right = 54.0
-margin_bottom = 49.0
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.305085
+anchor_top = 0.295652
+anchor_right = 0.65678
+anchor_bottom = 0.6
 focus_mode = 0
 enabled_focus_mode = 0
-flat = true
 __meta__ = {
-"_edit_lock_": true
+"_edit_lock_": true,
+"_edit_use_anchors_": true
 }
 
 [node name="farmanimals" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice2"]
@@ -409,42 +376,27 @@ __meta__ = {
 }
 
 [node name="Choice3" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer"]
-margin_left = 796.0
-margin_right = 1044.0
-margin_bottom = 216.0
+margin_left = 772.0
+margin_right = 1008.0
+margin_bottom = 206.0
 mouse_filter = 2
-texture = ExtResource( 9 )
+texture = ExtResource( 4 )
 stretch_mode = 4
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="alphabets" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice3"]
-anchor_left = 0.0635593
-anchor_top = 0.101852
-anchor_right = 0.940678
-anchor_bottom = 0.898148
-texture = ExtResource( 4 )
-expand = true
+[node name="CardMenu3" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice3"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.283898
+anchor_top = 0.278261
+anchor_right = 0.635593
+anchor_bottom = 0.582609
+focus_mode = 0
+enabled_focus_mode = 0
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
-}
-
-[node name="CardMenu3" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice3"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -62.0
-margin_top = -57.0
-margin_right = 62.0
-margin_bottom = 57.0
-focus_mode = 0
-enabled_focus_mode = 0
-flat = true
-__meta__ = {
-"_edit_lock_": true
 }
 
 [node name="alphabetpronouncation" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice3"]
@@ -492,60 +444,43 @@ __meta__ = {
 }
 
 [node name="Choice4" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer"]
-margin_left = 1194.0
-margin_right = 1442.0
-margin_bottom = 216.0
+margin_left = 1158.0
+margin_right = 1394.0
+margin_bottom = 206.0
 mouse_filter = 2
-texture = ExtResource( 9 )
-stretch_mode = 4
+theme = ExtResource( 7 )
+texture = ExtResource( 8 )
+stretch_mode = 6
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="bodyParts" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -117.5
-margin_top = -104.0
-margin_right = 117.5
-margin_bottom = 104.0
-texture = ExtResource( 17 )
-expand = true
+[node name="CardMenu4" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.34322
+anchor_top = 0.234783
+anchor_right = 0.694915
+anchor_bottom = 0.565217
+focus_mode = 0
+enabled_focus_mode = 0
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="CardMenu4" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -61.0
-margin_top = -59.0
-margin_right = 61.0
-margin_bottom = 59.0
-focus_mode = 0
-enabled_focus_mode = 0
-flat = true
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="body" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
-anchor_left = -0.0685484
-anchor_top = 0.847222
-anchor_right = 1.14919
-anchor_bottom = 1.0
-margin_bottom = -1.52588e-05
+[node name="bodyparts" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
+anchor_left = 0.0466102
+anchor_top = 0.757281
+anchor_right = 0.966102
+anchor_bottom = 1.00485
+margin_right = -1.52588e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 3
 custom_fonts/font = SubResource( 37 )
-text = "Mga Parte ng Katawan"
+text = "Bahagi ng
+Katawan ng Tao"
 align = 1
 valign = 1
 autowrap = true
@@ -556,7 +491,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="body" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4/body"]
+[node name="bodyparts" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4/bodyparts"]
 anchor_top = -0.105263
 anchor_right = 1.0
 anchor_bottom = 1.05263
@@ -564,7 +499,8 @@ custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 36 )
-text = "Mga Parte ng Katawan"
+text = "Bahagi ng
+Katawan ng Tao"
 align = 1
 valign = 1
 autowrap = true
@@ -690,9 +626,7 @@ anchor_left = 0.130574
 anchor_top = 0.1875
 anchor_right = 1.0
 anchor_bottom = 0.8125
-focus_mode = 0
 custom_fonts/font = SubResource( 26 )
-enabled_focus_mode = 0
 flat = true
 __meta__ = {
 "_edit_lock_": true,
