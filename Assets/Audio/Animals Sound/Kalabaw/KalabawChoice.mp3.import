@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/kalabawChoice.mp3-824ac0225bc772ea25c4ecf14bab53d0.mp3str"
+path="res://.import/KalabawChoice.mp3-418be8a6d19a02e2876f07a3f0a93ce9.mp3str"
 
 [deps]
 
-source_file="res://Assets/Audio/Animals Sound/Kalabaw/kalabawChoice.mp3"
-dest_files=[ "res://.import/kalabawChoice.mp3-824ac0225bc772ea25c4ecf14bab53d0.mp3str" ]
+source_file="res://Assets/Audio/Animals Sound/Kalabaw/KalabawChoice.mp3"
+dest_files=[ "res://.import/KalabawChoice.mp3-418be8a6d19a02e2876f07a3f0a93ce9.mp3str" ]
 
 [params]
 

@@ -86,6 +86,32 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="Button" type="Button" parent="frontCard"]
+anchor_left = 0.213836
+anchor_top = 0.206977
+anchor_right = 0.833333
+anchor_bottom = 0.672093
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Panel" type="Panel" parent="frontCard"]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0410095
+anchor_top = 0.123256
+anchor_right = 0.965301
+anchor_bottom = 0.697674
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="nextCard2" type="TextureRect" parent="."]
 unique_name_in_owner = true
 self_modulate = Color( 1, 1, 1, 0 )
@@ -248,6 +274,9 @@ texture = ExtResource( 10 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="part" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
 
 [connection signal="pressed" from="goBack" to="." method="_on_goBack_pressed"]
 [connection signal="animation_finished" from="AnimLeft" to="." method="_on_AnimLeft_animation_finished"]

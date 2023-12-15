@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://Assets/Images/bodyparts/ankle.png" type="Texture" id=6]
 [ext_resource path="res://Levels/BodyParts/Flashcards/AnkleMain.gd" type="Script" id=7]
 [ext_resource path="res://Assets/Images/bodyparts/footCard.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Images/bodyparts/coverShade.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Images/bodyparts/calfCard.png" type="Texture" id=10]
 [ext_resource path="res://Assets/UIElements/Icon_Right.png" type="Texture" id=11]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=12]
@@ -157,6 +156,32 @@ anchor_top = 0.146512
 anchor_right = 0.915094
 anchor_bottom = 0.686047
 flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Button" type="Button" parent="frontCard"]
+anchor_left = 0.213836
+anchor_top = 0.206977
+anchor_right = 0.833333
+anchor_bottom = 0.672093
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Panel" type="Panel" parent="frontCard"]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0410095
+anchor_top = 0.123256
+anchor_right = 0.965301
+anchor_bottom = 0.697674
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -316,15 +341,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="NinePatchRect2" type="NinePatchRect" parent="."]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
+[node name="part" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
 
+[connection signal="pressed" from="frontCard/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="goBack" to="." method="_on_goBack_pressed"]
 [connection signal="animation_finished" from="AnimLeft" to="." method="_on_AnimLeft_animation_finished"]
 [connection signal="pressed" from="ButtonLeft" to="." method="_on_ButtonLeft_pressed"]
+[connection signal="finished" from="part" to="." method="_on_part_finished"]
