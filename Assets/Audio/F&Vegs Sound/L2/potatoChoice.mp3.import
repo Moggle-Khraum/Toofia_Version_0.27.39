@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/potatoChoice.mp3-812aff231ecbc9b600c2cd0b5b015fa7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L2/potatoChoice.mp3"
+dest_files=[ "res://.import/potatoChoice.mp3-812aff231ecbc9b600c2cd0b5b015fa7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/The-Monkey-Island-Band-Returns.mp3-e1cc51e94a5c2fff426c5c489c8154d1.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/The-Monkey-Island-Band-Returns.mp3"
+dest_files=[ "res://.import/The-Monkey-Island-Band-Returns.mp3-e1cc51e94a5c2fff426c5c489c8154d1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

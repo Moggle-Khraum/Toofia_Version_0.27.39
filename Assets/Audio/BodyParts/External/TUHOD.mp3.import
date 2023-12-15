@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/TUHOD.mp3-2d597d0bb2821ef2b02fb815fb9e6008.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/TUHOD.mp3"
+dest_files=[ "res://.import/TUHOD.mp3-2d597d0bb2821ef2b02fb815fb9e6008.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

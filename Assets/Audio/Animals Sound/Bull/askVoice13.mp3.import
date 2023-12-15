@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice13.mp3-0d7104fea0780e7eb054c0423cbacb1d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Bull/askVoice13.mp3"
+dest_files=[ "res://.import/askVoice13.mp3-0d7104fea0780e7eb054c0423cbacb1d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoFrog.mp3-95ded79c52688f31cf380241429c8521.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Frog/infoFrog.mp3"
+dest_files=[ "res://.import/infoFrog.mp3-95ded79c52688f31cf380241429c8521.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

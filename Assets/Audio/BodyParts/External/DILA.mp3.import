@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DILA.mp3-cd4a896d068c6b3a50d4d1061405eb26.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/DILA.mp3"
+dest_files=[ "res://.import/DILA.mp3-cd4a896d068c6b3a50d4d1061405eb26.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

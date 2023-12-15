@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cornQuestion.mp3-d7f6e4bff201181a1872482f6c5859e5.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L12/cornQuestion.mp3"
+dest_files=[ "res://.import/cornQuestion.mp3-d7f6e4bff201181a1872482f6c5859e5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

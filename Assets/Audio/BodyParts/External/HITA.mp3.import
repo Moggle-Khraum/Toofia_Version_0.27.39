@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/HITA.mp3-bbe659045d03e6a7adc96de7129269ab.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/HITA.mp3"
+dest_files=[ "res://.import/HITA.mp3-bbe659045d03e6a7adc96de7129269ab.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

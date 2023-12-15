@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DALIRI.SA.KAMAY.mp3-96738b3e7fb3e7edf00ee81b66f3a51f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/DALIRI.SA.KAMAY.mp3"
+dest_files=[ "res://.import/DALIRI.SA.KAMAY.mp3-96738b3e7fb3e7edf00ee81b66f3a51f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

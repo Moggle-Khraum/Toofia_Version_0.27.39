@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sheepbleat.mp3-9666a1e8a995fedd89f33f0ccd8c45f9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Sheep/sheepbleat.mp3"
+dest_files=[ "res://.import/sheepbleat.mp3-9666a1e8a995fedd89f33f0ccd8c45f9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

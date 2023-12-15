@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/NGng.mp3-e9b84a447f6aec36443cb7b3945a80c8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/NGng.mp3"
+dest_files=[ "res://.import/NGng.mp3-e9b84a447f6aec36443cb7b3945a80c8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Nn.mp3-0744d95cad6ae4e19e694f6736e6cd76.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/Nn.mp3"
+dest_files=[ "res://.import/Nn.mp3-0744d95cad6ae4e19e694f6736e6cd76.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

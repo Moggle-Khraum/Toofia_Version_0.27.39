@@ -7,6 +7,7 @@ func _ready():
 	print("Opening Gate")
 	# Call the open_gate function to start the animation
 	open_gate()
+	$'%intro'.play()
 	
 
 func open_gate():
@@ -64,3 +65,5 @@ func gate_closed():
 	#Changes into the next scene
 	var _nextLoad = get_tree().change_scene("res://Scenes/LoadingScreen.tscn")
 	print("Going to Loading Screen")
+
+

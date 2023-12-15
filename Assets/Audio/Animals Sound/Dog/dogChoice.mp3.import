@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dogChoice.mp3-3dbb40c860c6bcc982d5483521429693.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Dog/dogChoice.mp3"
+dest_files=[ "res://.import/dogChoice.mp3-3dbb40c860c6bcc982d5483521429693.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

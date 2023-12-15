@@ -6,8 +6,8 @@
 [ext_resource path="res://Assets/Fonts/Titillium-BoldItalic.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://Assets/Fonts/Titillium-Bold.otf" type="DynamicFontData" id=5]
 [ext_resource path="res://Assets/Fonts/Titillium-RegularItalic.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/Images/background/abc.png" type="Texture" id=7]
 [ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=8]
-[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=10]
 [ext_resource path="res://Assets/GUI/gears2d2.png" type="Texture" id=11]
 [ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Blue_Circle.png" type="Texture" id=12]
@@ -182,7 +182,7 @@ __meta__ = {
 margin_right = 915.0
 margin_bottom = 500.0
 rect_min_size = Vector2( 915, 500 )
-texture = ExtResource( 9 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_lock_": true
 }

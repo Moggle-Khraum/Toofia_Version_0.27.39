@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LIKOD.mp3-a91ee019ac44212d9535ef125033af3d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/LIKOD.mp3"
+dest_files=[ "res://.import/LIKOD.mp3-a91ee019ac44212d9535ef125033af3d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

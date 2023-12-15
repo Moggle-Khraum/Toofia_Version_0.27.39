@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pinyaQuestion.mp3-d58ca6d2d7915ef80a6ad877cd5dd2d4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L8/pinyaQuestion.mp3"
+dest_files=[ "res://.import/pinyaQuestion.mp3-d58ca6d2d7915ef80a6ad877cd5dd2d4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

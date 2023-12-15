@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SiliQues.mp3-ef9eeff02a47f346493de52b29efd541.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L17/SiliQues.mp3"
+dest_files=[ "res://.import/SiliQues.mp3-ef9eeff02a47f346493de52b29efd541.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

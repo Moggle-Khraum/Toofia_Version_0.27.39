@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Fruit.mp3-18fe493d65cb508dbbb626a3fe6f2d88.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Music/Fruit.mp3"
+dest_files=[ "res://.import/Fruit.mp3-18fe493d65cb508dbbb626a3fe6f2d88.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

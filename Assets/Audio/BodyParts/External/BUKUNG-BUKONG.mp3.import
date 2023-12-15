@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BUKUNG-BUKONG.mp3-55128efc37b20b71e660cc54645c89c8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/BUKUNG-BUKONG.mp3"
+dest_files=[ "res://.import/BUKUNG-BUKONG.mp3-55128efc37b20b71e660cc54645c89c8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

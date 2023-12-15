@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/durianQuest.mp3-a11f5c5194161be165c8980954aae26d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L13/durianQuest.mp3"
+dest_files=[ "res://.import/durianQuest.mp3-a11f5c5194161be165c8980954aae26d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

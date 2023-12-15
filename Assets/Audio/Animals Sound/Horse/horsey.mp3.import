@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/horsey.mp3-a16e6491d866b3174a554ce685aed3d3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Horse/horsey.mp3"
+dest_files=[ "res://.import/horsey.mp3-a16e6491d866b3174a554ce685aed3d3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

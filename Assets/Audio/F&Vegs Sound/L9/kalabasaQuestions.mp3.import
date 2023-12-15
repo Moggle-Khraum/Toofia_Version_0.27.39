@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/kalabasaQuestions.mp3-d8a80a548fa4c2217231e0feeaff5b7b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L9/kalabasaQuestions.mp3"
+dest_files=[ "res://.import/kalabasaQuestions.mp3-d8a80a548fa4c2217231e0feeaff5b7b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

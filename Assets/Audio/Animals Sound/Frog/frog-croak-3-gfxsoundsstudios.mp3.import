@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/frog-croak-3-gfxsoundsstudios.mp3-27a6b75e17a008d522f8076f871926a7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Frog/frog-croak-3-gfxsoundsstudios.mp3"
+dest_files=[ "res://.import/frog-croak-3-gfxsoundsstudios.mp3-27a6b75e17a008d522f8076f871926a7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

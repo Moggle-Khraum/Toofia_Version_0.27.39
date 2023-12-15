@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/snakeHiss.mp3-1f414db77dbd6cc5117f4c13e4571aee.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Ahas/snakeHiss.mp3"
+dest_files=[ "res://.import/snakeHiss.mp3-1f414db77dbd6cc5117f4c13e4571aee.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/malunggayQuestion.mp3-ca4bac4b672cdd28872d23980cde37fd.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L15/malunggayQuestion.mp3"
+dest_files=[ "res://.import/malunggayQuestion.mp3-ca4bac4b672cdd28872d23980cde37fd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

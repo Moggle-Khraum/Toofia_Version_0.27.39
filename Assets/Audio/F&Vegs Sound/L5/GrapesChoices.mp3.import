@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GrapesChoices.mp3-a6e313f1fa21c5f77758a2818667c228.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L5/GrapesChoices.mp3"
+dest_files=[ "res://.import/GrapesChoices.mp3-a6e313f1fa21c5f77758a2818667c228.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

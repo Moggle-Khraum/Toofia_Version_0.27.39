@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ILONG.mp3-cf15892d96510fc900f5501efa2946ed.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/ILONG.mp3"
+dest_files=[ "res://.import/ILONG.mp3-cf15892d96510fc900f5501efa2946ed.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

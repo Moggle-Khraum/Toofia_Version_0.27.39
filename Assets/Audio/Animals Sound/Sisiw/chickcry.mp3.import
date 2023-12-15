@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chickcry.mp3-21dbe86ded743f1d6cef9d9fd0bc8fff.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Sisiw/chickcry.mp3"
+dest_files=[ "res://.import/chickcry.mp3-21dbe86ded743f1d6cef9d9fd0bc8fff.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

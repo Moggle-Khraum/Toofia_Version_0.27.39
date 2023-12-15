@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AvocadoChoices.mp3-770aa9d46fe024847822eb81eaf6ae90.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L4/AvocadoChoices.mp3"
+dest_files=[ "res://.import/AvocadoChoices.mp3-770aa9d46fe024847822eb81eaf6ae90.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

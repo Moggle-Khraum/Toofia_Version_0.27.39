@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Silly Fun - Alexander Blu.mp3-76cfca7de3a0e521067234591cf42e43.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Silly Fun - Alexander Blu.mp3"
+dest_files=[ "res://.import/Silly Fun - Alexander Blu.mp3-76cfca7de3a0e521067234591cf42e43.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

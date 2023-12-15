@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Choices.mp3-8d045cd9033dfad8602eec4f28ae66d0.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Gansa/Choices.mp3"
+dest_files=[ "res://.import/Choices.mp3-8d045cd9033dfad8602eec4f28ae66d0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

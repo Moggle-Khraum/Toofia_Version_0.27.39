@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/Audio/levelsAudio/SFX/Wrong Answer.wav" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Audio/Animals Sound/SFX/Wrong Answer.wav" type="AudioStream" id=1]
 
 [node name="wrongAnswer" type="AudioStreamPlayer"]
 stream = ExtResource( 1 )

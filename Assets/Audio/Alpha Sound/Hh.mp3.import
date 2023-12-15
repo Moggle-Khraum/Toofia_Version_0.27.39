@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hh.mp3-03f408161adbe5741458323517d898be.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/Hh.mp3"
+dest_files=[ "res://.import/Hh.mp3-03f408161adbe5741458323517d898be.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

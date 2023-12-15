@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/TAINGA.mp3-c785fe8b846607a5b73b5ca657db1a3b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/TAINGA.mp3"
+dest_files=[ "res://.import/TAINGA.mp3-c785fe8b846607a5b73b5ca657db1a3b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoGoat.mp3-21a6368c82292c3f9673ca99bb935db2.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Goat/infoGoat.mp3"
+dest_files=[ "res://.import/infoGoat.mp3-21a6368c82292c3f9673ca99bb935db2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoGansa.mp3-4c09c9d71792a2ab10e46b83a28a9eeb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Gansa/infoGansa.mp3"
+dest_files=[ "res://.import/infoGansa.mp3-4c09c9d71792a2ab10e46b83a28a9eeb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

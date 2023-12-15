@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askSnake.mp3-0d8434722ea8ddc65dbe59ee35d104e1.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Ahas/askSnake.mp3"
+dest_files=[ "res://.import/askSnake.mp3-0d8434722ea8ddc65dbe59ee35d104e1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

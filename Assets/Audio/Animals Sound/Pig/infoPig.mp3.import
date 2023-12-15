@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoPig.mp3-88b2ec2f6d647aeb765b65ce9f7e60a6.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Pig/infoPig.mp3"
+dest_files=[ "res://.import/infoPig.mp3-88b2ec2f6d647aeb765b65ce9f7e60a6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

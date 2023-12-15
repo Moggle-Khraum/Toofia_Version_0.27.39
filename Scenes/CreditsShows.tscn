@@ -6,7 +6,6 @@
 [ext_resource path="res://Assets/Fonts/Titillium-Bold.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://Assets/Fonts/Titillium-Regular.otf" type="DynamicFontData" id=5]
 [ext_resource path="res://Assets/Fonts/Titillium-BoldItalic.otf" type="DynamicFontData" id=6]
-[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=7]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle_Pressed.png" type="Texture" id=8]
 [ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=9]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Home.png" type="Texture" id=10]
@@ -14,6 +13,7 @@
 [ext_resource path="res://Assets/UIElements/Icon_Award.png" type="Texture" id=12]
 [ext_resource path="res://Assets/UIElements/Icon_SqiuareTilt.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=14]
+[ext_resource path="res://Assets/Images/background/wall3.png" type="Texture" id=15]
 
 [sub_resource type="DynamicFont" id=17]
 size = 37
@@ -48,7 +48,8 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 corner_detail = 10
-expand_margin_left = 25.0
+expand_margin_left = 22.0
+expand_margin_top = 3.0
 
 [sub_resource type="StyleBoxFlat" id=30]
 border_width_left = 5
@@ -155,7 +156,7 @@ __meta__ = {
 [node name="CenterContainer" type="NinePatchRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 7 )
+texture = ExtResource( 15 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -309,7 +310,7 @@ Alpha Tester at Kasamang Responsable sa Dokumentasyon
 Ang Pangunahing Responsable sa Dokumentasyon ng Proyekto, Pangunahing
 Tagapagdisenyo, Kasamang Mangongolekta ng Datos,  at Pangunahing Beta Tester
 
-[b] -[u] Karen Samaranos[/u][/b]
+[b] -[u] Karen G. Samaranos BSIT-4[/u][/b]
 Ang Kasamang Responsable sa Dokumentasyon ng Proyekto, Pangunahing Pagsusuri
 ng Kalidad, Pangunahing Mangongolekta ng Datos, at Kasamang Beta Tester[/center]
 
@@ -320,11 +321,11 @@ ng Kalidad, Pangunahing Mangongolekta ng Datos, at Kasamang Beta Tester[/center]
 
 [center][b] Para sa Musika ng Laro[/b][/center]
 
-[center][b]Jan 'Tzaot' Schulte[/b] | [b]Ismael Cobble[/b] | [b]Eric Matyas[/b] | [b]Moodmode[/b] | [b] Nojisuma[/b]
+[center][b]Jan 'Tzaot' Schulte[/b] | [b]Ismael Cobble[/b] | [b]Eric Matyas[/b] | [b]Moodmode[/b] | [b] Nojisuma[/b] | [b] Alexander Blu[/b]
 
 [i][u]Para sa mga sumusunod :[/u][/i]
 Intro, Idle & Mellow Tune, More Monkey Island Band & The Monkey Island
-Band Returns, Running Through The Jungle, at Fruit [/center]
+Band Returns, Running Through The Jungle,  Fruit, at Silly [/center]
 
 [center][b]Para sa Sound Effects(SFX) ng Laro :[/b][/center]
 
@@ -393,7 +394,7 @@ Alpha Tester at Kasamang Responsable sa Dokumentasyon
 Ang Pangunahing Responsable sa Dokumentasyon ng Proyekto, Pangunahing
 Tagapagdisenyo, Kasamang Mangongolekta ng Datos,  at Pangunahing Beta Tester
 
- - Karen Samaranos
+ - Karen G. Samaranos BSIT-4
 Ang Kasamang Responsable sa Dokumentasyon ng Proyekto, Pangunahing Pagsusuri
 ng Kalidad, Pangunahing Mangongolekta ng Datos, at Kasamang Beta Tester
 
@@ -404,11 +405,11 @@ Mga Taong may Parte sa Proyekto
 
  Para sa Musika ng Laro
 
-Jan 'Tzaot' Schulte | Ismael Cobble | Eric Matyas | Moodmode |  Nojisuma
+Jan 'Tzaot' Schulte | Ismael Cobble | Eric Matyas | Moodmode |  Nojisuma |  Alexander Blu
 
 Para sa mga sumusunod :
 Intro, Idle & Mellow Tune, More Monkey Island Band & The Monkey Island
-Band Returns, Running Through The Jungle, at Fruit 
+Band Returns, Running Through The Jungle,  Fruit, at Silly 
 
 Para sa Sound Effects(SFX) ng Laro :
 

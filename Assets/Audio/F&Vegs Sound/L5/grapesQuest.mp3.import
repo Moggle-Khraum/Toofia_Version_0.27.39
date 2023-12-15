@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/grapesQuest.mp3-12763d3af05e6b1d2b738cf40d7f1e56.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L5/grapesQuest.mp3"
+dest_files=[ "res://.import/grapesQuest.mp3-12763d3af05e6b1d2b738cf40d7f1e56.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

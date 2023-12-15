@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bullgroan.mp3-c71300b2cf1c07460ee935406f567b34.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Bull/bullgroan.mp3"
+dest_files=[ "res://.import/bullgroan.mp3-c71300b2cf1c07460ee935406f567b34.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,906 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://Levels/FarmAnimas/MgaHayopSaBukid.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Images/background/rainbow.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=5]
+[ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/horse.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/tupa.png" type="Texture" id=9]
+[ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/unggoy.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/gansa.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/bird.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Images/background/black.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/ahas.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/chicken.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/cat.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/goat.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/rat.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Audio/Music/Running_Through_The_Jungle.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/carabao.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/palaka.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Themes/levelsTheme.tres" type="Theme" id=23]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/dog.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/rabbit.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/Sisiw.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/duck.png" type="Texture" id=27]
+
+[sub_resource type="Theme" id=6]
+
+[sub_resource type="DynamicFont" id=10]
+size = 60
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+extra_spacing_char = -3
+font_data = ExtResource( 7 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 60
+use_filter = true
+extra_spacing_char = -3
+font_data = ExtResource( 7 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 32
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 7 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 32
+use_filter = true
+font_data = ExtResource( 7 )
+fallback/0 = ExtResource( 3 )
+
+[node name="MgaHayopSaBukid" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+unique_name_in_owner = true
+anchor_left = 0.0742188
+anchor_top = 0.218333
+anchor_right = 0.927735
+anchor_bottom = 0.968333
+theme = ExtResource( 23 )
+scroll_vertical_enabled = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Control" type="Control" parent="Panel/ScrollContainer"]
+margin_right = 1763.0
+margin_bottom = 450.0
+rect_min_size = Vector2( 1763, 450 )
+rect_clip_content = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/ScrollContainer/Control"]
+anchor_right = 1.0
+anchor_bottom = 0.444444
+margin_bottom = 0.000198364
+rect_min_size = Vector2( 880, 200 )
+custom_constants/separation = 22
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Manok" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Manok"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 8.0
+margin_right = -3.0
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Manok"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -76.0
+margin_top = -71.0
+margin_right = 69.0
+margin_bottom = 69.0
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pusa" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 222.0
+margin_right = 422.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+theme = SubResource( 6 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="2" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Pusa"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.99994
+margin_top = 7.0002
+margin_right = -7.00006
+margin_bottom = -7.9998
+texture = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="2Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Pusa"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -67.0
+margin_top = -74.0
+margin_right = 71.0
+margin_bottom = 71.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Kalabaw" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 444.0
+margin_right = 644.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="3" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Kalabaw"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.99994
+margin_top = 12.0002
+margin_right = -6.00006
+margin_bottom = 0.000198364
+texture = ExtResource( 21 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="3Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Kalabaw"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -69.0
+margin_top = -78.0
+margin_right = 78.0
+margin_bottom = 71.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Aso" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 666.0
+margin_right = 866.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="4" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Aso"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 6.0
+margin_right = -7.0
+texture = ExtResource( 24 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="4Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Aso"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -68.0
+margin_top = -75.0
+margin_right = 70.0
+margin_bottom = 72.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Kuneho" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 888.0
+margin_right = 1088.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="5" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Kuneho"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 30.9999
+margin_top = 11.0002
+margin_right = -7.00009
+margin_bottom = 0.000198364
+texture = ExtResource( 25 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="5Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Kuneho"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Daga" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 1110.0
+margin_right = 1310.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="6" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Daga"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 34.0002
+margin_right = 2.0
+margin_bottom = -13.9998
+texture = ExtResource( 19 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="6Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Daga"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Tupa" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 1332.0
+margin_right = 1532.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="7" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Tupa"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 4.0
+margin_right = -6.0
+texture = ExtResource( 9 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="7Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Tupa"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Gansa" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer"]
+margin_left = 1554.0
+margin_right = 1754.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="8" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer/Gansa"]
+anchor_left = 0.135
+anchor_top = 0.05
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="8Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer/Gansa"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -67.0
+margin_top = -68.0
+margin_right = 71.0
+margin_bottom = 68.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer0" type="HBoxContainer" parent="Panel/ScrollContainer/Control"]
+anchor_top = 0.444444
+anchor_right = 1.0
+anchor_bottom = 0.888889
+margin_top = 20.0002
+margin_bottom = 20.0002
+rect_min_size = Vector2( 880, 200 )
+custom_constants/separation = 22
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Kambing" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="9" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Kambing"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 7.0
+margin_right = -3.0
+margin_bottom = -3.0
+texture = ExtResource( 18 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="9Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Kambing"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ibon" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+margin_left = 222.0
+margin_right = 422.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="10" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Ibon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 15.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = -20.0
+texture = ExtResource( 13 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="10Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Ibon"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -67.0
+margin_top = -74.0
+margin_right = 75.0
+margin_bottom = 72.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Pato" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+margin_left = 444.0
+margin_right = 644.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="11" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Pato"]
+anchor_left = 0.095
+anchor_top = 0.065
+anchor_right = 0.94
+anchor_bottom = 0.9
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="11Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Pato"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -69.0
+margin_top = -69.0
+margin_right = 73.0
+margin_bottom = 70.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Kabayo" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+margin_left = 666.0
+margin_right = 866.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="12" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Kabayo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 11.0
+margin_top = 16.0
+margin_right = -10.0
+margin_bottom = -10.0
+texture = ExtResource( 8 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="12Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Kabayo"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -69.0
+margin_top = -76.0
+margin_right = 76.0
+margin_bottom = 72.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ahas" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+margin_left = 888.0
+margin_right = 1088.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="13" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Ahas"]
+anchor_left = 0.135
+anchor_top = 0.105001
+anchor_right = 0.895
+anchor_bottom = 0.920001
+texture = ExtResource( 15 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="13Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Ahas"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -74.0
+margin_top = -73.0
+margin_right = 71.0
+margin_bottom = 72.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Palaka" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+margin_left = 1110.0
+margin_right = 1310.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="14" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Palaka"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 33.0
+margin_top = 27.0
+margin_right = -30.0
+margin_bottom = -31.0
+texture = ExtResource( 22 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="14Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Palaka"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -70.0
+margin_top = -74.0
+margin_right = 77.0
+margin_bottom = 70.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Unggoy" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+margin_left = 1332.0
+margin_right = 1532.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="15" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Unggoy"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -81.0
+margin_top = -85.9998
+margin_right = 79.0
+margin_bottom = 87.0002
+texture = ExtResource( 11 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="15Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Unggoy"]
+anchor_left = 0.15
+anchor_top = 0.13
+anchor_right = 0.875
+anchor_bottom = 0.845
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Sisiw" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0"]
+margin_left = 1554.0
+margin_right = 1754.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="16" type="TextureRect" parent="Panel/ScrollContainer/Control/HBoxContainer0/Sisiw"]
+anchor_left = 0.115
+anchor_top = 0.125
+anchor_right = 0.895
+anchor_bottom = 0.88
+texture = ExtResource( 26 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="16Button" type="Button" parent="Panel/ScrollContainer/Control/HBoxContainer0/Sisiw"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -65.0
+margin_top = -76.0
+margin_right = 74.0
+margin_bottom = 69.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="farmAnimals" type="Label" parent="Panel"]
+anchor_left = 0.0751953
+anchor_top = 0.0233333
+anchor_right = 0.919922
+anchor_bottom = 0.148333
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 10 )
+text = "mga hayop sa bukid"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="farmAnimals" type="Label" parent="Panel/farmAnimals"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 11 )
+text = "mga hayop sa bukid"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="Panel"]
+visible = false
+anchor_left = 0.149414
+anchor_top = 0.113333
+anchor_right = 0.84668
+anchor_bottom = 0.238333
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 12 )
+text = "pumili ng level sa ibaba"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="selectLevel" type="Label" parent="Panel/selectLevel"]
+visible = false
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 13 )
+text = "pumili ng level sa ibaba"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LeftButton" type="Button" parent="Panel"]
+anchor_left = 0.0185547
+anchor_top = 0.465
+anchor_right = 0.0742188
+anchor_bottom = 0.681667
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 6 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="RightButton" type="Button" parent="Panel"]
+anchor_left = 0.920898
+anchor_top = 0.458333
+anchor_right = 0.976563
+anchor_bottom = 0.675
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 10 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="GoBackButton2" type="Button" parent="Panel"]
+anchor_left = 0.897461
+anchor_top = 0.025
+anchor_right = 0.980469
+anchor_bottom = 0.165
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pressedX" type="TextureRect" parent="Panel/GoBackButton2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 23.0
+margin_top = 19.0
+margin_right = -22.0
+margin_bottom = -23.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="animalsTheme" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 20 )
+bus = "Music"
+
+[connection signal="visibility_changed" from="." to="." method="_on_MgaHayopSaBukid_visibility_changed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Manok/1Button" to="." method="_on_1Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Pusa/2Button" to="." method="_on_2Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Kalabaw/3Button" to="." method="_on_3Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Aso/4Button" to="." method="_on_4Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Kuneho/5Button" to="." method="_on_5Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Daga/6Button" to="." method="_on_6Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Tupa/7Button" to="." method="_on_7Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer/Gansa/8Button" to="." method="_on_8Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Kambing/9Button" to="." method="_on_9Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Ibon/10Button" to="." method="_on_10Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Pato/11Button" to="." method="_on_11Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Kabayo/12Button" to="." method="_on_12Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Ahas/13Button" to="." method="_on_13Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Palaka/14Button" to="." method="_on_14Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Unggoy/15Button" to="." method="_on_15Button_pressed"]
+[connection signal="pressed" from="Panel/ScrollContainer/Control/HBoxContainer0/Sisiw/16Button" to="." method="_on_16Button_pressed"]
+[connection signal="pressed" from="Panel/LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="Panel/RightButton" to="." method="_on_RightButton_pressed"]
+[connection signal="pressed" from="Panel/GoBackButton2" to="." method="_on_GoBackButton_pressed"]

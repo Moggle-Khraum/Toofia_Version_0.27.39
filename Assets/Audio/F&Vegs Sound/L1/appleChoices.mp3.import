@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/appleChoices.mp3-1b6bd0d17c38c01f04ec505a9c62f246.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L1/appleChoices.mp3"
+dest_files=[ "res://.import/appleChoices.mp3-1b6bd0d17c38c01f04ec505a9c62f246.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

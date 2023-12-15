@@ -1,88 +1,94 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/LevelsPopupLogicDummy.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GUI/Icon_X.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/notyetready.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
-resource_local_to_scene = true
-size = 52
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-extra_spacing_top = 6
-font_data = ExtResource( 1 )
+size = 60
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+extra_spacing_char = -3
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 60
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 1 )
+use_filter = true
+extra_spacing_char = -3
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 1 )
 
-[node name="Control" type="Node"]
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-self_modulate = Color( 1, 1, 1, 0.694118 )
+[node name="Panel" type="Panel" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="TransparentBG" type="Panel" parent="MarginContainer"]
-self_modulate = Color( 1, 1, 1, 0.458824 )
-show_behind_parent = true
-margin_right = 1024.0
-margin_bottom = 600.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.0
+margin_top = 102.0
+texture = ExtResource( 6 )
+expand = true
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_left = 0.0458984
-anchor_top = 0.0733333
-anchor_right = 0.955078
-anchor_bottom = 0.928333
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Popup" type="PanelContainer" parent="CenterContainer"]
-margin_right = 931.0
-margin_bottom = 513.0
-rect_min_size = Vector2( 931, 513 )
+[node name="ExitButton" type="Button" parent="."]
+anchor_left = 0.897461
+anchor_top = 0.025
+anchor_right = 0.980469
+anchor_bottom = 0.165
+focus_mode = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-[node name="Panel" type="Panel" parent="CenterContainer/Popup"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 924.0
-margin_bottom = 506.0
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="ExitButton" type="Button" parent="CenterContainer/Popup/Panel"]
-anchor_left = 0.91413
-anchor_top = 0.0180723
-anchor_right = 0.990217
-anchor_bottom = 0.138554
-clip_text = true
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+flat = true
+icon_align = 1
+expand_icon = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="Label" type="Label" parent="CenterContainer/Popup/Panel/ExitButton"]
+[node name="pressedX" type="TextureRect" parent="ExitButton"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 5
+margin_left = 23.0
+margin_top = 19.0
+margin_right = -22.0
+margin_bottom = -23.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="guides" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -257.0
+margin_right = 257.0
+margin_bottom = 75.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 1 )
-text = "X"
+text = "Mga Gabay"
 align = 1
 valign = 1
 autowrap = true
@@ -92,17 +98,15 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="NoteLabel" type="Label" parent="CenterContainer/Popup/Panel"]
-anchor_left = 0.106931
-anchor_top = 0.262799
-anchor_right = 0.886139
-anchor_bottom = 0.726962
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 7
+[node name="guides" type="Label" parent="guides"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
 custom_fonts/font = SubResource( 2 )
-text = "This is a Popup Scene
-Click the 'X' to go back"
+text = "Mga Gabay"
 align = 1
 valign = 1
 autowrap = true
@@ -113,4 +117,4 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[connection signal="pressed" from="CenterContainer/Popup/Panel/ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]

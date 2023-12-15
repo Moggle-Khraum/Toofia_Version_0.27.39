@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoAsno.mp3-173458103016daa269216eb0784dd23b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Donkey/infoAsno.mp3"
+dest_files=[ "res://.import/infoAsno.mp3-173458103016daa269216eb0784dd23b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

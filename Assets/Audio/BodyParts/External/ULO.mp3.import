@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ULO.mp3-481b3665aa17610ee6c9da927ba4bc7f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/ULO.mp3"
+dest_files=[ "res://.import/ULO.mp3-481b3665aa17610ee6c9da927ba4bc7f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

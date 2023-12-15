@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/TalongQuest.mp3-fa730f66ae35076e464edb656c9d4efb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L7/TalongQuest.mp3"
+dest_files=[ "res://.import/TalongQuest.mp3-fa730f66ae35076e464edb656c9d4efb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

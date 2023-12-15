@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/TIYAN.mp3-80a2987f662d24e06379396e5ee3035b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/TIYAN.mp3"
+dest_files=[ "res://.import/TIYAN.mp3-80a2987f662d24e06379396e5ee3035b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

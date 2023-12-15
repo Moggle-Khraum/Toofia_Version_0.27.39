@@ -1,0 +1,2469 @@
+[gd_scene load_steps=65 format=2]
+
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GUI/Box_Rounded.png" type="Texture" id=5]
+[ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Pause.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=8]
+[ext_resource path="res://Levels/FarmAnimas/8Kabayo/Level_8MHSB.gd" type="Script" id=9]
+[ext_resource path="res://Assets/BoxesBanners/Box_Blank_Square.png" type="Texture" id=10]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=11]
+[ext_resource path="res://Assets/BoxesBanners/Box_WhiteOutline_Square.png" type="Texture" id=12]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_Menu_Grey.png" type="Texture" id=13]
+[ext_resource path="res://Levels/FarmAnimas/8Kabayo/PausePanel8.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Assets/Audio/Animals Sound/Horse/choiceA.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Assets/Audio/Animals Sound/Horse/horsey.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Assets/Audio/Animals Sound/Horse/infoHorse.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Assets/Audio/Animals Sound/Horse/askVoice8.mp3" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Images/Animals(canva.source)/horse.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Audio/Mali.mp3" type="AudioStream" id=22]
+[ext_resource path="res://Assets/Audio/Tama.mp3" type="AudioStream" id=23]
+[ext_resource path="res://Assets/UIElements/Item4.png" type="Texture" id=26]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_Star_WhiteOutline.png" type="Texture" id=27]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Return.png" type="Texture" id=28]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_StarGrey_WhiteOutline.png" type="Texture" id=29]
+[ext_resource path="res://Assets/BoxesBanners/Box_Orange_Square.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintB.otf" type="DynamicFontData" id=31]
+[ext_resource path="res://Assets/Images/background/farmfield.png" type="Texture" id=35]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 33
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 33
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+outline_size = 2
+outline_color = Color( 0.776471, 0.776471, 0.776471, 1 )
+use_filter = true
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 50
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 50
+use_filter = true
+extra_spacing_top = -6
+extra_spacing_char = 3
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=37]
+size = 34
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_top = -3
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=38]
+size = 34
+use_filter = true
+extra_spacing_top = -3
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = -4
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 30
+use_filter = true
+extra_spacing_top = -4
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 30
+use_filter = true
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+extra_spacing_top = -6
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 30
+use_filter = true
+extra_spacing_top = -8
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 65
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 65
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 35
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 35
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 40
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 40
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 24
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 31 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 24
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 31 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=26]
+size = 23
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 31 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=27]
+size = 23
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_filter = true
+font_data = ExtResource( 31 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=28]
+size = 25
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 31 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=29]
+size = 25
+outline_size = 1
+outline_color = Color( 0.266667, 0.266667, 0.266667, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 31 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=30]
+size = 50
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=31]
+size = 50
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=32]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_bottom = -4
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=33]
+size = 35
+use_filter = true
+extra_spacing_top = 2
+extra_spacing_bottom = 2
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=34]
+size = 40
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_bottom = -4
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=35]
+size = 40
+use_filter = true
+extra_spacing_bottom = -4
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=36]
+size = 35
+outline_size = 2
+outline_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_bottom = -4
+font_data = ExtResource( 8 )
+fallback/0 = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 35 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelBox" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.213867
+anchor_top = 0.035
+anchor_right = 0.780273
+anchor_bottom = 0.138333
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLine" type="Label" parent="Panel/NinePatchRect/levelBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "8"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelLabel" type="Label" parent="Panel/NinePatchRect/levelBox"]
+anchor_left = 0.0137931
+anchor_right = 0.984483
+anchor_bottom = 0.903229
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 2 )
+text = "8"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLabel2" type="Label" parent="Panel/NinePatchRect/levelBox/levelLabel"]
+anchor_left = -0.0017762
+anchor_top = 0.0178571
+anchor_right = 0.998224
+anchor_bottom = 0.946428
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 3 )
+text = "8"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pauseButton" type="Button" parent="Panel/NinePatchRect"]
+anchor_left = 0.00683594
+anchor_top = 0.0283333
+anchor_right = 0.100586
+anchor_bottom = 0.146667
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 11 )
+flat = true
+clip_text = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pauseIcon" type="TextureRect" parent="Panel/NinePatchRect/pauseButton"]
+anchor_left = 0.322917
+anchor_top = 0.217391
+anchor_right = 0.65625
+anchor_bottom = 0.782609
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="imageHolder" type="Sprite" parent="Panel/NinePatchRect"]
+position = Vector2( 250, 299 )
+scale = Vector2( 0.244296, 0.247043 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="kabayo" type="TextureRect" parent="Panel/NinePatchRect/imageHolder"]
+unique_name_in_owner = true
+anchor_left = 0.0673014
+anchor_top = 0.0611038
+anchor_right = 0.924163
+anchor_bottom = 0.965177
+margin_left = -761.5
+margin_top = -761.0
+margin_right = -761.5
+margin_bottom = -761.0
+texture = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="repeat" type="Button" parent="Panel/NinePatchRect/imageHolder/kabayo"]
+unique_name_in_owner = true
+anchor_left = 0.138715
+anchor_top = 0.197762
+anchor_right = 0.87606
+anchor_bottom = 0.852365
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="coverButton" type="Panel" parent="Panel/NinePatchRect/imageHolder/kabayo"]
+unique_name_in_owner = true
+anchor_left = -0.05275
+anchor_top = 0.0289682
+anchor_right = 1.03156
+anchor_bottom = 1.01402
+margin_right = -6.10352e-05
+input_pass_on_modal_close_click = false
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="infoHorse" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/kabayo"]
+unique_name_in_owner = true
+stream = ExtResource( 19 )
+bus = "Voices"
+
+[node name="horseVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/imageHolder/kabayo"]
+unique_name_in_owner = true
+stream = ExtResource( 18 )
+bus = "Voices"
+
+[node name="imageText" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.12793
+anchor_top = 0.811667
+anchor_right = 0.347656
+anchor_bottom = 0.903333
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="name" type="Label" parent="Panel/NinePatchRect/imageText"]
+anchor_top = 0.0181781
+anchor_right = 1.0
+anchor_bottom = 1.2
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 5 )
+text = "kabayo"
+align = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nameoutline" type="Label" parent="Panel/NinePatchRect/imageText"]
+anchor_right = 1.0
+anchor_bottom = 1.12728
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 6 )
+text = "kabayo"
+align = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="name" type="Label" parent="Panel/NinePatchRect/imageText/nameoutline"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 7 )
+text = "kabayo"
+align = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="askHolder" type="TextureRect" parent="Panel/NinePatchRect"]
+anchor_left = 0.470703
+anchor_top = 0.173333
+anchor_right = 0.960938
+anchor_bottom = 0.758333
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="askLabel" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0438246
+anchor_top = 0.0541311
+anchor_right = 0.954182
+anchor_bottom = 0.415954
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 37 )
+text = "Aling prutas ang karaniwang kinakain ng kabayo?"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="askLabel2" type="Label" parent="Panel/NinePatchRect/askHolder/askLabel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -2.0
+margin_bottom = -2.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 38 )
+text = "Aling prutas ang karaniwang kinakain ng kabayo?"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AskVoice" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/askLabel"]
+unique_name_in_owner = true
+stream = ExtResource( 20 )
+bus = "Voices"
+
+[node name="answerLabelA" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.065737
+anchor_top = 0.495726
+anchor_right = 0.964142
+anchor_bottom = 0.612536
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 10 )
+text = "A. kahoy"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabel2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 11 )
+text = "A. kahoy"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Choices" type="AudioStreamPlayer" parent="Panel/NinePatchRect/askHolder/answerLabelA"]
+unique_name_in_owner = true
+stream = ExtResource( 17 )
+bus = "Voices"
+
+[node name="answerLabelB" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0737051
+anchor_top = 0.638177
+anchor_right = 0.968126
+anchor_bottom = 0.763533
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 12 )
+text = "B. mansanas"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 13 )
+text = "B. mansanas"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder"]
+anchor_left = 0.0737051
+anchor_top = 0.797721
+anchor_right = 0.966134
+anchor_bottom = 0.908832
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 14 )
+text = "C. ampalaya"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="Panel/NinePatchRect/askHolder/answerLabelB2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 2.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 15 )
+text = "C. ampalaya"
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnswerPanel" type="Control" parent="Panel/NinePatchRect"]
+unique_name_in_owner = true
+anchor_left = 0.553711
+anchor_top = 0.771667
+anchor_right = 0.890625
+anchor_bottom = 0.930001
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="A" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+margin_right = 95.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickA" type="Label" parent="Panel/NinePatchRect/AnswerPanel/A"]
+anchor_left = 0.0947368
+anchor_top = 0.0842112
+anchor_right = 0.905263
+anchor_bottom = 0.926316
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 16 )
+text = "A
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickA2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/A/pickA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 17 )
+text = "A"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="B" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+margin_left = 125.0
+margin_right = 220.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickB" type="Label" parent="Panel/NinePatchRect/AnswerPanel/B"]
+anchor_left = 0.0842105
+anchor_top = 0.147368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 16 )
+text = "B
+"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/B/pickB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 17 )
+text = "B"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="C" type="Button" parent="Panel/NinePatchRect/AnswerPanel"]
+margin_left = 250.0
+margin_right = 345.0
+margin_bottom = 95.0
+rect_min_size = Vector2( 95, 95 )
+focus_mode = 0
+action_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pickC" type="Label" parent="Panel/NinePatchRect/AnswerPanel/C"]
+anchor_left = 0.0842105
+anchor_top = 0.0947368
+anchor_right = 0.915789
+anchor_bottom = 0.936842
+rect_min_size = Vector2( 75, 75 )
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 16 )
+text = "C"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickC2" type="Label" parent="Panel/NinePatchRect/AnswerPanel/C/pickC"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 17 )
+text = "C"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pausePanel" parent="." instance=ExtResource( 14 )]
+unique_name_in_owner = true
+
+[node name="ScorePanel2StarA" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color( 1, 1, 1, 0.509804 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="panelblock" type="NinePatchRect" parent="ScorePanel2StarA"]
+anchor_left = 0.295898
+anchor_top = 0.131667
+anchor_right = 0.763672
+anchor_bottom = 0.958334
+margin_right = -6.10352e-05
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="banner2" type="TextureRect" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.0265487
+anchor_top = -0.0693642
+anchor_right = 0.977876
+anchor_bottom = 0.0597303
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ribbon" type="TextureRect" parent="ScorePanel2StarA/panelblock"]
+anchor_left = -0.0125261
+anchor_top = -0.145161
+anchor_right = 1.03132
+anchor_bottom = 0.0806452
+texture = ExtResource( 26 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napakA" type="Label" parent="ScorePanel2StarA/panelblock/ribbon"]
+anchor_left = 0.126
+anchor_top = 0.169643
+anchor_right = 0.526377
+anchor_bottom = 0.496188
+margin_right = -2.18842
+margin_bottom = 10.4269
+rect_rotation = -3.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 18 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napaka" type="Label" parent="ScorePanel2StarA/panelblock/ribbon/napakA"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 19 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husaY" type="Label" parent="ScorePanel2StarA/panelblock/ribbon"]
+anchor_left = 0.472
+anchor_top = 0.0625
+anchor_right = 0.866185
+anchor_bottom = 0.624122
+margin_right = 3.90768
+margin_bottom = -13.9017
+rect_rotation = 4.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 20 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husay" type="Label" parent="ScorePanel2StarA/panelblock/ribbon/husaY"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 21 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.242171
+anchor_top = -0.00403226
+anchor_right = 0.505219
+anchor_bottom = 0.219759
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarA/panelblock/star0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.524009
+anchor_top = -0.00403226
+anchor_right = 0.787056
+anchor_bottom = 0.219759
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarA/panelblock/star1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.0334029
+anchor_top = 0.241935
+anchor_right = 0.966597
+anchor_bottom = 0.346774
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 22 )
+text = "Binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel2StarA/panelblock/applause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 23 )
+text = "binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="theLevels" type="Label" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.0793319
+anchor_top = 0.610887
+anchor_right = 0.340293
+anchor_bottom = 0.760081
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 24 )
+text = "Mga Levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLabel" type="Label" parent="ScorePanel2StarA/panelblock/theLevels"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 25 )
+text = "mga levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Retry" type="Label" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.356994
+anchor_top = 0.629032
+anchor_right = 0.634656
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 26 )
+text = "Subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="retry" type="Label" parent="ScorePanel2StarA/panelblock/Retry"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 27 )
+text = "Subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Continue" type="Label" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.643007
+anchor_top = 0.629032
+anchor_right = 0.941545
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 26 )
+text = "Tumuloy"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel2StarA/panelblock/Continue"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 27 )
+text = "Tumuloy"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelPanel" type="HBoxContainer" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.114823
+anchor_top = 0.768145
+anchor_right = 0.908142
+anchor_bottom = 0.939516
+custom_constants/separation = 50
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goLevels" type="TextureRect" parent="ScorePanel2StarA/panelblock/levelPanel"]
+margin_right = 90.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levels" type="Button" parent="ScorePanel2StarA/panelblock/levelPanel/goLevels"]
+anchor_left = 0.130439
+anchor_top = 0.189657
+anchor_right = 0.878265
+anchor_bottom = 0.818967
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 13 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goRetry" type="TextureRect" parent="ScorePanel2StarA/panelblock/levelPanel"]
+margin_left = 140.0
+margin_right = 230.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="retry" type="Button" parent="ScorePanel2StarA/panelblock/levelPanel/goRetry"]
+anchor_left = 0.144445
+anchor_top = 0.129412
+anchor_right = 0.892272
+anchor_bottom = 0.870791
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 28 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goContinue" type="TextureRect" parent="ScorePanel2StarA/panelblock/levelPanel"]
+margin_left = 280.0
+margin_right = 370.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nextQuestion" type="Button" parent="ScorePanel2StarA/panelblock/levelPanel/goContinue"]
+anchor_left = 0.126087
+anchor_top = 0.12931
+anchor_right = 0.873913
+anchor_bottom = 0.87069
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="border" type="HSeparator" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.039666
+anchor_top = 0.461693
+anchor_right = 0.960334
+anchor_bottom = 0.506048
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.246347
+anchor_top = 0.481855
+anchor_right = 0.822547
+anchor_bottom = 0.560484
+margin_left = -1.14441e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 28 )
+text = "Ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarA/panelblock/correctAns"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 29 )
+text = "Ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="b" type="TextureRect" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.156576
+anchor_top = 0.342742
+anchor_right = 0.292276
+anchor_bottom = 0.477822
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB" type="Label" parent="ScorePanel2StarA/panelblock/b"]
+anchor_left = 0.138462
+anchor_right = 0.861538
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 30 )
+text = "b"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB2" type="Label" parent="ScorePanel2StarA/panelblock/b/pickB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 31 )
+text = "b"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="answerLabelB" type="Label" parent="ScorePanel2StarA/panelblock"]
+anchor_left = 0.294363
+anchor_top = 0.350806
+anchor_right = 0.964508
+anchor_bottom = 0.477822
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 32 )
+text = "B. Kabayo"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="ScorePanel2StarA/panelblock/answerLabelB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 33 )
+text = "B. Kabayo"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScorePanel3StarB" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color( 1, 1, 1, 0.509804 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="panelblock" type="NinePatchRect" parent="ScorePanel3StarB"]
+anchor_left = 0.295898
+anchor_top = 0.131667
+anchor_right = 0.763672
+anchor_bottom = 0.958334
+margin_right = -6.10352e-05
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="banner2" type="TextureRect" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.0265487
+anchor_top = -0.0693642
+anchor_right = 0.977876
+anchor_bottom = 0.0597303
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ribbon" type="TextureRect" parent="ScorePanel3StarB/panelblock"]
+anchor_left = -0.0125261
+anchor_top = -0.145161
+anchor_right = 1.03132
+anchor_bottom = 0.0806452
+texture = ExtResource( 26 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napakA" type="Label" parent="ScorePanel3StarB/panelblock/ribbon"]
+anchor_left = 0.126
+anchor_top = 0.169643
+anchor_right = 0.526377
+anchor_bottom = 0.496188
+margin_right = -2.18842
+margin_bottom = 10.4269
+rect_rotation = -3.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 18 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napaka" type="Label" parent="ScorePanel3StarB/panelblock/ribbon/napakA"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 19 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husaY" type="Label" parent="ScorePanel3StarB/panelblock/ribbon"]
+anchor_left = 0.472
+anchor_top = 0.0625
+anchor_right = 0.866185
+anchor_bottom = 0.624122
+margin_right = 3.90768
+margin_bottom = -13.9017
+rect_rotation = 4.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 20 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husay" type="Label" parent="ScorePanel3StarB/panelblock/ribbon/husaY"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 21 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.118998
+anchor_top = -0.0141129
+anchor_right = 0.382046
+anchor_bottom = 0.209678
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel3StarB/panelblock/star0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.384134
+anchor_top = -0.0181452
+anchor_right = 0.647182
+anchor_bottom = 0.205646
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel3StarB/panelblock/star1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star2" type="TextureRect" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.64927
+anchor_top = -0.016129
+anchor_right = 0.912317
+anchor_bottom = 0.207662
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel3StarB/panelblock/star2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.0334029
+anchor_top = 0.241935
+anchor_right = 0.966597
+anchor_bottom = 0.346774
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 22 )
+text = "Binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel3StarB/panelblock/applause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 23 )
+text = "binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="theLevels" type="Label" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.219207
+anchor_top = 0.594758
+anchor_right = 0.480168
+anchor_bottom = 0.743952
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 24 )
+text = "Mga Levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLabel" type="Label" parent="ScorePanel3StarB/panelblock/theLevels"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 25 )
+text = "mga levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Continue" type="Label" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.530272
+anchor_top = 0.606855
+anchor_right = 0.82881
+anchor_bottom = 0.733871
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 26 )
+text = "Tumuloy"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel3StarB/panelblock/Continue"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 27 )
+text = "Tumuloy"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelPanel" type="HBoxContainer" parent="ScorePanel3StarB/panelblock"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 116.0
+margin_top = -127.0
+margin_right = -113.0
+margin_bottom = -42.0002
+custom_constants/separation = 70
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goLevels" type="TextureRect" parent="ScorePanel3StarB/panelblock/levelPanel"]
+margin_right = 90.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levels" type="Button" parent="ScorePanel3StarB/panelblock/levelPanel/goLevels"]
+anchor_left = 0.130439
+anchor_top = 0.189657
+anchor_right = 0.878265
+anchor_bottom = 0.818967
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 13 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goContinue" type="TextureRect" parent="ScorePanel3StarB/panelblock/levelPanel"]
+margin_left = 160.0
+margin_right = 250.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nextQuestion" type="Button" parent="ScorePanel3StarB/panelblock/levelPanel/goContinue"]
+anchor_left = 0.126087
+anchor_top = 0.12931
+anchor_right = 0.873913
+anchor_bottom = 0.87069
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="border" type="HSeparator" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.039666
+anchor_top = 0.568548
+anchor_right = 0.960334
+anchor_bottom = 0.612903
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB" type="Label" parent="ScorePanel3StarB/panelblock"]
+anchor_left = 0.045929
+anchor_top = 0.350806
+anchor_right = 0.96451
+anchor_bottom = 0.578629
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 34 )
+text = "Tama ang
+iyong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="ScorePanel3StarB/panelblock/answerLabelB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 35 )
+text = "Tama ang
+iyong sagot !"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ScorePanel2StarC" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color( 1, 1, 1, 0.509804 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="panelblock" type="NinePatchRect" parent="ScorePanel2StarC"]
+anchor_left = 0.295898
+anchor_top = 0.131667
+anchor_right = 0.763672
+anchor_bottom = 0.958334
+margin_right = -6.10352e-05
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="banner2" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.0265487
+anchor_top = -0.0693642
+anchor_right = 0.977876
+anchor_bottom = 0.0597303
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ribbon" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = -0.0125261
+anchor_top = -0.145161
+anchor_right = 1.03132
+anchor_bottom = 0.0806452
+texture = ExtResource( 26 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napakA" type="Label" parent="ScorePanel2StarC/panelblock/ribbon"]
+anchor_left = 0.126
+anchor_top = 0.169643
+anchor_right = 0.526377
+anchor_bottom = 0.496188
+margin_right = -2.18842
+margin_bottom = 10.4269
+rect_rotation = -3.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 18 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="napaka" type="Label" parent="ScorePanel2StarC/panelblock/ribbon/napakA"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 19 )
+text = "napaka"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husaY" type="Label" parent="ScorePanel2StarC/panelblock/ribbon"]
+anchor_left = 0.472
+anchor_top = 0.0625
+anchor_right = 0.866185
+anchor_bottom = 0.624122
+margin_right = 3.90768
+margin_bottom = -13.9017
+rect_rotation = 4.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 20 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="husay" type="Label" parent="ScorePanel2StarC/panelblock/ribbon/husaY"]
+anchor_left = -0.00106838
+anchor_top = -0.0491803
+anchor_right = 0.998932
+anchor_bottom = 0.95082
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 21 )
+text = "husay!!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.242171
+anchor_top = -0.00403226
+anchor_right = 0.505219
+anchor_bottom = 0.219759
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarC/panelblock/star0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="star1" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.524009
+anchor_top = -0.00403226
+anchor_right = 0.787056
+anchor_bottom = 0.219759
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="star0" type="TextureRect" parent="ScorePanel2StarC/panelblock/star1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.0334029
+anchor_top = 0.241935
+anchor_right = 0.966597
+anchor_bottom = 0.346774
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 22 )
+text = "Binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="applause" type="Label" parent="ScorePanel2StarC/panelblock/applause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 23 )
+text = "binabati kita!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="theLevels" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.0793319
+anchor_top = 0.610887
+anchor_right = 0.340293
+anchor_bottom = 0.760081
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 24 )
+text = "Mga Levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levelLabel" type="Label" parent="ScorePanel2StarC/panelblock/theLevels"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 25 )
+text = "mga levels"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Retry" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.356994
+anchor_top = 0.629032
+anchor_right = 0.634656
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 26 )
+text = "Subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="retry" type="Label" parent="ScorePanel2StarC/panelblock/Retry"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 27 )
+text = "Subukan
+muli"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Continue" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.643007
+anchor_top = 0.629032
+anchor_right = 0.941545
+anchor_bottom = 0.756048
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 26 )
+text = "Tumuloy"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="continue" type="Label" parent="ScorePanel2StarC/panelblock/Continue"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 27 )
+text = "Tumuloy"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="levelPanel" type="HBoxContainer" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.114823
+anchor_top = 0.768145
+anchor_right = 0.908142
+anchor_bottom = 0.939516
+custom_constants/separation = 50
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goLevels" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
+margin_right = 90.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="levels" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goLevels"]
+anchor_left = 0.130439
+anchor_top = 0.189657
+anchor_right = 0.878265
+anchor_bottom = 0.818967
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 13 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goRetry" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
+margin_left = 140.0
+margin_right = 230.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="retry" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goRetry"]
+anchor_left = 0.144445
+anchor_top = 0.129412
+anchor_right = 0.892272
+anchor_bottom = 0.870791
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 28 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goContinue" type="TextureRect" parent="ScorePanel2StarC/panelblock/levelPanel"]
+margin_left = 280.0
+margin_right = 370.0
+margin_bottom = 85.0
+rect_min_size = Vector2( 90, 85 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nextQuestion" type="Button" parent="ScorePanel2StarC/panelblock/levelPanel/goContinue"]
+anchor_left = 0.126087
+anchor_top = 0.12931
+anchor_right = 0.873913
+anchor_bottom = 0.87069
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="border" type="HSeparator" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.039666
+anchor_top = 0.461693
+anchor_right = 0.960334
+anchor_bottom = 0.506048
+margin_top = 3.05176e-05
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.246347
+anchor_top = 0.481855
+anchor_right = 0.822547
+anchor_bottom = 0.560484
+margin_left = -1.14441e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 28 )
+text = "Ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="correctAns" type="Label" parent="ScorePanel2StarC/panelblock/correctAns"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 29 )
+text = "Ang tamang sagot:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="b" type="TextureRect" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.156576
+anchor_top = 0.342742
+anchor_right = 0.292276
+anchor_bottom = 0.477822
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB" type="Label" parent="ScorePanel2StarC/panelblock/b"]
+anchor_left = 0.138462
+anchor_right = 0.861538
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 30 )
+text = "b"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pickB2" type="Label" parent="ScorePanel2StarC/panelblock/b/pickB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 31 )
+text = "b"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="answerLabelB" type="Label" parent="ScorePanel2StarC/panelblock"]
+anchor_left = 0.298538
+anchor_top = 0.350806
+anchor_right = 0.964508
+anchor_bottom = 0.477822
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 36 )
+text = "B. Kabayo"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="answerLabelB2" type="Label" parent="ScorePanel2StarC/panelblock/answerLabelB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 33 )
+text = "B. Kabayo"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="correctPick" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 23 )
+bus = "Voices"
+
+[node name="wrongPick" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 22 )
+bus = "Voices"
+
+[connection signal="pressed" from="Panel/NinePatchRect/pauseButton" to="." method="_on_pauseButton_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/imageHolder/kabayo/repeat" to="." method="_on_repeat_pressed"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/kabayo/infoHorse" to="." method="_on_infoHorse_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/imageHolder/kabayo/horseVoice" to="." method="_on_horseVoice_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/askLabel/AskVoice" to="." method="_on_AskVoice_finished"]
+[connection signal="finished" from="Panel/NinePatchRect/askHolder/answerLabelA/Choices" to="." method="_on_Choices_finished"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/A" to="." method="_on_A_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/B" to="." method="_on_B_pressed"]
+[connection signal="pressed" from="Panel/NinePatchRect/AnswerPanel/C" to="." method="_on_C_pressed"]
+[connection signal="pressed" from="pausePanel/bg/x" to="." method="_on_x_pressed"]
+[connection signal="visibility_changed" from="ScorePanel2StarA" to="." method="_on_ScorePanel2StarA_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarA/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarA/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarA/panelblock/levelPanel/goContinue/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="visibility_changed" from="ScorePanel3StarB" to="." method="_on_ScorePanel3StarB_visibility_changed"]
+[connection signal="pressed" from="ScorePanel3StarB/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel3StarB/panelblock/levelPanel/goContinue/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+[connection signal="visibility_changed" from="ScorePanel2StarC" to="." method="_on_ScorePanel2StarC_visibility_changed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goLevels/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goRetry/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="ScorePanel2StarC/panelblock/levelPanel/goContinue/nextQuestion" to="." method="_on_nextQuestion_pressed"]
+
+[editable path="pausePanel"]

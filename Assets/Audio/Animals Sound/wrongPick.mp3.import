@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wrongPick.mp3-0381671df7958f41093d9694ea4efb7f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/wrongPick.mp3"
+dest_files=[ "res://.import/wrongPick.mp3-0381671df7958f41093d9694ea4efb7f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

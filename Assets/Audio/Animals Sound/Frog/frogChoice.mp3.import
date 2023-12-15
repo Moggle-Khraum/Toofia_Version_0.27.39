@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/frogChoice.mp3-788ec696f1ad9336380c609d8a3d4d15.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Frog/frogChoice.mp3"
+dest_files=[ "res://.import/frogChoice.mp3-788ec696f1ad9336380c609d8a3d4d15.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

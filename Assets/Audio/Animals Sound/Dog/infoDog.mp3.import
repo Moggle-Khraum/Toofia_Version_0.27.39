@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoDog.mp3-e67e07944179c3f716774c2208f87c22.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Dog/infoDog.mp3"
+dest_files=[ "res://.import/infoDog.mp3-e67e07944179c3f716774c2208f87c22.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

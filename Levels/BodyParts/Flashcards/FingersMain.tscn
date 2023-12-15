@@ -1,0 +1,330 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Images/bodyparts/waistCard.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UIElements/Icon_Right.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GUI/IconButton_Large_Orange_Circle.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/bodyparts/fingersCard.png" type="Texture" id=6]
+[ext_resource path="res://Levels/BodyParts/Flashcards/FingersMain.gd" type="Script" id=7]
+[ext_resource path="res://Assets/Images/bodyparts/tummyCard.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/bodyparts/coverShade.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/bodyparts/handCard.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/background/abc.png" type="Texture" id=11]
+[ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_Arrow.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="Animation" id=3]
+resource_local_to_scene = true
+resource_name = "animPick"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("frontCard:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6, 0.8, 1, 1.2, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 368, 108 ), Vector2( 396, 150 ), Vector2( 336, 150 ), Vector2( 211, 150 ), Vector2( 140, 150 ), Vector2( 108, 149 ), Vector2( 108, 149 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("frontCard:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6, 0.8, 1, 1.2, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 318, 430 ), Vector2( 241, 338 ), Vector2( 241, 338 ), Vector2( 241, 338 ), Vector2( 241, 338 ), Vector2( 241, 338 ), Vector2( 241, 338 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("prevCard:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.737255 ), Color( 1, 1, 1, 0.54902 ), Color( 1, 1, 1, 0.223529 ), Color( 1, 1, 1, 0.109804 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("nextCard:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 703, 149 ), Vector2( 703, 149 ), Vector2( 703, 149 ), Vector2( 651, 149 ), Vector2( 518, 149 ), Vector2( 467, 149 ), Vector2( 368, 108 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("nextCard:rect_size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 241, 338 ), Vector2( 241, 338 ), Vector2( 241, 338 ), Vector2( 241, 339 ), Vector2( 241, 339 ), Vector2( 241, 339 ), Vector2( 317, 430 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("nextCard2:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.168627 ), Color( 1, 1, 1, 0.372549 ), Color( 1, 1, 1, 0.466667 ), Color( 1, 1, 1, 0.635294 ), Color( 1, 1, 1, 0.811765 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="prevCard" type="TextureRect" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.105469
+anchor_top = 0.248333
+anchor_right = 0.34082
+anchor_bottom = 0.811667
+margin_right = 0.000549316
+margin_bottom = -0.000396729
+texture = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="frontCard" type="TextureRect" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.359375
+anchor_top = 0.18
+anchor_right = 0.669922
+anchor_bottom = 0.896667
+margin_right = -0.00012207
+margin_bottom = -0.000183105
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="PlayAudio" type="Button" parent="frontCard"]
+unique_name_in_owner = true
+anchor_left = 0.091195
+anchor_top = 0.146512
+anchor_right = 0.915094
+anchor_bottom = 0.686047
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nextCard2" type="TextureRect" parent="."]
+unique_name_in_owner = true
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.686523
+anchor_top = 0.248333
+anchor_right = 0.921875
+anchor_bottom = 0.811667
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="nextCard" type="TextureRect" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.359375
+anchor_top = 0.18
+anchor_right = 0.668945
+anchor_bottom = 0.896667
+margin_left = 335.0
+margin_top = 41.0
+margin_right = 259.0
+margin_bottom = -51.0002
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="goBack" type="Button" parent="."]
+anchor_left = 0.0146484
+anchor_top = 0.025
+anchor_right = 0.0976564
+anchor_bottom = 0.165
+focus_mode = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pressedX" type="TextureRect" parent="goBack"]
+anchor_left = 0.2
+anchor_top = 0.190476
+anchor_right = 0.788234
+anchor_bottom = 0.797619
+texture = ExtResource( 12 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bodyparts" type="Label" parent="."]
+anchor_left = 0.0976563
+anchor_top = 0.0266667
+anchor_right = 0.983398
+anchor_bottom = 0.151667
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "Parte ng katawan"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bodyparts" type="Label" parent="bodyparts"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 2 )
+text = "Parte ng katawan"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="AnimLeft" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+anims/animPick = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+margin_left = 5.0
+margin_top = 488.0
+margin_right = 861.0
+margin_bottom = 628.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel2" type="Panel" parent="."]
+visible = false
+margin_left = -14.0
+margin_top = 9.0
+margin_right = 842.0
+margin_bottom = 149.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ButtonLeft" type="Button" parent="."]
+anchor_left = 0.109375
+anchor_top = 0.251667
+anchor_right = 0.338867
+anchor_bottom = 0.896667
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="left" type="TextureRect" parent="ButtonLeft"]
+self_modulate = Color( 1, 1, 1, 0.52549 )
+anchor_left = 0.612766
+anchor_top = 0.281653
+anchor_right = 1.0
+anchor_bottom = 0.63049
+margin_right = -1.52588e-05
+texture = ExtResource( 4 )
+expand = true
+flip_h = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="goBack" to="." method="_on_goBack_pressed"]
+[connection signal="animation_finished" from="AnimLeft" to="." method="_on_AnimLeft_animation_finished"]
+[connection signal="pressed" from="ButtonLeft" to="." method="_on_ButtonLeft_pressed"]

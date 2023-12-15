@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SmallA.mp3-0f30b4e65a3ea6f510224108a1183c2f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/SmallA.mp3"
+dest_files=[ "res://.import/SmallA.mp3-0f30b4e65a3ea6f510224108a1183c2f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/potatoQuest.mp3-7ca52cc7d5c91273d123ae670cd90b45.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L2/potatoQuest.mp3"
+dest_files=[ "res://.import/potatoQuest.mp3-7ca52cc7d5c91273d123ae670cd90b45.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

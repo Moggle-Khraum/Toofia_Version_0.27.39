@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PAA.mp3-1cf1a25c2b500979c50cf0db36e8f10d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/PAA.mp3"
+dest_files=[ "res://.import/PAA.mp3-1cf1a25c2b500979c50cf0db36e8f10d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

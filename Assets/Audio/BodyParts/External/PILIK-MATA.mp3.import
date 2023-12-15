@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PILIK-MATA.mp3-e39e3b3800e680f377d9ee31ef2cf46a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/PILIK-MATA.mp3"
+dest_files=[ "res://.import/PILIK-MATA.mp3-e39e3b3800e680f377d9ee31ef2cf46a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

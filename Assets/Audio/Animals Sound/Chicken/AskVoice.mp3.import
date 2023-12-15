@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AskVoice.mp3-26e3112764d1d07ab3e5506b3f81dc52.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Chicken/AskVoice.mp3"
+dest_files=[ "res://.import/AskVoice.mp3-26e3112764d1d07ab3e5506b3f81dc52.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/Audio/levelsAudio/SFX/Button Pop.wav" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Audio/Animals Sound/SFX/Button Pop.wav" type="AudioStream" id=1]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource( 1 )

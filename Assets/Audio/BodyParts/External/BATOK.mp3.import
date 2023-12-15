@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BATOK.mp3-1835c260f422aedf4ed0e827677413ea.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/BATOK.mp3"
+dest_files=[ "res://.import/BATOK.mp3-1835c260f422aedf4ed0e827677413ea.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

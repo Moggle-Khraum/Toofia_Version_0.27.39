@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice8.mp3-a68a6df872e1152cd595b5c6b4bfab93.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Horse/askVoice8.mp3"
+dest_files=[ "res://.import/askVoice8.mp3-a68a6df872e1152cd595b5c6b4bfab93.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

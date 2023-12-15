@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/KILAY.mp3-043dce5446da8f6792deea063606e465.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/KILAY.mp3"
+dest_files=[ "res://.import/KILAY.mp3-043dce5446da8f6792deea063606e465.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mouse_squeak.mp3-5267432e4fac71f6bfe89763ebb79204.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Mouse/mouse_squeak.mp3"
+dest_files=[ "res://.import/mouse_squeak.mp3-5267432e4fac71f6bfe89763ebb79204.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

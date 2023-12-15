@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/appleQuestions.mp3-cef91bd7ae2a7031e77d0a39fbf92cf0.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L1/appleQuestions.mp3"
+dest_files=[ "res://.import/appleQuestions.mp3-cef91bd7ae2a7031e77d0a39fbf92cf0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

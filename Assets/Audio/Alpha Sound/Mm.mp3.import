@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mm.mp3-765799ca8098168049582031205d8c55.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/Mm.mp3"
+dest_files=[ "res://.import/Mm.mp3-765799ca8098168049582031205d8c55.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

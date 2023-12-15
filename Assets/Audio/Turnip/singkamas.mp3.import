@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/singkamas.mp3-cfe3fe4298c7735b23c4809512a1e993.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Turnip/singkamas.mp3"
+dest_files=[ "res://.import/singkamas.mp3-cfe3fe4298c7735b23c4809512a1e993.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

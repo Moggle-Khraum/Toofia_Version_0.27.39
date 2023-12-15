@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoMouse.mp3-5fd2990efbae6b03d1fff7620f85c111.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Mouse/infoMouse.mp3"
+dest_files=[ "res://.import/infoMouse.mp3-5fd2990efbae6b03d1fff7620f85c111.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

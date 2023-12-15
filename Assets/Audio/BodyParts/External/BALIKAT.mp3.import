@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BALIKAT.mp3-1824cf911cb864c1a68746cc1881f9e9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/BALIKAT.mp3"
+dest_files=[ "res://.import/BALIKAT.mp3-1824cf911cb864c1a68746cc1881f9e9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

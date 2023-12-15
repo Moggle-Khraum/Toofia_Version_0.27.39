@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ChoicesTalong.mp3-e424ac7174d91c6d36d21ed345da6e2e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L7/ChoicesTalong.mp3"
+dest_files=[ "res://.import/ChoicesTalong.mp3-e424ac7174d91c6d36d21ed345da6e2e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

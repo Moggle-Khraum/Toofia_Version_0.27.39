@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PitayaQues.mp3-54bfdeb8cf83ada83fa19e5d0fdafb33.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L20/PitayaQues.mp3"
+dest_files=[ "res://.import/PitayaQues.mp3-54bfdeb8cf83ada83fa19e5d0fdafb33.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

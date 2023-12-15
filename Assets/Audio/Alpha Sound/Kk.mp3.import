@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Kk.mp3-a31d94193b19f4773ac1458b67a9fdae.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/Kk.mp3"
+dest_files=[ "res://.import/Kk.mp3-a31d94193b19f4773ac1458b67a9fdae.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

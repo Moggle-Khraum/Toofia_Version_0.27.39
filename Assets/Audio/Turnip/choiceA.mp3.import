@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceA.mp3-b9e19e7e69209c5f3ed7e8202bfb1687.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Turnip/choiceA.mp3"
+dest_files=[ "res://.import/choiceA.mp3-b9e19e7e69209c5f3ed7e8202bfb1687.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

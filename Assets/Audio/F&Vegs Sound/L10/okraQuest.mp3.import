@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/okraQuest.mp3-c493d631a195a5260b6767a23a7cd19e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L10/okraQuest.mp3"
+dest_files=[ "res://.import/okraQuest.mp3-c493d631a195a5260b6767a23a7cd19e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

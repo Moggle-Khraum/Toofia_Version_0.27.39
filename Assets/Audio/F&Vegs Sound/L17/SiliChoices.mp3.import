@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SiliChoices.mp3-df7d43a83acd9e8b08e48a4269c2b450.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L17/SiliChoices.mp3"
+dest_files=[ "res://.import/SiliChoices.mp3-df7d43a83acd9e8b08e48a4269c2b450.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

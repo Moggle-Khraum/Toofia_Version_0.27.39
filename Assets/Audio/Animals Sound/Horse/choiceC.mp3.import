@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/choiceC.mp3-5318c5e4947278f28b3d5f5874619cb4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Horse/choiceC.mp3"
+dest_files=[ "res://.import/choiceC.mp3-5318c5e4947278f28b3d5f5874619cb4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

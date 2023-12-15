@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/catInfo.mp3-0f0b48fe8d526facbcc29d6b48ec1407.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Cat/catInfo.mp3"
+dest_files=[ "res://.import/catInfo.mp3-0f0b48fe8d526facbcc29d6b48ec1407.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

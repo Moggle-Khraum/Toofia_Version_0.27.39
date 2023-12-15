@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/KalabasaChoices.mp3-45e977454cb8089b0f9977303688f4d6.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L9/KalabasaChoices.mp3"
+dest_files=[ "res://.import/KalabasaChoices.mp3-45e977454cb8089b0f9977303688f4d6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

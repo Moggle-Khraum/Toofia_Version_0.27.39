@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/MaisChoices.mp3-33ef876cdf956cd36a4d4292831b6061.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L12/MaisChoices.mp3"
+dest_files=[ "res://.import/MaisChoices.mp3-33ef876cdf956cd36a4d4292831b6061.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,86 +1,128 @@
 extends Control
 
-
-#THIS IS FOR THE SCROLL EFFECTS
-var scrollerContainer: ScrollContainer
-var targetScroll = 0.0
-var scrollStep = 600
-var scrollWeight = 0.5
-
-#signal pressed
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	#getting the Node by calling it through by get_node
-	scrollerContainer = $'%ScrollContainer'
-
-# warning-ignore:unused_argument
-func _process(delta: float) -> void:
-	# Check if the ScrollContainer's content width is larger than its view width
-	targetScroll = scrollerContainer.scroll_horizontal
-	scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, targetScroll, scrollWeight)
-
-
-#This is for the Left Button
-func _on_LeftButton_pressed() -> void:
-	ScrollPop.play()
-	# Calculate the target horizontal scroll position
-	scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, scrollerContainer.scroll_horizontal - scrollStep, scrollWeight)
-	scrollerContainer.scroll_horizontal -= scrollStep
-	print("Pressed Left Button '<='")
-	
-
 #This is for the Right Button
 func _on_RightButton_pressed() -> void:
 	ScrollPop.play()
-	scrollerContainer.scroll_horizontal = lerp(scrollerContainer.scroll_horizontal, scrollerContainer.scroll_horizontal + scrollStep, scrollWeight)
-	scrollerContainer.scroll_horizontal += scrollStep
-	print("Pressed Rigght Button '=>'")
+	var goLvl2 = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/NextLevelP2Z/LetterSpeak2.tscn")
+	print("Pressed Right Button '=>'")
 
 
 func _on_GoBackButton_pressed() -> void:
 	print("Presses Go Back")
 	MenuClickSfxPlayer.play()
 	#handles the Go back button
-	var backtoTopic = load('res://Scenes/MenuChoices.tscn')
-	var levelSelect = get_tree().change_scene_to(backtoTopic)
+	var levelSelect = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.tscn")
 	#$'%animalsTheme'.stream_paused = true
 	print("Going to Topic Selector")
 	
 
 
 #THIS HERE IS FOR THE BUTTONS
-#LETTERS A-G
-func _on_ag_pressed() -> void:
-	ScrollPop.play()
-	yield(get_tree().create_timer(0.5), "timeout")
-	var levelSelect = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/LevelA-G/LetterA.tscn")
-	print("Going to A-G")
+#LETTERS A
+func _on_Aa_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigA'.play()
+	print("Play Big A")
 
-#LETTERS H-N
-func _on_hn_pressed() -> void:
-	ScrollPop.play()
-	yield(get_tree().create_timer(0.5), "timeout")
-	var levelSelect = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/LevelH-N/LetterH.tscn")
-	print("Going to H-N")
 
-#LETTERS O-U
-func _on_ou_pressed() -> void:
-	ScrollPop.play()
-	yield(get_tree().create_timer(0.5), "timeout")
-	var levelSelect = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/LevelO-U/LetterO.tscn")
-	print("Going to O-U")
+#LETTERS B
+func _on_Bb_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigB'.play()
+	print("Play Big B")
 
-#LETTERS V-Z
-func _on_vz_pressed() -> void:
-	ScrollPop.play()
-	yield(get_tree().create_timer(0.5), "timeout")
-	var levelSelect = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/LevelV-Z/LetterV.tscn")
-	print("Going to V-Z")
+#LETTERS E
+func _on_Ee_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigE'.play()
+	print("Play Big B")
 
-#THIS IS FOR THE ALPHABET SONG------
-func _on_alphsong_pressed() -> void:
-	ScrollPop.play()
-	yield(get_tree().create_timer(0.5), "timeout")
-	var levelSelect = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.tscn")
-	print("Going to Song")
+
+#LETTERS G
+func _on_Gg_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigG'.play()
+	print("Play Big B")
+
+
+
+#LETTERS I
+func _on_Ii_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigI'.play()
+	print("Play Big I")
+
+func _on_Kk_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigK'.play()
+	print("Play Big B")
+
+#LETTERS L
+func _on_Ll_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigL'.play()
+	print("Play Big B")
+
+#LETTERS M
+func _on_Mm_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigM'.play()
+	print("Play Big M")
+
+#LETTERS N
+func _on_Nn_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigN'.play()
+	print("Play Big B")
+
+#LETTERS S
+func _on_Ss_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigS'.play()
+	print("Play Big S")
+
+#LETTERS O
+func _on_Oo_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigE'.play()
+	print("Play Big O")
+
+#LETTERS U
+func _on_Uu_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigU'.play()
+	print("Play Big P")
+
+#LETTERS T
+func _on_Tt_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigT'.play()
+	print("Play Big P")
+
+
+#LETTERS Y
+func _on_Yy_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigY'.play()
+	print("Play Big P")
+
+#LETTERS NGng
+func _on_NGng_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigNG'.play()
+	print("Play Big P")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/WatermelonChoices.mp3-3226d00650469c996a9bd205a6eddbf7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L6/WatermelonChoices.mp3"
+dest_files=[ "res://.import/WatermelonChoices.mp3-3226d00650469c996a9bd205a6eddbf7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

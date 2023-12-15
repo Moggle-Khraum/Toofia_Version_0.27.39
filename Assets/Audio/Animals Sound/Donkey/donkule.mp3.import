@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/donkule.mp3-d5076e10401fde7bce13a4a652c88c43.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Donkey/donkule.mp3"
+dest_files=[ "res://.import/donkule.mp3-d5076e10401fde7bce13a4a652c88c43.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

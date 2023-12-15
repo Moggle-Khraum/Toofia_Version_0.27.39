@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Choices.mp3-fed067bf8655ee47e957e57a277b3c29.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Bird/Choices.mp3"
+dest_files=[ "res://.import/Choices.mp3-fed067bf8655ee47e957e57a277b3c29.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

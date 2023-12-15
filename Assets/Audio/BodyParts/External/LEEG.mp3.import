@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LEEG.mp3-ab6e5113b8ddf7239f4f47212b01905c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/LEEG.mp3"
+dest_files=[ "res://.import/LEEG.mp3-ab6e5113b8ddf7239f4f47212b01905c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

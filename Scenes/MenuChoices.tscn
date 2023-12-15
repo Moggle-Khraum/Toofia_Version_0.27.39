@@ -1,39 +1,27 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Scripts/MenuChoicesScript.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assets/Images/speakLogo.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Images/farmAnimals.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/MenuChoice/ABC1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/MenuChoice/FARM2.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/LevelScroll.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Fonts/ButtonThemes.tres" type="Theme" id=7]
-[ext_resource path="res://Assets/Images/humanbody.jpg" type="Texture" id=8]
-[ext_resource path="res://Assets/Images/Fruits4.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/MenuChoice/fruitNvegs.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/MenuChoice/blankBox.png" type="Texture" id=9]
 [ext_resource path="res://Assets/GUI/leftArrow.png" type="Texture" id=10]
 [ext_resource path="res://Assets/GUI/rightArrow.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/background/board2.jpg" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/background/board2Cover.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=15]
 [ext_resource path="res://Assets/GUI/Blue_Rectangle.png" type="Texture" id=16]
-[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Images/bodyparts/humanCards.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Images/pilot-logo.png" type="Texture" id=18]
 [ext_resource path="res://Assets/Icons/ic_launcher.png" type="Texture" id=19]
 [ext_resource path="res://Assets/GUI/Icon_Return.png" type="Texture" id=20]
 [ext_resource path="res://Assets/GUI/Icon_LongSquare.png" type="Texture" id=21]
 [ext_resource path="res://Assets/UIElements/Icon_SqiuareTilt.png" type="Texture" id=22]
-
-[sub_resource type="DynamicFont" id=38]
-size = 60
-outline_size = 2
-outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=39]
-size = 60
-use_filter = true
-font_data = ExtResource( 3 )
-fallback/0 = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=40]
 size = 45
@@ -79,12 +67,21 @@ use_filter = true
 font_data = ExtResource( 3 )
 fallback/0 = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=11]
-resource_local_to_scene = true
-size = 24
-outline_size = 3
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
+[sub_resource type="StyleBoxTexture" id=29]
+texture = ExtResource( 19 )
+region_rect = Rect2( 0, 0, 192, 192 )
+
+[sub_resource type="StyleBoxTexture" id=30]
+texture = ExtResource( 18 )
+region_rect = Rect2( 0, 0, 176, 159 )
+
+[sub_resource type="StyleBoxTexture" id=20]
+texture = ExtResource( 16 )
+region_rect = Rect2( 0, 0, 1208, 653 )
+
+[sub_resource type="StyleBoxEmpty" id=16]
+
+[sub_resource type="StyleBoxEmpty" id=17]
 
 [sub_resource type="CanvasItemMaterial" id=7]
 light_mode = 1
@@ -96,22 +93,6 @@ region_rect = Rect2( 0, 0, 1208, 653 )
 [sub_resource type="StyleBoxEmpty" id=14]
 
 [sub_resource type="StyleBoxEmpty" id=15]
-
-[sub_resource type="StyleBoxTexture" id=20]
-texture = ExtResource( 16 )
-region_rect = Rect2( 0, 0, 1208, 653 )
-
-[sub_resource type="StyleBoxEmpty" id=16]
-
-[sub_resource type="StyleBoxEmpty" id=17]
-
-[sub_resource type="StyleBoxTexture" id=29]
-texture = ExtResource( 19 )
-region_rect = Rect2( 0, 0, 192, 192 )
-
-[sub_resource type="StyleBoxTexture" id=30]
-texture = ExtResource( 18 )
-region_rect = Rect2( 0, 0, 176, 159 )
 
 [sub_resource type="DynamicFont" id=26]
 resource_local_to_scene = true
@@ -135,6 +116,20 @@ use_filter = true
 font_data = ExtResource( 14 )
 fallback/0 = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=38]
+size = 60
+outline_size = 2
+outline_color = Color( 0.313726, 0.027451, 0.0627451, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=39]
+size = 60
+use_filter = true
+font_data = ExtResource( 3 )
+fallback/0 = ExtResource( 2 )
+
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -150,52 +145,13 @@ anchor_bottom = 1.0
 rect_clip_content = true
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 17 )
+texture = ExtResource( 12 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="bloxoftime" type="Label" parent="Panel"]
-anchor_left = 0.160156
-anchor_top = 0.0266667
-anchor_right = 0.835938
-anchor_bottom = 0.151667
-custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
-custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 38 )
-text = "Blocks of Time"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="bloxoftime" type="Label" parent="Panel/bloxoftime"]
-anchor_top = -0.0193965
-anchor_right = 1.0
-anchor_bottom = 1.02938
-custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
-custom_constants/shadow_offset_x = 3
-custom_constants/shadow_offset_y = 5
-custom_fonts/font = SubResource( 39 )
-text = "blocks of time"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="selectTopic" type="Label" parent="Panel"]
+visible = false
 anchor_left = 0.174805
 anchor_top = 0.113333
 anchor_right = 0.84668
@@ -234,7 +190,7 @@ __meta__ = {
 }
 
 [node name="Panel" type="Panel" parent="Panel"]
-self_modulate = Color( 1, 1, 1, 0.0392157 )
+self_modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.352539
 anchor_top = 0.228333
 anchor_right = 0.680664
@@ -251,6 +207,7 @@ anchor_right = 0.974609
 anchor_bottom = 1.27833
 grow_horizontal = 2
 grow_vertical = 2
+rect_min_size = Vector2( 978, 603.998 )
 mouse_filter = 1
 mouse_default_cursor_shape = 13
 size_flags_horizontal = 3
@@ -265,8 +222,8 @@ __meta__ = {
 scroll_duration = 0.3
 
 [node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
-margin_right = 2254.0
-margin_bottom = 226.0
+margin_right = 2302.0
+margin_bottom = 236.0
 mouse_filter = 2
 custom_constants/margin_right = 430
 custom_constants/margin_top = 10
@@ -279,8 +236,8 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer"]
 margin_left = 430.0
 margin_top = 10.0
-margin_right = 1824.0
-margin_bottom = 216.0
+margin_right = 1872.0
+margin_bottom = 226.0
 size_flags_horizontal = 5
 size_flags_vertical = 5
 theme = ExtResource( 7 )
@@ -291,28 +248,42 @@ __meta__ = {
 }
 
 [node name="Choice1" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer"]
-margin_right = 236.0
-margin_bottom = 206.0
+margin_right = 248.0
+margin_bottom = 216.0
 mouse_filter = 2
 texture = ExtResource( 9 )
 stretch_mode = 1
 __meta__ = {
-"_edit_group_": true,
 "_edit_lock_": true
 }
 
+[node name="fruits" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice1"]
+anchor_left = 0.0403226
+anchor_top = 0.0509259
+anchor_right = 0.947581
+anchor_bottom = 0.912037
+mouse_filter = 2
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="CardMenu1" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice1"]
-self_modulate = Color( 1, 1, 1, 0.32549 )
-anchor_left = 0.217262
-anchor_top = 0.281818
-anchor_right = 0.616071
-anchor_bottom = 0.636364
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -72.0
+margin_top = -69.5
+margin_right = 72.0
+margin_bottom = 69.5
 focus_mode = 0
 enabled_focus_mode = 0
 flat = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
 [node name="prutasAtGulay" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice1"]
@@ -357,27 +328,43 @@ __meta__ = {
 }
 
 [node name="Choice2" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer"]
-margin_left = 386.0
-margin_right = 622.0
-margin_bottom = 206.0
+margin_left = 398.0
+margin_right = 646.0
+margin_bottom = 216.0
 mouse_filter = 2
-texture = ExtResource( 5 )
+texture = ExtResource( 9 )
 stretch_mode = 4
 __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="animals" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 25.0001
+margin_top = 19.9999
+margin_right = -19.9999
+margin_bottom = -19.0001
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="CardMenu2" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice2"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.305085
-anchor_top = 0.295652
-anchor_right = 0.65678
-anchor_bottom = 0.6
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -54.0
+margin_top = -49.0
+margin_right = 54.0
+margin_bottom = 49.0
 focus_mode = 0
 enabled_focus_mode = 0
+flat = true
 __meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
+"_edit_lock_": true
 }
 
 [node name="farmanimals" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice2"]
@@ -422,27 +409,42 @@ __meta__ = {
 }
 
 [node name="Choice3" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer"]
-margin_left = 772.0
-margin_right = 1008.0
-margin_bottom = 206.0
+margin_left = 796.0
+margin_right = 1044.0
+margin_bottom = 216.0
 mouse_filter = 2
-texture = ExtResource( 4 )
+texture = ExtResource( 9 )
 stretch_mode = 4
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CardMenu3" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice3"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.283898
-anchor_top = 0.278261
-anchor_right = 0.635593
-anchor_bottom = 0.582609
-focus_mode = 0
-enabled_focus_mode = 0
+[node name="alphabets" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice3"]
+anchor_left = 0.0635593
+anchor_top = 0.101852
+anchor_right = 0.940678
+anchor_bottom = 0.898148
+texture = ExtResource( 4 )
+expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
+}
+
+[node name="CardMenu3" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -62.0
+margin_top = -57.0
+margin_right = 62.0
+margin_bottom = 57.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
 }
 
 [node name="alphabetpronouncation" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice3"]
@@ -450,7 +452,10 @@ anchor_left = -0.131356
 anchor_top = 0.849515
 anchor_right = 1.16525
 anchor_bottom = 1.0
-margin_right = -1.52588e-05
+margin_left = -3.99998
+margin_top = -9.15527e-05
+margin_right = -4.00003
+margin_bottom = -9.15527e-05
 custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
 custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
 custom_constants/shadow_offset_x = 1
@@ -487,40 +492,60 @@ __meta__ = {
 }
 
 [node name="Choice4" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer"]
-margin_left = 1158.0
-margin_right = 1394.0
-margin_bottom = 206.0
+margin_left = 1194.0
+margin_right = 1442.0
+margin_bottom = 216.0
 mouse_filter = 2
-theme = ExtResource( 7 )
-texture = ExtResource( 8 )
-stretch_mode = 6
+texture = ExtResource( 9 )
+stretch_mode = 4
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CardMenu4" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.34322
-anchor_top = 0.234783
-anchor_right = 0.694915
-anchor_bottom = 0.565217
-focus_mode = 0
-enabled_focus_mode = 0
+[node name="bodyParts" type="TextureRect" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -117.5
+margin_top = -104.0
+margin_right = 117.5
+margin_bottom = 104.0
+texture = ExtResource( 17 )
+expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="CardLabel4" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
-anchor_left = -0.233051
-anchor_top = 0.791304
-anchor_right = 1.22458
-anchor_bottom = 1.00435
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 7
-custom_fonts/font = SubResource( 11 )
-text = "bahagi ng katawan ng tao"
+[node name="CardMenu4" type="Button" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -61.0
+margin_top = -59.0
+margin_right = 61.0
+margin_bottom = 59.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="body" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4"]
+anchor_left = -0.0685484
+anchor_top = 0.847222
+anchor_right = 1.14919
+anchor_bottom = 1.0
+margin_bottom = -1.52588e-05
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 37 )
+text = "Mga Parte ng Katawan"
 align = 1
 valign = 1
 autowrap = true
@@ -531,8 +556,90 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="body" type="Label" parent="ScrollContainer/MarginContainer/HBoxContainer/Choice4/body"]
+anchor_top = -0.105263
+anchor_right = 1.0
+anchor_bottom = 1.05263
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 36 )
+text = "Mga Parte ng Katawan"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="GameIcon" type="Panel" parent="."]
+visible = false
+anchor_left = 0.0234375
+anchor_top = 0.036674
+anchor_right = 0.169922
+anchor_bottom = 0.269573
+custom_styles/panel = SubResource( 29 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="SchoolLogo" type="Panel" parent="."]
+visible = false
+anchor_left = 0.830078
+anchor_top = 0.036674
+anchor_right = 0.976563
+anchor_bottom = 0.271202
+custom_styles/panel = SubResource( 30 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Cover" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VisibleBlockerLeft" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0214844
+anchor_top = 0.213333
+anchor_right = 0.306641
+anchor_bottom = 0.785
+custom_styles/panel = SubResource( 20 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LeftButton" type="Button" parent="VisibleBlockerLeft"]
+anchor_left = 0.822824
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 0
+custom_styles/hover = SubResource( 16 )
+custom_styles/focus = SubResource( 17 )
+enabled_focus_mode = 0
+icon = ExtResource( 10 )
+flat = true
+clip_text = true
+align = 2
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="VisibleBlockerRight" type="Panel" parent="."]
-self_modulate = Color( 1, 1, 1, 0.596078 )
+self_modulate = Color( 1, 1, 1, 0 )
 light_mask = 5
 material = SubResource( 7 )
 anchor_left = 0.68457
@@ -567,59 +674,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="VisibleBlockerLeft" type="Panel" parent="."]
-self_modulate = Color( 1, 1, 1, 0.313726 )
-anchor_left = 0.0214844
-anchor_top = 0.213333
-anchor_right = 0.306641
-anchor_bottom = 0.785
-custom_styles/panel = SubResource( 20 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="LeftButton" type="Button" parent="VisibleBlockerLeft"]
-anchor_left = 0.822824
-anchor_right = 1.0
-anchor_bottom = 1.0
-focus_mode = 0
-custom_styles/hover = SubResource( 16 )
-custom_styles/focus = SubResource( 17 )
-enabled_focus_mode = 0
-icon = ExtResource( 10 )
-flat = true
-clip_text = true
-align = 2
-icon_align = 1
-expand_icon = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="GameIcon" type="Panel" parent="."]
-anchor_left = 0.0234375
-anchor_top = 0.036674
-anchor_right = 0.169922
-anchor_bottom = 0.269573
-custom_styles/panel = SubResource( 29 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="SchoolLogo" type="Panel" parent="."]
-anchor_left = 0.830078
-anchor_top = 0.036674
-anchor_right = 0.976563
-anchor_bottom = 0.271202
-custom_styles/panel = SubResource( 30 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="gobackCage" type="Control" parent="."]
 anchor_left = 0.30957
 anchor_top = 0.791667
@@ -636,7 +690,9 @@ anchor_left = 0.130574
 anchor_top = 0.1875
 anchor_right = 1.0
 anchor_bottom = 0.8125
+focus_mode = 0
 custom_fonts/font = SubResource( 26 )
+enabled_focus_mode = 0
 flat = true
 __meta__ = {
 "_edit_lock_": true,
@@ -714,10 +770,50 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="bloxoftime" type="Label" parent="."]
+anchor_left = 0.160156
+anchor_top = 0.0266667
+anchor_right = 0.835938
+anchor_bottom = 0.151667
+custom_colors/font_color = Color( 0.886275, 0.317647, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.580392, 0.247059, 0.286275, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 38 )
+text = "Blocks of Time"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="bloxoftime" type="Label" parent="bloxoftime"]
+anchor_top = -0.0193965
+anchor_right = 1.0
+anchor_bottom = 1.02938
+custom_colors/font_color = Color( 1, 0.643137, 0.215686, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 39 )
+text = "blocks of time"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [connection signal="pressed" from="ScrollContainer/MarginContainer/HBoxContainer/Choice1/CardMenu1" to="." method="_on_CardMenu1_pressed"]
 [connection signal="pressed" from="ScrollContainer/MarginContainer/HBoxContainer/Choice2/CardMenu2" to="." method="_on_CardMenu2_pressed"]
 [connection signal="pressed" from="ScrollContainer/MarginContainer/HBoxContainer/Choice3/CardMenu3" to="." method="_on_CardMenu3_pressed"]
 [connection signal="pressed" from="ScrollContainer/MarginContainer/HBoxContainer/Choice4/CardMenu4" to="." method="_on_CardMenu4_pressed"]
-[connection signal="pressed" from="VisibleBlockerRight/RightButton" to="ScrollContainer" method="_on_RightButton_pressed"]
 [connection signal="pressed" from="VisibleBlockerLeft/LeftButton" to="ScrollContainer" method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="VisibleBlockerRight/RightButton" to="ScrollContainer" method="_on_RightButton_pressed"]
 [connection signal="pressed" from="gobackCage/GoBackButton" to="." method="_on_GoBackButton_pressed"]

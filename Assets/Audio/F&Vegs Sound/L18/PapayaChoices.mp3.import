@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/PapayaChoices.mp3-7fb1360ce408d6095bbd62749f48a0db.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L18/PapayaChoices.mp3"
+dest_files=[ "res://.import/PapayaChoices.mp3-7fb1360ce408d6095bbd62749f48a0db.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

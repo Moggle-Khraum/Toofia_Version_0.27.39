@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoTupa.mp3-87d0182f562a8a30ac977ddb3909be94.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Sheep/infoTupa.mp3"
+dest_files=[ "res://.import/infoTupa.mp3-87d0182f562a8a30ac977ddb3909be94.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

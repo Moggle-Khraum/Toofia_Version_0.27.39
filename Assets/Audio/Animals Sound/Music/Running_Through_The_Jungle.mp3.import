@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Running_Through_The_Jungle.mp3-cd9093078df345668a0839dc4a500273.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Music/Running_Through_The_Jungle.mp3"
+dest_files=[ "res://.import/Running_Through_The_Jungle.mp3-cd9093078df345668a0839dc4a500273.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

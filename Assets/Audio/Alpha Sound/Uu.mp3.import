@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Uu.mp3-abbde802f3da64b0c62cdf2e35bf29ec.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/Uu.mp3"
+dest_files=[ "res://.import/Uu.mp3-abbde802f3da64b0c62cdf2e35bf29ec.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/chicken.mp3-411f2f1ad4b2adef85bc70e83ad07761.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Chicken/chicken.mp3"
+dest_files=[ "res://.import/chicken.mp3-411f2f1ad4b2adef85bc70e83ad07761.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

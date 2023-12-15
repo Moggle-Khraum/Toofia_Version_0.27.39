@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/manok.mp3-e9e62dd2e38f0828b40c96dd752a9d09.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Chicken/manok.mp3"
+dest_files=[ "res://.import/manok.mp3-e9e62dd2e38f0828b40c96dd752a9d09.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

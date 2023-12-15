@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/orangeQuest.mp3-222dd32df25b47f6c4d1cedb5fcf76be.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L11/orangeQuest.mp3"
+dest_files=[ "res://.import/orangeQuest.mp3-222dd32df25b47f6c4d1cedb5fcf76be.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

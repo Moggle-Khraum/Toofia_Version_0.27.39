@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/malunggayChoices.mp3-42f2fde7b7ae464820f21962e6b64b40.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L15/malunggayChoices.mp3"
+dest_files=[ "res://.import/malunggayChoices.mp3-42f2fde7b7ae464820f21962e6b64b40.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

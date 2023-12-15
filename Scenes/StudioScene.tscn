@@ -47,3 +47,7 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
+
+[node name="intro" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+bus = "Music"

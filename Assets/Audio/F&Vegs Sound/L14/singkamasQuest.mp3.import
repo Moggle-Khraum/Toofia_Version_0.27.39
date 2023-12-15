@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/singkamasQuest.mp3-ba38661e70a0fb4c65f7e2722edbad26.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L14/singkamasQuest.mp3"
+dest_files=[ "res://.import/singkamasQuest.mp3-ba38661e70a0fb4c65f7e2722edbad26.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

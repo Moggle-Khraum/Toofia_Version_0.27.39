@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/OrangeChoices.mp3-2c60b8ea61e06fc13c104610a415eb76.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L11/OrangeChoices.mp3"
+dest_files=[ "res://.import/OrangeChoices.mp3-2c60b8ea61e06fc13c104610a415eb76.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

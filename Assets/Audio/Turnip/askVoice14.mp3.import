@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askVoice14.mp3-d2277eded9e5766be5a70c9fd6cf6b58.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Turnip/askVoice14.mp3"
+dest_files=[ "res://.import/askVoice14.mp3-d2277eded9e5766be5a70c9fd6cf6b58.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/monkeyScream.mp3-7b6e08ecceaae7022d0eac12461c155e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Monkey/monkeyScream.mp3"
+dest_files=[ "res://.import/monkeyScream.mp3-7b6e08ecceaae7022d0eac12461c155e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

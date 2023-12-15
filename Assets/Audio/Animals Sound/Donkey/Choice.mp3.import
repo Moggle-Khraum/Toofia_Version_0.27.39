@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Choice.mp3-346aa7cebf52c0532bf2d830e3eda2b4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Donkey/Choice.mp3"
+dest_files=[ "res://.import/Choice.mp3-346aa7cebf52c0532bf2d830e3eda2b4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

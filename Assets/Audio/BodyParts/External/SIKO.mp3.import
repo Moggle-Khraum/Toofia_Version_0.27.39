@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SIKO.mp3-0da51e34f5766eac2709fd48d890438e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/SIKO.mp3"
+dest_files=[ "res://.import/SIKO.mp3-0da51e34f5766eac2709fd48d890438e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

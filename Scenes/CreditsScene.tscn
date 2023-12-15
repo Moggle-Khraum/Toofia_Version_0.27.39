@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/CreditsScripts.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/background/line1.jpg" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/Icon_LongSquare.png" type="Texture" id=5]
 [ext_resource path="res://Assets/UIElements/Icon_Write.png" type="Texture" id=6]
 [ext_resource path="res://Assets/UIElements/Icon_Return.png" type="Texture" id=7]
@@ -18,7 +18,7 @@
 
 [sub_resource type="StyleBoxTexture" id=9]
 texture = ExtResource( 4 )
-region_rect = Rect2( 0, 0, 1280, 720 )
+region_rect = Rect2( 0, 0, 5021, 4381 )
 
 [sub_resource type="DynamicFont" id=4]
 resource_local_to_scene = true

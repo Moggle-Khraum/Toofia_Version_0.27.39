@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rabbitcry.mp3-1ed19df843b9832f1805e624c04f41db.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Kuneho/rabbitcry.mp3"
+dest_files=[ "res://.import/rabbitcry.mp3-1ed19df843b9832f1805e624c04f41db.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

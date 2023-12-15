@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LABI.mp3-77f7feda4a1fb06fc5f09f332ba7cda4.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/LABI.mp3"
+dest_files=[ "res://.import/LABI.mp3-77f7feda4a1fb06fc5f09f332ba7cda4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

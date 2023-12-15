@@ -1,9 +1,9 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintMC.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Scripts/PopupEnterName.gd" type="Script" id=3]
-[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/background/blue.png" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/Background.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.ttf" type="DynamicFontData" id=7]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Assets/UIElements/Icon_SqiuareTilt.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Images/pilot-logo.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Icons/ic_launcher.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/background/hbpart.png" type="Texture" id=13]
 
 [sub_resource type="StyleBoxTexture" id=27]
 texture = ExtResource( 12 )
@@ -154,7 +155,7 @@ __meta__ = {
 [node name="Panel2" type="NinePatchRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 4 )
+texture = ExtResource( 13 )
 __meta__ = {
 "_edit_lock_": true
 }

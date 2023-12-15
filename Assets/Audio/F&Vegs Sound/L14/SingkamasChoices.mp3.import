@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SingkamasChoices.mp3-e435d486846e7cf25fe7c92fd99944ef.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L14/SingkamasChoices.mp3"
+dest_files=[ "res://.import/SingkamasChoices.mp3-e435d486846e7cf25fe7c92fd99944ef.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

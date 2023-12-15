@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/avocadoQues.mp3-af86a5edde7ab377af7c6caca29ef76f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L4/avocadoQues.mp3"
+dest_files=[ "res://.import/avocadoQues.mp3-af86a5edde7ab377af7c6caca29ef76f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

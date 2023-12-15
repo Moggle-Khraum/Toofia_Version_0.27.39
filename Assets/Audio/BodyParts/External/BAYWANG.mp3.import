@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BAYWANG.mp3-f1391bf8936c4682f3d390343fb80ccc.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/BAYWANG.mp3"
+dest_files=[ "res://.import/BAYWANG.mp3-f1391bf8936c4682f3d390343fb80ccc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

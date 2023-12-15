@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Enye.mp3-eb6bac1cd7ae81c6a287e9edbddf21bb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/Enye.mp3"
+dest_files=[ "res://.import/Enye.mp3-eb6bac1cd7ae81c6a287e9edbddf21bb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

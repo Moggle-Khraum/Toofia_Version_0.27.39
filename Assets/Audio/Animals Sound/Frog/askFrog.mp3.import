@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/askFrog.mp3-afc25802d497b4e5e01476d3a877f10b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Frog/askFrog.mp3"
+dest_files=[ "res://.import/askFrog.mp3-afc25802d497b4e5e01476d3a877f10b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

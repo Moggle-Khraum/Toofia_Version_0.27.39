@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/monkeyChoice.mp3-6cba4fe4ac651081192d590e69653a56.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Monkey/monkeyChoice.mp3"
+dest_files=[ "res://.import/monkeyChoice.mp3-6cba4fe4ac651081192d590e69653a56.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/infoKalabaw.mp3-93d68b90e363fcb86c511333a31ff77c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Kalabaw/infoKalabaw.mp3"
+dest_files=[ "res://.import/infoKalabaw.mp3-93d68b90e363fcb86c511333a31ff77c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

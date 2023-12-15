@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/goatChoice.mp3-0affa3f75f9c26e1f14da08dd34417c8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Goat/goatChoice.mp3"
+dest_files=[ "res://.import/goatChoice.mp3-0affa3f75f9c26e1f14da08dd34417c8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

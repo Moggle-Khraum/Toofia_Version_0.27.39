@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Qq.mp3-f9672445a91bef1ed52161a3353bc0f2.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Alpha Sound/Qq.mp3"
+dest_files=[ "res://.import/Qq.mp3-f9672445a91bef1ed52161a3353bc0f2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

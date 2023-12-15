@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/WatermelonQuest.mp3-efea43681424f0611e8960164999fa85.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L6/WatermelonQuest.mp3"
+dest_files=[ "res://.import/WatermelonQuest.mp3-efea43681424f0611e8960164999fa85.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

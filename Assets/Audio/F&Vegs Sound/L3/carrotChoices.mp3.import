@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/carrotChoices.mp3-5198c36b817ecead975f42cb08065d08.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/F&Vegs Sound/L3/carrotChoices.mp3"
+dest_files=[ "res://.import/carrotChoices.mp3-5198c36b817ecead975f42cb08065d08.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

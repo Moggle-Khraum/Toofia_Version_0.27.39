@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/KUKO.mp3-1ce1df18616e6264561a7b602257e01f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/KUKO.mp3"
+dest_files=[ "res://.import/KUKO.mp3-1ce1df18616e6264561a7b602257e01f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

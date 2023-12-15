@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Choices.mp3-b80dc921aebbdcf4bc1706a966d25778.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Animals Sound/Kuneho/Choices.mp3"
+dest_files=[ "res://.import/Choices.mp3-b80dc921aebbdcf4bc1706a966d25778.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

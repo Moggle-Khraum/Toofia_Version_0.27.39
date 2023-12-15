@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BINTI.mp3-838ac990bc0e92f41f4d484b2cc5d920.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/BINTI.mp3"
+dest_files=[ "res://.import/BINTI.mp3-838ac990bc0e92f41f4d484b2cc5d920.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

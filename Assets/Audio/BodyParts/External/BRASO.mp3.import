@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BRASO.mp3-0ba082403400f8e1717a3d5d02af0110.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/BodyParts/External/BRASO.mp3"
+dest_files=[ "res://.import/BRASO.mp3-0ba082403400f8e1717a3d5d02af0110.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

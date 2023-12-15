@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tropical-Music - Alexander Blu.mp3-3c847b0cb091d5eb35909f00345e2514.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Tropical-Music - Alexander Blu.mp3"
+dest_files=[ "res://.import/Tropical-Music - Alexander Blu.mp3-3c847b0cb091d5eb35909f00345e2514.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
