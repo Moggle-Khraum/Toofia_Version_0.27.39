@@ -11,7 +11,7 @@ func _on_GoBackButton_pressed() -> void:
 	print("Presses Go Back")
 	MenuClickSfxPlayer.play()
 	#handles the Go back button
-	var levelSelect = get_tree().change_scene("res://Scenes/MenuChoices.tscn")
+	var levelSelect = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.tscn")
 	#$'%animalsTheme'.stream_paused = true
 	print("Going to Topic Selector")
 	
@@ -32,20 +32,6 @@ func _on_Bb_pressed() -> void:
 	yield(get_tree().create_timer(0.15), "timeout")
 	$'%bigB'.play()
 	print("Play Big B")
-	
-#LETTERS C
-func _on_Cc_pressed() -> void:
-	#ScrollPop.play()
-	yield(get_tree().create_timer(0.15), "timeout")
-	$'%bigC'.play()
-	print("Play Big C")
-
-#LETTERS D
-func _on_Dd_pressed() -> void:
-	#ScrollPop.play()
-	yield(get_tree().create_timer(0.15), "timeout")
-	$'%bigD'.play()
-	print("Play Big D")
 
 #LETTERS E
 func _on_Ee_pressed() -> void:
@@ -54,12 +40,6 @@ func _on_Ee_pressed() -> void:
 	$'%bigE'.play()
 	print("Play Big B")
 
-#LETTERS F
-func _on_Ff_pressed() -> void:
-	#ScrollPop.play()
-	yield(get_tree().create_timer(0.15), "timeout")
-	$'%bigF'.play()
-	print("Play Big B")
 
 #LETTERS G
 func _on_Gg_pressed() -> void:
@@ -68,26 +48,14 @@ func _on_Gg_pressed() -> void:
 	$'%bigG'.play()
 	print("Play Big B")
 
-#LETTERS H
-func _on_Hh_pressed() -> void:
-	#ScrollPop.play()
-	yield(get_tree().create_timer(0.15), "timeout")
-	$'%bigH'.play()
-	print("Play Big B")
+
 
 #LETTERS I
 func _on_Ii_pressed() -> void:
 	#ScrollPop.play()
 	yield(get_tree().create_timer(0.15), "timeout")
 	$'%bigI'.play()
-	print("Play Big B")
-
-#LETTERS J
-func _on_Jj_pressed() -> void:
-	#ScrollPop.play()
-	yield(get_tree().create_timer(0.15), "timeout")
-	$'%bigJ'.play()
-	print("Play Big B")
+	print("Play Big I")
 
 func _on_Kk_pressed() -> void:
 	#ScrollPop.play()
@@ -107,7 +75,7 @@ func _on_Mm_pressed() -> void:
 	#ScrollPop.play()
 	yield(get_tree().create_timer(0.15), "timeout")
 	$'%bigM'.play()
-	print("Play Big B")
+	print("Play Big M")
 
 #LETTERS N
 func _on_Nn_pressed() -> void:
@@ -116,10 +84,45 @@ func _on_Nn_pressed() -> void:
 	$'%bigN'.play()
 	print("Play Big B")
 
-#LETTERS Ñ (Enye)
-func _on_Enye_pressed() -> void:
+#LETTERS S
+func _on_Ss_pressed() -> void:
 	#ScrollPop.play()
 	yield(get_tree().create_timer(0.15), "timeout")
-	$'%bigEnye'.play()
-	print("Play Big B")
+	$'%bigS'.play()
+	print("Play Big S")
 
+#LETTERS O
+func _on_Oo_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigE'.play()
+	print("Play Big O")
+
+#LETTERS U
+func _on_Uu_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigU'.play()
+	print("Play Big P")
+
+#LETTERS T
+func _on_Tt_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigT'.play()
+	print("Play Big P")
+
+
+#LETTERS Y
+func _on_Yy_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigY'.play()
+	print("Play Big P")
+
+#LETTERS NGng
+func _on_NGng_pressed() -> void:
+	#ScrollPop.play()
+	yield(get_tree().create_timer(0.15), "timeout")
+	$'%bigNG'.play()
+	print("Play Big P")

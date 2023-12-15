@@ -24,7 +24,7 @@ func _on_GoBackButton_pressed():
 func _on_CardMenu1_pressed():
 	MenuClickSfxPlayer.play()
 	print("Presses 1")
-	var pag = load('res://Levels/1PrutasAtGulay/PrutasAtGulayLevel.tscn')
+	var pag = load('res://Levels/Fruits&Vegs/Fruits&VegsMain.tscn')
 	var levels = get_tree().change_scene_to(pag)
 	MainMenuThemePlayer.stop()
 	print("Going to Prutas at Gulay Levels")
@@ -32,22 +32,22 @@ func _on_CardMenu1_pressed():
 func _on_CardMenu2_pressed():
 	MenuClickSfxPlayer.play()
 	print("Presses 2")
-	var farmAnimals = get_tree().change_scene("res://Levels/MgaHayopSaBukid/MgaHayopSaBukid.tscn")
+	var farmAnimals = get_tree().change_scene("res://Levels/FarmAnimas/MgaHayopSaBukid.tscn")
 	MainMenuThemePlayer.stop()
 	print("Going to Mga Hayop sa Bukid")
 
 func _on_CardMenu3_pressed():
 	MenuClickSfxPlayer.play()
 	print("Presses 3")
-	var letterspeak = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/LetterSpeak.tscn")
+	var letterspeak = get_tree().change_scene("res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.tscn")
 	MainMenuThemePlayer.stop()
 	print("Going to Letter Speak")
 
 func _on_CardMenu4_pressed():
 	MenuClickSfxPlayer.play()
 	print("Presses 4")
-	var humanBody = get_tree().change_scene("res://Levels/ParteNgKatawanNgTao/ParteNgKatawanNgTao.tscn")
+	var humanBody = get_tree().change_scene("res://Levels/BodyParts/BodyParts.tscn")
 	MainMenuThemePlayer.stream_paused = true
-	print("Going to BodyParts")
+	print("Going to Body Parts")
 
 

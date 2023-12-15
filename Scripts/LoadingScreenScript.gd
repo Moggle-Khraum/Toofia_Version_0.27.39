@@ -140,7 +140,8 @@ func goto_main_menu():
 #isNotCompatible shows CompatWarn
 func goto_compatibility_warning():
 	# Implement the code to load the compatibility warning scene here
-	var loadCompat = get_tree().change_scene("res://Scenes/CompatWarning.tscn")
+	var loadCompat = $PopupDialog
+	loadCompat.popup_centered()
 
 #Executor of Dot Animation
 func startDotAnimations():

@@ -1,24 +1,33 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=37 format=2]
 
-[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.gd" type="Script" id=1]
+[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/thumbnail2.0.png" type="Texture" id=1]
 [ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/thumbnail1.1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UIElements/Icon_Tube.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Images/blackScreen.png" type="Texture" id=4]
-[ext_resource path="res://Assets/GUI/Blue_Square.png" type="Texture" id=5]
-[ext_resource path="res://Assets/UIElements/Icon_Writing.png" type="Texture" id=6]
-[ext_resource path="res://Assets/UIElements/Icon_Down.png" type="Texture" id=7]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Square.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/background/hbpart.png" type="Texture" id=5]
+[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/thumbnail2.png" type="Texture" id=6]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Rounded.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=8]
 [ext_resource path="res://Assets/Fonts/Kaph-Regular.otf" type="DynamicFontData" id=9]
-[ext_resource path="res://Assets/UIElements/Icon_Write.png" type="Texture" id=10]
+[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/thumbnail3.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Fonts/fredoka-one/FredokaOne-Regular.otf" type="DynamicFontData" id=11]
 [ext_resource path="res://Assets/Images/thumbnail3.1.png" type="Texture" id=12]
 [ext_resource path="res://Assets/UIIcons/Icon_Small_Blank_X.png" type="Texture" id=13]
 [ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/Musikantahan.webm" type="VideoStream" id=14]
-[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/thumbnail3.png" type="Texture" id=15]
-[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/thumbnail2.png" type="Texture" id=16]
-[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/thumbnail2.0.png" type="Texture" id=17]
-[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/Writing-Letters.webm" type="VideoStream" id=18]
-[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/Forming Phonetics.webm" type="VideoStream" id=19]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Large_Red_Circle.png" type="Texture" id=15]
+[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/Writing-Letters.webm" type="VideoStream" id=16]
+[ext_resource path="res://Levels/PagbikasNgAlpabeto/AlphabetSong/AlphaSong.gd" type="Script" id=17]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Circle.png" type="Texture" id=18]
+[ext_resource path="res://Assets/ButtonsIcons/IconButton_Small_Orange_Rounded.png" type="Texture" id=19]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_Audio_Blank.png" type="Texture" id=20]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_Audio_Grey.png" type="Texture" id=21]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_AudioOff_Blank.png" type="Texture" id=22]
+[ext_resource path="res://Assets/UIIcons/Icon_Large_AudioOff_Grey.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Fonts/Hussar-Print-A/HussarPrintMC.otf" type="DynamicFontData" id=24]
+[ext_resource path="res://Assets/UIElements/Icon_Add.png" type="Texture" id=25]
+[ext_resource path="res://Assets/GUI/Item2.png" type="Texture" id=26]
+[ext_resource path="res://Assets/GUI/Icon_Minus.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Audio/Music/Tropical-Music - Alexander Blu.mp3" type="AudioStream" id=28]
 
 [sub_resource type="DynamicFont" id=5]
 size = 65
@@ -55,10 +64,22 @@ font_data = ExtResource( 11 )
 
 [sub_resource type="StyleBoxEmpty" id=9]
 
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 26 )
+region_rect = Rect2( 0, 0, 1528, 346 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 24 )
+
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 1 )
+script = ExtResource( 17 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -111,45 +132,34 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="pen" type="TextureRect" parent="NinePatchRect"]
-anchor_left = 0.875977
-anchor_top = 0.0583333
-anchor_right = 0.943359
-anchor_bottom = 0.16
-texture = ExtResource( 6 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="write" type="TextureRect" parent="NinePatchRect"]
-anchor_left = 0.0830078
-anchor_top = 0.06
-anchor_right = 0.150391
-anchor_bottom = 0.161667
-texture = ExtResource( 10 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="LeftButton" type="Button" parent="."]
+[node name="GoBackButton" type="TextureButton" parent="."]
 unique_name_in_owner = true
-anchor_left = 0.0195312
-anchor_top = 0.485
-anchor_right = 0.0195313
-anchor_bottom = 0.608333
-margin_left = 51.0
-margin_right = 125.0
-margin_bottom = -23.0
-rect_rotation = 90.0
-focus_mode = 0
-enabled_focus_mode = 0
-icon = ExtResource( 7 )
-flat = true
-expand_icon = true
+anchor_left = 0.0195313
+anchor_top = 0.035
+anchor_right = 0.0908203
+anchor_bottom = 0.155
+margin_left = 918.0
+margin_top = -7.0
+margin_right = 918.0
+margin_bottom = -7.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 19 )
+texture_hover = ExtResource( 19 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="pressedX" type="TextureRect" parent="GoBackButton"]
+anchor_left = 0.191781
+anchor_top = 0.180556
+anchor_right = 0.794521
+anchor_bottom = 0.777778
+texture = ExtResource( 13 )
+expand = true
+flip_h = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -185,7 +195,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Ponetaka" type="TextureButton" parent="firstVideo/Panel"]
+[node name="Pagbigkas" type="TextureButton" parent="firstVideo/Panel"]
 anchor_left = 0.233215
 anchor_top = 0.346406
 anchor_right = 0.61484
@@ -208,7 +218,7 @@ custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 7 )
-text = "Ponetika"
+text = "Pagbigkas"
 align = 1
 valign = 1
 __meta__ = {
@@ -225,7 +235,7 @@ custom_colors/font_color_shadow = Color( 0.690196, 0.223529, 0.188235, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 8 )
-text = "Ponetika"
+text = "Pagbigkas"
 align = 1
 valign = 1
 __meta__ = {
@@ -257,7 +267,7 @@ __meta__ = {
 [node name="2ndBG" type="TextureRect" parent="secondVideo/Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 17 )
+texture = ExtResource( 1 )
 expand = true
 __meta__ = {
 "_edit_lock_": true
@@ -387,79 +397,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Ponetaka" type="Control" parent="."]
-unique_name_in_owner = true
-visible = false
-anchor_left = 0.0146484
-anchor_top = 0.0233333
-anchor_right = 0.985352
-anchor_bottom = 0.976667
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="Panel" type="Panel" parent="Ponetaka"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="VPponetaka" type="VideoPlayer" parent="Ponetaka/Panel"]
-unique_name_in_owner = true
-anchor_right = 1.0
-anchor_bottom = 1.0
-stream = ExtResource( 19 )
-bus = "Voices"
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="curtain" type="TextureRect" parent="Ponetaka/Panel"]
-unique_name_in_owner = true
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 4 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="PlayVPonetaka" type="TextureButton" parent="Ponetaka/Panel"]
-unique_name_in_owner = true
-visible = false
-anchor_left = 0.399142
-anchor_top = 0.357278
-anchor_right = 0.549356
-anchor_bottom = 0.604915
-focus_mode = 0
-action_mode = 0
-enabled_focus_mode = 0
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 3 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="exitPonetaka" type="TextureButton" parent="Ponetaka"]
-unique_name_in_owner = true
-anchor_left = 0.924547
-anchor_right = 1.00101
-anchor_bottom = 0.122378
-margin_right = -6.10352e-05
-texture_normal = ExtResource( 13 )
-texture_pressed = ExtResource( 13 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [node name="Pagsulat" type="Control" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -473,17 +410,21 @@ __meta__ = {
 }
 
 [node name="Panel" type="Panel" parent="Pagsulat"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = -0.0100604
+anchor_top = -0.0174825
+anchor_right = 1.01207
+anchor_bottom = 1.01923
+input_pass_on_modal_close_click = false
 __meta__ = {
-"_edit_lock_": true
+"_edit_lock_": true,
+"_edit_use_anchors_": true
 }
 
 [node name="VPpagsulat" type="VideoPlayer" parent="Pagsulat/Panel"]
 unique_name_in_owner = true
 anchor_right = 1.0
 anchor_bottom = 1.0
-stream = ExtResource( 18 )
+stream = ExtResource( 16 )
 bus = "Voices"
 __meta__ = {
 "_edit_lock_": true
@@ -491,10 +432,9 @@ __meta__ = {
 
 [node name="curtain0" type="TextureRect" parent="Pagsulat/Panel"]
 unique_name_in_owner = true
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 16 )
+texture = ExtResource( 6 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
@@ -503,7 +443,6 @@ __meta__ = {
 
 [node name="PlayVPagsulat" type="TextureButton" parent="Pagsulat/Panel"]
 unique_name_in_owner = true
-visible = false
 anchor_left = 0.399142
 anchor_top = 0.357278
 anchor_right = 0.549356
@@ -520,16 +459,60 @@ __meta__ = {
 }
 
 [node name="exitPagsulat" type="TextureButton" parent="Pagsulat"]
-anchor_left = 0.924547
-anchor_top = -0.00174825
-anchor_right = 1.00101
-anchor_bottom = 0.120629
-texture_normal = ExtResource( 13 )
-texture_pressed = ExtResource( 13 )
+anchor_left = 0.944668
+anchor_top = -0.0174825
+anchor_right = 1.01207
+anchor_bottom = 0.0961538
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 4 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
+}
+
+[node name="exit" type="TextureRect" parent="Pagsulat/exitPagsulat"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 11.0
+margin_top = 11.0
+margin_right = -10.0
+margin_bottom = -12.0
+texture = ExtResource( 13 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mute" type="TextureButton" parent="Pagsulat"]
+unique_name_in_owner = true
+margin_left = -4.0
+margin_top = 500.0
+margin_right = 57.0
+margin_bottom = 583.0
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 21 )
+texture_hover = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="UnMute" type="TextureButton" parent="Pagsulat"]
+unique_name_in_owner = true
+visible = false
+margin_left = -10.0
+margin_top = 500.0
+margin_right = 63.0
+margin_bottom = 583.0
+toggle_mode = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 23 )
+texture_hover = ExtResource( 23 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
 }
 
 [node name="Pagawit" type="Control" parent="."]
@@ -547,6 +530,10 @@ __meta__ = {
 [node name="Panel" type="Panel" parent="Pagawit"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -9.0
+margin_top = -10.0
+margin_right = 9.99957
+margin_bottom = 9.99982
 __meta__ = {
 "_edit_lock_": true
 }
@@ -563,10 +550,9 @@ __meta__ = {
 
 [node name="curtain1" type="TextureRect" parent="Pagawit/Panel"]
 unique_name_in_owner = true
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 15 )
+texture = ExtResource( 10 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
@@ -575,7 +561,6 @@ __meta__ = {
 
 [node name="PlayVPagawit" type="TextureButton" parent="Pagawit/Panel"]
 unique_name_in_owner = true
-visible = false
 anchor_left = 0.399142
 anchor_top = 0.357278
 anchor_right = 0.549356
@@ -592,9 +577,10 @@ __meta__ = {
 }
 
 [node name="exitPagawit" type="TextureButton" parent="Pagawit"]
-anchor_left = 0.943719
-anchor_right = 1.0
-anchor_bottom = 0.0944056
+anchor_left = 0.953768
+anchor_top = -0.0174825
+anchor_right = 1.01005
+anchor_bottom = 0.0769231
 texture_normal = ExtResource( 13 )
 texture_pressed = ExtResource( 13 )
 expand = true
@@ -603,16 +589,113 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[connection signal="pressed" from="LeftButton" to="." method="_on_LeftButton_pressed"]
-[connection signal="pressed" from="firstVideo/Panel/Ponetaka" to="." method="_on_Ponetaka_pressed"]
+[node name="Volume" type="TextureButton" parent="Pagawit"]
+unique_name_in_owner = true
+margin_left = -11.0
+margin_top = 518.0
+margin_right = 48.0
+margin_bottom = 582.0
+texture_normal = ExtResource( 20 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Volume2" type="TextureButton" parent="Pagawit"]
+unique_name_in_owner = true
+visible = false
+margin_left = -11.0
+margin_top = 518.0
+margin_right = 48.0
+margin_bottom = 582.0
+texture_normal = ExtResource( 20 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel2" type="Panel" parent="Pagawit"]
+unique_name_in_owner = true
+visible = false
+margin_left = 52.0
+margin_top = 525.0
+margin_right = 201.0
+margin_bottom = 576.0
+custom_styles/panel = SubResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="plus" type="TextureButton" parent="Pagawit/Panel2"]
+anchor_left = 0.0201342
+anchor_top = 0.137255
+anchor_right = 0.264037
+anchor_bottom = 0.839009
+margin_right = -0.341465
+margin_bottom = 0.210526
+texture_normal = ExtResource( 25 )
+texture_pressed = ExtResource( 25 )
+texture_hover = ExtResource( 25 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Pagawit/Panel2"]
+unique_name_in_owner = true
+anchor_left = 0.275168
+anchor_top = 0.0588235
+anchor_right = 0.731544
+anchor_bottom = 0.882353
+custom_fonts/font = SubResource( 12 )
+text = "00"
+align = 1
+valign = 2
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="minus" type="TextureButton" parent="Pagawit/Panel2"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -39.0
+margin_top = -17.5
+margin_right = -3.0
+margin_bottom = 18.5
+texture_normal = ExtResource( 27 )
+texture_pressed = ExtResource( 27 )
+texture_hover = ExtResource( 27 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="alphTheme" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource( 28 )
+bus = "Music"
+
+[connection signal="visibility_changed" from="." to="." method="_on_Control_visibility_changed"]
+[connection signal="pressed" from="GoBackButton" to="." method="_on_GoBackButton_pressed"]
+[connection signal="pressed" from="firstVideo/Panel/Pagbigkas" to="." method="_on_Pagbigkas_pressed"]
 [connection signal="pressed" from="secondVideo/Panel/Pagsulat" to="." method="_on_Pagsulat_pressed"]
 [connection signal="pressed" from="thirdVideo/Panel/Pagawit" to="." method="_on_Pagawit_pressed"]
-[connection signal="finished" from="Ponetaka/Panel/VPponetaka" to="." method="_on_VPponetaka_finished"]
-[connection signal="button_down" from="Ponetaka/Panel/PlayVPonetaka" to="." method="_on_PlayVPonetaka_button_down"]
-[connection signal="pressed" from="Ponetaka/exitPonetaka" to="." method="_on_exitPonetaka_pressed"]
 [connection signal="finished" from="Pagsulat/Panel/VPpagsulat" to="." method="_on_VPpagsulat_finished"]
 [connection signal="button_down" from="Pagsulat/Panel/PlayVPagsulat" to="." method="_on_PlayVPagsulat_button_down"]
 [connection signal="pressed" from="Pagsulat/exitPagsulat" to="." method="_on_exitPagsulat_pressed"]
+[connection signal="pressed" from="Pagsulat/Mute" to="." method="_on_Mute_pressed"]
+[connection signal="pressed" from="Pagsulat/UnMute" to="." method="_on_UnMute_pressed"]
 [connection signal="finished" from="Pagawit/Panel/VPpagawit" to="." method="_on_VPpagawit_finished"]
 [connection signal="button_down" from="Pagawit/Panel/PlayVPagawit" to="." method="_on_PlayVPagawit_button_down"]
 [connection signal="pressed" from="Pagawit/exitPagawit" to="." method="_on_exitPagawit_pressed"]
+[connection signal="pressed" from="Pagawit/Volume" to="." method="_on_Volume_pressed"]
+[connection signal="pressed" from="Pagawit/Volume2" to="." method="_on_Volume2_pressed"]
+[connection signal="pressed" from="Pagawit/Panel2/plus" to="." method="_on_plus_pressed"]
+[connection signal="pressed" from="Pagawit/Panel2/minus" to="." method="_on_minus_pressed"]

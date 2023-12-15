@@ -1,5 +1,6 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
+[ext_resource path="res://Scenes/CompatWarning.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/GUI/gears2d2.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Images/blackScreen.png" type="Texture" id=4]
@@ -403,5 +404,7 @@ texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="PopupDialog" parent="." instance=ExtResource( 1 )]
 
 [connection signal="value_changed" from="MainPanel/loadingBar" to="." method="_on_loadingBar_value_changed"]
