@@ -16,3 +16,11 @@ func _on_AnimLeft_animation_finished(_anim_name: String) -> void:
 	var left = get_tree().change_scene("res://Levels/BodyParts/Flashcards/LegMain.tscn")
 	print("Changes Scene to LEG")
 
+
+
+func _on_Button_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_part_finished() -> void:
+	pass # Replace with function body.

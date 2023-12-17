@@ -354,6 +354,8 @@ __meta__ = {
 [node name="part" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 
+[connection signal="pressed" from="frontCard/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="goBack" to="." method="_on_goBack_pressed"]
 [connection signal="animation_finished" from="AnimLeft" to="." method="_on_AnimLeft_animation_finished"]
 [connection signal="pressed" from="ButtonLeft" to="." method="_on_ButtonLeft_pressed"]
+[connection signal="finished" from="part" to="." method="_on_part_finished"]
