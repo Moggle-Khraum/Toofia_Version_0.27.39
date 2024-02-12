@@ -16,17 +16,10 @@
 - [x] Added, Modified and Fixed the Reapeat Button of the Question by pressing the image
 - [x] Add the Blocks of Time's level selection
 - [x] Adds Corresponding Level Themes.
-- [x] Add a system logic that makes the star display 1, 2 or 3 stars based on the players choice
-- [x]
-- [x]
-  
-:pushpin: **Next Goal:**
-- [  ] Add a autosave system, display stars to the levels
-- [  ] Implement this system to other levels :face_with_spiral_eyes:
-- [  ] Add more questions to Levels :dizzy_face:
-- [  ] TLDR;
-- [  ] Finish the game.. :tada:
-- more to come...
+- [x] Static Stars
+- [x] Implement the Stars to other levels
+- [x] Deploy both the Desktop & Mobile build of the game. :tada:
+ 
 
  
 
